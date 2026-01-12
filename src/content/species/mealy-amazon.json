@@ -1,0 +1,17 @@
+{
+  "category": "Amazons",
+  "species": "Mealy Amazon",
+  "slug": "mealy-amazon",
+  "image": "/assets/img/parrots/mealy-amazon.webp",
+  "description": "One of the largest Amazon species, they have a green body with a dusty or 'mealy' appearance due to a faint white-ish tinge to their feathers. Some have a patch of yellow on the crown.",
+  "size": "15-16 inches (38-41 cm). Weight: 540-700g (19-24.7 oz)",
+  "weight_grams": 620,
+  "temperament": "Known as 'gentle giants.' They are typically more docile, easy-going, and less prone to aggression than many other large Amazons.",
+  "loudness": "Moderate to Loud. Their voice is not as harsh as some other Amazons, but they can still be quite loud when they want to be.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": "Fair talking ability. They can learn words and phrases but are not considered the most gifted talkers of the genus.",
+  "dietaryNeeds": "A standard low-fat Amazon diet is appropriate: high-quality pellets with plenty of fresh vegetables and occasional fruits.",
+  "healthPointers": "Can live for 40-60 years. Obesity is a concern. They need a large cage and plenty of out-of-cage time for exercise.",
+  "housing": "Requires a very large cage due to their size. Minimum 40\"W x 30\"D x 60\"H. Not ideal for apartments.",
+  "origin": "Central & South America"
+}

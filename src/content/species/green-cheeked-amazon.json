@@ -1,0 +1,17 @@
+{
+  "category": "Amazons",
+  "species": "Green-cheeked Amazon",
+  "slug": "green-cheeked-amazon",
+  "image": "/assets/img/parrots/green-cheeked-amazon.webp",
+  "description": "Also known as the Mexican Red-headed Parrot, this is a medium-sized green parrot with a bright red patch on its forehead and a splash of violet-blue behind the eyes.",
+  "size": "12-13 inches (30.5-33 cm). Weight: 280-400g (9.9-14 oz)",
+  "weight_grams": 340,
+  "temperament": "Energetic, playful, and intelligent. They are known to be quite charismatic but can be nippy and require good socialization.",
+  "loudness": "Loud. They have a high-pitched, loud call.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Fair to good talkers. They can learn a number of phrases but may not have the clarity of other Amazons.",
+  "dietaryNeeds": "A balanced diet of pellets, fresh vegetables, and some fruits. Like other Amazons, they can become overweight if their diet is too high in fat.",
+  "healthPointers": "Can live up to 50 years. Can be prone to psittacosis, fatty liver disease, and Pacheco's disease.",
+  "housing": "Requires a spacious cage. Minimum size of 30\"W x 24\"D x 48\"H. Their noise level makes them a challenge for apartment living.",
+  "origin": "Central & South America"
+}

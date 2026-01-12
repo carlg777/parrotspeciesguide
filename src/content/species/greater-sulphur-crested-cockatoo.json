@@ -1,0 +1,17 @@
+{
+  "category": "Cockatoos",
+  "species": "Greater Sulphur-Crested Cockatoo",
+  "slug": "greater-sulphur-crested-cockatoo",
+  "image": "/assets/img/parrots/greater-sulphur-crested-cockatoo.webp",
+  "description": "The iconic large white cockatoo with a big, expressive yellow crest. They are highly intelligent and are often seen in movies and television.",
+  "size": "18-20 inches (46-51 cm). Weight: 700-950g (25-33.5 oz)",
+  "weight_grams": 825,
+  "temperament": "Extremely intelligent, complex, and demanding. They can be affectionate but often bond with one person and can be aggressive towards others. Require a very experienced owner.",
+  "loudness": "Extremely Loud. Their screech is deafening and can be heard from a great distance. They are not suitable for close neighbors.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Excellent talkers and mimics. They can learn a wide vocabulary and are very good at learning tricks and complex tasks.",
+  "dietaryNeeds": "Prone to obesity and fatty liver disease. A low-fat pelleted diet with plenty of fresh vegetables is essential. Limit nuts and seeds to treats.",
+  "healthPointers": "Can live for 60-80 years. Very prone to behavioral problems like feather plucking and screaming if not given immense amounts of attention and stimulation. Produce a lot of feather dust.",
+  "housing": "Absolutely not for apartments. Requires a very large, strong cage or aviary. Minimum 40\"W x 30\"D x 60\"H.",
+  "origin": "Australia & Oceania"
+}

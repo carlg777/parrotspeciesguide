@@ -1,0 +1,17 @@
+{
+  "category": "Amazons",
+  "species": "White-fronted Amazon",
+  "slug": "white-fronted-amazon",
+  "image": "/assets/img/parrots/white-fronted-amazon.webp",
+  "description": "The smallest of the Amazon parrots. They are mostly green with a white patch on the forehead, blue on the crown, and red around the eyes. They are sexually dimorphic; males have bright red feathers on their wings.",
+  "size": "10 inches (25.5 cm). Weight: 180-240g (6.3-8.5 oz)",
+  "weight_grams": 210,
+  "temperament": "Active, playful, and can be feisty. They have a 'big parrot' personality in a small body and can be prone to nipping if not well-trained.",
+  "loudness": "Moderate to Loud. Their call is high-pitched and can be quite yappy and repetitive.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": "Fair talkers. They can learn some words but are not known for extensive vocabularies.",
+  "dietaryNeeds": "A standard pelleted diet with fresh vegetables and some fruit. Their smaller size makes portion control important.",
+  "healthPointers": "Generally hardy with a lifespan of 40-50 years, but can be prone to obesity if overfed and under-exercised.",
+  "housing": "A smaller cage is acceptable but should still be roomy. Minimum 24\"W x 20\"D x 30\"H. Can be suitable for apartments if the owner can manage their sometimes yappy calls.",
+  "origin": "Central & South America"
+}

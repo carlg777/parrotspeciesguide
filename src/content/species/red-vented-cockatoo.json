@@ -1,0 +1,17 @@
+{
+  "category": "Cockatoos",
+  "species": "Red-Vented Cockatoo",
+  "slug": "red-vented-cockatoo",
+  "image": "/assets/img/parrots/red-vented-cockatoo.webp",
+  "description": "Also known as the Philippine Cockatoo, this is a critically endangered species. It is an all-white cockatoo with a helmet-like crest and distinctive reddish-orange feathers under the tail.",
+  "size": "12 inches (30.5 cm). Weight: 280-350g (10-12.3 oz)",
+  "weight_grams": 315,
+  "temperament": "Intelligent, social, and playful. Due to their rarity, most are in conservation programs rather than the pet trade. They require significant social interaction.",
+  "loudness": "Loud. They have a loud, raucous call typical of cockatoos.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Can learn to talk, but their numbers are so low that their primary vocalizations are their natural calls.",
+  "dietaryNeeds": "A varied diet including seeds, fruits, flowers, and nuts. Their specific dietary needs are a focus of conservation breeding efforts.",
+  "healthPointers": "Lifespan of up to 40 years. Critically endangered due to habitat loss and poaching. They are not available as pets.",
+  "housing": "Housed in specialized aviaries for breeding and conservation purposes. Not a pet species.",
+  "origin": "Australia & Oceania"
+}

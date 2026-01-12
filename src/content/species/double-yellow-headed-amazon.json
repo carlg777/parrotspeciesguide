@@ -1,0 +1,17 @@
+{
+  "category": "Amazons",
+  "species": "Double Yellow-headed Amazon",
+  "slug": "double-yellow-headed-amazon",
+  "image": "/assets/img/parrots/double-yellow-headed-amazon.webp",
+  "description": "A large, popular Amazon known for its striking yellow head, which spreads down the neck as it matures. They are highly sought after for their talking and singing ability.",
+  "size": "15-17 inches (38-43 cm). Weight: 480-600g (17-21 oz)",
+  "weight_grams": 540,
+  "temperament": "Highly intelligent, social, and confident. Can be very affectionate but are prone to bonding strongly with one person and can become aggressive, especially during breeding season.",
+  "loudness": "Very Loud. Possess an extremely powerful voice and are not shy about using it.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Among the best talkers in the parrot world, capable of amazing clarity and extensive vocabularies. They are also talented singers.",
+  "dietaryNeeds": "Prone to obesity. A low-fat pelleted diet is crucial, supplemented with a wide variety of vegetables. Fruit and nuts should be given sparingly.",
+  "healthPointers": "Can live for 60+ years. Susceptible to obesity, fatty liver disease, atherosclerosis, and upper respiratory infections.",
+  "housing": "Needs a very large and durable cage due to their size and beak strength. Not suitable for apartments. Minimum cage: 40\"W x 30\"D x 60\"H.",
+  "origin": "Central & South America"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "Macaws",
+  "species": "Blue-Throated Macaw",
+  "slug": "blue-throated-macaw",
+  "image": "/assets/img/parrots/blue-throated-macaw.webp",
+  "description": "A critically endangered macaw that is often mistaken for the Blue and Gold. They have a brilliant turquoise-blue throat, nape, and crown, contrasting with a golden-yellow underside.",
+  "size": "33 inches (84 cm). Weight: 700-900g (24.7-31.7 oz)",
+  "weight_grams": 800,
+  "temperament": "Known for being intelligent, gentle, and inquisitive. They are less demanding and aggressive than many other large macaws, making them prized companions.",
+  "loudness": "Loud. They have a loud macaw call, but it's generally considered to be less harsh and frequent than that of a Blue and Gold or Scarlet Macaw.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Good talkers, able to mimic a variety of words and phrases with clarity. They are also known for their playful, chattering sounds.",
+  "dietaryNeeds": "A formulated diet supplemented with fruits, vegetables, and a variety of nuts, particularly palm nuts, which are a favorite.",
+  "healthPointers": "Can live for 50+ years. Being critically endangered, they require specialized care. They are susceptible to PDD and require a very clean environment. Regular veterinary care is essential.",
+  "housing": "Needs a very large cage or aviary, minimum 48\"W x 36\"D x 60\"H. Not suitable for apartments.",
+  "origin": "Central & South America"
+}

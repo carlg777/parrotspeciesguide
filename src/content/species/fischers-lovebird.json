@@ -1,0 +1,17 @@
+{
+  "category": "Lovebirds",
+  "species": "Fischer's Lovebird",
+  "slug": "fischers-lovebird",
+  "image": "/assets/img/parrots/fischers-lovebird.webp",
+  "description": "A small, beautiful lovebird with a green body, golden-yellow neck, and a fiery orange-red face. A prominent white eye-ring gives them a distinct look.",
+  "size": "5.5 inches (14 cm). Weight: 40-50g (1.4-1.8 oz)",
+  "weight_grams": 45,
+  "temperament": "Playful, charming, and social. They are known for being slightly less aggressive and territorial than Peach-faced Lovebirds, but still have big personalities.",
+  "loudness": "Loud. They have a very high-pitched, shrill call that can be quite piercing.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Not known to mimic speech. Their main vocalization is their loud, natural call.",
+  "dietaryNeeds": "A balanced diet of small pellets, fresh vegetables, and a small amount of fruit is ideal. They enjoy a variety of greens.",
+  "healthPointers": "Can live 15-20 years. Prone to eye infections if their environment isn't clean. Also susceptible to psittacosis and common avian bacterial infections.",
+  "housing": "Their loud call makes them a potential issue for apartments. They need a secure cage with small bar spacing. Minimum 20\"W x 20\"D x 24\"H.",
+  "origin": "Africa"
+}

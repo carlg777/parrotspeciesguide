@@ -1,0 +1,17 @@
+{
+  "category": "African Parrots",
+  "species": "Red-bellied Parrot",
+  "slug": "red-bellied-parrot",
+  "image": "/assets/img/parrots/red-bellied-parrot.webp",
+  "description": "This small parrot is sexually dimorphic. They are primarily greyish-brown with green feathers on the back. Males have a striking bright orange or red belly, while the female's belly is grey.",
+  "size": "9 inches (23 cm). Weight: 115-130g (4-4.6 oz)",
+  "weight_grams": 122,
+  "temperament": "Playful, curious, and intelligent. They can be a bit shy and reserved with strangers but form strong bonds with their chosen person. They are active and enjoy playing with toys.",
+  "loudness": "Quiet to Moderate. They are not screamers but have a range of whistles and chirps that can get loud when they are excited or alarmed.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
+  "vocalization": "Can be decent talkers, learning several words and phrases. They are also great at mimicking sounds like microwaves and phones.",
+  "dietaryNeeds": "A balanced diet of pellets, fresh vegetables, and a small amount of fruit. Like their cousins, they should have a low-fat diet.",
+  "healthPointers": "A hardy species with a lifespan of 20-30 years. Ensure a varied diet to prevent vitamin deficiencies and provide plenty of chewable toys to keep their beak healthy.",
+  "housing": "A great choice for apartment dwellers. A cage of at least 24\"W x 18\"D x 24\"H will give them room to play.",
+  "origin": "Africa"
+}

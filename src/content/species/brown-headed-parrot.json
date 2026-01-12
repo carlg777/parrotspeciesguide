@@ -1,0 +1,17 @@
+{
+  "category": "African Parrots",
+  "species": "Brown-headed Parrot",
+  "slug": "brown-headed-parrot",
+  "image": "/assets/img/parrots/brown-headed-parrot.webp",
+  "description": "A small, stocky parrot that is primarily green, with a brownish-grey head and bright yellow feathers under the wings, which are visible during flight.",
+  "size": "9 inches (23 cm). Weight: 120-140g (4.2-4.9 oz)",
+  "weight_grams": 130,
+  "temperament": "Generally shy, quiet, and sweet-natured. They are less demanding than many other Poicephalus parrots and can be very affectionate once they form a bond.",
+  "loudness": "Quiet. Considered one of the quietest Poicephalus species, they tend to communicate with soft whistles and chirps.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
+  "vocalization": "Not known for their talking ability, but they can mimic a variety of household sounds. Their natural calls are not overly loud.",
+  "dietaryNeeds": "A high-quality pelleted diet, supplemented with fresh vegetables, leafy greens, and a small amount of fruit.",
+  "healthPointers": "Generally a hardy species with a lifespan of 20-30 years. As with other Poicephalus, they can be susceptible to aspergillosis if kept in a damp or poorly ventilated environment.",
+  "housing": "Excellent for apartments due to their quiet nature. A minimum cage size of 24\"W x 18\"D x 24\"H is suitable.",
+  "origin": "Africa"
+}

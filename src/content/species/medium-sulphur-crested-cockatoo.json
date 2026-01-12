@@ -1,0 +1,17 @@
+{
+  "category": "Cockatoos",
+  "species": "Medium Sulphur-Crested Cockatoo",
+  "slug": "medium-sulphur-crested-cockatoo",
+  "image": "/assets/img/parrots/medium-sulphur-crested-cockatoo.webp",
+  "description": "Known as the Eleonora Cockatoo, this is a subspecies of the Greater Sulphur-Crested. It is smaller than the Greater but larger than the Lesser, with a crest that is not as forward-curving.",
+  "size": "16-18 inches (40.5-46 cm). Weight: 400-600g (14-21 oz)",
+  "weight_grams": 500,
+  "temperament": "Highly intelligent, playful, and demanding. Their personality is a classic 'big cockatoo' temperament, requiring a lot of social interaction and mental stimulation.",
+  "loudness": "Extremely Loud. They possess the full, ear-splitting screech of the Sulphur-Crested family and are not suitable for noise-sensitive environments.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Can be excellent mimics of speech and sounds. However, they are more likely to use their natural scream to communicate.",
+  "dietaryNeeds": "A low-fat pelleted diet is essential to prevent obesity and fatty liver disease. Provide a wide variety of fresh vegetables daily.",
+  "healthPointers": "Can live 60-80 years. Very prone to behavioral issues like feather plucking and screaming if their needs for attention are not met. Produce significant feather dust.",
+  "housing": "Not suitable for apartments. A very large and strong cage is required. Minimum size: 36\"W x 24\"D x 60\"H.",
+  "origin": "Australia & Oceania"
+}

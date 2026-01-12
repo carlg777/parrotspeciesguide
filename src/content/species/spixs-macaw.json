@@ -1,0 +1,17 @@
+{
+  "category": "Macaws",
+  "species": "Spix's Macaw",
+  "slug": "spixs-macaw",
+  "image": "/assets/img/parrots/spixs-macaw.webp",
+  "description": "The famous 'Little Blue Macaw,' a small macaw with various shades of blue-grey plumage and a brighter blue on the wings and tail. It is extinct in the wild, existing only in breeding programs.",
+  "size": "22 inches (56 cm). Weight: 300g (10.5 oz)",
+  "weight_grams": 300,
+  "temperament": "Known to be very shy, gentle, and intelligent. They form strong pair bonds. Their temperament in a companion setting is not well-documented due to their extreme rarity.",
+  "loudness": "Moderate. Their call is a 'kra-ark' sound, which is not considered as loud or harsh as that of other macaw species.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": "Not known for talking ability. Their vocalizations are their natural calls.",
+  "dietaryNeeds": "Highly specialized, relying on the nuts of specific palm trees in their native habitat. Breeding programs work to replicate this diet.",
+  "healthPointers": "Lifespan of 20-30 years. The incredibly small gene pool presents significant health challenges. They are not available as pets and are managed under strict conservation protocols.",
+  "housing": "Housed exclusively in large, dedicated aviaries as part of international conservation and reintroduction efforts. Not a pet species.",
+  "origin": "Central & South America"
+}

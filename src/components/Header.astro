@@ -1,0 +1,36 @@
+---
+import { getLangFromUrl, useTranslations, getLocalizedPath } from "../i18n/utils";
+
+const currentLang = getLangFromUrl(Astro.url);
+const t = useTranslations(currentLang);
+---
+
+<header class="site-header">
+  <nav class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
+    <a href="/" class="logo" style="font-size: 1.5rem; font-weight: bold; text-decoration: none;">
+      🦜 Parrot Species Guide
+    </a>
+    <div class="nav-links" style="display: flex; gap: 2rem;">
+      <a href="/species">{t('nav.species')}</a>
+      {currentLang === 'en' ? (
+        <a href="/es/species" hreflang="es">Español</a>
+      ) : (
+        <a href="/species" hreflang="en">English</a>
+      )}
+    </div>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #374151;
+  }
+  .nav-links a:hover {
+    color: #10b981;
+  }
+</style>

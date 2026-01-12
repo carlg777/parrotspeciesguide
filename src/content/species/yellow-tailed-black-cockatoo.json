@@ -1,0 +1,17 @@
+{
+  "category": "Cockatoos",
+  "species": "Yellow-Tailed Black Cockatoo",
+  "slug": "yellow-tailed-black-cockatoo",
+  "image": "/assets/img/parrots/yellow-tailed-black-cockatoo.webp",
+  "description": "A large black cockatoo from southeastern Australia, with distinctive yellow patches on its cheeks and yellow panels in its long tail. They have a crest that curls forward.",
+  "size": "22-26 inches (56-66 cm). Weight: 750-900g (26.5-32 oz)",
+  "weight_grams": 825,
+  "temperament": "Generally gentle for a large parrot, but they are not common in aviculture. They are active, social birds with a very powerful beak.",
+  "loudness": "Very Loud. They have a very loud, high-pitched, wailing call that can be heard from far away, often described as 'kee-ow'.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Not known for talking ability. Their vocalizations consist of their loud, natural calls.",
+  "dietaryNeeds": "A specialized diet consisting of seeds from native trees like banksia, hakea, and pine cones, as well as wood-boring grubs.",
+  "healthPointers": "Can live for 60+ years. Rarely kept as pets and require a very experienced keeper. They need a huge amount of space and a specialized diet.",
+  "housing": "Requires a very large outdoor aviary with plenty of wood to destroy. Not suitable for an indoor or home environment.",
+  "origin": "Australia & Oceania"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "Conures",
+  "species": "Dusky Conure",
+  "slug": "dusky-conure",
+  "image": "/assets/img/parrots/dusky-conure.webp",
+  "description": "A medium-sized conure with more subdued coloring, featuring a dusky or greyish-brown head and breast that blends into an olive-green body. They are known for their sweet nature.",
+  "size": "10-11 inches (25.5-28 cm). Weight: 90-110g (3.2-3.9 oz)",
+  "weight_grams": 100,
+  "temperament": "Gentle, affectionate, and relatively quiet for a conure. They are known to be less nippy and demanding than some of their more colorful cousins, making them great companions.",
+  "loudness": "Moderate. While capable of loud calls, they are generally considered to be one of the quieter Aratinga conures.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": "Can learn a few words, but are not known for being prolific talkers. Their vocalizations are often a series of pleasant chirps and squawks.",
+  "dietaryNeeds": "A balanced diet of high-quality pellets, supplemented with a variety of fresh vegetables, leafy greens, and a small amount of fruit.",
+  "healthPointers": "A hardy species with a lifespan of 20+ years. Like other conures, they can be susceptible to PBFD and Pacheco's disease. Ensure they have plenty of toys for mental stimulation.",
+  "housing": "Their moderate noise level can make them suitable for apartment living with tolerant neighbors. A cage of at least 24\"W x 20\"D x 30\"H is recommended.",
+  "origin": "Central & South America"
+}

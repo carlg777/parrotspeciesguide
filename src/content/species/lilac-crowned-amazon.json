@@ -1,0 +1,17 @@
+{
+  "category": "Amazons",
+  "species": "Lilac-crowned Amazon",
+  "slug": "lilac-crowned-amazon",
+  "image": "/assets/img/parrots/lilac-crowned-amazon.webp",
+  "description": "A medium-sized Amazon with primarily green plumage, a maroon forehead, and a distinctive lilac-blue crown and neck. They are known for their gentler nature.",
+  "size": "12-13.5 inches (30.5-34 cm). Weight: 300-390g (10.5-13.7 oz)",
+  "weight_grams": 345,
+  "temperament": "Generally considered calmer, less aggressive, and quieter than many other Amazon species. They are playful, curious, and can be very affectionate.",
+  "loudness": "Moderate. While capable of loud calls, they are not as prone to screaming as some of their relatives.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": "Moderate talkers. They can develop a decent vocabulary but are not typically as prolific as the yellow-headed species.",
+  "dietaryNeeds": "A well-balanced diet of high-quality pellets, fresh vegetables, and limited fruit to prevent obesity.",
+  "healthPointers": "A generally hardy species with a lifespan of 50+ years. Prone to the common Amazon ailments like obesity and Vitamin A deficiency if not fed a proper diet.",
+  "housing": "A good-sized cage is still needed. Minimum 30\"W x 24\"D x 40\"H. Their more moderate noise level might make them more suitable for some shared-wall living situations than other Amazons.",
+  "origin": "Central & South America"
+}

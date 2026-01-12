@@ -1,0 +1,26 @@
+---
+interface Props {
+  year: number;
+}
+
+const { year } = Astro.props;
+---
+
+<footer class="site-footer">
+  <div class="container" style="text-align: center; padding: 2rem 0;">
+    <p style="margin: 0; color: #6b7280;">
+      © {year} Parrot Species Guide. All rights reserved.
+    </p>
+    <p style="margin: 0.5rem 0 0; font-size: 0.875rem; color: #9ca3af;">
+      Comprehensive care information for 84+ parrot species
+    </p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 4rem;
+  }
+</style>

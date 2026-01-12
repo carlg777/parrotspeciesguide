@@ -1,0 +1,17 @@
+{
+  "category": "Macaws",
+  "species": "Scarlet Macaw",
+  "slug": "scarlet-macaw",
+  "image": "/assets/img/parrots/scarlet-macaw.webp",
+  "description": "Arguably one of the most beautiful parrots, the Scarlet Macaw is a stunning bird with brilliant red plumage, a band of bright yellow on its wings, tipped with blue.",
+  "size": "32-36 inches (81-91 cm). Weight: 1000-1200g (35-42 oz)",
+  "weight_grams": 1100,
+  "temperament": "High-energy, intelligent, and bold. They can be quite feisty, willful, and nippy, requiring an experienced owner who can provide consistent training and socialization.",
+  "loudness": "Extremely Loud. Their call is a very loud, high-pitched, and harsh screech that is designed to carry over long distances.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Fair talking ability, but they are more known for their screaming. They can learn words and phrases but may not have great clarity.",
+  "dietaryNeeds": "A diet rich in fats is essential. This includes a base of formulated pellets, plus a generous amount of nuts, fruits, and vegetables daily.",
+  "healthPointers": "Can live 50-75+ years. Prone to feather-plucking due to boredom or stress. Also susceptible to PDD and Pacheco's disease.",
+  "housing": "Needs a very large cage or aviary (minimum 48\"W x 36\"D x 72\"H) and a lot of time outside the cage for exercise. Not suitable for apartments under any circumstances.",
+  "origin": "Central & South America"
+}

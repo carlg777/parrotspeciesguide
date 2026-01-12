@@ -1,0 +1,17 @@
+{
+  "category": "Cockatoos",
+  "species": "Moluccan Cockatoo",
+  "slug": "moluccan-cockatoo",
+  "image": "/assets/img/parrots/moluccan-cockatoo.webp",
+  "description": "One of the largest white cockatoos, the Moluccan (or Salmon-Crested) has beautiful pale pink feathers that are particularly visible when they raise their large, impressive crest.",
+  "size": "18-22 inches (46-56 cm). Weight: 750-1000g (26.5-35 oz)",
+  "weight_grams": 875,
+  "temperament": "Known for being extremely affectionate, cuddly, and sensitive. They form incredibly strong bonds with their owners and can be very demanding of attention. A true 'velcro bird'.",
+  "loudness": "Extremely Loud. Perhaps the loudest of all cockatoos, their scream is unbelievably powerful and can be physically painful at close range.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Can learn to talk, but they are not the clearest speakers. They are much more known for their incredibly loud screams.",
+  "dietaryNeeds": "A formulated diet (pellets) is the best base. Supplement with vegetables, some fruits, and nuts. Prone to obesity.",
+  "healthPointers": "Can live 60-80+ years. Highly prone to feather plucking, self-mutilation, and other stress-related behaviors if they do not receive constant attention. Produce a lot of feather dust.",
+  "housing": "Absolutely not for apartments. They require a huge, incredibly strong cage or aviary with a secure lock. Minimum 48\"W x 36\"D x 72\"H.",
+  "origin": "Australia & Oceania"
+}

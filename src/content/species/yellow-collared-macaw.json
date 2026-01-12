@@ -1,0 +1,17 @@
+{
+  "category": "Macaws",
+  "species": "Yellow-Collared Macaw",
+  "slug": "yellow-collared-macaw",
+  "image": "/assets/img/parrots/yellow-collared-macaw.webp",
+  "description": "A popular mini-macaw, mostly green with a distinctive bright yellow band on the back of its neck that develops with age. They have a black forehead and a reddish belly patch.",
+  "size": "15 inches (38 cm). Weight: 250-280g (8.8-9.9 oz)",
+  "weight_grams": 265,
+  "temperament": "Intelligent, curious, and mischievous. They are known for being very playful and can be affectionate, but they also have a stubborn streak and can be nippy.",
+  "loudness": "Loud for their size. They have a high-pitched, piercing call that can be quite repetitive when they want something.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Very good talkers. They can develop a clear vocabulary of words and are known for their ability to learn tricks and mimic sounds.",
+  "dietaryNeeds": "A balanced diet consisting of high-quality pellets, fresh vegetables, leafy greens, and a limited amount of fruit and nuts.",
+  "healthPointers": "Can live for 50+ years. A hardy species. Prone to feather plucking if bored. They need plenty of chewable toys to keep their beaks in good condition.",
+  "housing": "Needs a roomy cage, minimum 30\"W x 24\"D x 36\"H. Their potential for noise makes them a challenging, but not impossible, choice for apartments.",
+  "origin": "Central & South America"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "African Parrots",
+  "species": "Timneh African Grey",
+  "slug": "timneh-african-grey",
+  "image": "/assets/img/parrots/timneh-african-grey.webp",
+  "description": "The Timneh African Grey is slightly smaller and darker than the Congo African Grey, with a horn-colored upper beak and a maroon tail. They are known for their intelligence and early talking ability.",
+  "size": "10-11 inches (25.5-28 cm). Weight: 275-375g (9.7-13.2 oz)",
+  "weight_grams": 325,
+  "temperament": "Intelligent, sensitive, and can be more reserved than the Congo. They are known to be less prone to anxiety.",
+  "loudness": "Moderate. Can be loud, but generally quieter than many other large parrots.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": "Excellent talkers and mimics, often starting at a younger age than Congos. Their voice is less a perfect imitation and more their 'own' voice.",
+  "dietaryNeeds": "A high-quality pelleted diet, supplemented with fresh vegetables, fruits, and some nuts. They require adequate calcium and Vitamin A.",
+  "healthPointers": "Can live for 50-80 years. Prone to calcium deficiency, Vitamin A and D deficiency, respiratory infections, and feather plucking if bored or stressed.",
+  "housing": "Needs a large space. A minimum cage size of 36\"W x 24\"D x 48\"H is recommended. Not ideal for apartments unless the owner is home a lot and can manage noise.",
+  "origin": "Africa"
+}

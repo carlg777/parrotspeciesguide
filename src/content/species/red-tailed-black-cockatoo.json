@@ -1,0 +1,17 @@
+{
+  "category": "Cockatoos",
+  "species": "Red-Tailed Black Cockatoo",
+  "slug": "red-tailed-black-cockatoo",
+  "image": "/assets/img/parrots/red-tailed-black-cockatoo.webp",
+  "description": "A large, sexually dimorphic cockatoo from Australia. Males are solid black with brilliant red panels in their tail. Females are black with yellow spots and have barred orange-yellow tail panels.",
+  "size": "22-24 inches (56-61 cm). Weight: 600-900g (21-32 oz)",
+  "weight_grams": 750,
+  "temperament": "Intelligent, active, and can be very destructive with their powerful beaks. They are not typically cuddly birds and are less common in aviculture than other cockatoos.",
+  "loudness": "Very Loud. They have a loud, drawn-out, and far-carrying call.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Not known for their talking ability. Their vocalizations are their loud, natural calls.",
+  "dietaryNeeds": "Specialized diet is required, as they primarily feed on the seeds of eucalyptus and other native Australian plants.",
+  "healthPointers": "Can live up to 50 years. They are not common as pets and have very specific dietary and aviary needs that are difficult for the average person to meet.",
+  "housing": "Requires a large, durable outdoor aviary. They are not suited for indoor cage life.",
+  "origin": "Australia & Oceania"
+}

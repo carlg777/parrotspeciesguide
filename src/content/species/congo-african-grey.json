@@ -1,0 +1,17 @@
+{
+  "category": "African Parrots",
+  "species": "Congo African Grey",
+  "slug": "congo-african-grey",
+  "image": "/assets/img/parrots/congo-african-grey.webp",
+  "description": "The Congo African Grey is the larger of the two common subspecies, with silvery-grey feathers, a white mask around the eyes, and a bright red tail. They have a solid black beak.",
+  "size": "12-14 inches (30-35.5 cm). Weight: 400-500g (14-17.5 oz)",
+  "weight_grams": 450,
+  "temperament": "Extremely intelligent, highly sensitive, and can form very strong bonds with their owners. They can be prone to anxiety and stress if not properly stimulated.",
+  "loudness": "Moderate to Loud. Can develop loud screams, especially if seeking attention.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": "Renowned for their exceptional ability to mimic human speech and sounds with incredible clarity.",
+  "dietaryNeeds": "A balanced diet of high-quality pellets, fresh vegetables (especially those high in Vitamin A like sweet potatoes and kale), fruits, and a limited amount of nuts.",
+  "healthPointers": "Can live for 50-80 years. Susceptible to feather-picking, psittacosis, and hypocalcemia (low calcium levels). Regular mental stimulation is crucial for their well-being.",
+  "housing": "Requires a large space. A cage of at least 40\"W x 30\"D x 60\"H is suitable. Their potential for loud calls makes them a challenge for apartment living.",
+  "origin": "Africa"
+}

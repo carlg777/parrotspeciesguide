@@ -1,0 +1,17 @@
+{
+  "category": "Macaws",
+  "species": "Red-Fronted Macaw",
+  "slug": "red-fronted-macaw",
+  "image": "/assets/img/parrots/red-fronted-macaw.webp",
+  "description": "A medium-sized macaw, mostly green with a bright red patch on its forehead and crown, red ear patches, and red on the bend of the wings. Critically endangered.",
+  "size": "22-24 inches (56-61 cm). Weight: 450-550g (15.8-19.4 oz)",
+  "weight_grams": 500,
+  "temperament": "Playful, energetic, and curious. They are known for being very social and less aggressive than larger macaws, but they still require plenty of interaction.",
+  "loudness": "Loud. They have a typical macaw screech, though not as powerful as the largest species.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Can learn to mimic words and phrases and can be quite vocal. They have a range of different calls and squawks.",
+  "dietaryNeeds": "A varied diet is key. A base of pellets should be supplemented with fresh vegetables, fruits, and a small amount of nuts.",
+  "healthPointers": "Can live for 40+ years. Being critically endangered, they are rare in captivity. They need a spacious environment and plenty of toys to prevent boredom-related behaviors like feather plucking.",
+  "housing": "Requires a large cage or aviary, at least 36\"W x 24\"D x 48\"H. Their noise level makes them a challenge for apartment living.",
+  "origin": "Central & South America"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "Macaws",
+  "species": "Illiger's Macaw",
+  "slug": "illigers-macaw",
+  "image": "/assets/img/parrots/illigers-macaw.webp",
+  "description": "A popular mini-macaw, the Illiger's is predominantly green with a red forehead, and blue on the head and wings. They have a distinctive orange-red patch on their belly.",
+  "size": "15-17 inches (38-43 cm). Weight: 250-300g (8.8-10.5 oz)",
+  "weight_grams": 275,
+  "temperament": "Highly intelligent, outgoing, and curious. They are known for their playful and affectionate nature, but they can also be mischievous and require consistent training.",
+  "loudness": "Moderate to Loud. While not as loud as a large macaw, they have a high-pitched call that can be quite piercing and frequent.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": "Good talkers for their size. They can learn a variety of words and phrases and are known for their playful chatter.",
+  "dietaryNeeds": "A balanced diet of pellets, fresh fruits, and vegetables. They enjoy nuts as treats, but these should be given in moderation.",
+  "healthPointers": "Generally a hardy species with a lifespan of 40-50 years. They can be prone to feather plucking if they become bored, so a variety of enriching toys is essential.",
+  "housing": "Needs a large cage for a mini-macaw, at least 30\"W x 24\"D x 48\"H. Their noise level might be too much for some apartments.",
+  "origin": "Central & South America"
+}

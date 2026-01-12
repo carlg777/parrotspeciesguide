@@ -1,0 +1,17 @@
+{
+  "category": "Parakeets",
+  "species": "Budgerigar (Budgie)",
+  "slug": "budgerigar-budgie",
+  "image": "/assets/img/parrots/budgerigar-budgie.webp",
+  "description": "One of the most popular pets in the world, the budgie is a small, long-tailed, seed-eating parrot. Wild budgies are green and yellow, but selective breeding has produced a rainbow of colors.",
+  "size": "7-8 inches (18-20 cm). Weight: 30-40g (1-1.4 oz)",
+  "weight_grams": 35,
+  "temperament": "Social, cheerful, and energetic. They are intelligent little birds that are relatively easy to tame and can become very affectionate with their owners.",
+  "loudness": "Quiet. Their chatter is generally pleasant and not disruptive, making them ideal for almost any living situation.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
+  "vocalization": "Can be excellent talkers, with some males learning hundreds of words. Their voices are fast and high-pitched. Both sexes are great at whistling and chattering.",
+  "dietaryNeeds": "A high-quality pelleted diet should form the base. Supplement with a variety of fresh vegetables (leafy greens, shredded carrots) and a small amount of fruit. Seed should be a treat, not a staple.",
+  "healthPointers": "Can live 5-15 years. Prone to tumors, liver problems (often diet-related), and scaly mites on the beak and feet. A clean cage and a healthy diet are crucial.",
+  "housing": "Perfect for apartments. They are small and quiet. A cage that is wider than it is tall is best, with a minimum size of 18\"W x 18\"D x 18\"H, but bigger is always better.",
+  "origin": "Australia & Oceania"
+}

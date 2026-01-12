@@ -1,0 +1,17 @@
+{
+  "category": "Cockatoos",
+  "species": "Palm Cockatoo",
+  "slug": "palm-cockatoo",
+  "image": "/assets/img/parrots/palm-cockatoo.webp",
+  "description": "A very large and powerful parrot, the Palm Cockatoo is a dark, smoky-grey or black with a huge crest and a massive beak. They have a distinctive bare red cheek patch that changes color with emotion.",
+  "size": "22-24 inches (56-61 cm). Weight: 900-1200g (32-42 oz)",
+  "weight_grams": 1050,
+  "temperament": "Highly intelligent, sensitive, and can be quite gentle, but they are not a cuddly species. They require a very experienced owner who understands their complex body language.",
+  "loudness": "Loud. They have a wide vocal range, including a very loud, trumpet-like call. They are also known for drumming on hollow logs with sticks.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Can learn a few words, but are not known for talking. Their vocal repertoire consists of a variety of whistles and calls.",
+  "dietaryNeeds": "A very specialized diet is required, high in fat. In the wild, they eat hard-to-crack nuts and seeds. In captivity, a mix of pellets, palm nuts, Brazil nuts, and other hard nuts is needed.",
+  "healthPointers": "Can live 80-90 years. Their beak is incredibly powerful and requires a constant supply of hard wood and nuts to keep it in condition. They are rare and very expensive.",
+  "housing": "Not a typical pet. They require a custom-built, walk-in aviary made of strong metal. Not suitable for a cage or a typical home environment.",
+  "origin": "Australia & Oceania"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "Parrotlets",
+  "species": "Pacific Parrotlet",
+  "slug": "pacific-parrotlet",
+  "image": "/assets/img/parrots/pacific-parrotlet.webp",
+  "description": "One of the smallest parrot species, often called 'pocket parrots.' They have a stocky build and a short tail. Males are bright green with a striking cobalt blue streak behind the eye and on the wings, while females are mostly green.",
+  "size": "4.5-5.5 inches (11.5-14 cm). Weight: 28-35g (1-1.2 oz)",
+  "weight_grams": 31,
+  "temperament": "Bold, feisty, and comical. They are known for having a 'big parrot' personality in a tiny body. Can be very affectionate and cuddly, but also territorial and require consistent handling to manage their assertiveness.",
+  "loudness": "Quiet. Their natural vocalizations are soft chirps and chattering, making them an excellent choice for apartment living.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
+  "vocalization": "Not known for being great talkers, though some may learn a few words. Their voice is very small and high-pitched. They are more likely to chatter quietly than scream.",
+  "dietaryNeeds": "A high-quality small parrot pellets, fresh vegetables, and fruits. Unlike many parrots, they need some sunflower seeds for extra fat content. Provide mineral blocks and cuttlebone.",
+  "healthPointers": "Generally hardy and can live 15-20 years despite their small size. Prone to fatty liver disease if on a poor diet. Color mutation birds should not be fed pellets due to potential kidney issues.",
+  "housing": "Perfect for apartments. A cage with bar spacing of 1/2 inch or less is crucial. A minimum cage size of 18\"W x 18\"D x 18\"H is acceptable, but a larger, wider cage is highly recommended to provide ample room for toys and activity.",
+  "origin": "Central & South America"
+}

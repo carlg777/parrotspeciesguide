@@ -1,0 +1,17 @@
+{
+  "category": "Cockatoos",
+  "species": "Triton Cockatoo",
+  "slug": "triton-cockatoo",
+  "image": "/assets/img/parrots/triton-cockatoo.webp",
+  "description": "The Triton is a large and popular subspecies of the Sulphur-Crested Cockatoo. They are large, white, have a big yellow crest, and a distinctive blue eye-ring.",
+  "size": "18-20 inches (46-51 cm). Weight: 600-800g (21-28 oz)",
+  "weight_grams": 700,
+  "temperament": "Extremely intelligent, loud, and demanding. They are known for being particularly energetic and 'over the top,' even for a cockatoo. Require a very experienced owner.",
+  "loudness": "Extremely Loud. They have the classic, deafening screech of the Sulphur-Crested family and are known to be one of the noisiest parrots available.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Can be good talkers, but their screaming often overshadows any talking ability. They are excellent at getting attention with their voice.",
+  "dietaryNeeds": "A low-fat pelleted diet is crucial. Supplement with a wide variety of fresh vegetables. Avoid high-fat seeds and nuts.",
+  "healthPointers": "Can live 60-80 years. Very prone to behavioral problems like feather plucking and screaming if not kept constantly stimulated and engaged. Produces a lot of feather dust.",
+  "housing": "Absolutely not for apartments. A very large, walk-in aviary is better than a cage. If caged, it must be huge and incredibly strong. Minimum 48\"W x 36\"D x 72\"H.",
+  "origin": "Australia & Oceania"
+}

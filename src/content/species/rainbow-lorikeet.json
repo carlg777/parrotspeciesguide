@@ -1,0 +1,17 @@
+{
+  "category": "Lories & Lorikeets",
+  "species": "Rainbow Lorikeet",
+  "slug": "rainbow-lorikeet",
+  "image": "/assets/img/parrots/rainbow-lorikeet.webp",
+  "description": "As their name suggests, Rainbow Lorikeets are a kaleidoscope of color, with a blue head, green back, and a chest of orange and yellow. They are one of the most common lorikeet species.",
+  "size": "10-12 inches (25.5-30.5 cm). Weight: 75-150g (2.6-5.3 oz)",
+  "weight_grams": 112,
+  "temperament": "Extremely energetic, playful, and comical. They are always on the move, and their antics are a constant source of entertainment. Can be nippy and require a lot of attention.",
+  "loudness": "Loud. They have a high-pitched, screechy call that they use frequently, especially when excited or trying to get attention.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Can learn a few words and phrases, but are more known for their loud squawks and chattering. They are not the clearest talkers.",
+  "dietaryNeeds": "A specialized diet of commercial nectar/lory food is essential. They have a brush-tipped tongue for eating nectar and pollen. They can also eat soft fruits and edible flowers, but should NOT be fed seeds.",
+  "healthPointers": "Can live 10-15 years. Their liquid diet results in messy, liquid droppings. Cages need to be cleaned daily. Prone to hemochromatosis (iron storage disease) if not on a proper diet.",
+  "housing": "Challenging for apartments due to their noise and extreme messiness. They need a large cage to burn off energy, at least 36\"W x 24\"D x 24\"H, with easily cleanable surfaces.",
+  "origin": "Australia & Oceania"
+}

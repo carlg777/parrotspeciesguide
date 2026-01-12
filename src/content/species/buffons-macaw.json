@@ -1,0 +1,17 @@
+{
+  "category": "Macaws",
+  "species": "Buffon's Macaw",
+  "slug": "buffons-macaw",
+  "image": "/assets/img/parrots/buffons-macaw.webp",
+  "description": "Also known as the Great Green Macaw, it is the second-largest macaw species. It is primarily yellowish-green with a red forehead, blue on the lower back, and an orange and blue tail.",
+  "size": "33-36 inches (84-91 cm). Weight: 1200-1400g (42-49 oz)",
+  "weight_grams": 1300,
+  "temperament": "Gentle, intelligent, and social. They are often described as being calmer than the Scarlet or Military Macaw, but still require significant attention and interaction.",
+  "loudness": "Very Loud. They have an extremely powerful call that is deep and resonant.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Fair talkers, but are not known for extensive vocabularies. They are more likely to learn loud, natural calls and sounds.",
+  "dietaryNeeds": "Requires a diet with a good balance of pellets, fresh fruits, vegetables, and nuts. They have a particular fondness for certain types of seeds and nuts.",
+  "healthPointers": "Can live for 60-70 years. Endangered in the wild. Susceptible to PDD and Pacheco's disease. Their large, powerful beak requires an abundance of tough, safe chew toys.",
+  "housing": "Requires an exceptionally large and robust cage or aviary. A minimum of 48\"W x 36\"D x 72\"H is necessary. Unsuitable for apartments.",
+  "origin": "Central & South America"
+}

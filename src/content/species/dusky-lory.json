@@ -1,0 +1,17 @@
+{
+  "category": "Lories & Lorikeets",
+  "species": "Dusky Lory",
+  "slug": "dusky-lory",
+  "image": "/assets/img/parrots/dusky-lory.webp",
+  "description": "A uniquely colored lory with two main color phases: one with a brownish-black body with a bright orange or yellow bib, and another that is more olive-green. Both have striking orange and red markings.",
+  "size": "10 inches (25.5 cm). Weight: 90-115g (3.2-4 oz)",
+  "weight_grams": 102,
+  "temperament": "Playful, intelligent, and curious. They are known for their comical antics and can be quite affectionate. They are very active and enjoy swinging and playing with toys.",
+  "loudness": "Moderate to Loud. They have a high-pitched, repetitive call that can be noisy, but they are generally not as loud as a Rainbow or Chattering Lory.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": "Can learn to mimic a good number of words and sounds. Their voice is high-pitched and they enjoy chattering.",
+  "dietaryNeeds": "A liquid nectar diet is essential. Commercially prepared formulas are best. Supplement with a variety of soft fruits and some vegetables.",
+  "healthPointers": "Can live 20+ years. Messy droppings are a given. Prone to fungal infections if their environment is not kept scrupulously clean. They need a lot of toys to keep them occupied.",
+  "housing": "Can be manageable in an apartment if the owner is diligent about cleaning and can tolerate moderate noise. A cage of at least 30\"W x 24\"D x 24\"H is needed.",
+  "origin": "Australia & Oceania"
+}

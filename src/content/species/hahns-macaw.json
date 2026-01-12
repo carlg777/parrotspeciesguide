@@ -1,0 +1,17 @@
+{
+  "category": "Macaws",
+  "species": "Hahn's Macaw",
+  "slug": "hahns-macaw",
+  "image": "/assets/img/parrots/hahns-macaw.webp",
+  "description": "The smallest of the macaw species, Hahn's Macaws are compact, primarily green parrots with a patch of red on the bend of their wings. They are part of the 'mini-macaw' group.",
+  "size": "12-14 inches (30.5-35.5 cm). Weight: 130-170g (4.6-6 oz)",
+  "weight_grams": 150,
+  "temperament": "Have a classic 'big macaw' personality in a small body. They are intelligent, playful, and can be very affectionate, but are also known for being feisty and nippy if not well-trained.",
+  "loudness": "Loud. Their call is a high-pitched screech, but it is not as deafening as that of their larger cousins.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Fairly good talkers. They can learn a decent vocabulary and their voices are higher-pitched than larger macaws.",
+  "dietaryNeeds": "A balanced diet of high-quality pellets, fresh vegetables, some fruit, and a limited amount of nuts.",
+  "healthPointers": "A hardy species that can live 20-30 years. Still susceptible to common psittacine diseases. Can become cage-aggressive if not handled regularly.",
+  "housing": "A roomy cage is still necessary. Minimum size of 24\"W x 24\"D x 36\"H. Can be suitable for apartments if the owner can tolerate their noise level.",
+  "origin": "Central & South America"
+}

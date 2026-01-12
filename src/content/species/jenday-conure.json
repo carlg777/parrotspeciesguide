@@ -1,0 +1,17 @@
+{
+  "category": "Conures",
+  "species": "Jenday Conure",
+  "slug": "jenday-conure",
+  "image": "/assets/img/parrots/jenday-conure.webp",
+  "description": "A very colorful conure, often confused with the Sun Conure. They have a bright yellow head and chest, an orange-red belly, green wings, and a blue tail.",
+  "size": "12 inches (30.5 cm). Weight: 110-130g (3.9-4.6 oz)",
+  "weight_grams": 120,
+  "temperament": "Very playful, affectionate, and cuddly. They are known for their high energy levels and love to be the center of attention. Can be nippy if over-excited.",
+  "loudness": "Very Loud. They have a sharp, piercing screech that is on par with a Sun Conure's. They are not shy about using their voice.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Can learn a few words and phrases. They are better at mimicking sounds and can be quite vocal with their natural calls.",
+  "dietaryNeeds": "A high-quality pelleted diet, with daily offerings of fresh vegetables and fruits. A varied diet is key to their health.",
+  "healthPointers": "A hardy species with a lifespan of 25-30 years, but require a lot of social interaction to prevent behavioral problems like feather plucking.",
+  "housing": "Unsuitable for most apartment situations due to their high noise level. A cage of at least 24\"W x 20\"D x 30\"H is recommended.",
+  "origin": "Central & South America"
+}

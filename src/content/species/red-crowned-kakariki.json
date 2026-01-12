@@ -1,0 +1,17 @@
+{
+  "category": "Kakarikis",
+  "species": "Red-Crowned Kakariki",
+  "slug": "red-crowned-kakariki",
+  "image": "/assets/img/parrots/red-crowned-kakariki.webp",
+  "description": "A small to medium parakeet with a bright green body and a distinctive red crown and forehead stripe. They are native to New Zealand and are known for their constant motion.",
+  "size": "10-11 inches (25-28 cm). Weight: 50-65g (1.8-2.3 oz)",
+  "weight_grams": 57,
+  "temperament": "Extremely active, curious, and playful. They are constantly chattering and moving, and are known for their comical antics. They are generally not aggressive.",
+  "loudness": "Moderate. They have a continuous, goat-like chatter that is not overly loud but is very persistent.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": "Can learn some words but are not known as exceptional talkers. They prefer to chatter in their own language.",
+  "dietaryNeeds": "A varied diet including pellets, seeds, fresh vegetables, fruits, and even insects. They enjoy foraging on the ground.",
+  "healthPointers": "Generally hardy but need experienced care as they are still relatively uncommon in captivity. Can live 12-15 years. Their high activity level means they need a lot of space.",
+  "housing": "A large flight cage with plenty of room for ground foraging is essential. Bar spacing should be 1/2 inch. They need multiple perch levels and many toys.",
+  "origin": "Australia & Oceania"
+}

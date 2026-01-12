@@ -1,0 +1,266 @@
+---
+export const prerender = true;
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getCollection } from 'astro:content';
+import { toAbsoluteUrl } from '../../../lib/urlUtils';
+
+export async function getStaticPaths() {
+  const allSpecies = await getCollection('species');
+  return allSpecies.map(species => ({
+    params: { slug: species.data.slug },
+    props: { species: species.data },
+  }));
+}
+
+const { slug } = Astro.params;
+const { species } = Astro.props;
+
+// Get related species (same category)
+const allSpecies = await getCollection('species');
+const relatedSpecies = allSpecies
+  .filter(s => s.data.category === species.category && s.data.slug !== species.slug)
+  .slice(0, 3);
+
+// Structured data for SEO
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://www.findyourparrot.com/es/species/${species.slug}`
+  },
+  "headline": `${species.species} - Guía Completa de Cuidado`,
+  "description": species.description,
+  "image": toAbsoluteUrl(species.image),
+  "inLanguage": "es",
+  "author": {
+    "@type": "Organization",
+    "name": "Encuentra Tu Loro"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Encuentra Tu Loro",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.findyourparrot.com/assets/img/parrot-african-grey.svg"
+    }
+  },
+  "mainEntity": {
+    "@type": "Animal",
+    "name": species.species,
+    "image": toAbsoluteUrl(species.image),
+    "description": species.description
+  }
+};
+
+// Breadcrumb structured data
+const breadcrumbStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.findyourparrot.com/es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guía de Especies",
+      "item": "https://www.findyourparrot.com/es/species"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": species.species,
+      "item": `https://www.findyourparrot.com/es/species/${species.slug}`
+    }
+  ]
+};
+
+const structuredDataString = JSON.stringify(structuredData).replace(/</g, '\\u003c');
+const breadcrumbDataString = JSON.stringify(breadcrumbStructuredData).replace(/</g, '\\u003c');
+---
+
+<BaseLayout
+  title={`${species.species} | Guía de Especies de Loros`}
+  description={`${species.description.substring(0, 150)}. Aprende sobre cuidado, temperamento, dieta y alojamiento para ${species.species}.`}
+  canonical={`https://www.findyourparrot.com/es/species/${species.slug}`}
+  ogTitle={`${species.species} - Guía Completa de Cuidado`}
+  ogDescription={species.description.substring(0, 200)}
+  ogImage={species.image}
+  dataPage="species-detail"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline>
+      {structuredDataString}
+    </script>
+    <script type="application/ld+json" is:inline>
+      {breadcrumbDataString}
+    </script>
+  </Fragment>
+
+  <main class="container" style="padding: 2rem 0 4rem;">
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" style="margin-bottom: 2rem;">
+      <ol style="display: flex; gap: 0.5rem; list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--pf-neutral-500);">
+        <li><a href="/es/" style="color: inherit; text-decoration: none;">Inicio</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/es/species" style="color: inherit; text-decoration: none;">Especies</a></li>
+        <li aria-hidden="true">/</li>
+        <li style="color: var(--pf-neutral-700);">{species.species}</li>
+      </ol>
+    </nav>
+
+    <!-- Header with Image -->
+    <header style="margin-bottom: 3rem;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+        <div>
+          <h1 style="font-family: var(--pf-font-display); font-size: 2.5rem; margin: 0 0 1rem;">
+            {species.species}
+          </h1>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.5rem;">
+            <span style="padding: 0.5rem 1rem; background: var(--pf-primary-050); color: var(--pf-primary-600); border-radius: var(--pf-radius-pill); font-weight: 500;">
+              {species.category}
+            </span>
+            <span style="padding: 0.5rem 1rem; background: var(--pf-neutral-050); border-radius: var(--pf-radius-pill);">
+              {species.origin}
+            </span>
+          </div>
+
+          <p style="font-size: 1.1rem; line-height: 1.7; color: var(--pf-neutral-700); margin: 0;">
+            {species.description}
+          </p>
+        </div>
+
+        <div style="position: relative; aspect-ratio: 4 / 3; border-radius: var(--pf-radius-soft); overflow: hidden; background: var(--pf-neutral-050);">
+          <img
+            src={species.image}
+            alt={`Loro ${species.species} de ${species.origin}`}
+            width="800"
+            height="600"
+            style="position: absolute; width: 100%; height: 100%; object-fit: contain;"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- Quick Facts Grid -->
+    <section style="margin-bottom: 3rem;">
+      <h2 style="font-family: var(--pf-font-display); font-size: 1.75rem; margin: 0 0 1.5rem;">
+        Datos Rápidos
+      </h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+        <div class="filters-panel__card">
+          <h3 style="font-size: 0.9rem; color: var(--pf-neutral-500); margin: 0 0 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">
+            Tamaño
+          </h3>
+          <p style="font-size: 1.25rem; font-weight: 500; margin: 0;">
+            {species.size}
+          </p>
+        </div>
+
+        <div class="filters-panel__card">
+          <h3 style="font-size: 0.9rem; color: var(--pf-neutral-500); margin: 0 0 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">
+            Esperanza de Vida
+          </h3>
+          <p style="font-size: 1.25rem; font-weight: 500; margin: 0;">
+            {species.lifespan}
+          </p>
+        </div>
+
+        <div class="filters-panel__card">
+          <h3 style="font-size: 0.9rem; color: var(--pf-neutral-500); margin: 0 0 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">
+            Nivel de Ruido
+          </h3>
+          <p style="font-size: 1.25rem; font-weight: 500; margin: 0;">
+            {species.loudness}
+          </p>
+        </div>
+
+        <div class="filters-panel__card">
+          <h3 style="font-size: 0.9rem; color: var(--pf-neutral-500); margin: 0 0 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">
+            Dieta
+          </h3>
+          <p style="font-size: 1.25rem; font-weight: 500; margin: 0;">
+            {species.diet}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Information -->
+    <section style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem;">
+      <div class="filters-panel__card">
+        <h2 style="font-family: var(--pf-font-display); font-size: 1.5rem; margin: 0 0 1rem;">
+          Personalidad
+        </h2>
+        <p style="line-height: 1.7; color: var(--pf-neutral-700); margin: 0;">
+          {species.personality}
+        </p>
+      </div>
+
+      <div class="filters-panel__card">
+        <h2 style="font-family: var(--pf-font-display); font-size: 1.5rem; margin: 0 0 1rem;">
+          Requisitos de Cuidado
+        </h2>
+        <p style="line-height: 1.7; color: var(--pf-neutral-700); margin: 0;">
+          {species.careRequirements}
+        </p>
+      </div>
+    </section>
+
+    <!-- View Available Listings CTA -->
+    <section style="text-align: center; margin-bottom: 3rem; padding: 2.5rem; background: var(--pf-primary-050); border-radius: var(--pf-radius-soft);">
+      <h2 style="font-family: var(--pf-font-display); font-size: 1.75rem; margin: 0 0 1rem;">
+        ¿Listo para encontrar tu {species.species}?
+      </h2>
+      <p style="color: var(--pf-neutral-600); margin: 0 0 1.5rem; font-size: 1.05rem;">
+        Explora anuncios disponibles de criadores y rescates confiables
+      </p>
+      <a class="button button-primary button-large" href={`/es/browse?species=${species.slug}`}>
+        Ver Anuncios Disponibles
+      </a>
+    </section>
+
+    <!-- Related Species -->
+    {relatedSpecies.length > 0 && (
+      <section>
+        <h2 style="font-family: var(--pf-font-display); font-size: 1.75rem; margin: 0 0 1.5rem;">
+          Especies Relacionadas
+        </h2>
+
+        <div class="featured-grid">
+          {relatedSpecies.map((related) => (
+            <article class="filters-panel__card">
+              <a href={`/es/species/${related.data.slug}`} style="text-decoration: none; color: inherit;">
+                <div style="position: relative; aspect-ratio: 3 / 2; overflow: hidden; border-radius: var(--pf-radius-soft); margin-bottom: 1rem; background: var(--pf-neutral-050);">
+                  <img
+                    src={related.data.image}
+                    alt={`Loro ${related.data.species}`}
+                    loading="lazy"
+                    decoding="async"
+                    width="600"
+                    height="400"
+                    style="position: absolute; width: 100%; height: 100%; object-fit: contain;"
+                  />
+                </div>
+
+                <h3 style="font-family: var(--pf-font-display); font-size: 1.25rem; margin: 0 0 0.5rem;">
+                  {related.data.species}
+                </h3>
+
+                <p style="color: var(--pf-neutral-500); font-size: 0.9rem; margin: 0;">
+                  {related.data.category}
+                </p>
+              </a>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+  </main>
+</BaseLayout>

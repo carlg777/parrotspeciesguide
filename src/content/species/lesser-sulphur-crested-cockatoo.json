@@ -1,0 +1,17 @@
+{
+  "category": "Cockatoos",
+  "species": "Lesser Sulphur-Crested Cockatoo",
+  "slug": "lesser-sulphur-crested-cockatoo",
+  "image": "/assets/img/parrots/lesser-sulphur-crested-cockatoo.webp",
+  "description": "A medium-sized version of the Greater Sulphur-Crested, with the same white body and yellow crest, but noticeably smaller.",
+  "size": "13-14 inches (33-35.5 cm). Weight: 300-425g (10.5-15 oz)",
+  "weight_grams": 362,
+  "temperament": "Shares the high intelligence and playful nature of its larger cousin but in a more compact package. Can still be very demanding and nippy.",
+  "loudness": "Very Loud. Their screech is high-pitched and just as ear-splitting as the larger Sulphur-Crested cockatoos.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Can learn to talk and mimic, but are primarily known for their loud natural calls.",
+  "dietaryNeeds": "A low-fat pelleted diet is important. Supplement with a variety of vegetables. Use seeds and nuts only for training treats.",
+  "healthPointers": "Can live for 40-50 years. Prone to the same issues as other Sulphur-Crested 'toos: feather plucking, PBFD, and obesity. They also produce a lot of dander.",
+  "housing": "Not suitable for apartments. Requires a strong and secure cage with plenty of toys. Minimum size: 30\"W x 24\"D x 48\"H.",
+  "origin": "Australia & Oceania"
+}

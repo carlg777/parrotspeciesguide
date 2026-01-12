@@ -1,0 +1,17 @@
+{
+  "category": "Parakeets",
+  "species": "Bourke's Parakeet",
+  "slug": "bourkes-parakeet",
+  "image": "/assets/img/parrots/bourkes-parakeet.webp",
+  "description": "A small, gentle parakeet with brownish-tinged plumage, a pinkish belly, and blue highlights on the wings and tail. They are known for their calm demeanor.",
+  "size": "7-8 inches (18-20 cm). Weight: 40-50g (1.4-1.8 oz)",
+  "weight_grams": 45,
+  "temperament": "Very calm, quiet, and sweet-natured. They are not as active or demanding as budgies and are most active at dawn and dusk.",
+  "loudness": "Very Quiet. They have a soft, melodious twittering call, making them one of the best choices for those who want a quiet bird.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
+  "vocalization": "Not known to talk. Their vocalizations are limited to soft, pleasant chirps and whistles.",
+  "dietaryNeeds": "A good-quality parakeet mix, pellets, fresh vegetables, fruits, and sprouted seeds. Enjoy ground foraging and grass seeds.",
+  "healthPointers": "Generally hardy and can live 15-25 years. Less prone to behavioral issues due to their calm nature. Need a temperature range of 60-85°F.",
+  "housing": "Perfect for apartments. Their quiet nature is a huge plus. A cage that is longer than it is tall is ideal, minimum 24\"L x 16\"D x 16\"H.",
+  "origin": "Australia & Oceania"
+}

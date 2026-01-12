@@ -1,0 +1,17 @@
+{
+  "category": "Parakeets",
+  "species": "Lineolated Parakeet",
+  "slug": "lineolated-parakeet",
+  "image": "/assets/img/parrots/lineolated-parakeet.webp",
+  "description": "Often called 'Linnies,' these small parakeets are known for their calm nature and unique barred or lined feather pattern. They are typically green with black markings but come in blue, grey, and cobalt mutations.",
+  "size": "6-7 inches (15-18 cm). Weight: 45-55g (1.6-1.9 oz)",
+  "weight_grams": 50,
+  "temperament": "Very calm, sweet, and gentle. They are not as hyperactive as budgies and enjoy climbing more than flying. They have a comical way of walking and enjoy being held and petted.",
+  "loudness": "Very Quiet. One of the quietest parrot species available, their vocalizations are soft, chattering sounds.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
+  "vocalization": "Can learn to talk, and their voices are surprisingly clear for their size. They are not screamers and prefer to chatter quietly.",
+  "dietaryNeeds": "A high-quality pelleted diet is recommended. They enjoy fresh vegetables and fruits, especially berries. Because they enjoy climbing, foraging toys are a great way to provide food.",
+  "healthPointers": "Hardy birds with a lifespan of 10-15 years. Can be prone to respiratory issues if their environment is not clean. Also susceptible to polyomavirus.",
+  "housing": "Large flight cage with horizontal space for climbing. Bar spacing should be 1/2 inch. Provide multiple perches at different heights and textures. Temperature tolerance: can handle cooler temperatures better than most parrots.",
+  "origin": "Central & South America"
+}

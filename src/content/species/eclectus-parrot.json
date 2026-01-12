@@ -1,0 +1,17 @@
+{
+  "category": "Eclectus",
+  "species": "Eclectus Parrot",
+  "slug": "eclectus-parrot",
+  "image": "/assets/img/parrots/eclectus-parrot.webp",
+  "description": "A medium-large parrot with extreme sexual dimorphism. Males are a brilliant emerald green with a candy-corn colored beak, while females are a stunning combination of bright red and royal blue/purple.",
+  "size": "17-20 inches (43-50 cm). Weight: 380-475g (13.4-16.8 oz)",
+  "weight_grams": 427,
+  "temperament": "Generally calm, gentle, and intelligent. They are less prone to screaming than Amazons or Cockatoos. Females tend to be more dominant and territorial than the more easy-going males.",
+  "loudness": "Moderate. Much quieter than most large parrots, making them suitable for many home environments. They have a range of calls, but are not constant screamers.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": "Good talking ability with clear, pleasant voices. Both sexes can learn words and phrases, and can be quite chatty, though individuals vary.",
+  "dietaryNeeds": "A specialized diet with a heavy emphasis on fresh fruits and vegetables is crucial. They have a longer digestive tract and cannot handle many artificial ingredients or fortified pellets.",
+  "healthPointers": "Can live 30-50+ years. Prone to toe-tapping and wing-flipping if their diet is incorrect (too many vitamins/minerals). Sensitive to medications and artificial additives.",
+  "housing": "Large cage minimum 36\"W x 24\"D x 48\". Bar spacing 3/4 to 1 inch. They are less destructive than many large parrots but still need plenty of toys.",
+  "origin": "Australia & Oceania"
+}

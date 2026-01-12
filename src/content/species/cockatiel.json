@@ -1,0 +1,17 @@
+{
+  "category": "Parakeets",
+  "species": "Cockatiel",
+  "slug": "cockatiel",
+  "image": "/assets/img/parrots/cockatiel.webp",
+  "description": "Distinctive crested parrots from Australia. Grey body with white wing patches, orange cheek circles, and yellow head (males). Many color mutations exist including lutino, pied, and pearl varieties.",
+  "size": "12-13 inches (30-33 cm). Weight: 80-100g (2.8-3.5 oz)",
+  "weight_grams": 90,
+  "temperament": "Gentle, affectionate, and social. Generally calm and less demanding than larger parrots. Males tend to be more vocal and outgoing than females.",
+  "loudness": "Moderate. They whistle, chirp, and can be vocal especially at dawn and dusk. Not as loud as larger parrots but can be persistent.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": "Males are excellent whistlers and can learn songs and simple words. They often mimic household sounds. Females are generally quieter but can learn some vocalizations.",
+  "dietaryNeeds": "High-quality cockatiel pellets as base diet, supplemented with fresh vegetables, fruits, and some seeds. Provide cuttlebone for calcium and mineral block.",
+  "healthPointers": "Generally healthy and can live 15-25 years. Prone to night frights, fatty liver disease, and egg-binding in females. Need UV light exposure, regular nail trims, and spacious caging. Watch for signs of illness as they hide symptoms well.",
+  "housing": "Minimum 24\" x 18\" x 24\" cage. Bar spacing 1/2 to 5/8 inch. Provide multiple perches, toys, and climbing opportunities. Need 10-12 hours quiet darkness for sleep.",
+  "origin": "Australia & Oceania"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "Parakeets",
+  "species": "Prince of Wales Parakeet",
+  "slug": "prince-of-wales-parakeet",
+  "image": "/assets/img/parrots/prince-of-wales-parakeet.webp",
+  "description": "Also known as the Rock Pebbler, this is a slender, long-tailed parakeet from Australia. Males are a striking olive-yellow with red on the wings, while females are a duller olive-green. They are very active flyers.",
+  "size": "16 inches (40.5 cm). Weight: 130-160g (4.6-5.6 oz)",
+  "weight_grams": 145,
+  "temperament": "Gentle, quiet, and can be somewhat shy or reserved. They are not typically cuddly parrots and are better suited for owners who enjoy watching active birds. They are very social with their own kind.",
+  "loudness": "Quiet to Moderate. Their natural call is a pleasant, rolling whistle, not a harsh screech. They are not known to be noisy birds.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
+  "vocalization": "Not known for their ability to mimic speech. Their vocalizations consist of soft, melodic chattering and whistles.",
+  "dietaryNeeds": "A base diet of high-quality pellets or a good parakeet seed mix. This should be supplemented with a variety of fresh vegetables, greens, and a small amount of fruit.",
+  "healthPointers": "A very hardy species that can live up to 20 years. As they are extremely active, they are prone to stress if confined to a small cage without the opportunity for flight.",
+  "housing": "An aviary or a large flight cage is essential. A long cage is more important than a tall one to allow for horizontal flight. A minimum of 48\"L x 24\"D x 24\"H is recommended. Not ideal for apartments unless a very large cage can be provided.",
+  "origin": "Australia & Oceania"
+}

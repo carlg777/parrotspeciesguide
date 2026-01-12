@@ -1,0 +1,77 @@
+{
+  "$ref": "#/definitions/species",
+  "definitions": {
+    "species": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string"
+        },
+        "species": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "size": {
+          "type": "string"
+        },
+        "weight_grams": {
+          "type": "number"
+        },
+        "temperament": {
+          "type": "string"
+        },
+        "loudness": {
+          "type": "string"
+        },
+        "loudness_icon": {
+          "type": "string"
+        },
+        "vocalization": {
+          "type": "string"
+        },
+        "dietaryNeeds": {
+          "type": "string"
+        },
+        "healthPointers": {
+          "type": "string"
+        },
+        "housing": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "category",
+        "species",
+        "slug",
+        "image",
+        "description",
+        "size",
+        "weight_grams",
+        "temperament",
+        "loudness",
+        "loudness_icon",
+        "vocalization",
+        "dietaryNeeds",
+        "healthPointers",
+        "housing",
+        "origin"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

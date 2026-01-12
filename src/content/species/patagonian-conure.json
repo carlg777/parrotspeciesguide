@@ -1,0 +1,17 @@
+{
+  "category": "Conures",
+  "species": "Patagonian Conure",
+  "slug": "patagonian-conure",
+  "image": "/assets/img/parrots/patagonian-conure.webp",
+  "description": "One of the largest conure species, the Patagonian Conure, or Burrowing Parrot, is primarily olive-brown with a white eye-ring, white patches on the breast, and a red and yellow belly.",
+  "size": "18 inches (45.5 cm). Weight: 240-310g (8.5-11 oz)",
+  "weight_grams": 275,
+  "temperament": "Intelligent, inquisitive, and can be quite gentle and affectionate. They are known for their clownish antics but are less 'hyper' than many smaller conures.",
+  "loudness": "Extremely Loud. They have a very loud, harsh, and grating call, which makes them unsuitable for many home environments.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Can learn to talk, but they are not known for their clarity. They are more likely to be loud with their natural calls.",
+  "dietaryNeeds": "A diet based on high-quality pellets, with a variety of fresh vegetables, some fruit, and nuts. They enjoy chewing, so providing foraging opportunities is great.",
+  "healthPointers": "A very hardy species that can live for 30+ years. They need an extremely durable cage and lots of chew toys to keep their powerful beaks busy.",
+  "housing": "Absolutely not suitable for apartments. Their noise is extreme. They need a very large and strong cage or aviary, minimum 40\"W x 30\"D x 60\"H.",
+  "origin": "Central & South America"
+}

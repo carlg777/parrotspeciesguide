@@ -1,0 +1,17 @@
+{
+  "category": "Conures",
+  "species": "Sun Conure",
+  "slug": "sun-conure",
+  "image": "/assets/img/parrots/sun-conure.webp",
+  "description": "One of the most strikingly colored parrots, with a vibrant mix of yellow, orange, red, and green plumage. Their full color comes in with maturity.",
+  "size": "12 inches (30.5 cm). Weight: 100-120g (3.5-4.2 oz)",
+  "weight_grams": 110,
+  "temperament": "Playful, cuddly, and full of personality. They can be very nippy, especially when young, and require consistent handling.",
+  "loudness": "Extremely Loud. They possess a notoriously loud, sharp, and piercing screech that they use frequently. This is the main reason they are surrendered.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Can learn a few words and phrases, but are not known as great talkers. They are better at mimicking sounds.",
+  "dietaryNeeds": "A diet based on pellets, supplemented with a variety of vegetables and fruits. They can be prone to feather-plucking if their diet is deficient.",
+  "healthPointers": "Can live 20-30 years. Prone to Psittacine Beak and Feather Disease (PBFD) and feather plucking. Need lots of social interaction.",
+  "housing": "Unsuitable for apartments. Their noise level is too high for shared living spaces. They need a cage of at least 24\"W x 20\"D x 30\"H.",
+  "origin": "Central & South America"
+}

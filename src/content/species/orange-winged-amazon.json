@@ -1,0 +1,17 @@
+{
+  "category": "Amazons",
+  "species": "Orange-winged Amazon",
+  "slug": "orange-winged-amazon",
+  "image": "/assets/img/parrots/orange-winged-amazon.webp",
+  "description": "A popular and common medium-sized Amazon. They are mostly green with blue and yellow on the face and a distinctive splash of orange on the leading edge of their wings.",
+  "size": "12-13 inches (30.5-33 cm). Weight: 300-450g (10.5-15.8 oz)",
+  "weight_grams": 375,
+  "temperament": "Can make excellent family pets. They are intelligent, playful, and generally have a stable temperament, though they can go through nippy phases.",
+  "loudness": "Loud. Can produce loud, harsh screams, especially when excited or seeking attention.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Good talkers. They can develop a clear vocabulary and are good at mimicking sounds.",
+  "dietaryNeeds": "A pelleted base diet with a mix of fresh vegetables is essential. They are prone to weight gain, so limit fatty foods.",
+  "healthPointers": "Can live up to 50 years. Watch for obesity and related issues. Can be prone to feather destructive behaviors if bored or stressed.",
+  "housing": "Needs a roomy cage, at least 30\"W x 24\"D x 48\"H. Not recommended for apartments due to noise.",
+  "origin": "Central & South America"
+}

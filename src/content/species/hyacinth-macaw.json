@@ -1,0 +1,17 @@
+{
+  "category": "Macaws",
+  "species": "Hyacinth Macaw",
+  "slug": "hyacinth-macaw",
+  "image": "/assets/img/parrots/hyacinth-macaw.webp",
+  "description": "The largest of all flying parrot species, the Hyacinth Macaw is a breathtaking solid cobalt blue, with bright yellow patches of bare skin around its eyes and at the base of its beak.",
+  "size": "Up to 40 inches (100 cm). Weight: 1200-1700g (42-60 oz)",
+  "weight_grams": 1450,
+  "temperament": "Famously known as 'gentle giants.' They are exceptionally gentle, sweet-natured, and even-tempered. They are highly intelligent and playful but not as prone to nippiness as other macaws.",
+  "loudness": "Extremely Loud. Their calls are deep, guttural, and can travel for miles. They are among the loudest of all parrots.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Can learn to talk, but they are not known for extensive vocabularies or clarity. Their vocalizations are more often loud, throaty squawks.",
+  "dietaryNeeds": "A highly specialized diet is required. They need a diet very high in fat and calories, consisting of macadamia nuts, Brazil nuts, walnuts, and specialized pellets.",
+  "healthPointers": "Can live up to 60 years. Susceptible to PDD. Their massive beaks require a constant supply of extremely hard, durable toys and nuts to maintain their condition.",
+  "housing": "Requires a custom-built, exceptionally large, and strong enclosure, ideally a walk-in aviary. A standard cage will not suffice. Absolutely unsuitable for apartments.",
+  "origin": "Central & South America"
+}

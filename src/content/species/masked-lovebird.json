@@ -1,0 +1,17 @@
+{
+  "category": "Lovebirds",
+  "species": "Masked Lovebird",
+  "slug": "masked-lovebird",
+  "image": "/assets/img/parrots/masked-lovebird.webp",
+  "description": "Also known as the Yellow-collared Lovebird, this species has a striking black 'mask' on its head, a bright yellow collar and breast, and a green body. They also have a white eye-ring.",
+  "size": "6 inches (15 cm). Weight: ~50g (1.8 oz)",
+  "weight_grams": 50,
+  "temperament": "Can be a bit shyer and more reserved than other lovebird species, but they are still active, playful, and intelligent birds that can become affectionate with time.",
+  "loudness": "Loud. Like the Fischer's, they have a high-pitched, shrill call.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Not considered talkers. Their communication is through their flock calls and chirps.",
+  "dietaryNeeds": "A standard lovebird diet of high-quality pellets, supplemented with a variety of fresh vegetables and occasional fruit.",
+  "healthPointers": "A hardy species with a lifespan of 15-20 years, but like all birds with white eye-rings, they can be prone to eye problems. Ensure a clean cage environment.",
+  "housing": "Their high-pitched calls can be a problem in apartments. A good-sized cage with plenty of toys is necessary. Minimum 20\"W x 20\"D x 24\"H.",
+  "origin": "Africa"
+}

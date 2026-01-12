@@ -1,0 +1,17 @@
+{
+  "category": "Macaws",
+  "species": "Blue-Headed Macaw",
+  "slug": "blue-headed-macaw",
+  "image": "/assets/img/parrots/blue-headed-macaw.webp",
+  "description": "Also known as the Coulon's Macaw, this is a smaller, rare macaw. It is primarily green with a striking blue head, a patch of red under the tail, and a pale bill tipped in black.",
+  "size": "16 inches (41 cm). Weight: 250-300g (8.8-10.5 oz)",
+  "weight_grams": 275,
+  "temperament": "Known to be intelligent, inquisitive, and generally gentler than other mini-macaws. They can be shy and reserved but are also playful and affectionate with their owners.",
+  "loudness": "Moderate. Their call is higher-pitched and less grating than large macaws, making them a quieter option, though they can still be noisy.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": "Can learn a few words and phrases, but are not considered exceptional talkers. They are more known for their playful chirps and squawks.",
+  "dietaryNeeds": "A pelleted diet supplemented with fresh vegetables, fruits, and some nuts. They are known to enjoy foraging for food.",
+  "healthPointers": "Can live for 30+ years. As they are rare in aviculture, specific health data is limited. A varied diet and regular vet check-ups are crucial. Prone to PDD like other macaws.",
+  "housing": "Being a mini-macaw, they require a cage of at least 30\"W x 24\"D x 48\"H. Their moderate noise level could make them suitable for some apartment situations with tolerant neighbors.",
+  "origin": "Central & South America"
+}

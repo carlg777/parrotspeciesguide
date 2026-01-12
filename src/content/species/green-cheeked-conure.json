@@ -1,0 +1,17 @@
+{
+  "category": "Conures",
+  "species": "Green-cheeked Conure",
+  "slug": "green-cheeked-conure",
+  "image": "/assets/img/parrots/green-cheeked-conure.webp",
+  "description": "A small, popular conure known for its relatively quiet nature. They are mostly green with a maroon tail, grey head, and subtle red on the belly.",
+  "size": "10 inches (25.5 cm). Weight: 60-80g (2.1-2.8 oz)",
+  "weight_grams": 70,
+  "temperament": "Goofy, affectionate, and intelligent. They are less prone to being nippy than other conures and have big personalities in small bodies.",
+  "loudness": "Quiet to Moderate. By far one of the quietest conure species, making them excellent for apartment living.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
+  "vocalization": "Can learn some words, but their voices are gravelly and not very clear. They often learn to mimic household sounds.",
+  "dietaryNeeds": "A standard conure diet of pellets, fresh vegetables, and some fruit. Ensure a varied diet to keep them engaged.",
+  "healthPointers": "Generally robust and can live 15-25 years with proper care. Can be prone to polyomavirus. They love to snuggle in fabric, so be cautious about cloth huts that can cause crop impaction or strangulation.",
+  "housing": "Perfect for apartments. They are relatively quiet and their smaller size means a cage of 20\"W x 20\"D x 24\"H is a good minimum size, though larger is always better.",
+  "origin": "Central & South America"
+}

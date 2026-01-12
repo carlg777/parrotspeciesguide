@@ -1,0 +1,274 @@
+---
+export const prerender = true;
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from 'astro:content';
+import { toAbsoluteUrl } from '../../lib/urlUtils';
+
+// Get all species
+const allSpecies = await getCollection('species');
+
+// Sort alphabetically
+const sortedSpecies = allSpecies.sort((a, b) =>
+  a.data.species.localeCompare(b.data.species)
+);
+
+// Get unique categories
+const categories = [...new Set(allSpecies.map(s => s.data.category))].sort();
+
+// Get unique origins
+const origins = [...new Set(allSpecies.map(s => s.data.origin))].sort();
+
+// Serialize for client-side filtering
+const serializedSpecies = JSON.stringify(sortedSpecies.map(s => s.data)).replace(/</g, '\\u003c');
+
+// ItemList structured data
+const speciesListStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Parrot Species Care Guides",
+  "description": "Complete care guides for 84 parrot species including temperament, diet, housing, and health information.",
+  "numberOfItems": sortedSpecies.length,
+  "itemListElement": sortedSpecies.map((species, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "url": `https://www.findyourparrot.com/species/${species.data.slug}`,
+    "name": species.data.species,
+    "image": toAbsoluteUrl(species.data.image)
+  }))
+};
+
+const speciesListDataString = JSON.stringify(speciesListStructuredData).replace(/</g, '\\u003c');
+---
+
+<BaseLayout
+  title="Parrot Species Guide | Find Your Parrot"
+  description="Explore detailed profiles of 80+ parrot species. Learn about temperament, care requirements, noise levels, and more for Macaws, Cockatoos, Amazons, African Greys, and other pet parrots."
+  canonical="https://www.findyourparrot.com/species"
+  ogTitle="Complete Parrot Species Guide"
+  ogDescription="Discover the perfect parrot species for your home. Detailed care information, temperament profiles, and expert guidance."
+  dataPage="species"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline>
+      {speciesListDataString}
+    </script>
+  </Fragment>
+  <main class="container" style="padding: 2rem 0 4rem;">
+    <header style="text-align: center; margin-bottom: 3rem;">
+      <h1 style="font-family: var(--pf-font-display); font-size: 2.5rem; margin: 0;">
+        Parrot Species Guide
+      </h1>
+      <p style="color: var(--pf-neutral-500); margin: 0.75rem 0 0; font-size: 1.1rem;">
+        Explore {allSpecies.length} parrot species with detailed care information
+      </p>
+    </header>
+
+    <!-- Quick Facts -->
+    <section style="margin-bottom: 3rem;">
+      <h2 style="font-family: var(--pf-font-display); font-size: 1.5rem; text-align: center; margin-bottom: 1.5rem;">
+        Quick Facts
+      </h2>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem;">
+        <button class="button button-secondary" data-quick-fact="quiet">Quietest Species</button>
+        <button class="button button-secondary" data-quick-fact="talkers">Best Talkers</button>
+        <button class="button button-secondary" data-quick-fact="beginner">Beginner-Friendly</button>
+        <button class="button button-secondary" data-quick-fact="demanding">Most Demanding</button>
+        <button class="button button-secondary" data-quick-fact="small">Small Parrots</button>
+        <button class="button button-secondary" data-quick-fact="apartment">Apartment Friendly</button>
+      </div>
+    </section>
+
+    <!-- Search and Filters -->
+    <section class="search-filters" style="max-width: 900px; margin: 0 auto 3rem;">
+      <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        <div class="field-group">
+          <label for="species-search">Search Species</label>
+          <input
+            type="text"
+            id="species-search"
+            placeholder="Search by name..."
+            style="width: 100%; padding: 0.75rem; border: 1px solid var(--pf-neutral-200); border-radius: var(--pf-radius-soft);"
+          />
+        </div>
+
+        <div class="field-group">
+          <label for="filter-origin">Filter by Origin</label>
+          <select
+            id="filter-origin"
+            style="width: 100%; padding: 0.75rem; border: 1px solid var(--pf-neutral-200); border-radius: var(--pf-radius-soft);"
+          >
+            <option value="">All Regions</option>
+            {origins.map(origin => (
+              <option value={origin}>{origin}</option>
+            ))}
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label for="filter-loudness">Filter by Noise Level</label>
+          <select
+            id="filter-loudness"
+            style="width: 100%; padding: 0.75rem; border: 1px solid var(--pf-neutral-200); border-radius: var(--pf-radius-soft);"
+          >
+            <option value="">All Levels</option>
+            <option value="Quiet">Quiet</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Loud">Loud</option>
+            <option value="Very Loud">Very Loud</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="margin-top: 1rem; text-align: center; color: var(--pf-neutral-500);">
+        <span id="results-count">{allSpecies.length} species</span>
+      </div>
+    </section>
+
+    <!-- Species Grid -->
+    <div id="species-grid" class="featured-grid" style="gap: 2rem;">
+      {sortedSpecies.map((speciesEntry) => (
+        <article class="filters-panel__card species-card" data-species={speciesEntry.data.slug}>
+          <a href={`/species/${speciesEntry.data.slug}`} style="text-decoration: none; color: inherit;">
+            <div style="position: relative; aspect-ratio: 3 / 2; overflow: hidden; border-radius: var(--pf-radius-soft); margin-bottom: 1rem; background: var(--pf-neutral-050);">
+              <img
+                src={speciesEntry.data.image}
+                alt={`${speciesEntry.data.species} parrot from ${speciesEntry.data.origin} - ${speciesEntry.data.size}`}
+                loading="lazy"
+                decoding="async"
+                width="600"
+                height="400"
+                style="position: absolute; width: 100%; height: 100%; object-fit: contain;"
+              />
+            </div>
+
+            <h3 style="font-family: var(--pf-font-display); font-size: 1.25rem; margin: 0 0 0.5rem;">
+              {speciesEntry.data.species}
+            </h3>
+
+            <p style="color: var(--pf-neutral-500); font-size: 0.9rem; margin: 0 0 0.75rem;">
+              {speciesEntry.data.category}
+            </p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+              <span class="badge badge-success" style="font-size: 0.85rem;">
+                {speciesEntry.data.origin}
+              </span>
+              <span class={`badge ${speciesEntry.data.loudness.includes('Quiet') ? 'badge-success' : speciesEntry.data.loudness.includes('Loud') ? 'badge-accent' : ''}`} style="font-size: 0.85rem;">
+                {speciesEntry.data.loudness}
+              </span>
+            </div>
+
+            <p style="color: var(--pf-neutral-700); font-size: 0.95rem; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+              {speciesEntry.data.description.substring(0, 150)}...
+            </p>
+
+            <div style="margin-top: 1rem;">
+              <span style="color: var(--pf-primary-600); font-weight: 500;">Learn more →</span>
+            </div>
+          </a>
+        </article>
+      ))}
+    </div>
+
+    <!-- No Results Message -->
+    <div id="no-results" style="display: none; text-align: center; padding: 3rem;">
+      <p style="color: var(--pf-neutral-500); font-size: 1.1rem;">
+        No species match your filters. Try adjusting your search.
+      </p>
+    </div>
+  </main>
+
+  <script is:inline define:vars={{ serializedSpecies }}>
+    const speciesData = JSON.parse(serializedSpecies);
+    const searchInput = document.getElementById('species-search');
+    const originFilter = document.getElementById('filter-origin');
+    const loudnessFilter = document.getElementById('filter-loudness');
+    const resultsCount = document.getElementById('results-count');
+    const speciesCards = document.querySelectorAll('.species-card');
+    const noResults = document.getElementById('no-results');
+    const quickFactButtons = document.querySelectorAll('[data-quick-fact]');
+
+    function filterSpecies() {
+      const searchTerm = searchInput.value.toLowerCase().trim();
+      const origin = originFilter.value;
+      const loudness = loudnessFilter.value;
+
+      let visibleCount = 0;
+
+      speciesCards.forEach(card => {
+        const slug = card.getAttribute('data-species');
+        const species = speciesData.find(s => s.slug === slug);
+
+        if (!species) {
+          card.style.display = 'none';
+          return;
+        }
+
+        // Split search terms by space and check if ANY term matches
+        const searchTerms = searchTerm.split(/\s+/).filter(t => t.length > 0);
+        const matchesSearch = searchTerms.length === 0 || searchTerms.some(term =>
+          species.species.toLowerCase().includes(term) ||
+          species.category.toLowerCase().includes(term) ||
+          species.description.toLowerCase().includes(term)
+        );
+
+        const matchesOrigin = !origin || species.origin === origin;
+        const matchesLoudness = !loudness || species.loudness.includes(loudness);
+
+        if (matchesSearch && matchesOrigin && matchesLoudness) {
+          card.style.display = '';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      resultsCount.textContent = `${visibleCount} species`;
+      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+
+    // Quick fact filters
+    quickFactButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const fact = button.getAttribute('data-quick-fact');
+
+        // Clear all filters first
+        searchInput.value = '';
+        originFilter.value = '';
+        loudnessFilter.value = '';
+
+        // Set the appropriate filter
+        switch(fact) {
+          case 'quiet':
+            loudnessFilter.value = 'Quiet';
+            break;
+          case 'talkers':
+            // Best talking species: African Greys and top Amazon talkers
+            searchInput.value = 'congo timneh yellow-naped blue-fronted double';
+            break;
+          case 'beginner':
+            // Easy-going, forgiving species good for first-time owners
+            searchInput.value = 'budgerigar cockatiel';
+            break;
+          case 'demanding':
+            searchInput.value = 'macaw cockatoo';
+            break;
+          case 'small':
+            // All small species regardless of difficulty
+            searchInput.value = 'parakeet parrotlet lovebird budgerigar conure caique';
+            break;
+          case 'apartment':
+            // Quiet, smaller species ideal for apartment living
+            searchInput.value = 'bourke budgerigar cockatiel pionus parrotlet lineolated lovebird';
+            break;
+        }
+
+        filterSpecies();
+      });
+    });
+
+    searchInput.addEventListener('input', filterSpecies);
+    originFilter.addEventListener('change', filterSpecies);
+    loudnessFilter.addEventListener('change', filterSpecies);
+  </script>
+</BaseLayout>

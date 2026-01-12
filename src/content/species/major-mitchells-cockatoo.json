@@ -1,0 +1,17 @@
+{
+  "category": "Cockatoos",
+  "species": "Major Mitchell’s Cockatoo",
+  "slug": "major-mitchells-cockatoo",
+  "image": "/assets/img/parrots/major-mitchells-cockatoo.webp",
+  "description": "Also known as the Leadbeater's Cockatoo, this is arguably one of the most beautiful cockatoos, with soft white and salmon-pink plumage and a stunning, large crest of red and yellow bands.",
+  "size": "13-14 inches (33-35.5 cm). Weight: 360-480g (12.7-17 oz)",
+  "weight_grams": 420,
+  "temperament": "Intelligent and active, but are not typically as cuddly as other cockatoo species. They are known to be more independent and can become quite aggressive, especially males.",
+  "loudness": "Loud. They have a loud, quavering call that can be very piercing.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Not known for being great talkers, but can learn a few words. Their natural call is very distinct.",
+  "dietaryNeeds": "A formulated diet is best, supplemented with a variety of vegetables. In the wild, they eat a lot of seeds, but this should be limited in captivity to prevent obesity.",
+  "healthPointers": "A hardy species with a lifespan of 60+ years. Can be prone to bonding with one person and becoming aggressive toward others.",
+  "housing": "Not recommended for apartments. They need a very large cage or aviary to accommodate their active nature. Minimum 36\"W x 24\"D x 48\"H.",
+  "origin": "Australia & Oceania"
+}

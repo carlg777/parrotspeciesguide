@@ -1,0 +1,17 @@
+{
+  "category": "African Parrots",
+  "species": "Senegal Parrot",
+  "slug": "senegal-parrot",
+  "image": "/assets/img/parrots/senegal-parrot.webp",
+  "description": "A very popular Poicephalus species. They have a charcoal grey head, green back and throat, and a distinctive V-shaped patch of yellow, orange, or red on their belly.",
+  "size": "9 inches (23 cm). Weight: 120-130g (4.2-4.6 oz)",
+  "weight_grams": 125,
+  "temperament": "Playful, comical, and can be very cuddly. They often bond very strongly with one person and can become jealous or nippy towards others if not well-socialized.",
+  "loudness": "Quiet to Moderate. They are not prone to screaming but have a variety of loud whistles and squawks.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
+  "vocalization": "Can develop a fair vocabulary of words and phrases. Their voice is often high-pitched and childlike. They are great mimics of sounds.",
+  "dietaryNeeds": "A pelleted diet, supplemented with fresh vegetables and limited fruits. They are prone to Vitamin A deficiency, so provide plenty of dark leafy greens and orange vegetables.",
+  "healthPointers": "Generally a very hardy and healthy bird with a lifespan of 20-30 years. Can be prone to polyomavirus. Require lots of toys to keep them from becoming bored.",
+  "housing": "An excellent apartment bird. A minimum cage size of 24\"W x 20\"D x 24\"H is recommended.",
+  "origin": "Africa"
+}

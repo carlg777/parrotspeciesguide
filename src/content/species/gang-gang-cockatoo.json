@@ -1,0 +1,17 @@
+{
+  "category": "Cockatoos",
+  "species": "Gang-Gang Cockatoo",
+  "slug": "gang-gang-cockatoo",
+  "image": "/assets/img/parrots/gang-gang-cockatoo.webp",
+  "description": "A unique, small cockatoo from Australia. They are sexually dimorphic: males are dark grey with a striking bright red head and wispy crest, while females are all grey.",
+  "size": "13-14 inches (33-35.5 cm). Weight: 250-300g (8.8-10.5 oz)",
+  "weight_grams": 275,
+  "temperament": "Relatively quiet, gentle, and can be shy. They are not as cuddly as other cockatoos and are less common in aviculture due to their specialized needs.",
+  "loudness": "Quiet for a cockatoo. Their call is a distinctive 'creaky door' or growling sound, rather than a harsh screech.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
+  "vocalization": "Not known to be talkers, but they can mimic sounds. Their natural call is unique and not overly loud.",
+  "dietaryNeeds": "A specialized diet is required, focusing on native seeds (especially eucalyptus and acacia), berries, and insects. A standard parrot diet is often insufficient.",
+  "healthPointers": "Can live for 60+ years. They do not thrive in warm climates and are susceptible to heat stress. They are not common as pets and are best suited for experienced keepers in appropriate climates.",
+  "housing": "An aviary that can be kept cool is ideal. They are not well-suited for typical indoor cage life.",
+  "origin": "Australia & Oceania"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "Lories & Lorikeets",
+  "species": "Black-capped Lory",
+  "slug": "black-capped-lory",
+  "image": "/assets/img/parrots/black-capped-lory.webp",
+  "description": "A beautiful lory with a black cap, a vibrant red neck and chest, blue belly, and green wings. They are a sight to behold.",
+  "size": "12 inches (30.5 cm). Weight: 200-240g (7-8.5 oz)",
+  "weight_grams": 220,
+  "temperament": "Intelligent, active, and can be quite demanding of attention. They can be nippy and require an owner who can provide firm, consistent training.",
+  "loudness": "Loud. They have a shrill, piercing whistle and can be quite vocal throughout the day.",
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
+  "vocalization": "Fair talkers. They can learn words and phrases but are better known for their loud whistles and ability to mimic sounds.",
+  "dietaryNeeds": "Must be fed a nectar-based diet. Commercial lory formulas are readily available. Soft fruits and edible flowers can be offered as treats.",
+  "healthPointers": "Can live for 25+ years. Their liquid, sugary diet means their cages must be cleaned daily to prevent bacterial and fungal growth. They are prone to stress-related illnesses if not given enough attention.",
+  "housing": "Not a good choice for apartments due to their high noise level and mess. They require a large cage for their active lifestyle, minimum 36\"W x 24\"D x 24\"H.",
+  "origin": "Australia & Oceania"
+}
