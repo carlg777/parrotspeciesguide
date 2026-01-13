@@ -30,5 +30,6 @@ jobs:
           path: dist/
           remote_path: ${{ secrets.SG_PATH }}
           remote_host: ${{ secrets.SG_HOST }}
+          remote_port: ${{ secrets.SG_PORT }}
           remote_user: ${{ secrets.SG_USER }}
           remote_key: ${{ secrets.SG_SSH_KEY }}
