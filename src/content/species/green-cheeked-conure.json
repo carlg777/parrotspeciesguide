@@ -13,5 +13,12 @@
   "dietaryNeeds": "A standard conure diet of pellets, fresh vegetables, and some fruit. Ensure a varied diet to keep them engaged.",
   "healthPointers": "Generally robust and can live 15-25 years with proper care. Can be prone to polyomavirus. They love to snuggle in fabric, so be cautious about cloth huts that can cause crop impaction or strangulation.",
   "housing": "Perfect for apartments. They are relatively quiet and their smaller size means a cage of 20\"W x 20\"D x 24\"H is a good minimum size, though larger is always better.",
-  "origin": "Central & South America"
+  "origin": "Central & South America",
+  "lifespan": "15-30 years with quality care (average 20-25 years)",
+  "careLevel": "intermediate",
+  "activityLevel": "High energy and playful. Loves climbing, swinging, and interactive toys. Needs 2-3 hours outside cage for exercise and bonding. More active and mischievous than cockatiels but more manageable than larger parrots.",
+  "socialNeeds": "Very social and affectionate. Enjoys close contact and cuddling. Can bond strongly to one person but socializes well with others if introduced properly. Tolerates alone time better than larger parrots but still needs daily interaction.",
+  "noiseTolerance": "Relatively quiet for a conure. Occasional loud calls but not constant screeching. Morning/evening vocalizations. Apartment-suitable if neighbors are reasonable. Quieter than sun conures or larger parrots.",
+  "spaceRequirements": "Minimum cage 24\"W × 24\"D × 30\"H. Prefers width over height for horizontal movement. Needs multiple perches, foraging toys, and climbing opportunities. Play gym recommended for out-of-cage time.",
+  "timeCommitment": "1.5-2 hours daily for play, training, and interaction. Daily food preparation (fresh vegetables) and cage spot-cleaning (15 min). Weekly deep cage clean (45 min). More demanding than budgies but less than larger parrots."
 }
