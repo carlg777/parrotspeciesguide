@@ -1,0 +1,25 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PSG Parrot Species Guide">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0fdfa" />
+      <stop offset="50%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#fdf2f8" />
+    </linearGradient>
+    <linearGradient id="feather" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="55%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <g transform="translate(120,140)">
+    <circle cx="170" cy="170" r="150" fill="url(#feather)" />
+    <circle cx="140" cy="150" r="20" fill="#ffffff" />
+    <circle cx="146" cy="150" r="9" fill="#111827" />
+    <path d="M190 170 L290 140 L260 210 Z" fill="#f59e0b" />
+    <path d="M110 240 C150 260 200 260 250 220" stroke="#0f766e" stroke-width="14" fill="none" stroke-linecap="round" />
+  </g>
+  <text x="420" y="290" font-size="150" font-family="Trebuchet MS, Verdana, sans-serif" font-weight="800" fill="#111827">PSG</text>
+  <text x="420" y="360" font-size="44" font-family="Trebuchet MS, Verdana, sans-serif" fill="#1f2937">Parrot Species Guide</text>
+  <text x="420" y="420" font-size="28" font-family="Trebuchet MS, Verdana, sans-serif" fill="#374151">Care guides for 84+ parrot species</text>
+</svg>

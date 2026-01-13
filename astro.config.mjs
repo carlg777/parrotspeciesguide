@@ -1,13 +1,8 @@
 import { defineConfig } from "astro/config";
-import node from "@astrojs/node";
-
-// Static site with SSR for dynamic routes
+// Static site output for standard hosting
 export default defineConfig({
   site: "https://www.parrotspeciesguide.com",
-  output: "server",
-  adapter: node({
-    mode: "standalone"
-  }),
+  output: "static",
   i18n: {
     defaultLocale: "en",
     locales: ["en", "es"],

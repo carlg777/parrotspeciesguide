@@ -1,0 +1,6 @@
+node_modules/
+.astro/
+dev-server.log
+preview-server.log
+.planning/
+.DS_Store
