@@ -1,5 +1,8 @@
 /**
  * String manipulation utilities
+ *
+ * Migration Note: Created during Phase 1 to reduce duplication.
+ * Existing pages will be migrated to use these utilities in subsequent plans.
  */
 
 /**

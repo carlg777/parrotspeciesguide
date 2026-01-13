@@ -1,5 +1,8 @@
 /**
  * URL utilities for structured data and canonical references
+ *
+ * Migration Note: Enhanced during Phase 1 to support dynamic site configuration.
+ * Existing pages will be migrated to use Astro.site?.href in subsequent plans.
  */
 
 /**
