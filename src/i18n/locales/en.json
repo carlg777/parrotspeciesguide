@@ -1,5 +1,5 @@
 {
-  "site.title": "Find Your Parrot",
+  "site.title": "Parrot Species Guide",
   "site.tagline": "Connecting birds with loving homes",
   "site.description": "Find your perfect parrot companion. Browse available parrots for adoption, sale, and rescue. Expert species guides and care resources.",
   "nav.home": "Home",
@@ -18,7 +18,7 @@
   "nav.signup": "Sign Up",
   "nav.dashboard": "Dashboard",
   "nav.signout": "Sign Out",
-  "hero.title": "Find Your Perfect Parrot",
+  "hero.title": "Find Your Perfect Parrot Species",
   "hero.subtitle": "Connecting birds with loving homes since 2024",
   "hero.description": "Browse available parrots, explore species guides, and connect with trusted sellers and rescues.",
   "hero.cta.browse": "Find a Parrot",
@@ -147,7 +147,7 @@
   "footer.privacy": "Privacy Policy",
   "footer.terms": "Terms of Use",
   "footer.safety": "Safety & Welfare",
-  "footer.copyright": "© 2024 Find Your Parrot. All rights reserved.",
+  "footer.copyright": "© 2024 Parrot Species Guide. All rights reserved.",
   "common.readMore": "Read more",
   "common.learnMore": "Learn more",
   "common.viewAll": "View all",
@@ -163,11 +163,5 @@
   "common.none": "None",
   "common.yes": "Yes",
   "common.no": "No",
-  "common.or": "or",
-  "nav": {
-    "resourcesMenuTitle": "Resources",
-    "resourcesRescues": "Rescues Directory",
-    "resourcesBreeders": "Breeders Directory",
-    "resourcesVets": "Avian Vets Directory"
-  }
+  "common.or": "or"
 }

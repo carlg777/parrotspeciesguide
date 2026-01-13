@@ -1,0 +1,136 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const allSpecies = await getCollection("species");
+const categories = [...new Set(allSpecies.map((s) => s.data.category))].sort();
+
+const faqStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cómo elijo la especie de loro adecuada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Compara el tamaño, el nivel de ruido, el temperamento y los cuidados. Elige una especie que encaje con tu espacio y experiencia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Los loros son ruidosos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende de la especie. Las aves pequeñas suelen ser más silenciosas, mientras que los guacamayos y las cacatúas suelen ser ruidosos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué comen los loros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La mayoría prospera con pellets, verduras frescas, fruta y pocas semillas. Cada perfil incluye recomendaciones de dieta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto vive un loro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La esperanza de vida depende de la especie. Muchos loros viven de 15 a más de 60 años con buenos cuidados."
+      }
+    }
+  ]
+};
+
+const faqDataString = JSON.stringify(faqStructuredData).replace(/</g, '\\u003c');
+---
+
+<BaseLayout
+  title="Guía de Especies de Loros | Cuidados y Perfiles"
+  description="Guías completas de cuidado para más de 84 especies de loros. Descubre temperamento, dieta, nivel de ruido, tamaño, origen y alojamiento."
+  canonical="https://www.parrotspeciesguide.com/es/"
+  ogTitle="Guía de Especies de Loros | Cuidados"
+  ogDescription="Encuentra la especie ideal con perfiles de temperamento, dieta, ruido y alojamiento."
+  dataPage="home"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline>
+      {faqDataString}
+    </script>
+  </Fragment>
+  <main class="container page-main">
+    <header class="page-header">
+      <h1 class="page-title page-title--xl">
+        🦜 Guía de Especies de Loros
+      </h1>
+      <p class="page-subtitle--wide">
+        Perfiles completos de cuidado para {allSpecies.length} especies de loros domésticos.
+      </p>
+      <p class="page-subtitle--support">
+        Compara tamaño, origen, nivel de ruido y necesidades de vivienda para elegir la especie ideal para tu hogar.
+      </p>
+      <div class="cta-spacer">
+        <a href="/es/species" class="button button-hero">
+          Explorar Todas las Especies →
+        </a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title section-title--xl">Categorías de Especies de Loros</h2>
+      <div class="category-grid">
+        {categories.map((category) => {
+          const count = allSpecies.filter((s) => s.data.category === category).length;
+          return (
+            <a href={`/es/species#${category.toLowerCase().replace(/\s+/g, '-')}`} class="category-card">
+              <h3 class="category-card__title">{category}</h3>
+              <p class="category-card__meta">{count} especies</p>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+
+    <section class="cta-panel">
+      <h2 class="section-title section-title--xl">Encuentra tu Especie de Loro Ideal</h2>
+      <p class="cta-panel__text">
+        Conoce el temperamento, los cuidados, la alimentación, los niveles de ruido y las necesidades de alojamiento de cada especie.
+      </p>
+      <a href="/es/species" class="button button-hero-secondary">
+        Ver Todas las Especies
+      </a>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title section-title--xl">Preguntas Frecuentes sobre Especies de Loros</h2>
+      <div class="faq-grid faq-container">
+        <div class="filters-panel__card">
+          <h3 class="faq-question">¿Cómo elijo la especie de loro adecuada?</h3>
+          <p class="faq-answer">
+            Compara el tamaño, el nivel de ruido, el temperamento y los cuidados. Elige una especie que encaje con tu espacio y experiencia.
+          </p>
+        </div>
+        <div class="filters-panel__card">
+          <h3 class="faq-question">¿Los loros son ruidosos?</h3>
+          <p class="faq-answer">
+            Depende de la especie. Las aves pequeñas suelen ser más silenciosas, mientras que los guacamayos y las cacatúas suelen ser ruidosos.
+          </p>
+        </div>
+        <div class="filters-panel__card">
+          <h3 class="faq-question">¿Qué comen los loros?</h3>
+          <p class="faq-answer">
+            La mayoría prospera con pellets, verduras frescas, fruta y pocas semillas. Cada perfil incluye recomendaciones de dieta.
+          </p>
+        </div>
+        <div class="filters-panel__card">
+          <h3 class="faq-question">¿Cuánto vive un loro?</h3>
+          <p class="faq-answer">
+            La esperanza de vida depende de la especie. Muchos loros viven de 15 a más de 60 años con buenos cuidados.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

@@ -18,6 +18,12 @@ const categories = [...new Set(allSpecies.map(s => s.data.category))].sort();
 // Get unique origins
 const origins = [...new Set(allSpecies.map(s => s.data.origin))].sort();
 
+const categoryGroups = categories.map(category => ({
+  category,
+  slug: category.toLowerCase().replace(/\s+/g, "-"),
+  species: sortedSpecies.filter(entry => entry.data.category === category)
+}));
+
 // Serialize for client-side filtering
 const serializedSpecies = JSON.stringify(sortedSpecies.map(s => s.data)).replace(/</g, '\\u003c');
 
@@ -31,19 +37,52 @@ const speciesListStructuredData = {
   "itemListElement": sortedSpecies.map((species, index) => ({
     "@type": "ListItem",
     "position": index + 1,
-    "url": `https://www.findyourparrot.com/species/${species.data.slug}`,
+    "url": `https://www.parrotspeciesguide.com/species/${species.data.slug}`,
     "name": species.data.species,
     "image": toAbsoluteUrl(species.data.image)
   }))
 };
 
 const speciesListDataString = JSON.stringify(speciesListStructuredData).replace(/</g, '\\u003c');
+
+const faqStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many parrot species are in this guide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `This guide includes ${sortedSpecies.length} detailed parrot species profiles.`
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I filter by noise level?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Use the noise level filter to find quiet, moderate, loud, or very loud species."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you list beginner-friendly parrots?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Use the Quick Facts buttons to see beginner-friendly options and other quick filters."
+      }
+    }
+  ]
+};
+
+const faqDataString = JSON.stringify(faqStructuredData).replace(/</g, '\\u003c');
 ---
 
 <BaseLayout
-  title="Parrot Species Guide | Find Your Parrot"
+  title="Parrot Species Guide | Species List"
   description="Explore detailed profiles of 80+ parrot species. Learn about temperament, care requirements, noise levels, and more for Macaws, Cockatoos, Amazons, African Greys, and other pet parrots."
-  canonical="https://www.findyourparrot.com/species"
+  canonical="https://www.parrotspeciesguide.com/species"
   ogTitle="Complete Parrot Species Guide"
   ogDescription="Discover the perfect parrot species for your home. Detailed care information, temperament profiles, and expert guidance."
   dataPage="species"
@@ -52,23 +91,26 @@ const speciesListDataString = JSON.stringify(speciesListStructuredData).replace(
     <script type="application/ld+json" is:inline>
       {speciesListDataString}
     </script>
+    <script type="application/ld+json" is:inline>
+      {faqDataString}
+    </script>
   </Fragment>
-  <main class="container" style="padding: 2rem 0 4rem;">
-    <header style="text-align: center; margin-bottom: 3rem;">
-      <h1 style="font-family: var(--pf-font-display); font-size: 2.5rem; margin: 0;">
+  <main class="container page-main page-main--compact">
+    <header class="page-header">
+      <h1 class="page-title">
         Parrot Species Guide
       </h1>
-      <p style="color: var(--pf-neutral-500); margin: 0.75rem 0 0; font-size: 1.1rem;">
+      <p class="page-subtitle">
         Explore {allSpecies.length} parrot species with detailed care information
       </p>
     </header>
 
     <!-- Quick Facts -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-family: var(--pf-font-display); font-size: 1.5rem; text-align: center; margin-bottom: 1.5rem;">
+    <section class="section-gap">
+      <h2 class="section-title section-title--center">
         Quick Facts
       </h2>
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem;">
+      <div class="button-row">
         <button class="button button-secondary" data-quick-fact="quiet">Quietest Species</button>
         <button class="button button-secondary" data-quick-fact="talkers">Best Talkers</button>
         <button class="button button-secondary" data-quick-fact="beginner">Beginner-Friendly</button>
@@ -79,15 +121,15 @@ const speciesListDataString = JSON.stringify(speciesListStructuredData).replace(
     </section>
 
     <!-- Search and Filters -->
-    <section class="search-filters" style="max-width: 900px; margin: 0 auto 3rem;">
-      <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+    <section class="search-filters filter-panel">
+      <div class="filter-grid">
         <div class="field-group">
           <label for="species-search">Search Species</label>
           <input
             type="text"
             id="species-search"
             placeholder="Search by name..."
-            style="width: 100%; padding: 0.75rem; border: 1px solid var(--pf-neutral-200); border-radius: var(--pf-radius-soft);"
+            class="input-control"
           />
         </div>
 
@@ -95,7 +137,7 @@ const speciesListDataString = JSON.stringify(speciesListStructuredData).replace(
           <label for="filter-origin">Filter by Origin</label>
           <select
             id="filter-origin"
-            style="width: 100%; padding: 0.75rem; border: 1px solid var(--pf-neutral-200); border-radius: var(--pf-radius-soft);"
+            class="input-control"
           >
             <option value="">All Regions</option>
             {origins.map(origin => (
@@ -108,7 +150,7 @@ const speciesListDataString = JSON.stringify(speciesListStructuredData).replace(
           <label for="filter-loudness">Filter by Noise Level</label>
           <select
             id="filter-loudness"
-            style="width: 100%; padding: 0.75rem; border: 1px solid var(--pf-neutral-200); border-radius: var(--pf-radius-soft);"
+            class="input-control"
           >
             <option value="">All Levels</option>
             <option value="Quiet">Quiet</option>
@@ -119,60 +161,96 @@ const speciesListDataString = JSON.stringify(speciesListStructuredData).replace(
         </div>
       </div>
 
-      <div style="margin-top: 1rem; text-align: center; color: var(--pf-neutral-500);">
+      <div class="results-count">
         <span id="results-count">{allSpecies.length} species</span>
       </div>
     </section>
 
-    <!-- Species Grid -->
-    <div id="species-grid" class="featured-grid" style="gap: 2rem;">
-      {sortedSpecies.map((speciesEntry) => (
-        <article class="filters-panel__card species-card" data-species={speciesEntry.data.slug}>
-          <a href={`/species/${speciesEntry.data.slug}`} style="text-decoration: none; color: inherit;">
-            <div style="position: relative; aspect-ratio: 3 / 2; overflow: hidden; border-radius: var(--pf-radius-soft); margin-bottom: 1rem; background: var(--pf-neutral-050);">
-              <img
-                src={speciesEntry.data.image}
-                alt={`${speciesEntry.data.species} parrot from ${speciesEntry.data.origin} - ${speciesEntry.data.size}`}
-                loading="lazy"
-                decoding="async"
-                width="600"
-                height="400"
-                style="position: absolute; width: 100%; height: 100%; object-fit: contain;"
-              />
-            </div>
+    <!-- FAQ -->
+    <section class="faq-section">
+      <h2 class="section-title section-title--center section-title--lg">
+        Parrot Species FAQ
+      </h2>
+      <div class="faq-grid">
+        <div class="filters-panel__card">
+          <h3 class="faq-question">How many parrot species are in this guide?</h3>
+          <p class="faq-answer">
+            This guide includes {sortedSpecies.length} detailed parrot species profiles.
+          </p>
+        </div>
+        <div class="filters-panel__card">
+          <h3 class="faq-question">Can I filter by noise level?</h3>
+          <p class="faq-answer">
+            Yes. Use the noise level filter to find quiet, moderate, loud, or very loud species.
+          </p>
+        </div>
+        <div class="filters-panel__card">
+          <h3 class="faq-question">Do you list beginner-friendly parrots?</h3>
+          <p class="faq-answer">
+            Yes. Use the Quick Facts buttons to see beginner-friendly options and other quick filters.
+          </p>
+        </div>
+      </div>
+    </section>
 
-            <h3 style="font-family: var(--pf-font-display); font-size: 1.25rem; margin: 0 0 0.5rem;">
-              {speciesEntry.data.species}
-            </h3>
+    <!-- Species by Category -->
+    <div id="species-grid" class="species-grid">
+      {categoryGroups.map(group => (
+        <section id={group.slug} class="species-category" data-category={group.category}>
+          <h2 class="section-title section-title--lg">
+            {group.category}
+          </h2>
+          <div class="featured-grid species-category__grid">
+            {group.species.map((speciesEntry) => (
+              <article class="filters-panel__card species-card" data-species={speciesEntry.data.slug}>
+                <a href={`/species/${speciesEntry.data.slug}`} class="species-card__link">
+                  <div class="species-card__media">
+                    <img
+                      src={speciesEntry.data.image}
+                      alt={`${speciesEntry.data.species} parrot from ${speciesEntry.data.origin} - ${speciesEntry.data.size}`}
+                      loading="lazy"
+                      decoding="async"
+                      width="600"
+                      height="400"
+                      class="species-card__image"
+                    />
+                  </div>
 
-            <p style="color: var(--pf-neutral-500); font-size: 0.9rem; margin: 0 0 0.75rem;">
-              {speciesEntry.data.category}
-            </p>
+                  <h3 class="species-card__title">
+                    {speciesEntry.data.species}
+                  </h3>
 
-            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
-              <span class="badge badge-success" style="font-size: 0.85rem;">
-                {speciesEntry.data.origin}
-              </span>
-              <span class={`badge ${speciesEntry.data.loudness.includes('Quiet') ? 'badge-success' : speciesEntry.data.loudness.includes('Loud') ? 'badge-accent' : ''}`} style="font-size: 0.85rem;">
-                {speciesEntry.data.loudness}
-              </span>
-            </div>
+                  <p class="species-card__meta">
+                    {speciesEntry.data.category}
+                  </p>
 
-            <p style="color: var(--pf-neutral-700); font-size: 0.95rem; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
-              {speciesEntry.data.description.substring(0, 150)}...
-            </p>
+                  <div class="species-card__badges">
+                    <span class="badge badge-success badge--small">
+                      {speciesEntry.data.origin}
+                    </span>
+                    <span class={`badge badge--small ${speciesEntry.data.loudness.includes('Quiet') ? 'badge-success' : speciesEntry.data.loudness.includes('Loud') ? 'badge-accent' : ''}`}>
+                      {speciesEntry.data.loudness}
+                    </span>
+                  </div>
 
-            <div style="margin-top: 1rem;">
-              <span style="color: var(--pf-primary-600); font-weight: 500;">Learn more →</span>
-            </div>
-          </a>
-        </article>
+                  <p class="species-card__excerpt">
+                    {speciesEntry.data.description.substring(0, 150)}...
+                  </p>
+
+                  <div class="species-card__cta">
+                    <span class="species-card__cta-text">Learn more →</span>
+                  </div>
+                </a>
+              </article>
+            ))}
+          </div>
+        </section>
       ))}
     </div>
 
     <!-- No Results Message -->
-    <div id="no-results" style="display: none; text-align: center; padding: 3rem;">
-      <p style="color: var(--pf-neutral-500); font-size: 1.1rem;">
+    <div id="no-results" class="no-results">
+      <p class="no-results__text">
         No species match your filters. Try adjusting your search.
       </p>
     </div>
@@ -185,6 +263,7 @@ const speciesListDataString = JSON.stringify(speciesListStructuredData).replace(
     const loudnessFilter = document.getElementById('filter-loudness');
     const resultsCount = document.getElementById('results-count');
     const speciesCards = document.querySelectorAll('.species-card');
+    const categorySections = document.querySelectorAll('.species-category');
     const noResults = document.getElementById('no-results');
     const quickFactButtons = document.querySelectorAll('[data-quick-fact]');
 
@@ -225,6 +304,12 @@ const speciesListDataString = JSON.stringify(speciesListStructuredData).replace(
 
       resultsCount.textContent = `${visibleCount} species`;
       noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+
+      categorySections.forEach(section => {
+        const cards = section.querySelectorAll('.species-card');
+        const hasVisible = Array.from(cards).some(card => card.style.display !== 'none');
+        section.style.display = hasVisible ? '' : 'none';
+      });
     }
 
     // Quick fact filters

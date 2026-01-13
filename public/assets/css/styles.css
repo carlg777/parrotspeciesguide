@@ -97,6 +97,33 @@ a:focus {
   border-color: var(--pf-primary-500);
 }
 
+.button-hero {
+  background: #10b981;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+}
+
+.button-hero:hover,
+.button-hero:focus-visible {
+  background: #059669;
+  text-decoration: none;
+}
+
+.button-hero-secondary {
+  background: white;
+  border: 2px solid #10b981;
+  color: #10b981;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+}
+
+.button-hero-secondary:hover,
+.button-hero-secondary:focus-visible {
+  background: rgba(16, 185, 129, 0.1);
+  text-decoration: none;
+}
+
 .button-secondary:hover,
 .button-secondary:focus-visible {
   background: var(--pf-primary-050);
@@ -125,6 +152,15 @@ a:focus {
 .badge-accent {
   background: rgba(249, 132, 74, 0.2);
   color: var(--pf-accent-600);
+}
+
+.badge-neutral {
+  background: var(--pf-neutral-050);
+  color: var(--pf-neutral-700);
+}
+
+.badge--small {
+  font-size: 0.85rem;
 }
 
 header.site-header {
@@ -678,6 +714,261 @@ header.site-header {
   border-radius: var(--pf-radius-soft);
   box-shadow: var(--pf-elevation-1);
   background: white;
+}
+
+.page-main {
+  padding: 3rem 0;
+}
+
+.page-main--compact {
+  padding: 2rem 0 4rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-title {
+  font-family: var(--pf-font-display);
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.page-title--xl {
+  font-size: 3rem;
+  margin: 0 0 1rem;
+}
+
+.page-subtitle {
+  color: var(--pf-neutral-500);
+  margin: 0.75rem 0 0;
+  font-size: 1.1rem;
+}
+
+.page-subtitle--wide {
+  font-size: 1.25rem;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.page-subtitle--support {
+  font-size: 1rem;
+  color: #6b7280;
+  max-width: 720px;
+  margin: 1rem auto 0;
+}
+
+.cta-spacer {
+  margin-top: 2rem;
+}
+
+.section {
+  margin-top: 4rem;
+}
+
+.section-gap {
+  margin-bottom: 3rem;
+}
+
+.section--centered {
+  text-align: center;
+}
+
+.section-title {
+  font-family: var(--pf-font-display);
+  font-size: 1.5rem;
+  margin: 0 0 1.5rem;
+}
+
+.section-title--center {
+  text-align: center;
+}
+
+.section-title--lg {
+  font-size: 1.75rem;
+}
+
+.section-title--xl {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.filter-panel {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+.filter-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.input-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--pf-neutral-200);
+  border-radius: var(--pf-radius-soft);
+}
+
+.results-count {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--pf-neutral-500);
+}
+
+.faq-section {
+  margin: 4rem auto 3rem;
+  max-width: 900px;
+}
+
+.faq-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.faq-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.faq-question {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.faq-answer {
+  margin: 0;
+  color: #6b7280;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.category-card {
+  display: block;
+  padding: 2rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.category-card__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+  color: #111827;
+}
+
+.category-card__meta {
+  margin: 0;
+  color: #6b7280;
+}
+
+.cta-panel {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 3rem;
+  background: #f9fafb;
+  border-radius: 0.5rem;
+}
+
+.cta-panel__text {
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.species-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.species-category__grid {
+  gap: 2rem;
+}
+
+.species-card__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.species-card__media {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: var(--pf-radius-soft);
+  margin-bottom: 1rem;
+  background: var(--pf-neutral-050);
+}
+
+.species-card__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.species-card__title {
+  font-family: var(--pf-font-display);
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+}
+
+.species-card__meta {
+  color: var(--pf-neutral-500);
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem;
+}
+
+.species-card__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.species-card__excerpt {
+  color: var(--pf-neutral-700);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.species-card__cta {
+  margin-top: 1rem;
+}
+
+.species-card__cta-text {
+  color: var(--pf-primary-600);
+  font-weight: 500;
+}
+
+.no-results {
+  display: none;
+  text-align: center;
+  padding: 3rem;
+}
+
+.no-results__text {
+  color: var(--pf-neutral-500);
+  font-size: 1.1rem;
 }
 
 .results-list {

@@ -18,6 +18,12 @@ const categories = [...new Set(allSpecies.map(s => s.data.category))].sort();
 // Get unique origins
 const origins = [...new Set(allSpecies.map(s => s.data.origin))].sort();
 
+const categoryGroups = categories.map(category => ({
+  category,
+  slug: category.toLowerCase().replace(/\s+/g, "-"),
+  species: sortedSpecies.filter(entry => entry.data.category === category)
+}));
+
 // Serialize for client-side filtering
 const serializedSpecies = JSON.stringify(sortedSpecies.map(s => s.data)).replace(/</g, '\\u003c');
 
@@ -31,44 +37,80 @@ const speciesListStructuredData = {
   "itemListElement": sortedSpecies.map((species, index) => ({
     "@type": "ListItem",
     "position": index + 1,
-    "url": `https://www.findyourparrot.com/es/species/${species.data.slug}`,
+    "url": `https://www.parrotspeciesguide.com/es/species/${species.data.slug}`,
     "name": species.data.species,
     "image": toAbsoluteUrl(species.data.image)
   }))
 };
 
 const speciesListDataString = JSON.stringify(speciesListStructuredData).replace(/</g, '\\u003c');
+
+const faqStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuántas especies de loros hay en esta guía?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `Esta guía incluye ${sortedSpecies.length} perfiles detallados de especies de loros.`
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo filtrar por nivel de ruido?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Usa el filtro de ruido para encontrar especies silenciosas, moderadas o ruidosas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hay especies recomendadas para principiantes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Usa los botones de Datos Rápidos para ver opciones para principiantes y otros filtros."
+      }
+    }
+  ]
+};
+
+const faqDataString = JSON.stringify(faqStructuredData).replace(/</g, '\\u003c');
 ---
 
 <BaseLayout
-  title="Guía de Especies de Loros | Encuentra Tu Loro"
-  description="Explora perfiles detallados de más de 80 especies de loros. Aprende sobre temperamento, requisitos de cuidado, niveles de ruido y más para Guacamayos, Cacatúas, Amazonas, Grises Africanos y otros loros domésticos."
-  canonical="https://www.findyourparrot.com/es/species"
-  ogTitle="Guía Completa de Especies de Loros"
-  ogDescription="Descubre la especie de loro perfecta para tu hogar. Información detallada de cuidado, perfiles de temperamento y orientación experta."
+  title="Guía de Especies de Loros | Lista Completa de Especies"
+  description="Explora perfiles detallados de más de 80 especies de loros. Descubre temperamento, cuidados, nivel de ruido, dieta y alojamiento para cada especie."
+  canonical="https://www.parrotspeciesguide.com/es/species"
+  ogTitle="Lista Completa de Especies de Loros"
+  ogDescription="Encuentra la especie ideal con perfiles de temperamento, cuidados, dieta, ruido y alojamiento."
   dataPage="species"
 >
   <Fragment slot="head">
     <script type="application/ld+json" is:inline>
       {speciesListDataString}
     </script>
+    <script type="application/ld+json" is:inline>
+      {faqDataString}
+    </script>
   </Fragment>
-  <main class="container" style="padding: 2rem 0 4rem;">
-    <header style="text-align: center; margin-bottom: 3rem;">
-      <h1 style="font-family: var(--pf-font-display); font-size: 2.5rem; margin: 0;">
+  <main class="container page-main page-main--compact">
+    <header class="page-header">
+      <h1 class="page-title">
         Guía de Especies de Loros
       </h1>
-      <p style="color: var(--pf-neutral-500); margin: 0.75rem 0 0; font-size: 1.1rem;">
+      <p class="page-subtitle">
         Explora {allSpecies.length} especies de loros con información detallada de cuidado
       </p>
     </header>
 
     <!-- Quick Facts -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-family: var(--pf-font-display); font-size: 1.5rem; text-align: center; margin-bottom: 1.5rem;">
+    <section class="section-gap">
+      <h2 class="section-title section-title--center">
         Datos Rápidos
       </h2>
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem;">
+      <div class="button-row">
         <button class="button button-secondary" data-quick-fact="quiet">Especies Más Silenciosas</button>
         <button class="button button-secondary" data-quick-fact="talkers">Mejores Habladores</button>
         <button class="button button-secondary" data-quick-fact="beginner">Amigable para Principiantes</button>
@@ -79,15 +121,15 @@ const speciesListDataString = JSON.stringify(speciesListStructuredData).replace(
     </section>
 
     <!-- Search and Filters -->
-    <section class="search-filters" style="max-width: 900px; margin: 0 auto 3rem;">
-      <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+    <section class="search-filters filter-panel">
+      <div class="filter-grid">
         <div class="field-group">
           <label for="species-search">Buscar Especie</label>
           <input
             type="text"
             id="species-search"
             placeholder="Buscar por nombre..."
-            style="width: 100%; padding: 0.75rem; border: 1px solid var(--pf-neutral-200); border-radius: var(--pf-radius-soft);"
+            class="input-control"
           />
         </div>
 
@@ -95,7 +137,7 @@ const speciesListDataString = JSON.stringify(speciesListStructuredData).replace(
           <label for="filter-origin">Filtrar por Origen</label>
           <select
             id="filter-origin"
-            style="width: 100%; padding: 0.75rem; border: 1px solid var(--pf-neutral-200); border-radius: var(--pf-radius-soft);"
+            class="input-control"
           >
             <option value="">Todas las Regiones</option>
             {origins.map(origin => (
@@ -108,7 +150,7 @@ const speciesListDataString = JSON.stringify(speciesListStructuredData).replace(
           <label for="filter-loudness">Filtrar por Nivel de Ruido</label>
           <select
             id="filter-loudness"
-            style="width: 100%; padding: 0.75rem; border: 1px solid var(--pf-neutral-200); border-radius: var(--pf-radius-soft);"
+            class="input-control"
           >
             <option value="">Todos los Niveles</option>
             <option value="Quiet">Silencioso</option>
@@ -119,50 +161,86 @@ const speciesListDataString = JSON.stringify(speciesListStructuredData).replace(
         </div>
       </div>
 
-      <div style="margin-top: 1rem; text-align: center; color: var(--pf-neutral-500);">
+      <div class="results-count">
         <span id="results-count">{allSpecies.length} especies</span>
       </div>
     </section>
 
-    <!-- Species Grid -->
-    <div id="species-grid" class="featured-grid" style="gap: 2rem;">
-      {sortedSpecies.map((speciesEntry) => (
-        <article class="filters-panel__card species-card" data-species={speciesEntry.data.slug}>
-          <a href={`/es/species/${speciesEntry.data.slug}`} style="text-decoration: none; color: inherit;">
-            <div style="position: relative; aspect-ratio: 3 / 2; overflow: hidden; border-radius: var(--pf-radius-soft); margin-bottom: 1rem; background: var(--pf-neutral-050);">
-              <img
-                src={speciesEntry.data.image}
-                alt={`Loro ${speciesEntry.data.species} de ${speciesEntry.data.origin} - ${speciesEntry.data.size}`}
-                loading="lazy"
-                decoding="async"
-                width="600"
-                height="400"
-                style="position: absolute; width: 100%; height: 100%; object-fit: contain;"
-              />
-            </div>
+    <!-- FAQ -->
+    <section class="faq-section">
+      <h2 class="section-title section-title--center section-title--lg">
+        Preguntas Frecuentes sobre Especies de Loros
+      </h2>
+      <div class="faq-grid">
+        <div class="filters-panel__card">
+          <h3 class="faq-question">¿Cuántas especies de loros hay en esta guía?</h3>
+          <p class="faq-answer">
+            Esta guía incluye {sortedSpecies.length} perfiles detallados de especies de loros.
+          </p>
+        </div>
+        <div class="filters-panel__card">
+          <h3 class="faq-question">¿Puedo filtrar por nivel de ruido?</h3>
+          <p class="faq-answer">
+            Sí. Usa el filtro de ruido para encontrar especies silenciosas, moderadas o ruidosas.
+          </p>
+        </div>
+        <div class="filters-panel__card">
+          <h3 class="faq-question">¿Hay especies recomendadas para principiantes?</h3>
+          <p class="faq-answer">
+            Sí. Usa los botones de Datos Rápidos para ver opciones para principiantes y otros filtros.
+          </p>
+        </div>
+      </div>
+    </section>
 
-            <h3 style="font-family: var(--pf-font-display); font-size: 1.25rem; margin: 0 0 0.5rem;">
-              {speciesEntry.data.species}
-            </h3>
+    <!-- Species by Category -->
+    <div id="species-grid" class="species-grid">
+      {categoryGroups.map(group => (
+        <section id={group.slug} class="species-category" data-category={group.category}>
+          <h2 class="section-title section-title--lg">
+            {group.category}
+          </h2>
+          <div class="featured-grid species-category__grid">
+            {group.species.map((speciesEntry) => (
+              <article class="filters-panel__card species-card" data-species={speciesEntry.data.slug}>
+                <a href={`/es/species/${speciesEntry.data.slug}`} class="species-card__link">
+                  <div class="species-card__media">
+                    <img
+                      src={speciesEntry.data.image}
+                      alt={`Loro ${speciesEntry.data.species} de ${speciesEntry.data.origin} - ${speciesEntry.data.size}`}
+                      loading="lazy"
+                      decoding="async"
+                      width="600"
+                      height="400"
+                      class="species-card__image"
+                    />
+                  </div>
 
-            <p style="color: var(--pf-neutral-500); font-size: 0.9rem; margin: 0 0 0.75rem;">
-              {speciesEntry.data.category}
-            </p>
+                  <h3 class="species-card__title">
+                    {speciesEntry.data.species}
+                  </h3>
 
-            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
-              <span style="padding: 0.25rem 0.5rem; background: var(--pf-neutral-050); border-radius: var(--pf-radius-pill); font-size: 0.85rem;">
-                {speciesEntry.data.origin}
-              </span>
-              <span style="padding: 0.25rem 0.5rem; background: var(--pf-neutral-050); border-radius: var(--pf-radius-pill); font-size: 0.85rem;">
-                {speciesEntry.data.size}
-              </span>
-            </div>
+                  <p class="species-card__meta">
+                    {speciesEntry.data.category}
+                  </p>
 
-            <p style="color: var(--pf-neutral-600); font-size: 0.95rem; line-height: 1.5; margin: 0;">
-              {speciesEntry.data.description.slice(0, 120)}...
-            </p>
-          </a>
-        </article>
+                  <div class="species-card__badges">
+                    <span class="badge badge--small badge-neutral">
+                      {speciesEntry.data.origin}
+                    </span>
+                    <span class="badge badge--small badge-neutral">
+                      {speciesEntry.data.size}
+                    </span>
+                  </div>
+
+                  <p class="species-card__excerpt">
+                    {speciesEntry.data.description.slice(0, 120)}...
+                  </p>
+                </a>
+              </article>
+            ))}
+          </div>
+        </section>
       ))}
     </div>
   </main>
@@ -176,6 +254,7 @@ const speciesListDataString = JSON.stringify(speciesListStructuredData).replace(
       const loudnessFilter = document.getElementById('filter-loudness');
       const resultsCount = document.getElementById('results-count');
       const quickFactButtons = document.querySelectorAll('[data-quick-fact]');
+      const categorySections = grid.querySelectorAll('.species-category');
 
       function filterSpecies() {
         const searchTerm = searchInput.value.toLowerCase();
@@ -213,6 +292,12 @@ const speciesListDataString = JSON.stringify(speciesListStructuredData).replace(
         });
 
         resultsCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'especie' : 'especies'}`;
+
+        categorySections.forEach((section) => {
+          const sectionCards = section.querySelectorAll('.species-card');
+          const hasVisible = Array.from(sectionCards).some(card => card.style.display !== 'none');
+          section.style.display = hasVisible ? '' : 'none';
+        });
       }
 
       searchInput.addEventListener('input', filterSpecies);

@@ -1,0 +1,19 @@
+<svg width="640" height="200" viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PSG Parrot Species Guide">
+  <defs>
+    <linearGradient id="feather" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="55%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="200" fill="none" />
+  <g transform="translate(20,20)">
+    <circle cx="80" cy="80" r="70" fill="url(#feather)" />
+    <circle cx="60" cy="70" r="14" fill="#ffffff" />
+    <circle cx="64" cy="70" r="6" fill="#111827" />
+    <path d="M92 84 L136 70 L122 102 Z" fill="#f59e0b" />
+    <path d="M48 120 C70 130 96 130 120 110" stroke="#0f766e" stroke-width="10" fill="none" stroke-linecap="round" />
+  </g>
+  <text x="190" y="120" font-size="88" font-family="Trebuchet MS, Verdana, sans-serif" font-weight="700" fill="#111827">PSG</text>
+  <text x="190" y="160" font-size="24" font-family="Trebuchet MS, Verdana, sans-serif" fill="#374151" letter-spacing="2">Parrot Species Guide</text>
+</svg>

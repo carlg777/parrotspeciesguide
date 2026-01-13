@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { getLangFromUrl, getLocalizedPath, removeLocaleFromPath, languages } from "../i18n/utils";
+import { toAbsoluteUrl } from "../lib/urlUtils";
 
 interface Props {
   title: string;
@@ -21,7 +22,7 @@ const {
   canonical,
   ogTitle = title,
   ogDescription = description ?? "",
-  ogImage = "/assets/img/parrot-icon.svg",
+  ogImage = "/assets/img/og/psg-og.png",
   ogType = "website",
   twitterCard = "summary_large_image",
   dataPage = "static"
@@ -29,6 +30,7 @@ const {
 
 const currentLang = getLangFromUrl(Astro.url);
 const currentPathWithoutLocale = removeLocaleFromPath(Astro.url.pathname);
+const resolvedOgImage = toAbsoluteUrl(ogImage);
 
 // Generate alternate URLs for all languages
 const alternateUrls = Object.keys(languages).map(lang => ({
@@ -58,14 +60,15 @@ const alternateUrls = Object.keys(languages).map(lang => ({
     {ogDescription && <meta property="og:description" content={ogDescription} />}
     {canonical && <meta property="og:url" content={canonical} />}
     <meta property="og:type" content={ogType} />
-    {ogImage && <meta property="og:image" content={ogImage} />}
+    {resolvedOgImage && <meta property="og:image" content={resolvedOgImage} />}
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content={twitterCard} />
     <meta name="twitter:title" content={ogTitle} />
     {ogDescription && <meta name="twitter:description" content={ogDescription} />}
-    {ogImage && <meta name="twitter:image" content={ogImage} />}
+    {resolvedOgImage && <meta name="twitter:image" content={resolvedOgImage} />}
 
+    <link rel="preload" href="/assets/css/styles.css" as="style" />
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <slot name="head" />
   </head>

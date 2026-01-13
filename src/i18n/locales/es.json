@@ -1,5 +1,5 @@
 {
-  "site.title": "Encuentra Tu Loro",
+  "site.title": "Guía de Especies de Loros",
   "site.tagline": "Conectando aves con hogares amorosos",
   "site.description": "Encuentra tu compañero loro perfecto. Explora loros disponibles para adopción, venta y rescate. Guías de especies expertas y recursos de cuidado.",
   "nav.home": "Inicio",
@@ -18,7 +18,7 @@
   "nav.signup": "Registrarse",
   "nav.dashboard": "Panel de Control",
   "nav.signout": "Cerrar Sesión",
-  "hero.title": "Encuentra Tu Loro Perfecto",
+  "hero.title": "Encuentra tu especie de loro ideal",
   "hero.subtitle": "Conectando aves con hogares amorosos desde 2024",
   "hero.description": "Explora loros disponibles, consulta guías de especies y conéctate con vendedores y rescates confiables.",
   "hero.cta.browse": "Buscar un Loro",
@@ -147,7 +147,7 @@
   "footer.privacy": "Política de Privacidad",
   "footer.terms": "Términos de Uso",
   "footer.safety": "Seguridad y Bienestar",
-  "footer.copyright": "© 2024 Encuentra Tu Loro. Todos los derechos reservados.",
+  "footer.copyright": "© 2024 Guía de Especies de Loros. Todos los derechos reservados.",
   "common.readMore": "Leer más",
   "common.learnMore": "Aprender más",
   "common.viewAll": "Ver todo",
@@ -163,11 +163,5 @@
   "common.none": "Ninguno",
   "common.yes": "Sí",
   "common.no": "No",
-  "common.or": "o",
-  "nav": {
-    "resourcesMenuTitle": "Recursos",
-    "resourcesRescues": "Directorio de Rescates",
-    "resourcesBreeders": "Directorio de Criadores",
-    "resourcesVets": "Directorio de Veterinarios"
-  }
+  "common.or": "o"
 }

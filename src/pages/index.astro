@@ -7,6 +7,47 @@ const allSpecies = await getCollection('species');
 
 // Get unique categories
 const categories = [...new Set(allSpecies.map(s => s.data.category))].sort();
+
+const faqStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I choose the right parrot species?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Compare size, noise level, temperament, and care needs. Start with species that match your space, time, and experience level."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are parrots noisy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Noise varies by species. Smaller parrots are often quieter, while macaws and cockatoos are typically loud."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do parrots eat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most species thrive on pellets plus fresh vegetables, fruit, and limited seeds. Each species profile includes diet guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long do parrots live?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lifespan depends on the species. Many parrots live 15 to 60+ years with proper care."
+      }
+    }
+  ]
+};
+
+const faqDataString = JSON.stringify(faqStructuredData).replace(/</g, '\\u003c');
 ---
 
 <BaseLayout
@@ -17,45 +58,79 @@ const categories = [...new Set(allSpecies.map(s => s.data.category))].sort();
   ogDescription="Discover the perfect parrot species for your home. Detailed care information, temperament profiles, and expert guidance."
   dataPage="home"
 >
-  <main class="container" style="padding: 3rem 0;">
-    <header style="text-align: center; margin-bottom: 3rem;">
-      <h1 style="font-family: var(--pf-font-display, sans-serif); font-size: 3rem; margin: 0 0 1rem;">
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline>
+      {faqDataString}
+    </script>
+  </Fragment>
+  <main class="container page-main">
+    <header class="page-header">
+      <h1 class="page-title page-title--xl">
         🦜 Parrot Species Guide
       </h1>
-      <p style="font-size: 1.25rem; color: #6b7280; max-width: 600px; margin: 0 auto;">
+      <p class="page-subtitle--wide">
         Comprehensive care information for {allSpecies.length} parrot species
       </p>
-      <div style="margin-top: 2rem;">
-        <a href="/species" class="button" style="display: inline-block; padding: 1rem 2rem; background: #10b981; color: white; text-decoration: none; border-radius: 0.5rem; font-weight: 600;">
+      <div class="cta-spacer">
+        <a href="/species" class="button button-hero">
           Explore All Species →
         </a>
       </div>
     </header>
 
-    <section style="margin-top: 4rem;">
-      <h2 style="text-align: center; font-size: 2rem; margin-bottom: 2rem;">Browse by Category</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+    <section class="section">
+      <h2 class="section-title section-title--xl">Browse by Category</h2>
+      <div class="category-grid">
         {categories.map(category => {
           const count = allSpecies.filter(s => s.data.category === category).length;
           return (
-            <a href={`/species#${category.toLowerCase().replace(/\s+/g, '-')}`}
-               style="display: block; padding: 2rem; background: white; border: 1px solid #e5e7eb; border-radius: 0.5rem; text-decoration: none; transition: all 0.2s;">
-              <h3 style="margin: 0 0 0.5rem; font-size: 1.5rem; color: #111827;">{category}</h3>
-              <p style="margin: 0; color: #6b7280;">{count} species</p>
+            <a href={`/species#${category.toLowerCase().replace(/\s+/g, '-')}`} class="category-card">
+              <h3 class="category-card__title">{category}</h3>
+              <p class="category-card__meta">{count} species</p>
             </a>
           );
         })}
       </div>
     </section>
 
-    <section style="margin-top: 4rem; text-align: center; padding: 3rem; background: #f9fafb; border-radius: 0.5rem;">
-      <h2 style="font-size: 2rem; margin-bottom: 1rem;">Find Your Perfect Parrot</h2>
-      <p style="color: #6b7280; margin-bottom: 2rem;">
+    <section class="cta-panel">
+      <h2 class="section-title section-title--xl">Find Your Perfect Parrot</h2>
+      <p class="cta-panel__text">
         Learn about each species' temperament, care needs, noise levels, and housing requirements
       </p>
-      <a href="/species" class="button button-secondary" style="display: inline-block; padding: 1rem 2rem; background: white; border: 2px solid #10b981; color: #10b981; text-decoration: none; border-radius: 0.5rem; font-weight: 600;">
+      <a href="/species" class="button button-hero-secondary">
         View All Species
       </a>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title section-title--xl">Parrot Species FAQ</h2>
+      <div class="faq-grid faq-container">
+        <div class="filters-panel__card">
+          <h3 class="faq-question">How do I choose the right parrot species?</h3>
+          <p class="faq-answer">
+            Compare size, noise level, temperament, and care needs. Start with species that match your space, time, and experience level.
+          </p>
+        </div>
+        <div class="filters-panel__card">
+          <h3 class="faq-question">Are parrots noisy?</h3>
+          <p class="faq-answer">
+            Noise varies by species. Smaller parrots are often quieter, while macaws and cockatoos are typically loud.
+          </p>
+        </div>
+        <div class="filters-panel__card">
+          <h3 class="faq-question">What do parrots eat?</h3>
+          <p class="faq-answer">
+            Most species thrive on pellets plus fresh vegetables, fruit, and limited seeds. Each species profile includes diet guidance.
+          </p>
+        </div>
+        <div class="filters-panel__card">
+          <h3 class="faq-question">How long do parrots live?</h3>
+          <p class="faq-answer">
+            Lifespan depends on the species. Many parrots live 15 to 60+ years with proper care.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 </BaseLayout>
