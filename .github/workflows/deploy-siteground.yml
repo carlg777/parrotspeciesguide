@@ -23,6 +23,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Add SSH known_hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -p "${{ secrets.SG_PORT }}" "${{ secrets.SG_HOST }}" >> ~/.ssh/known_hosts
+
       - name: Deploy via rsync
         uses: burnett01/rsync-deployments@6.0.0
         with:
