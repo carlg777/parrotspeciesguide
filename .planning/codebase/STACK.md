@@ -1,93 +1,76 @@
 # Technology Stack
 
-**Analysis Date:** 2026-01-13
+**Analysis Date:** 2026-01-15
 
 ## Languages
 
 **Primary:**
 - TypeScript 5.6.0 - All application code (`package.json`, `tsconfig.json`)
-- Astro Component Language - `.astro` files throughout `src/pages/`, `src/layouts/`, `src/components/`
-- JSON - 84 species data files in `src/content/species/`
 
 **Secondary:**
-- JavaScript (ESM) - Build scripts, config files (`package.json` type: "module")
-- CSS - Custom styles in `public/assets/css/styles.css`
+- JavaScript (ES modules) - Build scripts and configuration (`astro.config.mjs`)
+- Astro components - Template files (`.astro` files throughout `src/`)
 
 ## Runtime
 
 **Environment:**
-- Node.js 18+ - Required by Astro 5.14.8
-- Browser (Client-side) - Web-based SSR + static generation
+- Node.js 20 - Build and development runtime (`.github/workflows/deploy-siteground.yml`)
+- Static HTML output - No server runtime required (pre-rendered at build time)
 
 **Package Manager:**
-- npm - Package manifest `package.json`
-- Lockfile: `package-lock.json` (v3, 6,391 lines)
+- npm - Package management
+- Lockfile: `package-lock.json` (lockfileVersion 3)
 
 ## Frameworks
 
 **Core:**
-- Astro 5.14.8 - `package.json`, `astro.config.mjs` - Static site generator with SSR capability
-- @astrojs/node 9.5.0 - `package.json`, `astro.config.mjs` - Node.js adapter for SSR (standalone mode)
+- Astro 5.14.8 - Static site generator framework (`package.json`, `astro.config.mjs`)
+- @astrojs/node 9.5.0 - Node.js adapter for static output (`package.json`)
+
+**Testing:**
+- None - No testing framework currently installed
 
 **Build/Dev:**
-- @astrojs/check 0.9.6 - `package.json` - TypeScript-aware linter
-- Sharp 0.34.5 - `package.json` - Image optimization (WebP conversion)
-- TypeScript 5.6.0 - `tsconfig.json` - Strict mode enabled
+- Vite (bundled with Astro) - Bundling and dev server (`astro.config.mjs`)
+- TypeScript 5.6.0 - Type checking and compilation (`package.json`)
+- @astrojs/check 0.9.6 - Astro-specific type checking (dev dependency)
 
 ## Key Dependencies
 
 **Critical:**
-- astro ^5.14.8 - Core framework for site generation
-- @astrojs/node ^9.5.0 - SSR adapter for standalone Node.js server
-- sharp ^0.34.5 - Image optimization pipeline
+- astro 5.14.8 - Core framework for static site generation
+- Zod (via Astro) - Content collection schema validation (`src/content/config.ts`)
 
 **Infrastructure:**
-- Zod (via Astro) - Schema validation for content collections in `src/content/config.ts`
-- Astro Content Collections API - Type-safe data layer for 84 species JSON files
+- Sharp 0.34.5 - Image optimization during build (dev dependency)
+- No external runtime dependencies (pure static site)
 
 ## Configuration
 
 **Environment:**
-- No environment variables required
-- Site URL configured in `astro.config.mjs`: `https://www.parrotspeciesguide.com`
-- Dev server: `127.0.0.1:4322` (non-standard port)
+- No environment variables required for production build
+- Static configuration in `astro.config.mjs`
+- Deployment secrets managed via GitHub Actions
 
 **Build:**
-- `astro.config.mjs` - Site configuration, SSR adapter, i18n settings
-- `tsconfig.json` - TypeScript strict mode, React JSX support (for future integration)
-- `package.json` - npm scripts (dev, build, preview, astro)
-
-**Build Scripts:**
-```bash
-npm run dev          # Development server on :4322
-npm run build        # astro check && astro build
-npm run preview      # Preview production build
-```
-
-**Content Management:**
-- Astro Content Collections - Type-safe JSON data layer
-- Schema validation via Zod in `src/content/config.ts`
-- 84 JSON species profiles in `src/content/species/`
-
-**Internationalization:**
-- Manual i18n implementation via `src/i18n/utils.ts`
-- Astro i18n config in `astro.config.mjs` (en/es locales)
-- Translation files: `src/i18n/locales/en.json`, `src/i18n/locales/es.json`
-- Bilingual support: English (default), Spanish (/es prefix)
+- `astro.config.mjs` - Site configuration, i18n setup, static output
+- `tsconfig.json` - TypeScript strict mode with Astro presets
+- `package.json` - Build scripts: `astro check && astro build`
 
 ## Platform Requirements
 
 **Development:**
-- Node.js 18+ (required by Astro 5.14.8)
-- Any platform with Node.js support (macOS/Linux/Windows)
-- No external dependencies beyond npm packages
+- Any platform with Node.js 20+
+- No external services required for local development
+- npm for dependency management
 
 **Production:**
-- Node.js standalone server (via @astrojs/node adapter)
-- SSR mode enabled (`output: "server"` in config)
-- Can also be deployed as static site (prerender: true on most pages)
+- Static HTML output deployed to any web server
+- Currently: SiteGround hosting via rsync SSH deployment
+- CI/CD: GitHub Actions for automated builds and deployment
+- No server-side runtime required (fully static)
 
 ---
 
-*Stack analysis: 2026-01-13*
+*Stack analysis: 2026-01-15*
 *Update after major dependency changes*

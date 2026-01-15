@@ -2,7 +2,7 @@ name: Deploy to SiteGround
 
 on:
   push:
-    branches: [main]
+    branches: [main, jolly-volhard]
 
 jobs:
   build-and-deploy:

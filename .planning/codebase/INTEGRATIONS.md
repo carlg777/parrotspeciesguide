@@ -1,125 +1,105 @@
 # External Integrations
 
-**Analysis Date:** 2026-01-13
+**Analysis Date:** 2026-01-15
 
 ## APIs & External Services
 
-**NONE DETECTED** - This is a static-site architecture with no external API integrations.
+**Payment Processing:**
+- Not applicable - No payment processing
+
+**Email/SMS:**
+- Not applicable - No email or SMS services
+
+**External APIs:**
+- None - Fully self-contained static site
 
 ## Data Storage
 
 **Databases:**
-- None - Pure static generation with Astro's content layer
+- None - All data stored as local JSON files in `src/content/species/*.json`
 
 **File Storage:**
-- Local static assets only
-- WebP images in `public/assets/img/parrots/` (84+ species images)
-- No cloud storage integration (S3, Cloudinary, etc.)
+- Local file system - 84+ parrot species data files
+- Public assets - Images in `public/assets/img/parrots/*.webp`
 
 **Caching:**
-- None - No Redis, Memcached, or similar caching layers
+- None - Relies on HTTP caching headers only
 
 ## Authentication & Identity
 
-**NONE** - No authentication provider integrated.
+**Auth Provider:**
+- Not applicable - No authentication required
 
-- No Auth0, Supabase Auth, NextAuth, Clerk, or custom JWT implementation
-- Site is fully public, no user accounts
+**OAuth Integrations:**
+- None
 
 ## Monitoring & Observability
 
 **Error Tracking:**
-- None - No Sentry, Rollbar, or similar error tracking
+- None detected
 
 **Analytics:**
-- None - No Google Analytics, Mixpanel, Plausible, or tracking code detected
+- None detected
 
 **Logs:**
-- Stdout/stderr only (Node.js server logs)
-- No external logging service (CloudWatch, Datadog, Loggly)
+- Build logs via GitHub Actions
+- No runtime logging (static site)
 
 ## CI/CD & Deployment
 
 **Hosting:**
-- Configured for: https://www.parrotspeciesguide.com - `astro.config.mjs` line 6
-- Platform: Node.js standalone server via Astro Node adapter
-- No explicit CI/CD configuration files (.github/workflows, .gitlab-ci.yml, etc.)
+- SiteGround - Static HTML hosting
+- Deployment: Automated via GitHub Actions on main branch push
+- Configuration: SSH deployment using rsync - `.github/workflows/deploy-siteground.yml`
 
 **CI Pipeline:**
-- None detected
+- GitHub Actions - Build and deployment workflow
+- Workflow: `.github/workflows/deploy-siteground.yml`
+- Secrets: SG_HOST, SG_PORT, SG_USER, SG_SSH_KEY, SG_PATH (stored in GitHub)
+- Build steps: Install dependencies, type check, build static site, deploy via rsync
 
 ## Environment Configuration
 
 **Development:**
-- No `.env` files required
-- Configuration via `astro.config.mjs` only
-- Dev server: `127.0.0.1:4322`
+- No environment variables required
+- All configuration in `astro.config.mjs`
+- Local development: `npm run dev`
+
+**Staging:**
+- Not configured
 
 **Production:**
-- No environment variables needed
-- Site URL hardcoded: `https://www.parrotspeciesguide.com` (in multiple files)
-- ⚠️ **Tech Debt**: Domain should be environment variable, not hardcoded
+- Static site URL: https://www.parrotspeciesguide.com
+- Configured in: `astro.config.mjs`, multiple utility files
+- Deployment credentials: GitHub Actions secrets
 
-## SEO Integrations
+## Webhooks & Callbacks
 
-**Structured Data:**
-- Schema.org JSON-LD markup embedded in pages
-  - Article schema - `src/pages/species/[slug].astro`
-  - BreadcrumbList schema - `src/pages/species/[slug].astro`
-  - FAQPage schema - `src/pages/index.astro`, `src/pages/es/index.astro`
-  - ItemList schema - `src/pages/species/index.astro`
+**Incoming:**
+- None
 
-**Sitemap:**
-- Dynamic sitemap generation - `src/pages/sitemap.xml.ts`
-- Generates URLs for all species + static pages in both languages
-- Referenced in `public/robots.txt`
+**Outgoing:**
+- None
 
-**Meta Tags:**
-- Open Graph support in `src/layouts/BaseLayout.astro`
-- Twitter Card support in `src/layouts/BaseLayout.astro`
-- Canonical URLs via `src/lib/urlUtils.ts`
-- hreflang alternates for bilingual content
+## Content Management
 
-## Static Assets
+**Content Source:**
+- Local JSON files - 84 parrot species in `src/content/species/*.json`
+- Schema validation - Zod schemas in `src/content/config.ts`
+- Astro Content Collections API - `getCollection('species')`
 
-**Images:**
-- WebP format species images: `public/assets/img/parrots/*.webp`
-- Optimized via Sharp (build-time processing)
-- Brand logo: `public/assets/img/brand/psg-logo.svg`
+**Internationalization:**
+- Manual i18n system - `src/i18n/utils.ts`
+- Translation files - `src/i18n/locales/en.json`, `src/i18n/locales/es.json`
+- No external translation service
 
-**CSS:**
-- Custom design system: `public/assets/css/styles.css`
-- CSS custom properties for theming
-- No CSS framework (Tailwind, Bootstrap, etc.)
-
-## Future Integration Points
-
-**Referenced but Not Implemented:**
-- Browse/Marketplace link in `src/pages/species/[slug].astro` (lines 183-185):
-  ```
-  <a href={`/browse?search=${encodeURIComponent(species.species)}`}>
-    See Available {species.species} Listings
-  </a>
-  ```
-- This suggests planned integration with a marketplace (`/browse` endpoint not yet built)
-
-**Planned Features** (per PROJECT.md):
-- Newsletter signup (email service integration needed)
-- Marketplace integration (Bird Finder)
-- Community features (authentication + database needed)
-
-## Technology Summary
-
-This is a **content-focused static site** with **zero external integrations**. The architecture is:
-- Pure static generation + SSR capability via Astro
-- Self-contained content (84 species in JSON files)
-- No database, APIs, or third-party services
-- Minimal dependencies (only Astro, TypeScript, Sharp)
-- Optimized for performance with WebP images and server-side rendering
-- Full SEO implementation with structured data, sitemaps, and meta tags
-- No external dependencies means no API keys, no rate limits, no service costs
+**SEO & Structured Data:**
+- JSON-LD Schema.org markup - Embedded in pages
+- Sitemap generation - `src/pages/sitemap.xml.ts`
+- robots.txt - `public/robots.txt`
+- No external SEO tools
 
 ---
 
-*Integration audit: 2026-01-13*
+*Integration audit: 2026-01-15*
 *Update when adding/removing external services*

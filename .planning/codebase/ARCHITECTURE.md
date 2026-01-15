@@ -1,193 +1,167 @@
 # Architecture
 
-**Analysis Date:** 2026-01-13
+**Analysis Date:** 2026-01-15
 
 ## Pattern Overview
 
-**Overall:** Static Site Generator (SSG) with Server-Side Rendering (SSR) capability - Content-Driven Architecture
+**Overall:** Content-driven static site generator (JAMstack architecture)
 
 **Key Characteristics:**
-- Output mode: `server` (SSR enabled via Node.js adapter in `astro.config.mjs`)
-- Bilingual routing (English default, Spanish with `/es` prefix)
-- File-based content collections (84 JSON species profiles)
-- Client-side filtering with JavaScript
-- SEO-optimized with structured data (JSON-LD)
-- Most pages prerendered at build time (`export const prerender = true`)
+- Pre-rendered static HTML at build time
+- Content Collections for structured data
+- Multi-locale support (English and Spanish)
+- Client-side filtering with serialized data
+- SEO-optimized with Schema.org structured data
 
 ## Layers
 
 **Content Layer:**
-- Purpose: JSON-based species database
-- Contains: 84 species profiles with structured data
-- Location: `src/content/species/*.json`
-- Schema: Defined via Zod in `src/content/config.ts`
-- Accessed via: Astro Content Collections API (`getCollection('species')`)
-- Validation: Type-safe with Zod schema enforcement
+- Purpose: Authoritative data source for all parrot species
+- Contains: JSON files with Zod schema validation
+- Location: `src/content/species/*.json`, `src/content/config.ts`
+- Depends on: Nothing (pure data)
+- Used by: Page components via `getCollection('species')`
 
-**Page Layer:**
-- Purpose: Route handlers and page templates
-- Contains: `.astro` page files defining routes
-- Location: `src/pages/`, `src/pages/es/`, `src/pages/species/`, `src/pages/es/species/`
-- Depends on: Content layer, layout layer, component layer
-- Used by: Browser requests (routes)
-- Dynamic routes: `src/pages/species/[slug].astro`, `src/pages/es/species/[slug].astro`
+**Page/Route Layer:**
+- Purpose: Define routes and handle rendering logic
+- Contains: Astro page components with frontmatter logic
+- Location: `src/pages/*.astro`, `src/pages/species/*.astro`, `src/pages/es/**/*.astro`
+- Depends on: Content layer, utility layer, layout layer
+- Used by: Astro router (file-based routing)
 
 **Layout Layer:**
-- Purpose: Master template with header/footer, SEO, meta tags
-- Contains: `BaseLayout.astro` wrapper component
+- Purpose: Shared page templates and structure
+- Contains: Master layouts with meta tags and common UI
 - Location: `src/layouts/BaseLayout.astro`
-- Depends on: Component layer (Header, Footer)
+- Depends on: Component layer, utility layer
 - Used by: All pages
-- Responsibilities: Meta tags, Open Graph, Twitter Cards, canonical URLs, hreflang, structured data injection
 
 **Component Layer:**
 - Purpose: Reusable UI components
 - Contains: Header, Footer components
 - Location: `src/components/Header.astro`, `src/components/Footer.astro`
 - Depends on: i18n utilities
-- Used by: Layouts
+- Used by: Layouts and pages
 
-**Utility Layer:**
-- Purpose: Helper functions for URLs and internationalization
-- Contains: Pure functions with no side effects
-- Location: `src/lib/urlUtils.ts`, `src/i18n/utils.ts`
-- Depends on: Nothing (leaf nodes)
+**Utility/Library Layer:**
+- Purpose: Pure functions for common operations
+- Contains: String manipulation, URL formatting, i18n helpers, structured data generation
+- Location: `src/lib/*.ts`, `src/i18n/utils.ts`
+- Depends on: Nothing (pure functions)
 - Used by: Pages, layouts, components
-
-**Localization Layer:**
-- Purpose: Translation strings for bilingual support
-- Contains: JSON translation files
-- Location: `src/i18n/locales/en.json`, `src/i18n/locales/es.json`
-- Loaded by: `src/i18n/utils.ts`
-- Pattern: Hierarchical dot notation (e.g., `nav.species`, `hero.title`)
 
 ## Data Flow
 
-**Static Page Request (Prerendered):**
+**Static Page Generation:**
 
-1. Build time: Astro runs `getCollection('species')` to load all JSON files
-2. Build time: `getStaticPaths()` generates routes for each species (84 routes × 2 languages = 168 routes)
-3. Build time: Pages rendered to static HTML with embedded structured data
-4. Runtime: Node.js server serves prerendered HTML
-5. Browser: Client-side JavaScript handles filtering/search (no server requests)
+1. Build process starts (`astro build`)
+2. Astro reads content collections from `src/content/species/*.json`
+3. Zod validation runs on all species data (`src/content/config.ts`)
+4. For each page in `src/pages/`:
+   - `getStaticPaths()` generates route parameters
+   - `getCollection('species')` loads species data
+   - Data filtered/sorted/transformed in frontmatter
+   - Structured data (JSON-LD) generated for SEO
+   - Template rendered with props
+5. Static HTML output written to `dist/`
+6. Build artifacts deployed to hosting
 
-**Example Flow (Species Detail Page):**
+**Client-Side Filtering (Species List):**
 
-1. User visits `/species/blue-and-gold-macaw`
-2. Server serves prerendered HTML (generated at build time)
-3. HTML includes:
-   - Metadata from BaseLayout
-   - Species data embedded in page
-   - JSON-LD structured data (Article + BreadcrumbList schemas)
-   - Localized strings from i18n
-4. Page is fully functional without JavaScript (progressive enhancement)
-
-**Client-Side Filtering:**
-
-1. Species list page loads with all species embedded as JSON in `<script>` tag
-2. User interacts with search/filter controls
-3. JavaScript filters visible species cards (no API calls)
-4. Quick Facts buttons trigger predefined filter combinations
-5. No server-side interaction for filtering
+1. User visits `/species` or `/es/species`
+2. Pre-rendered HTML loads with serialized species data embedded
+3. JavaScript hydrates filter controls
+4. User interactions trigger `filterSpecies()` function
+5. DOM updated to show/hide species cards
+6. No server requests needed (all client-side)
 
 **State Management:**
-- Stateless - No persistent state between requests
-- Session: None - No user sessions or authentication
-- Client state: Managed via vanilla JavaScript in inline `<script>` tags
+- Stateless - No persistent state between page loads
+- Client-side state limited to filter UI on species list pages
+- No global state management
 
 ## Key Abstractions
 
-**Content Collection (Astro Pattern):**
-- Purpose: Type-safe data layer for structured content
-- Example: `src/content/species/` directory
-- Schema: Defined in `src/content/config.ts` using Zod
-- Access pattern: `await getCollection('species')`
-- Fields: category, species, slug, image, description, size, weight_grams, temperament, loudness, vocalization, dietaryNeeds, healthPointers, housing, origin
-
-**BaseLayout Component:**
-- Purpose: DRY wrapper for all pages
-- Location: `src/layouts/BaseLayout.astro`
-- Pattern: Slots for `head`, `scripts`, and default content
-- Responsibilities:
-  - Meta tag generation (title, description, OG, Twitter)
-  - Canonical URL management
-  - hreflang alternates for bilingual content
-  - Header/Footer inclusion
-  - Structured data injection via `slot="head"`
+**Content Collection:**
+- Purpose: Type-safe species data access
+- Location: `src/content/config.ts` (schema), `src/content/species/*.json` (data)
+- Pattern: Astro Content Collections API with Zod validation
+- Examples: 84+ species files with consistent structure
 
 **i18n Utilities:**
-- Purpose: Language detection and translation lookups
+- Purpose: Internationalization and localization
 - Location: `src/i18n/utils.ts`
-- Key functions:
-  - `getLangFromUrl(url: URL)` - Detects language from URL path
-  - `useTranslations(lang)` - Returns translation function for given language
-  - `getLocalizedPath(path, locale)` - Converts paths between locales
-  - `getAlternateLanguage(lang)` - Toggles between en/es
-- Pattern: Functional utilities, no classes or state
+- Pattern: Functional utilities for language routing and translation
+- Key functions: `getLangFromUrl()`, `useTranslations()`, `getLocalizedPath()`
 
 **URL Utilities:**
-- Purpose: Convert relative URLs to absolute for structured data
+- Purpose: URL normalization and absolute URL generation
 - Location: `src/lib/urlUtils.ts`
-- Function: `toAbsoluteUrl(maybeUrl)` - Handles relative paths, absolute URLs, null/undefined
-- Used by: Pages generating JSON-LD (Open Graph images, canonical URLs)
+- Pattern: Pure functions with backward compatibility
+- Key function: `toAbsoluteUrl()` with optional site URL parameter
 
-**Client-Side Filtering:**
-- Purpose: Real-time species filtering without API calls
-- Location: Inline `<script is:inline define:vars>` in `src/pages/species/index.astro`
-- Pattern: `filterSpecies()` function + event listeners on search/filter inputs
-- Quick Facts: Preset filter combinations (quiet, talkers, beginners, etc.)
-- ⚠️ **Tech Debt**: Duplicated logic between English and Spanish versions
+**Structured Data Helpers:**
+- Purpose: Safe JSON-LD embedding for SEO
+- Location: `src/lib/structuredData.ts`
+- Pattern: XSS-safe escaping function
+- Key function: `escapeJsonLd()` (defined but currently unused)
 
 ## Entry Points
 
-**Home Pages:**
-- English: `src/pages/index.astro` - Categories, FAQ, CTA
-- Spanish: `src/pages/es/index.astro` - Translated home page
+**Home Page:**
+- Location: `src/pages/index.astro`, `src/pages/es/index.astro`
+- Triggers: User navigates to `/` or `/es/`
+- Responsibilities: Display overview, FAQ structured data, link to species browsing
 
 **Species List:**
-- English: `src/pages/species/index.astro` - Full species directory with filters
-- Spanish: `src/pages/es/species/index.astro` - Translated species list
-- Prerendered: Yes (static HTML generated at build time)
+- Location: `src/pages/species/index.astro`, `src/pages/es/species/index.astro`
+- Triggers: User navigates to `/species` or `/es/species`
+- Responsibilities: Display all species, client-side filtering, ItemList structured data
 
-**Species Detail (Dynamic Routes):**
-- English: `src/pages/species/[slug].astro` - Individual species page
-- Spanish: `src/pages/es/species/[slug].astro` - Translated detail page
-- Prerendered: Yes (84 routes generated via `getStaticPaths()`)
+**Species Detail:**
+- Location: `src/pages/species/[slug].astro`, `src/pages/es/species/[slug].astro`
+- Triggers: User navigates to `/species/{slug}` or `/es/species/{slug}`
+- Responsibilities: Display species details, related species, Article + BreadcrumbList structured data
 
-**Sitemap:**
+**Sitemap API:**
 - Location: `src/pages/sitemap.xml.ts`
-- Dynamic: Generates XML for all languages + species at build time
-- Referenced: `public/robots.txt`
+- Triggers: Build process or user navigates to `/sitemap.xml`
+- Responsibilities: Generate XML sitemap with all routes in both languages
 
 ## Error Handling
 
-**Strategy:** No explicit error handling - Rely on Astro build-time failures
+**Strategy:** Build-time validation prevents runtime errors
 
 **Patterns:**
-- No try/catch around `getCollection()` calls
-- No validation that species data exists before rendering
-- Build fails if content schema validation fails (Zod)
-- ⚠️ **Tech Debt**: Missing runtime error handling for data operations
+- Zod schema validation at build time for all content
+- TypeScript strict mode catches type errors
+- Astro type checking via `@astrojs/check`
+- No runtime error handling needed (static site)
 
 ## Cross-Cutting Concerns
 
+**Logging:**
+- Build-time only via console output
+- No runtime logging (static HTML)
+
+**Validation:**
+- Zod schemas for content collections (`src/content/config.ts`)
+- TypeScript for compile-time type safety
+- Build fails on validation errors
+
 **SEO:**
-- Structured data: JSON-LD embedded in `<script type="application/ld+json">`
-- Escape pattern: `.replace(/</g, '\\\\u003c')` to prevent XSS in JSON-LD
-- ⚠️ **Tech Debt**: Escape pattern duplicated in 10+ files
+- Schema.org JSON-LD on all pages
+- Meta tags and Open Graph in `BaseLayout.astro`
+- Sitemap generation at build time
+- hreflang tags for language alternates
 
-**Localization:**
-- Route-based: `/` for English, `/es/` for Spanish
-- Language detection: `getLangFromUrl(Astro.url)`
-- Translation lookup: `useTranslations(currentLang)`
-- hreflang tags: Generated in BaseLayout for alternate language versions
-
-**Filtering:**
-- Server-side: Category grouping and sorting at build time
-- Client-side: Real-time search/filter via JavaScript
-- No API calls: All data embedded in page HTML
+**Internationalization:**
+- File-based routing: `/` for English, `/es/` for Spanish
+- Translation keys in JSON files: `src/i18n/locales/`
+- Language-aware utilities: `src/i18n/utils.ts`
+- Configured in `astro.config.mjs`
 
 ---
 
-*Architecture analysis: 2026-01-13*
+*Architecture analysis: 2026-01-15*
 *Update when major patterns change*

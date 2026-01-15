@@ -1,191 +1,159 @@
 # Codebase Concerns
 
-**Analysis Date:** 2026-01-13
+**Analysis Date:** 2026-01-15
 
 ## Tech Debt
 
-**Hardcoded domain URLs throughout codebase:**
-- Issue: Domain `https://www.parrotspeciesguide.com` hardcoded in 20+ locations instead of using environment variables or Astro's `site` configuration
-- Files: `src/lib/urlUtils.ts` (line 26), `src/pages/index.astro` (line 56), `src/pages/species/index.astro` (lines 40, 85), `src/pages/species/[slug].astro` (lines 31, 65-77, 89), `src/pages/es/index.astro` (line 48), `src/pages/es/species/index.astro` (lines 40, 85), `src/pages/es/species/[slug].astro` (lines 31, 66-78, 90), `src/pages/sitemap.xml.ts` (line 7)
-- Why: Rapid development without centralizing configuration
-- Impact: Changing domain or deploying to staging requires manual updates across all files. `astro.config.mjs` has `site` config but not being used consistently.
-- Fix approach: Create environment variable `PUBLIC_SITE_URL`, update `astro.config.mjs` to use it, replace all hardcoded URLs with `import.meta.env.SITE` or `Astro.site.href`
+**Unused utility function - escapeJsonLd:**
+- Issue: `escapeJsonLd()` function defined in `src/lib/structuredData.ts` but not used anywhere
+- Files: Function exists in `src/lib/structuredData.ts`, manual JSON escaping used in `src/pages/species/index.astro` (lines 28, 46, 79), `src/pages/es/species/index.astro` (lines 28, 46, 79), `src/pages/species/[slug].astro` (lines 82-83), `src/pages/es/species/[slug].astro` (lines 83-84), `src/pages/index.astro` (line 50), `src/pages/es/index.astro` (line 47)
+- Why: Utility created during Phase 1 but pages never migrated to use it
+- Impact: Code duplication across 6+ pages using `JSON.stringify(...).replace(/</g, '\\u003c')`
+- Fix approach: Replace all manual JSON escaping with `escapeJsonLd()` utility
 
-**Duplicate client-side filter logic:**
-- Issue: `filterSpecies()` function implemented twice with diverging logic
-- Files: `src/pages/species/index.astro` (lines 270-357) vs `src/pages/es/species/index.astro` (lines 259-341)
-- Why: Separate English and Spanish pages created independently
-- Impact: Logic divergence causes inconsistent behavior between language versions. Spanish version has hardcoded string `'Quiet'` (line 319) where English version uses dynamic values. Maintenance burden doubled.
-- Fix approach: Extract filter logic to `src/lib/filterSpecies.ts`, import in both pages, pass locale-specific translations as parameters
+**Inconsistent string truncation:**
+- Issue: Manual truncation using different methods and lengths instead of utility function
+- Files: `src/pages/species/index.astro` (line 237 uses `.substring(0, 150)`), `src/pages/es/species/index.astro` (line 237 uses `.slice(0, 120)`), while `src/lib/stringUtils.ts` provides `truncateWithEllipsis()` utility
+- Why: Utility created during Phase 1 but existing code not migrated
+- Impact: Inconsistent truncation lengths (150 vs 120), different methods (substring vs slice), no ellipsis handling
+- Fix approach: Replace all manual truncation with `truncateWithEllipsis()` utility
 
-**Duplicate structured data escape pattern:**
-- Issue: `.replace(/</g, '\\u003c')` XSS escape pattern repeated 10+ times across pages
-- Files: `src/pages/index.astro` (line 50), `src/pages/species/index.astro` (lines 28, 46, 79), `src/pages/species/[slug].astro` (lines 82-83), `src/pages/es/index.astro` (line 47), `src/pages/es/species/index.astro` (lines 28, 46, 79), `src/pages/es/species/[slug].astro` (lines 83-84)
-- Why: Each page independently implements JSON-LD escaping
-- Impact: Hard to maintain. If escape pattern changes or additional sanitization needed, must update 10+ locations.
-- Fix approach: Create `src/lib/structuredData.ts` with `escapeJsonLd(obj)` utility, replace all inline escaping with utility function calls
+**Example file not deleted:**
+- Issue: `src/lib/__examples__.ts` explicitly marked for deletion after migration (line 5 comment)
+- Files: `src/lib/__examples__.ts` (entire 89-line file)
+- Why: Created as temporary documentation during Phase 1 refactoring
+- Impact: Clutters codebase, confuses developers about what's production code
+- Fix approach: Delete file after confirming migration complete
 
-**Inconsistent string truncation between languages:**
-- Issue: English version truncates descriptions at 150 characters, Spanish at 120 characters
-- Files: `src/pages/species/index.astro` (line 237) uses `.substring(0, 150)`, `src/pages/es/species/index.astro` (line 237) uses `.slice(0, 120)`
-- Why: Different developers or evolution over time
-- Impact: UX inconsistency between language versions. Spanish users see less preview text.
-- Fix approach: Standardize truncation length (e.g., 150 for both) and method (use `.slice()` consistently), add utility function `truncateWithEllipsis(text, length)`
+**Stale migration notes:**
+- Issue: Multiple files contain "Phase 1" migration notes suggesting incomplete refactoring
+- Files: `src/lib/stringUtils.ts` (lines 3-5), `src/lib/structuredData.ts` (lines 3-5), `src/lib/urlUtils.ts` (lines 3-5, 22-24), `src/content/config.ts` (lines 25, 81, 132)
+- Why: Migration documentation not removed after completion
+- Impact: Unclear if migration is complete or in progress
+- Fix approach: Remove or update migration notes to clarify completion status
+
+**Hardcoded domain throughout codebase:**
+- Issue: Hardcoded `https://www.parrotspeciesguide.com` in 20+ locations instead of using `Astro.site` config
+- Files: `src/pages/species/[slug].astro` (lines 31, 40, 65, 71, 77, 89), `src/pages/es/species/[slug].astro` (lines 31, 40, 66, 72, 78, 90), `src/pages/species/index.astro` (lines 40, 85), `src/pages/es/species/index.astro` (lines 40, 85), `src/pages/index.astro` (line 56), `src/pages/es/index.astro` (line 53), `src/lib/urlUtils.ts` (line 28 default fallback)
+- Why: Quick initial implementation before configuration system established
+- Impact: Domain changes require updating 20+ locations; breaks staging/preview environments
+- Fix approach: Replace all hardcoded URLs with `Astro.site?.href` or pass site URL as parameter
 
 ## Known Bugs
 
-**Ellipsis appended to short descriptions:**
-- Symptoms: Species with descriptions shorter than 150/120 characters show `...` suffix anyway
-- Trigger: Any species card on list page where `description.length < 150`
-- Files: `src/pages/species/index.astro` (line 237), `src/pages/es/species/index.astro` (line 237)
-- Workaround: None for users
-- Root cause: No length check before appending ellipsis: `{description.substring(0, 150)}...`
-- Fix: Add conditional: `{description.length > 150 ? description.substring(0, 150) + '...' : description}`
+**Broken navigation links to non-existent browse page:**
+- Symptoms: Call-to-action buttons link to `/browse?search=...` pages that return 404
+- Trigger: Click "View Similar Species" button on any species detail page
+- Files: `src/pages/species/[slug].astro` (line 183), `src/pages/es/species/[slug].astro` (line 259)
+- Workaround: None - links are dead
+- Root cause: Browse page never created, but links remain from initial design
+- Fix: Either create `/browse` pages or update links to point to `/species` with filters
 
-**No fallback for missing description:**
-- Symptoms: If species JSON lacks `description` field, page shows empty card or JavaScript error
-- Trigger: Invalid or incomplete species JSON file
-- Files: All pages rendering `species.data.description`
-- Workaround: Schema validation in `src/content/config.ts` prevents this at build time
-- Root cause: No runtime validation that required fields exist
-- Fix: Add optional chaining `species.data.description?.substring(...)` or provide default text
+**Inconsistent language specification in structured data:**
+- Symptoms: Spanish pages include `"inLanguage": "es"` in breadcrumb schema, English pages omit language tag
+- Trigger: View structured data on any detail page in both languages
+- Files: `src/pages/es/species/[slug].astro` (line 36 has language tag), `src/pages/species/[slug].astro` (missing language tag)
+- Workaround: Search engines may infer language from URL
+- Root cause: Inconsistent implementation between language versions
+- Fix: Add `"inLanguage": "en"` to English page structured data
 
 ## Security Considerations
 
-**Unsanitized HTML rendering with set:html:**
-- Risk: `set:html` directive renders content fields as raw HTML without sanitization
-- Files: `src/pages/species/[slug].astro` (lines 217, 225, 233), `src/pages/es/species/[slug].astro` (lines 233, 240, 247)
-- Current mitigation: Content comes from JSON files in `src/content/species/` under version control (not user-generated)
-- Recommendations:
-  1. If content will ever come from external sources, add HTML sanitization library (e.g., `sanitize-html`)
-  2. Document in comments why `set:html` is safe here (controlled content)
-  3. Consider switching to Markdown for structured content fields (safer pattern)
+**Unsafe HTML rendering with set:html:**
+- Risk: Using `set:html` directive on content fields without sanitization
+- Files: `src/pages/species/[slug].astro` (lines 217, 225, 233 render `dietaryNeeds`, `healthPointers`, `housing`), `src/pages/es/species/[slug].astro` (lines 233, 240, 247)
+- Current mitigation: Content comes from trusted content collection (JSON files in repo)
+- Recommendations: If content source changes to external/user-generated, add HTML sanitization or switch to safe rendering
 
-**No Content Security Policy (CSP) headers:**
-- Risk: No CSP headers configured, vulnerable to XSS if any injection vulnerability exists
-- Files: None - missing configuration
-- Current mitigation: Static site with no user input or dynamic content
-- Recommendations: Add CSP headers via Astro middleware or hosting platform (Vercel/Netlify headers)
-
-**No environment variable validation:**
-- Risk: Missing or malformed environment variables won't be caught until runtime/build
-- Files: No `.env.example`, no validation logic
-- Current mitigation: All configuration is hardcoded (no env vars used)
-- Recommendations: Create `.env.example` when migrating to environment-based configuration
+**Hardcoded site URL in structured data:**
+- Risk: Structured data always points to production domain, even in staging/dev
+- Files: All pages with structured data (20+ files)
+- Current mitigation: Only production deployment is public
+- Recommendations: Use `Astro.site?.href` to support multiple environments
 
 ## Performance Bottlenecks
 
-**Redundant getCollection() calls:**
-- Problem: `getCollection('species')` called twice in detail pages
-- Files: `src/pages/species/[slug].astro` (lines 8, 20), `src/pages/es/species/[slug].astro` (lines 8, 20)
-- Measurement: Build time impact (not measured, but unnecessary)
-- Cause: First call in `getStaticPaths()`, second call in component body for data access
-- Improvement path: Astro should cache this internally, but worth verifying. Pass collection data through `props` instead of re-fetching.
-
-**No image optimization beyond WebP:**
-- Problem: All images are WebP but no responsive image sizes or lazy loading
-- Files: All species images in `public/assets/img/parrots/` (84 images)
-- Measurement: Not measured
-- Cause: Manual image conversion without responsive image strategy
-- Improvement path: Use Astro's `<Image>` component for automatic optimization, generate multiple sizes, implement lazy loading
+**Client-side species data serialization:**
+- Problem: Full species dataset embedded in HTML for client-side filtering
+- Files: `src/pages/species/index.astro` (line 28), `src/pages/es/species/index.astro` (line 28)
+- Measurement: 84 species × all fields serialized to JSON in every page load
+- Cause: Client-side filtering requires full dataset
+- Improvement path: Monitor payload size; consider pagination or server-side filtering if dataset grows significantly
 
 ## Fragile Areas
 
 **Client-side filtering logic:**
-- Files: `src/pages/species/index.astro` (lines 270-357), `src/pages/es/species/index.astro` (lines 259-341)
-- Why fragile: Complex inline JavaScript with no tests, duplicated between pages, many edge cases
-- Common failures: Filter combinations not clearing properly, search terms with special characters, loudness filter not matching all variants
-- Safe modification: Extract to separate module first, add unit tests, then refactor
-- Test coverage: None
+- Files: `src/pages/species/index.astro` (lines 270-313), `src/pages/es/species/index.astro` (similar range)
+- Why fragile: Complex multi-filter logic with DOM manipulation, no tests
+- Common failures: Could break if species data structure changes or new filter types added
+- Safe modification: Add inline documentation, test manually with all filter combinations
+- Test coverage: None - no automated tests
 
-**i18n path manipulation:**
-- Files: `src/i18n/utils.ts` (all functions)
-- Why fragile: String manipulation with URL parsing, assumes specific path structure (`/es/` prefix)
-- Common failures: Edge cases with trailing slashes, nested paths, query parameters
-- Safe modification: Add unit tests before modifying, test with various URL formats
+**i18n routing logic:**
+- Files: `src/i18n/utils.ts` (functions: `getLangFromUrl`, `getLocalizedPath`, `removeLocaleFromPath`)
+- Why fragile: Manual path parsing and manipulation for language routing
+- Common failures: Could break if URL structure changes or new languages added
+- Safe modification: Test with all URL patterns (with/without locale, with/without trailing slash)
 - Test coverage: None
-
-**Structured data JSON-LD generation:**
-- Files: All page files with structured data (10+ files)
-- Why fragile: Manual JSON construction with string escaping, easy to break Schema.org compliance
-- Common failures: Invalid JSON due to missing escaping, incorrect schema types, broken URLs in structured data
-- Safe modification: Use structured data utility library or validate output with Schema.org validator
-- Test coverage: None - manual validation only
 
 ## Scaling Limits
 
-**Static site generation with 84+ species:**
-- Current capacity: 84 species × 2 languages = 168 static pages
-- Limit: ~1000 species before build times become painful (Astro SSG overhead)
-- Symptoms at limit: Slow builds (5+ minutes), memory issues during generation
-- Scaling path: Implement on-demand ISR (Incremental Static Regeneration) or switch to SSR with caching
-
-**No CDN or caching strategy:**
-- Current capacity: Depends on hosting platform (likely Vercel/Netlify defaults)
-- Limit: Unknown - no traffic data
-- Symptoms at limit: Slow page loads, high bandwidth costs
-- Scaling path: Add CDN (CloudFlare), implement cache headers, optimize static assets
+**Static build for 84 species:**
+- Current capacity: Handles 84 species well with static generation
+- Limit: Static generation becomes slow with 1000+ species (each generates 2 pages)
+- Symptoms at limit: Long build times, large `dist/` directory
+- Scaling path: Consider pagination or dynamic rendering for large catalogs
 
 ## Dependencies at Risk
 
-**No outdated or deprecated dependencies detected:**
-- All dependencies are current and actively maintained
-- Astro 5.14.8 is recent (December 2024)
-- No security vulnerabilities reported
+**No dependencies at risk:**
+- All dependencies are actively maintained
+- Astro 5.14.8 is latest stable version
+- TypeScript 5.6.0 is current
+- No deprecated packages detected
 
 ## Missing Critical Features
 
-**No 404 error page:**
-- Problem: No custom 404 page for invalid species slugs or routes
-- Current workaround: Default server 404 (not branded)
-- Blocks: Poor UX when users access broken links
-- Implementation complexity: Low (create `src/pages/404.astro`)
+**No testing infrastructure:**
+- Problem: No automated tests for utility functions or page rendering
+- Current workaround: Manual testing during development
+- Blocks: Confident refactoring, regression prevention, CI/CD quality gates
+- Implementation complexity: Medium (add Vitest, write tests for utilities)
 
-**No robots.txt dynamic generation:**
-- Problem: Static `public/robots.txt` doesn't account for environment (dev/staging should block crawlers)
-- Current workaround: Manual robots.txt editing
-- Blocks: Staging sites could be indexed by search engines
-- Implementation complexity: Low (convert to `src/pages/robots.txt.ts`)
+**No linting/formatting tools:**
+- Problem: No ESLint or Prettier configuration
+- Current workaround: Manual code style adherence
+- Blocks: Consistent code style, automated code quality checks
+- Implementation complexity: Low (add config files, npm scripts)
 
-**No search functionality:**
-- Problem: Only client-side filtering on species list page, no full-text search
-- Current workaround: Users manually browse or use browser find (Ctrl+F)
-- Blocks: Can't search across species characteristics, care information, or descriptions
-- Implementation complexity: Medium (requires search index, possibly Algolia or Pagefind)
-
-**No offline support:**
-- Problem: Site requires network connection, no service worker or PWA features
-- Current workaround: None
-- Blocks: Poor experience on flaky mobile connections
-- Implementation complexity: Medium (add service worker, cache strategy)
+**Dead translation keys:**
+- Problem: Extensive unused translation keys for non-existent pages (browse, dashboard, auth, resources, sell)
+- Files: `src/i18n/locales/en.json` (lines 31-52, 70-128), `src/i18n/locales/es.json` (similar ranges)
+- Current workaround: Keys simply ignored
+- Blocks: Clean localization files, clear understanding of actual features
+- Implementation complexity: Low (remove unused keys)
 
 ## Test Coverage Gaps
 
-**No unit tests for utilities:**
-- What's not tested: `src/lib/urlUtils.ts` (URL transformation logic), `src/i18n/utils.ts` (5 functions)
-- Risk: URL edge cases, path manipulation bugs, language detection failures
-- Priority: High (core functionality)
-- Difficulty to test: Low (pure functions, easy to unit test)
+**Utility functions untested:**
+- What's not tested: All functions in `src/lib/*.ts` and `src/i18n/utils.ts`
+- Risk: Breaking changes to utilities go unnoticed
+- Priority: High - utilities are reused across many pages
+- Difficulty to test: Low - pure functions, easy to test
 
-**No tests for client-side filtering:**
-- What's not tested: Filter logic in `src/pages/species/index.astro` and Spanish equivalent
-- Risk: Filter combinations breaking, search not working, quick facts buttons not functioning
-- Priority: High (critical user-facing feature)
-- Difficulty to test: Medium (inline JavaScript, needs extraction or E2E tests)
+**Content schema validation untested:**
+- What's not tested: Zod schema validation behavior in `src/content/config.ts`
+- Risk: Schema changes could break existing content
+- Priority: Medium - build fails provide some protection
+- Difficulty to test: Medium - requires test content files
 
-**No validation that structured data is valid:**
-- What's not tested: JSON-LD structured data in all pages
-- Risk: Invalid Schema.org markup, broken rich snippets in search results
-- Priority: Medium (affects SEO)
-- Difficulty to test: Low (JSON schema validation available)
-
-**No E2E tests for user flows:**
-- What's not tested: Navigation, language switching, species browsing
-- Risk: Broken links, routing issues, JavaScript errors going unnoticed
-- Priority: Medium (but important for regressions)
-- Difficulty to test: Medium (requires Playwright/Cypress setup)
+**i18n routing untested:**
+- What's not tested: Language detection, path localization, translation fallbacks
+- Risk: URL routing could break for certain patterns
+- Priority: Medium - core functionality but low change frequency
+- Difficulty to test: Medium - requires test URLs and request simulation
 
 ---
 
-*Concerns audit: 2026-01-13*
+*Concerns audit: 2026-01-15*
 *Update as issues are fixed or new ones discovered*
