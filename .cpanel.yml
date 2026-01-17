@@ -2,12 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/parrotguide/public_html
-    - export PATH=/opt/cpanel/composer/bin:$PATH
-    - cd $DEPLOYPATH/..
-    - /bin/node --version
-    - /bin/npm --version
-    - npm ci
-    - npm run build
     - /bin/rm -rf $DEPLOYPATH/*
     - /bin/cp -R dist/* $DEPLOYPATH
-    - /bin/cp -R public/* $DEPLOYPATH
