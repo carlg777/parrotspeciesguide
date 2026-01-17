@@ -110,7 +110,6 @@ const speciesCollection = defineCollection({
  * educational resources on parrot care topics.
  *
  * REQUIRED FIELDS:
- * - slug: URL-friendly identifier (e.g., "feeding-basics", "cage-setup")
  * - title: Bilingual guide titles
  *   Format: { en: string, es: string }
  * - description: SEO-optimized descriptions for search engines
@@ -127,6 +126,7 @@ const speciesCollection = defineCollection({
  *
  * CONTENT:
  * - Markdown body content handled by Astro's content collections
+ * - Slug automatically derived from filename (e.g., "feeding-basics.md" → "feeding-basics")
  * - Supports all standard markdown features (headings, lists, emphasis, links)
  * - Images can be referenced via relative or absolute paths
  *
@@ -138,9 +138,6 @@ const speciesCollection = defineCollection({
 const guidesCollection = defineCollection({
   type: 'content',
   schema: z.object({
-    // URL identifier
-    slug: z.string(),
-
     // Bilingual titles for guide pages
     title: z.object({
       en: z.string(),
