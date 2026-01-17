@@ -103,8 +103,70 @@ const speciesCollection = defineCollection({
   }),
 });
 
+/**
+ * Guides Collection Schema
+ *
+ * Defines the structure for standalone care guide pages that provide comprehensive
+ * educational resources on parrot care topics.
+ *
+ * REQUIRED FIELDS:
+ * - slug: URL-friendly identifier (e.g., "feeding-basics", "cage-setup")
+ * - title: Bilingual guide titles
+ *   Format: { en: string, es: string }
+ * - description: SEO-optimized descriptions for search engines
+ *   Format: { en: string, es: string }
+ * - category: Organization category for guides
+ *   Values: "feeding" (nutrition and diet), "housing" (cages and environment),
+ *           "health" (medical care and wellness), "training" (behavior and socialization)
+ * - order: Display order in navigation (numeric sorting)
+ *   Format: number (e.g., 1, 2, 3)
+ *
+ * OPTIONAL FIELDS:
+ * - icon: SVG icon identifier for navigation display
+ *   Format: string (e.g., "utensils", "home", "heart-pulse", "graduation-cap")
+ *
+ * CONTENT:
+ * - Markdown body content handled by Astro's content collections
+ * - Supports all standard markdown features (headings, lists, emphasis, links)
+ * - Images can be referenced via relative or absolute paths
+ *
+ * BILINGUAL SUPPORT:
+ * - Title and description objects support English (en) and Spanish (es)
+ * - Content markdown can include language-specific sections if needed
+ * - Follow existing i18n patterns from species collection
+ */
+const guidesCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    // URL identifier
+    slug: z.string(),
+
+    // Bilingual titles for guide pages
+    title: z.object({
+      en: z.string(),
+      es: z.string(),
+    }),
+
+    // SEO descriptions for search engines
+    description: z.object({
+      en: z.string(),
+      es: z.string(),
+    }),
+
+    // Category for organization and navigation
+    category: z.enum(['feeding', 'housing', 'health', 'training']),
+
+    // Optional icon identifier for UI display
+    icon: z.string().optional(),
+
+    // Display order in navigation (lower numbers appear first)
+    order: z.number(),
+  }),
+});
+
 export const collections = {
   species: speciesCollection,
+  guides: guidesCollection,
 };
 
 /*
