@@ -8,7 +8,20 @@
           "type": "string"
         },
         "species": {
-          "type": "string"
+          "type": "object",
+          "properties": {
+            "en": {
+              "type": "string"
+            },
+            "es": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "en",
+            "es"
+          ],
+          "additionalProperties": false
         },
         "slug": {
           "type": "string"
@@ -17,37 +30,63 @@
           "type": "string"
         },
         "description": {
-          "type": "string"
+          "$ref": "#/definitions/species/properties/species"
         },
         "size": {
-          "type": "string"
+          "$ref": "#/definitions/species/properties/species"
         },
         "weight_grams": {
           "type": "number"
         },
         "temperament": {
-          "type": "string"
+          "$ref": "#/definitions/species/properties/species"
         },
         "loudness": {
-          "type": "string"
+          "$ref": "#/definitions/species/properties/species"
         },
         "loudness_icon": {
           "type": "string"
         },
         "vocalization": {
-          "type": "string"
+          "$ref": "#/definitions/species/properties/species"
         },
         "dietaryNeeds": {
-          "type": "string"
+          "$ref": "#/definitions/species/properties/species"
         },
         "healthPointers": {
-          "type": "string"
+          "$ref": "#/definitions/species/properties/species"
         },
         "housing": {
-          "type": "string"
+          "$ref": "#/definitions/species/properties/species"
         },
         "origin": {
-          "type": "string"
+          "$ref": "#/definitions/species/properties/species"
+        },
+        "lifespan": {
+          "$ref": "#/definitions/species/properties/species"
+        },
+        "careLevel": {
+          "type": "string",
+          "enum": [
+            "beginner",
+            "intermediate",
+            "advanced"
+          ]
+        },
+        "activityLevel": {
+          "$ref": "#/definitions/species/properties/species"
+        },
+        "socialNeeds": {
+          "$ref": "#/definitions/species/properties/species"
+        },
+        "noiseTolerance": {
+          "$ref": "#/definitions/species/properties/species"
+        },
+        "spaceRequirements": {
+          "$ref": "#/definitions/species/properties/species"
+        },
+        "timeCommitment": {
+          "$ref": "#/definitions/species/properties/species"
         },
         "$schema": {
           "type": "string"

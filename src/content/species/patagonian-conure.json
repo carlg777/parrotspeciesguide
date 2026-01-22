@@ -1,17 +1,52 @@
 {
   "category": "Conures",
-  "species": "Patagonian Conure",
+  "species": {
+    "en": "Patagonian Conure",
+    "es": "Loro Barranquero (Cyanoliseus patagonus)"
+  },
   "slug": "patagonian-conure",
   "image": "/assets/img/parrots/patagonian-conure.webp",
-  "description": "One of the largest conure species, the Patagonian Conure, or Burrowing Parrot, is primarily olive-brown with a white eye-ring, white patches on the breast, and a red and yellow belly.",
-  "size": "18 inches (45.5 cm). Weight: 240-310g (8.5-11 oz)",
+  "description": {
+    "en": "One of the largest conure species, the Patagonian Conure, or Burrowing Parrot, is primarily olive-brown with a white eye-ring, white patches on the breast, and a red and yellow belly.",
+    "es": "Una de las especies de conuro más grandes, el conuro patagónico o loro barranquero, es principalmente de color marrón olivo con un anillo ocular blanco, manchas blancas en el pecho y el vientre rojo y amarillo."
+  },
+  "size": {
+    "en": "18 inches (45.5 cm). Weight: 240-310g (8.5-11 oz)",
+    "es": "18 pulgadas (45.5 cm). Peso: 240-310g (8.5-11 oz)"
+  },
   "weight_grams": 275,
-  "temperament": "Intelligent, inquisitive, and can be quite gentle and affectionate. They are known for their clownish antics but are less 'hyper' than many smaller conures.",
-  "loudness": "Extremely Loud. They have a very loud, harsh, and grating call, which makes them unsuitable for many home environments.",
+  "temperament": {
+    "en": "Intelligent, inquisitive, and can be quite gentle and affectionate. They are known for their clownish antics but are less 'hyper' than many smaller conures.",
+    "es": "Inteligente, inquisitivo y puede ser bastante amable y afectuoso. Son conocidos por sus travesuras de payaso, pero son menos 'hiperactivos' que muchos conuros más pequeños."
+  },
+  "loudness": {
+    "en": "Extremely Loud. They have a very loud, harsh, and grating call, which makes them unsuitable for many home environments.",
+    "es": "Extremadamente ruidosa. Tienen una llamada muy fuerte, áspera y estridente, lo que las hace inadecuadas para muchos entornos domésticos."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Can learn to talk, but they are not known for their clarity. They are more likely to be loud with their natural calls.",
-  "dietaryNeeds": "A diet based on high-quality pellets, with a variety of fresh vegetables, some fruit, and nuts. They enjoy chewing, so providing foraging opportunities is great.",
-  "healthPointers": "A very hardy species that can live for 30+ years. They need an extremely durable cage and lots of chew toys to keep their powerful beaks busy.",
-  "housing": "Absolutely not suitable for apartments. Their noise is extreme. They need a very large and strong cage or aviary, minimum 40\"W x 30\"D x 60\"H.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Can learn to talk, but they are not known for their clarity. They are more likely to be loud with their natural calls.",
+    "es": "Pueden aprender a hablar, pero no son conocidos por su claridad. Es más probable que sean ruidosos con sus llamadas naturales."
+  },
+  "dietaryNeeds": {
+    "en": "A diet based on high-quality pellets, with a variety of fresh vegetables, some fruit, and nuts. They enjoy chewing, so providing foraging opportunities is great.",
+    "es": "Dieta basada en pellets de alta calidad, con una variedad de verduras frescas, algo de fruta y frutos secos. Les gusta masticar, por lo que proporcionar oportunidades de forrajeo es genial."
+  },
+  "healthPointers": {
+    "en": "A very hardy species that can live for 30+ years. They need an extremely durable cage and lots of chew toys to keep their powerful beaks busy.",
+    "es": "Una especie muy resistente que puede vivir más de 30 años. Necesitan una jaula extremadamente duradera y muchos juguetes para masticar para mantener ocupados sus potentes picos."
+  },
+  "housing": {
+    "en": "Absolutely not suitable for apartments. Their noise is extreme. They need a very large and strong cage or aviary, minimum 40\"W x 30\"D x 60\"H.",
+    "es": "Absolutamente inadecuada para apartamentos. Su ruido es extremo. Necesitan una jaula o aviario muy grande y resistente, mínimo 100 cm de ancho x 75 cm de fondo x 150 cm de alto."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "30+ years",
+    "es": "30+ años"
+  }
 }

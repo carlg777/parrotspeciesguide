@@ -1,17 +1,52 @@
 {
   "category": "Conures",
-  "species": "Dusky Conure",
+  "species": {
+    "en": "Dusky Conure",
+    "es": "Aratinga de Cabeza Oscura (Aratinga weddellii)"
+  },
   "slug": "dusky-conure",
   "image": "/assets/img/parrots/dusky-conure.webp",
-  "description": "A medium-sized conure with more subdued coloring, featuring a dusky or greyish-brown head and breast that blends into an olive-green body. They are known for their sweet nature.",
-  "size": "10-11 inches (25.5-28 cm). Weight: 90-110g (3.2-3.9 oz)",
+  "description": {
+    "en": "A medium-sized conure with more subdued coloring, featuring a dusky or greyish-brown head and breast that blends into an olive-green body. They are known for their sweet nature.",
+    "es": "Un conuro de tamaño medio con una coloración más tenue, que presenta una cabeza y un pecho oscuros o de color marrón grisáceo que se funden en un cuerpo de color verde oliva. Son conocidos por su naturaleza dulce."
+  },
+  "size": {
+    "en": "10-11 inches (25.5-28 cm). Weight: 90-110g (3.2-3.9 oz)",
+    "es": "10-11 pulgadas (25.5-28 cm). Peso: 90-110g (3.2-3.9 oz)"
+  },
   "weight_grams": 100,
-  "temperament": "Gentle, affectionate, and relatively quiet for a conure. They are known to be less nippy and demanding than some of their more colorful cousins, making them great companions.",
-  "loudness": "Moderate. While capable of loud calls, they are generally considered to be one of the quieter Aratinga conures.",
-  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
-  "vocalization": "Can learn a few words, but are not known for being prolific talkers. Their vocalizations are often a series of pleasant chirps and squawks.",
-  "dietaryNeeds": "A balanced diet of high-quality pellets, supplemented with a variety of fresh vegetables, leafy greens, and a small amount of fruit.",
-  "healthPointers": "A hardy species with a lifespan of 20+ years. Like other conures, they can be susceptible to PBFD and Pacheco's disease. Ensure they have plenty of toys for mental stimulation.",
-  "housing": "Their moderate noise level can make them suitable for apartment living with tolerant neighbors. A cage of at least 24\"W x 20\"D x 30\"H is recommended.",
-  "origin": "Central & South America"
+  "temperament": {
+    "en": "Gentle, affectionate, and relatively quiet for a conure. They are known to be less nippy and demanding than some of their more colorful cousins, making them great companions.",
+    "es": "Amable, afectuosa y relativamente silenciosa para un conuro. Se sabe que son menos propensas a dar picotazos y menos exigentes que algunas de sus primas más coloridas, lo que las convierte en grandes compañeras."
+  },
+  "loudness": {
+    "en": "Moderate. While capable of loud calls, they are generally considered to be one of the quieter Aratinga conures.",
+    "es": "Moderada. Aunque son capaces de emitir llamadas fuertes, generalmente se consideran uno de los conuros Aratinga más silenciosos."
+  },
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4L7 9H3zm13.5 3c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": {
+    "en": "Can learn a few words, but are not known for being prolific talkers. Their vocalizations are often a series of pleasant chirps and squawks.",
+    "es": "Pueden aprender algunas palabras, pero no son conocidas por ser habladoras prolíficas. Sus vocalizaciones suelen ser una serie de agradables gorjeos y graznidos."
+  },
+  "dietaryNeeds": {
+    "en": "A balanced diet of high-quality pellets, supplemented with a variety of fresh vegetables, leafy greens, and a small amount of fruit.",
+    "es": "Una dieta equilibrada de pellets de alta calidad, complementada con una variedad de verduras frescas, hortalizas de hoja verde y una pequeña cantidad de fruta."
+  },
+  "healthPointers": {
+    "en": "A hardy species with a lifespan of 20+ years. Like other conures, they can be susceptible to PBFD and Pacheco's disease. Ensure they have plenty of toys for mental stimulation.",
+    "es": "Una especie resistente con una esperanza de vida de más de 20 años. Al igual que otros conuros, pueden ser susceptibles al PBFD y a la enfermedad de Pacheco. Asegúrese de que tengan muchos juguetes para su estimulación mental."
+  },
+  "housing": {
+    "en": "Their moderate noise level can make them suitable for apartment living with tolerant neighbors. A cage of at least 24\"W x 20\"D x 30\"H is recommended.",
+    "es": "Su nivel de ruido moderado puede hacerlas adecuadas para vivir en apartamentos con vecinos tolerantes. Se recomienda una jaula de al menos 60 cm de ancho x 50 cm de fondo x 75 cm de alto."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "intermediate",
+  "lifespan": {
+    "en": "20+ years",
+    "es": "20+ años"
+  }
 }

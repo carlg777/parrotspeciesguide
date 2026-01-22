@@ -1,17 +1,52 @@
 {
   "category": "Cockatoos",
-  "species": "Ducorps’ Cockatoo",
+  "species": {
+    "en": "Ducorps’ Cockatoo",
+    "es": "Cacatúa de las Salomón (Cacatua ducorpsii)"
+  },
   "slug": "ducorps-cockatoo",
   "image": "/assets/img/parrots/ducorps-cockatoo.webp",
-  "description": "A medium-sized, all-white cockatoo with a small recumbent crest and a pale blue eye-ring. They are known for being more gentle and less demanding than other cockatoos.",
-  "size": "12-13 inches (30.5-33 cm). Weight: 300-400g (10.5-14 oz)",
+  "description": {
+    "en": "A medium-sized, all-white cockatoo with a small recumbent crest and a pale blue eye-ring. They are known for being more gentle and less demanding than other cockatoos.",
+    "es": "Una cacatúa de tamaño medio, totalmente blanca, con una pequeña cresta reclinada y un anillo ocular azul pálido. Se sabe que son más amables y menos exigentes que otras cacatúas."
+  },
+  "size": {
+    "en": "12-13 inches (30.5-33 cm). Weight: 300-400g (10.5-14 oz)",
+    "es": "12-13 pulgadas (30.5-33 cm). Peso: 300-400g (10.5-14 oz)"
+  },
   "weight_grams": 350,
-  "temperament": "Playful, gentle, and relatively quiet for a cockatoo. They are known to be very friendly and less prone to biting or neurotic behaviors than many of their cousins.",
-  "loudness": "Moderate to Loud. While quieter than the large cockatoos, they can still produce a loud screech when they want to.",
+  "temperament": {
+    "en": "Playful, gentle, and relatively quiet for a cockatoo. They are known to be very friendly and less prone to biting or neurotic behaviors than many of their cousins.",
+    "es": "Juguetona, amable y relativamente silenciosa para una cacatúa. Se sabe que son muy amigables y menos propensas a morder o a tener comportamientos neuróticos que muchas de sus primas."
+  },
+  "loudness": {
+    "en": "Moderate to Loud. While quieter than the large cockatoos, they can still produce a loud screech when they want to.",
+    "es": "Moderado a fuerte. Aunque son más silenciosas que las cacatúas grandes, pueden producir un fuerte chillido cuando quieren."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
-  "vocalization": "Not known for their talking ability, but they are intelligent and can learn some words. Their calls are generally less harsh than other cockatoos.",
-  "dietaryNeeds": "A balanced diet of pellets, fresh vegetables, and some fruit. They are active birds and can be good eaters.",
-  "healthPointers": "Generally a hardy species with a lifespan of 40+ years. They still produce feather dust and need regular bathing. PBFD is a concern for all cockatoos.",
-  "housing": "May be suitable for some apartment situations due to their more moderate noise level. They are active and need a spacious cage, minimum 30\"W x 22\"D x 40\"H.",
-  "origin": "Australia & Oceania"
+  "vocalization": {
+    "en": "Not known for their talking ability, but they are intelligent and can learn some words. Their calls are generally less harsh than other cockatoos.",
+    "es": "No son conocidas por su capacidad de habla, pero son inteligentes y pueden aprender algunas palabras. Sus llamadas son generalmente menos ásperas que las de otras cacatúas."
+  },
+  "dietaryNeeds": {
+    "en": "A balanced diet of pellets, fresh vegetables, and some fruit. They are active birds and can be good eaters.",
+    "es": "Una dieta equilibrada de pellets, verduras frescas y algo de fruta. Son aves activas y pueden ser buenas comedoras."
+  },
+  "healthPointers": {
+    "en": "Generally a hardy species with a lifespan of 40+ years. They still produce feather dust and need regular bathing. PBFD is a concern for all cockatoos.",
+    "es": "Especie generalmente resistente con una esperanza de vida de más de 40 años. Siguen produciendo polvo de plumas y necesitan baños regulares. El PBFD es una preocupación para todas las cacatúas."
+  },
+  "housing": {
+    "en": "May be suitable for some apartment situations due to their more moderate noise level. They are active and need a spacious cage, minimum 30\"W x 22\"D x 40\"H.",
+    "es": "Puede ser adecuada para algunas situaciones de apartamento debido a su nivel de ruido más moderado. Son activas y necesitan una jaula espaciosa, mínimo 75 cm de ancho x 55 cm de fondo x 100 cm de alto."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "40+ years",
+    "es": "40+ años"
+  }
 }

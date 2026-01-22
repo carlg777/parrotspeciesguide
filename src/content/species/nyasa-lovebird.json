@@ -1,17 +1,52 @@
 {
   "category": "Lovebirds",
-  "species": "Nyasa Lovebird",
+  "species": {
+    "en": "Nyasa Lovebird",
+    "es": "Inseparable del Nyasa (Agapornis lilianae)"
+  },
   "slug": "nyasa-lovebird",
   "image": "/assets/img/parrots/nyasa-lovebird.webp",
-  "description": "Also known as Lilian's Lovebird, this is one of the smallest lovebird species. It has a green body and a beautiful orange-pink head and breast.",
-  "size": "5 inches (13 cm). Weight: 30-40g (1-1.4 oz)",
+  "description": {
+    "en": "Also known as Lilian's Lovebird, this is one of the smallest lovebird species. It has a green body and a beautiful orange-pink head and breast.",
+    "es": "También conocida como inseparable de Lilian, esta es una de las especies de inseparables más pequeñas. Tiene el cuerpo verde y la cabeza y el pecho de un hermoso color rosa anaranjado."
+  },
+  "size": {
+    "en": "5 inches (13 cm). Weight: 30-40g (1-1.4 oz)",
+    "es": "5 pulgadas (13 cm). Peso: 30-40g (1-1.4 oz)"
+  },
   "weight_grams": 35,
-  "temperament": "Known for being much quieter, sweeter, and more gentle than the other common lovebird species. They are less prone to aggression and nippiness.",
-  "loudness": "Quiet. Their calls are softer and less frequent than those of Peach-faced or Fischer's, making them a much better choice for apartment living.",
-  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
-  "vocalization": "Not known to talk. Their vocalizations are a series of soft, pleasant chirps.",
-  "dietaryNeeds": "A diet of small pellets, fresh greens, and vegetables is ideal. They can be more delicate, so a high-quality diet is crucial.",
-  "healthPointers": "Can live 10-15 years. Can be more susceptible to stress and disease than hardier lovebird species. A clean, quiet, and stable environment is important.",
-  "housing": "Excellent for apartments due to their quiet nature. A smaller cage is acceptable, but they are still active birds. Minimum 18\"W x 18\"D x 24\"H.",
-  "origin": "Africa"
+  "temperament": {
+    "en": "Known for being much quieter, sweeter, and more gentle than the other common lovebird species. They are less prone to aggression and nippiness.",
+    "es": "Conocidos por ser mucho más silenciosos, dulces y amables que las otras especies comunes de inseparables. Son menos propensos a la agresividad y a dar picotazos."
+  },
+  "loudness": {
+    "en": "Quiet. Their calls are softer and less frequent than those of Peach-faced or Fischer's, making them a much better choice for apartment living.",
+    "es": "Silenciosa. Sus llamadas son más suaves y menos frecuentes que las de los de cuello rosa o los de Fischer, lo que los convierte en una opción mucho mejor para vivir en apartamentos."
+  },
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4L7 9H3zm13.5 3c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": {
+    "en": "Not known to talk. Their vocalizations are a series of soft, pleasant chirps.",
+    "es": "No se sabe que hablen. Sus vocalizaciones son una serie de suaves y agradables píos."
+  },
+  "dietaryNeeds": {
+    "en": "A diet of small pellets, fresh greens, and vegetables is ideal. They can be more delicate, so a high-quality diet is crucial.",
+    "es": "Lo ideal es una dieta de pellets pequeños, verduras frescas y vegetales. Pueden ser más delicados, por lo que una dieta de alta calidad es fundamental."
+  },
+  "healthPointers": {
+    "en": "Can live 10-15 years. Can be more susceptible to stress and disease than hardier lovebird species. A clean, quiet, and stable environment is important.",
+    "es": "Pueden vivir entre 10 y 15 años. Pueden ser más susceptibles al estrés y a las enfermedades que otras especies de inseparables más resistentes. Es importante un entorno limpio, tranquilo y estable."
+  },
+  "housing": {
+    "en": "Excellent for apartments due to their quiet nature. A smaller cage is acceptable, but they are still active birds. Minimum 18\"W x 18\"D x 24\"H.",
+    "es": "Excelente para apartamentos debido a su naturaleza silenciosa. Una jaula más pequeña es aceptable, pero siguen siendo aves activas. Mínimo 45 cm de ancho x 45 cm de fondo x 60 cm de alto."
+  },
+  "origin": {
+    "en": "Africa",
+    "es": "África"
+  },
+  "careLevel": "intermediate",
+  "lifespan": {
+    "en": "10-15 years",
+    "es": "10-15 años"
+  }
 }

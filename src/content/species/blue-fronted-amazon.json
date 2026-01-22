@@ -1,17 +1,52 @@
 {
   "category": "Amazons",
-  "species": "Blue-fronted Amazon",
+  "species": {
+    "en": "Blue-fronted Amazon",
+    "es": "Amazona de Frente Azul (Amazona aestiva)"
+  },
   "slug": "blue-fronted-amazon",
   "image": "/assets/img/parrots/blue-fronted-amazon.webp",
-  "description": "A popular Amazon species, characterized by a patch of blue or turquoise on their forehead. The amount of blue varies greatly between individuals.",
-  "size": "14-15 inches (35.5-38 cm). Weight: 400-500g (14-17.5 oz)",
+  "description": {
+    "en": "A popular Amazon species, characterized by a patch of blue or turquoise on their forehead. The amount of blue varies greatly between individuals.",
+    "es": "Una especie popular de amazona, caracterizada por una mancha azul o turquesa en la frente. La cantidad de azul varía enormemente de un individuo a otro."
+  },
+  "size": {
+    "en": "14-15 inches (35.5-38 cm). Weight: 400-500g (14-17.5 oz)",
+    "es": "14-15 pulgadas (35.5-38 cm). Peso: 400-500g (14-17.5 oz)"
+  },
   "weight_grams": 450,
-  "temperament": "Playful, intelligent, and can be very affectionate. They are known for being relatively 'mellow' for an Amazon but can still be stubborn and strong-willed.",
-  "loudness": "Loud. While maybe not as intense as the Yellow-naped, they can and will scream to get attention or express excitement.",
+  "temperament": {
+    "en": "Playful, intelligent, and can be very affectionate. They are known for being relatively 'mellow' for an Amazon but can still be stubborn and strong-willed.",
+    "es": "Juguetona, inteligente y puede ser muy afectuosa. Son conocidas por ser relativamente 'tranquilas' para ser un amazona, pero aun así pueden ser testarudas y de carácter fuerte."
+  },
+  "loudness": {
+    "en": "Loud. While maybe not as intense as the Yellow-naped, they can and will scream to get attention or express excitement.",
+    "es": "Ruidosa. Aunque no sea tan intensa como la de nuca amarilla, pueden gritar y lo harán para llamar la atención o expresar emoción."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Very good talkers and can mimic a wide range of sounds. They have clear, human-like voices.",
-  "dietaryNeeds": "An obesity-prone species. Their diet should consist of pellets, a wide array of fresh vegetables, and very limited high-sugar fruits and high-fat nuts.",
-  "healthPointers": "Can live 50-80 years with proper care. Keep an eye on weight gain. Also susceptible to respiratory infections and sinus problems if not kept in a clean environment.",
-  "housing": "Requires a large space. A minimum cage size of 36\"W x 24\"D x 48\"H is recommended. Not a good choice for apartment dwellers due to noise.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Very good talkers and can mimic a wide range of sounds. They have clear, human-like voices.",
+    "es": "Muy buenas habladoras y pueden imitar una amplia gama de sonidos. Tienen voces claras y parecidas a las humanas."
+  },
+  "dietaryNeeds": {
+    "en": "An obesity-prone species. Their diet should consist of pellets, a wide array of fresh vegetables, and very limited high-sugar fruits and high-fat nuts.",
+    "es": "Especie propensa a la obesidad. Su dieta debe consistir en pellets, una amplia variedad de verduras frescas y frutas con alto contenido en azúcar y frutos secos con alto contenido en grasas muy limitados."
+  },
+  "healthPointers": {
+    "en": "Can live 50-80 years with proper care. Keep an eye on weight gain. Also susceptible to respiratory infections and sinus problems if not kept in a clean environment.",
+    "es": "Pueden vivir entre 50 y 80 años con los cuidados adecuados. Hay que vigilar el aumento de peso. También son susceptibles a las infecciones respiratorias y los problemas de sinusitis si no se mantienen en un entorno limpio."
+  },
+  "housing": {
+    "en": "Requires a large space. A minimum cage size of 36\"W x 24\"D x 48\"H is recommended. Not a good choice for apartment dwellers due to noise.",
+    "es": "Requiere un espacio amplio. Se recomienda una jaula con un tamaño mínimo de 90 cm de ancho x 60 cm de fondo x 120 cm de alto. No es una buena elección para quienes viven en apartamentos debido al ruido."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "50-80 years",
+    "es": "50-80 años"
+  }
 }

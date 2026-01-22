@@ -1,17 +1,52 @@
 {
   "category": "Conures",
-  "species": "Gold-Capped Conure",
+  "species": {
+    "en": "Gold-Capped Conure",
+    "es": "Aratinga de Cabeza Dorada (Aratinga auricapillus)"
+  },
   "slug": "gold-capped-conure",
   "image": "/assets/img/parrots/gold-capped-conure.webp",
-  "description": "A striking conure that is mostly green, with a brilliant golden-orange cap on its head, orange on its cheeks, and a red and yellow belly patch. They are known for their intelligence.",
-  "size": "12-13 inches (30.5-33 cm). Weight: 140-170g (4.9-6 oz)",
+  "description": {
+    "en": "A striking conure that is mostly green, with a brilliant golden-orange cap on its head, orange on its cheeks, and a red and yellow belly patch. They are known for their intelligence.",
+    "es": "Un conuro llamativo que es mayoritariamente verde, con un brillante gorro naranja dorado en la cabeza, naranja en las mejillas y una mancha roja y amarilla en el vientre. Son conocidos por su inteligencia."
+  },
+  "size": {
+    "en": "12-13 inches (30.5-33 cm). Weight: 140-170g (4.9-6 oz)",
+    "es": "12-13 pulgadas (30.5-33 cm). Peso: 140-170g (4.9-6 oz)"
+  },
   "weight_grams": 155,
-  "temperament": "Highly intelligent, playful, and affectionate. They are known for being quick learners and can be very interactive, but they also have a mischievous streak.",
-  "loudness": "Loud. They have a strong, piercing call and can be quite vocal, especially when they want attention.",
+  "temperament": {
+    "en": "Highly intelligent, playful, and affectionate. They are known for being quick learners and can be very interactive, but they also have a mischievous streak.",
+    "es": "Altamente inteligente, juguetona y afectuosa. Son conocidos por aprender rápido y pueden ser muy interactivos, pero también tienen una vena traviesa."
+  },
+  "loudness": {
+    "en": "Loud. They have a strong, piercing call and can be quite vocal, especially when they want attention.",
+    "es": "Ruidosa. Tienen una llamada fuerte y penetrante y pueden ser muy vocales, especialmente cuando quieren atención."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Good talkers for a conure. They can develop a clear vocabulary of several words and phrases.",
-  "dietaryNeeds": "A pelleted diet supplemented with plenty of fresh vegetables and some fruits. They enjoy foraging toys to keep them challenged.",
-  "healthPointers": "Generally a robust and healthy bird with a lifespan of 30+ years. Ensure a varied diet to prevent nutritional deficiencies. Can be prone to feather plucking if bored.",
-  "housing": "Not ideal for apartments due to their noise level. They are active birds that need a spacious cage, minimum 24\"W x 24\"D x 36\"H.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Good talkers for a conure. They can develop a clear vocabulary of several words and phrases.",
+    "es": "Buenas habladoras para ser un conuro. Pueden desarrollar un vocabulario claro de varias palabras y frases."
+  },
+  "dietaryNeeds": {
+    "en": "A pelleted diet supplemented with plenty of fresh vegetables and some fruits. They enjoy foraging toys to keep them challenged.",
+    "es": "Una dieta de pellets complementada con abundantes verduras frescas y algunas frutas. Disfrutan con los juguetes de forrajeo para mantenerse estimulados."
+  },
+  "healthPointers": {
+    "en": "Generally a robust and healthy bird with a lifespan of 30+ years. Ensure a varied diet to prevent nutritional deficiencies. Can be prone to feather plucking if bored.",
+    "es": "Generalmente es un ave robusta y sana con una esperanza de vida de más de 30 años. Asegurar una dieta variada para evitar deficiencias nutricionales. Pueden ser propensas al picaje de plumas si se aburren."
+  },
+  "housing": {
+    "en": "Not ideal for apartments due to their noise level. They are active birds that need a spacious cage, minimum 24\"W x 24\"D x 36\"H.",
+    "es": "No es ideal para apartamentos debido a su nivel de ruido. Son aves activas que necesitan una jaula espaciosa, mínimo 60 cm de ancho x 60 cm de fondo x 90 cm de alto."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "intermediate",
+  "lifespan": {
+    "en": "30+ years",
+    "es": "30+ años"
+  }
 }

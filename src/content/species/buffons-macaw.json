@@ -1,17 +1,52 @@
 {
   "category": "Macaws",
-  "species": "Buffon's Macaw",
+  "species": {
+    "en": "Buffon's Macaw",
+    "es": "Guacamayo de Buffon (Ara ambiguus)"
+  },
   "slug": "buffons-macaw",
   "image": "/assets/img/parrots/buffons-macaw.webp",
-  "description": "Also known as the Great Green Macaw, it is the second-largest macaw species. It is primarily yellowish-green with a red forehead, blue on the lower back, and an orange and blue tail.",
-  "size": "33-36 inches (84-91 cm). Weight: 1200-1400g (42-49 oz)",
+  "description": {
+    "en": "Also known as the Great Green Macaw, it is the second-largest macaw species. It is primarily yellowish-green with a red forehead, blue on the lower back, and an orange and blue tail.",
+    "es": "También conocido como el gran guacamayo verde, es la segunda especie de guacamayo más grande. Es principalmente verde amarillento con la frente roja, azul en la parte inferior de la espalda y una cola naranja y azul."
+  },
+  "size": {
+    "en": "33-36 inches (84-91 cm). Weight: 1200-1400g (42-49 oz)",
+    "es": "33-36 pulgadas (84-91 cm). Peso: 1200-1400g (42-49 oz)"
+  },
   "weight_grams": 1300,
-  "temperament": "Gentle, intelligent, and social. They are often described as being calmer than the Scarlet or Military Macaw, but still require significant attention and interaction.",
-  "loudness": "Very Loud. They have an extremely powerful call that is deep and resonant.",
+  "temperament": {
+    "en": "Gentle, intelligent, and social. They are often described as being calmer than the Scarlet or Military Macaw, but still require significant attention and interaction.",
+    "es": "Amable, inteligente y social. A menudo se les describe como más tranquilos que el guacamayo rojo o el militar, pero aun así requieren mucha atención e interacción."
+  },
+  "loudness": {
+    "en": "Very Loud. They have an extremely powerful call that is deep and resonant.",
+    "es": "Muy ruidoso. Tienen una llamada extremadamente potente, profunda y resonante."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Fair talkers, but are not known for extensive vocabularies. They are more likely to learn loud, natural calls and sounds.",
-  "dietaryNeeds": "Requires a diet with a good balance of pellets, fresh fruits, vegetables, and nuts. They have a particular fondness for certain types of seeds and nuts.",
-  "healthPointers": "Can live for 60-70 years. Endangered in the wild. Susceptible to PDD and Pacheco's disease. Their large, powerful beak requires an abundance of tough, safe chew toys.",
-  "housing": "Requires an exceptionally large and robust cage or aviary. A minimum of 48\"W x 36\"D x 72\"H is necessary. Unsuitable for apartments.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Fair talkers, but are not known for extensive vocabularies. They are more likely to learn loud, natural calls and sounds.",
+    "es": "Habladores aceptables, pero no son conocidos por tener vocabularios extensos. Es más probable que aprendan sonidos y llamadas naturales fuertes."
+  },
+  "dietaryNeeds": {
+    "en": "Requires a diet with a good balance of pellets, fresh fruits, vegetables, and nuts. They have a particular fondness for certain types of seeds and nuts.",
+    "es": "Requiere una dieta con un buen equilibrio de pellets, frutas frescas, verduras y frutos secos. Tienen predilección por ciertos tipos de semillas y frutos secos."
+  },
+  "healthPointers": {
+    "en": "Can live for 60-70 years. Endangered in the wild. Susceptible to PDD and Pacheco's disease. Their large, powerful beak requires an abundance of tough, safe chew toys.",
+    "es": "Pueden vivir entre 60 y 70 años. En peligro de extinción en estado salvaje. Susceptibles a la PDD y a la enfermedad de Pacheco. Su pico grande y potente requiere abundantes juguetes para masticar que sean resistentes y seguros."
+  },
+  "housing": {
+    "en": "Requires an exceptionally large and robust cage or aviary. A minimum of 48\"W x 36\"D x 72\"H is necessary. Unsuitable for apartments.",
+    "es": "Requiere una jaula o aviario excepcionalmente grande y robusto. Es necesario un mínimo de 120 cm de ancho x 90 cm de fondo x 180 cm de alto. Inadecuado para apartamentos."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "60-70 years",
+    "es": "60-70 años"
+  }
 }

@@ -1,17 +1,52 @@
 {
   "category": "African Parrots",
-  "species": "Congo African Grey",
+  "species": {
+    "en": "Congo African Grey",
+    "es": "Loro Gris de Cola Roja (Psittacus erithacus)"
+  },
   "slug": "congo-african-grey",
   "image": "/assets/img/parrots/congo-african-grey.webp",
-  "description": "The Congo African Grey is the larger of the two common subspecies, with silvery-grey feathers, a white mask around the eyes, and a bright red tail. They have a solid black beak.",
-  "size": "12-14 inches (30-35.5 cm). Weight: 400-500g (14-17.5 oz)",
+  "description": {
+    "en": "The Congo African Grey is the larger of the two common subspecies, with silvery-grey feathers, a white mask around the eyes, and a bright red tail. They have a solid black beak.",
+    "es": "El loro gris del Congo es la mayor de las dos subespecies comunes, con plumas de color gris plateado, una máscara blanca alrededor de los ojos y una cola de color rojo brillante. Tienen el pico de color negro sólido."
+  },
+  "size": {
+    "en": "12-14 inches (30-35.5 cm). Weight: 400-500g (14-17.5 oz)",
+    "es": "12-14 pulgadas (30-35.5 cm). Peso: 400-500g (14-17.5 oz)"
+  },
   "weight_grams": 450,
-  "temperament": "Extremely intelligent, highly sensitive, and can form very strong bonds with their owners. They can be prone to anxiety and stress if not properly stimulated.",
-  "loudness": "Moderate to Loud. Can develop loud screams, especially if seeking attention.",
-  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
-  "vocalization": "Renowned for their exceptional ability to mimic human speech and sounds with incredible clarity.",
-  "dietaryNeeds": "A balanced diet of high-quality pellets, fresh vegetables (especially those high in Vitamin A like sweet potatoes and kale), fruits, and a limited amount of nuts.",
-  "healthPointers": "Can live for 50-80 years. Susceptible to feather-picking, psittacosis, and hypocalcemia (low calcium levels). Regular mental stimulation is crucial for their well-being.",
-  "housing": "Requires a large space. A cage of at least 40\"W x 30\"D x 60\"H is suitable. Their potential for loud calls makes them a challenge for apartment living.",
-  "origin": "Africa"
+  "temperament": {
+    "en": "Extremely intelligent, highly sensitive, and can form very strong bonds with their owners. They can be prone to anxiety and stress if not properly stimulated.",
+    "es": "Extremadamente inteligente, muy sensible y puede formar vínculos muy fuertes con sus dueños. Pueden ser propensos a la ansiedad y al estrés si no se les estimula adecuadamente."
+  },
+  "loudness": {
+    "en": "Moderate to Loud. Can develop loud screams, especially if seeking attention.",
+    "es": "Moderada a fuerte. Pueden desarrollar gritos fuertes, sobre todo si buscan atención."
+  },
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4L7 9H3zm13.5 3c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": {
+    "en": "Renowned for their exceptional ability to mimic human speech and sounds with incredible clarity.",
+    "es": "Famosos por su excepcional capacidad para imitar el habla y los sonidos humanos con una claridad increíble."
+  },
+  "dietaryNeeds": {
+    "en": "A balanced diet of high-quality pellets, fresh vegetables (especially those high in Vitamin A like sweet potatoes and kale), fruits, and a limited amount of nuts.",
+    "es": "Una dieta equilibrada a base de pellets de alta calidad, verduras frescas (especialmente las ricas en vitamina A como los boniatos y la col rizada), frutas y una cantidad limitada de frutos secos."
+  },
+  "healthPointers": {
+    "en": "Can live for 50-80 years. Susceptible to feather-picking, psittacosis, and hypocalcemia (low calcium levels). Regular mental stimulation is crucial for their well-being.",
+    "es": "Pueden vivir entre 50 y 80 años. Susceptibles al picaje de plumas, la psitacosis y la hipocalcemia (niveles bajos de calcio). La estimulación mental regular es fundamental para su bienestar."
+  },
+  "housing": {
+    "en": "Requires a large space. A cage of at least 40\"W x 30\"D x 60\"H is suitable. Their potential for loud calls makes them a challenge for apartment living.",
+    "es": "Requiere un espacio amplio. Una jaula de al menos 100 cm de ancho x 75 cm de fondo x 150 cm de alto es adecuada. Su potencial para las llamadas fuertes las convierte en un reto para vivir en apartamentos."
+  },
+  "origin": {
+    "en": "Africa",
+    "es": "África"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "50-80 years",
+    "es": "50-80 años"
+  }
 }

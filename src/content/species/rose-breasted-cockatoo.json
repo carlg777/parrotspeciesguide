@@ -1,17 +1,52 @@
 {
   "category": "Cockatoos",
-  "species": "Rose-Breasted Cockatoo",
+  "species": {
+    "en": "Rose-Breasted Cockatoo",
+    "es": "Cacatúa Galah (Eolophus roseicapilla)"
+  },
   "slug": "rose-breasted-cockatoo",
   "image": "/assets/img/parrots/rose-breasted-cockatoo.webp",
-  "description": "Commonly known as the Galah, this is a beautiful and very common Australian cockatoo. They have a bright pink chest and face, a grey back, and a light pink crown.",
-  "size": "12-14 inches (30.5-35.5 cm). Weight: 300-400g (10.5-14 oz)",
+  "description": {
+    "en": "Commonly known as the Galah, this is a beautiful and very common Australian cockatoo. They have a bright pink chest and face, a grey back, and a light pink crown.",
+    "es": "Comúnmente conocida como Galah, es una cacatúa australiana hermosa y muy común. Tienen el pecho y la cara de color rosa brillante, el dorso gris y la corona rosa claro."
+  },
+  "size": {
+    "en": "12-14 inches (30.5-35.5 cm). Weight: 300-400g (10.5-14 oz)",
+    "es": "12-14 pulgadas (30.5-35.5 cm). Peso: 300-400g (10.5-14 oz)"
+  },
   "weight_grams": 350,
-  "temperament": "Highly intelligent, energetic, and comical. They can be very affectionate and form strong bonds, but they can also be nippy and require consistent training.",
-  "loudness": "Loud. They have a high-pitched screech, though it's generally not as sustained or deafening as the larger white cockatoos.",
+  "temperament": {
+    "en": "Highly intelligent, energetic, and comical. They can be very affectionate and form strong bonds, but they can also be nippy and require consistent training.",
+    "es": "Altamente inteligente, enérgica y cómica. Pueden ser muy afectuosas y formar vínculos fuertes, pero también pueden dar picotazos y requieren un entrenamiento constante."
+  },
+  "loudness": {
+    "en": "Loud. They have a high-pitched screech, though it's generally not as sustained or deafening as the larger white cockatoos.",
+    "es": "Ruidoso. Tienen un chillido agudo, aunque por lo general no es tan sostenido ni ensordecedor como el de las cacatúas blancas más grandes."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Fairly good talkers. They can learn a number of words and phrases and have a clear, cheerful voice.",
-  "dietaryNeeds": "A low-fat pelleted diet is essential, as they are very prone to fatty tumors (lipomas). Supplement with plenty of fresh vegetables. Limit seeds and nuts severely.",
-  "healthPointers": "Can live 40-60 years. Extremely prone to fatty liver disease and lipomas. Diet management is critical. They are also known to be carriers of PBFD.",
-  "housing": "Can be challenging for apartments. They need a spacious cage with plenty of toys to destroy. Minimum 32\"W x 24\"D x 40\"H.",
-  "origin": "Australia & Oceania"
+  "vocalization": {
+    "en": "Fairly good talkers. They can learn a number of words and phrases and have a clear, cheerful voice.",
+    "es": "Habladores bastante buenos. Pueden aprender varias palabras y frases y tienen una voz clara y alegre."
+  },
+  "dietaryNeeds": {
+    "en": "A low-fat pelleted diet is essential, as they are very prone to fatty tumors (lipomas). Supplement with plenty of fresh vegetables. Limit seeds and nuts severely.",
+    "es": "Es esencial una dieta de pellets baja en grasas, ya que son muy propensas a desarrollar tumores grasos (lipomas). Compleméntela con abundantes verduras frescas. Limite severamente las semillas y los frutos secos."
+  },
+  "healthPointers": {
+    "en": "Can live 40-60 years. Extremely prone to fatty liver disease and lipomas. Diet management is critical. They are also known to be carriers of PBFD.",
+    "es": "Pueden vivir entre 40 y 60 años. Extremadamente propensas a la enfermedad del hígado graso y a los lipomas. El control de la dieta es fundamental. También se sabe que son portadoras de PBFD."
+  },
+  "housing": {
+    "en": "Can be challenging for apartments. They need a spacious cage with plenty of toys to destroy. Minimum 32\"W x 24\"D x 40\"H.",
+    "es": "Puede ser un reto para los apartamentos. Necesitan una jaula espaciosa con muchos juguetes para destruir. Mínimo 80 cm de ancho x 60 cm de fondo x 100 cm de alto."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "40-60+ years",
+    "es": "40-60+ años"
+  }
 }

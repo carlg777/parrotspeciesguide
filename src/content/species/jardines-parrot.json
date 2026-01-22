@@ -1,17 +1,52 @@
 {
   "category": "African Parrots",
-  "species": "Jardine's Parrot",
+  "species": {
+    "en": "Jardine's Parrot",
+    "es": "Lorito de Jardine (Poicephalus gulielmi)"
+  },
   "slug": "jardines-parrot",
   "image": "/assets/img/parrots/jardines-parrot.webp",
-  "description": "A stocky, medium-sized parrot, the Jardine's is primarily green with black scalloping on the feathers, a black head, and red markings on the crown and wings. They are known for their steady temperament.",
-  "size": "11 inches (28 cm). Weight: 200-230g (7-8.1 oz)",
+  "description": {
+    "en": "A stocky, medium-sized parrot, the Jardine's is primarily green with black scalloping on the feathers, a black head, and red markings on the crown and wings. They are known for their steady temperament.",
+    "es": "Un loro robusto, de tamaño medio, el Jardine es principalmente verde con festoneado negro en las plumas, cabeza negra y marcas rojas en la corona y las alas. Son conocidos por su temperamento estable."
+  },
+  "size": {
+    "en": "11 inches (28 cm). Weight: 200-230g (7-8.1 oz)",
+    "es": "11 pulgadas (28 cm). Peso: 200-230g (7-8.1 oz)"
+  },
   "weight_grams": 215,
-  "temperament": "Intelligent, playful, and generally even-tempered. They are less demanding and prone to anxiety than African Greys, making them a more beginner-friendly Poicephalus.",
-  "loudness": "Moderate. They are not known to be screamers, but they have a range of loud whistles and calls, especially when excited.",
-  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
-  "vocalization": "Can be good talkers and are excellent at mimicking sounds and whistles. Their voice is high-pitched and clear.",
-  "dietaryNeeds": "A high-quality pelleted diet should be the base, supplemented with fresh vegetables, and a small amount of fruit. Avoid high-fat diets.",
-  "healthPointers": "Generally a hardy and robust species with a lifespan of 30+ years. Prone to respiratory issues like aspergillosis if kept in poor, damp conditions.",
-  "housing": "Needs a roomy cage to accommodate their active nature. Minimum 30\"W x 24\"D x 48\"H. Their moderate noise level makes them potentially suitable for apartments.",
-  "origin": "Africa"
+  "temperament": {
+    "en": "Intelligent, playful, and generally even-tempered. They are less demanding and prone to anxiety than African Greys, making them a more beginner-friendly Poicephalus.",
+    "es": "Inteligente, juguetón y, por lo general, de temperamento estable. Son menos exigentes y propensos a la ansiedad que los de cola roja, lo que los convierte en un Poicephalus más adecuado para principiantes."
+  },
+  "loudness": {
+    "en": "Moderate. They are not known to be screamers, but they have a range of loud whistles and calls, especially when excited.",
+    "es": "Moderada. No son conocidos por gritar, pero tienen una gama de silbidos y llamadas fuertes, especialmente cuando están excitados."
+  },
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4L7 9H3zm13.5 3c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": {
+    "en": "Can be good talkers and are excellent at mimicking sounds and whistles. Their voice is high-pitched and clear.",
+    "es": "Pueden ser buenos habladores y son excelentes para imitar sonidos y silbidos. Su voz es aguda y clara."
+  },
+  "dietaryNeeds": {
+    "en": "A high-quality pelleted diet should be the base, supplemented with fresh vegetables, and a small amount of fruit. Avoid high-fat diets.",
+    "es": "La base debe ser una dieta de pellets de alta calidad, complementada con verduras frescas y una pequeña cantidad de fruta. Evite las dietas ricas en grasas."
+  },
+  "healthPointers": {
+    "en": "Generally a hardy and robust species with a lifespan of 30+ years. Prone to respiratory issues like aspergillosis if kept in poor, damp conditions.",
+    "es": "Generalmente es una especie resistente y robusta con una esperanza de vida de más de 30 años. Propenso a problemas respiratorios como la aspergilosis si se mantiene en condiciones deficientes y húmedas."
+  },
+  "housing": {
+    "en": "Needs a roomy cage to accommodate their active nature. Minimum 30\"W x 24\"D x 48\"H. Their moderate noise level makes them potentially suitable for apartments.",
+    "es": "Necesita una jaula espaciosa para adaptarse a su naturaleza activa. Mínimo 75 cm de ancho x 60 cm de fondo x 120 cm de alto. Su nivel de ruido moderado los hace potencialmente adecuados para apartamentos."
+  },
+  "origin": {
+    "en": "Africa",
+    "es": "África"
+  },
+  "careLevel": "intermediate",
+  "lifespan": {
+    "en": "30+ years",
+    "es": "30+ años"
+  }
 }

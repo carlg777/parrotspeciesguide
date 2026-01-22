@@ -1,17 +1,52 @@
 {
   "category": "Macaws",
-  "species": "Military Macaw",
+  "species": {
+    "en": "Military Macaw",
+    "es": "Guacamayo Militar (Ara militaris)"
+  },
   "slug": "military-macaw",
   "image": "/assets/img/parrots/military-macaw.webp",
-  "description": "A large macaw that is predominantly olive green, with a bright red patch on its forehead, blue flight feathers, and a red and blue tail. Its name comes from its uniform-like green plumage.",
-  "size": "27-33 inches (68.5-84 cm). Weight: 900-1100g (31.7-38.8 oz)",
+  "description": {
+    "en": "A large macaw that is predominantly olive green, with a bright red patch on its forehead, blue flight feathers, and a red and blue tail. Its name comes from its uniform-like green plumage.",
+    "es": "Un guacamayo grande predominante de color verde oliva, con una mancha roja brillante en la frente, plumas de vuelo azules y una cola roja y azul. Su nombre proviene de su plumaje verde similar a un uniforme."
+  },
+  "size": {
+    "en": "27-33 inches (68.5-84 cm). Weight: 900-1100g (31.7-38.8 oz)",
+    "es": "27-33 pulgadas (68.5-84 cm). Peso: 900-1100g (31.7-38.8 oz)"
+  },
   "weight_grams": 1000,
-  "temperament": "Intelligent, inquisitive, and can be quite friendly and even-tempered with good socialization. They can be mischievous and require consistent training.",
-  "loudness": "Very Loud. They have a loud, grating screech that they will use often, especially in the morning and evening.",
+  "temperament": {
+    "en": "Intelligent, inquisitive, and can be quite friendly and even-tempered with good socialization. They can be mischievous and require consistent training.",
+    "es": "Inteligente, inquisitivo y puede ser bastante amigable y de carácter equilibrado con una buena socialización. Pueden ser traviesos y requieren entrenamiento constante."
+  },
+  "loudness": {
+    "en": "Very Loud. They have a loud, grating screech that they will use often, especially in the morning and evening.",
+    "es": "Muy ruidoso. Tienen un chillido fuerte y chirriante que usan a menudo, especialmente por la mañana y por la tarde."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Good talkers, capable of learning many words and phrases with reasonable clarity.",
-  "dietaryNeeds": "A standard macaw diet of high-quality pellets, supplemented with a variety of fruits, vegetables, and nuts.",
-  "healthPointers": "Generally a hardy species with a lifespan of 50-60 years. They can be prone to the common macaw ailments such as PDD and psittacosis.",
-  "housing": "Requires a large, durable cage of at least 36\"W x 48\"D x 60\"H. Their loud vocalizations make them unsuitable for apartment living.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Good talkers, capable of learning many words and phrases with reasonable clarity.",
+    "es": "Buenos habladores, capaces de aprender muchas palabras y frases con una claridad razonable."
+  },
+  "dietaryNeeds": {
+    "en": "A standard macaw diet of high-quality pellets, supplemented with a variety of fruits, vegetables, and nuts.",
+    "es": "Una dieta estándar para guacamayos a base de pellets de alta calidad, complementada con una variedad de frutas, verduras y frutos secos."
+  },
+  "healthPointers": {
+    "en": "Generally a hardy species with a lifespan of 50-60 years. They can be prone to the common macaw ailments such as PDD and psittacosis.",
+    "es": "Especie generalmente resistente con una esperanza de vida de 50 a 60 años. Pueden ser propensos a las dolencias comunes de los guacamayos, como la PDD y la psitacosis."
+  },
+  "housing": {
+    "en": "Requires a large, durable cage of at least 36\"W x 48\"D x 60\"H. Their loud vocalizations make them unsuitable for apartment living.",
+    "es": "Requiere una jaula grande y duradera de al menos 90 cm de ancho x 120 cm de fondo x 150 cm de alto. Sus fuertes vocalizaciones los hacen inadecuados para vivir en apartamentos."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "50-60 years",
+    "es": "50-60 años"
+  }
 }

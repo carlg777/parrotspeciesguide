@@ -1,17 +1,52 @@
 {
   "category": "Eclectus",
-  "species": "Eclectus Parrot",
+  "species": {
+    "en": "Eclectus Parrot",
+    "es": "Loro Ecléctico (Eclectus roratus)"
+  },
   "slug": "eclectus-parrot",
   "image": "/assets/img/parrots/eclectus-parrot.webp",
-  "description": "A medium-large parrot with extreme sexual dimorphism. Males are a brilliant emerald green with a candy-corn colored beak, while females are a stunning combination of bright red and royal blue/purple.",
-  "size": "17-20 inches (43-50 cm). Weight: 380-475g (13.4-16.8 oz)",
+  "description": {
+    "en": "A medium-large parrot with extreme sexual dimorphism. Males are a brilliant emerald green with a candy-corn colored beak, while females are a stunning combination of bright red and royal blue/purple.",
+    "es": "Un loro de tamaño mediano-grande con un dimorfismo sexual extremo. Los machos son de un color verde esmeralda brillante con el pico de color caramelo, mientras que las hembras son una impresionante combinación de rojo brillante y azul real/púrpura."
+  },
+  "size": {
+    "en": "17-20 inches (43-50 cm). Weight: 380-475g (13.4-16.8 oz)",
+    "es": "17-20 pulgadas (43-50 cm). Peso: 380-475g (13.4-16.8 oz)"
+  },
   "weight_grams": 427,
-  "temperament": "Generally calm, gentle, and intelligent. They are less prone to screaming than Amazons or Cockatoos. Females tend to be more dominant and territorial than the more easy-going males.",
-  "loudness": "Moderate. Much quieter than most large parrots, making them suitable for many home environments. They have a range of calls, but are not constant screamers.",
-  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
-  "vocalization": "Good talking ability with clear, pleasant voices. Both sexes can learn words and phrases, and can be quite chatty, though individuals vary.",
-  "dietaryNeeds": "A specialized diet with a heavy emphasis on fresh fruits and vegetables is crucial. They have a longer digestive tract and cannot handle many artificial ingredients or fortified pellets.",
-  "healthPointers": "Can live 30-50+ years. Prone to toe-tapping and wing-flipping if their diet is incorrect (too many vitamins/minerals). Sensitive to medications and artificial additives.",
-  "housing": "Large cage minimum 36\"W x 24\"D x 48\". Bar spacing 3/4 to 1 inch. They are less destructive than many large parrots but still need plenty of toys.",
-  "origin": "Australia & Oceania"
+  "temperament": {
+    "en": "Generally calm, gentle, and intelligent. They are less prone to screaming than Amazons or Cockatoos. Females tend to be more dominant and territorial than the more easy-going males.",
+    "es": "Generalmente tranquilo, amable e inteligente. Son menos propensos a gritar que los amazonas o las cacatúas. Las hembras tienden a ser más dominantes y territoriales que los machos, que son más tranquilos."
+  },
+  "loudness": {
+    "en": "Moderate. Much quieter than most large parrots, making them suitable for many home environments. They have a range of calls, but are not constant screamers.",
+    "es": "Moderada. Mucho más silenciosos que la mayoría de los loros grandes, lo que los hace adecuados para muchos entornos domésticos. Tienen una gama de llamadas, pero no son de los que gritan constantemente."
+  },
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4L7 9H3zm13.5 3c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": {
+    "en": "Good talking ability with clear, pleasant voices. Both sexes can learn words and phrases, and can be quite chatty, though individuals vary.",
+    "es": "Buena capacidad de habla con voces claras y agradables. Ambos sexos pueden aprender palabras y frases, y pueden ser bastante charlatanes, aunque cada individuo varía."
+  },
+  "dietaryNeeds": {
+    "en": "A specialized diet with a heavy emphasis on fresh fruits and vegetables is crucial. They have a longer digestive tract and cannot handle many artificial ingredients or fortified pellets.",
+    "es": "Es fundamental una dieta especializada en la que se haga mucho hincapié en las frutas y verduras frescas. Tienen un tracto digestivo más largo y no pueden asimilar muchos ingredientes artificiales o pellets fortificados."
+  },
+  "healthPointers": {
+    "en": "Can live 30-50+ years. Prone to toe-tapping and wing-flipping if their diet is incorrect (too many vitamins/minerals). Sensitive to medications and artificial additives.",
+    "es": "Pueden vivir más de 30-50 años. Propensos al golpeteo de dedos y al aleteo si su dieta es incorrecta (demasiadas vitaminas/minerales). Sensibles a los medicamentos y a los aditivos artificiales."
+  },
+  "housing": {
+    "en": "Large cage minimum 36\"W x 24\"D x 48\". Bar spacing 3/4 to 1 inch. They are less destructive than many large parrots but still need plenty of toys.",
+    "es": "Jaula grande de 90 x 60 x 120 cm como mínimo. Separación entre barrotes de 2 a 2,5 cm. Son menos destructivos que muchos loros grandes, pero aun así necesitan muchos juguetes."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "30-50+ years",
+    "es": "30-50+ años"
+  }
 }

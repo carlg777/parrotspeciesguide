@@ -3,20 +3,24 @@ export const prerender = true;
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from 'astro:content';
 import { toAbsoluteUrl } from '../../lib/urlUtils';
+import { getLangFromUrl } from '../../i18n/utils';
+
+// Get current language
+const currentLang = getLangFromUrl(Astro.url);
 
 // Get all species
 const allSpecies = await getCollection('species');
 
-// Sort alphabetically
+// Sort alphabetically by species name in current language
 const sortedSpecies = allSpecies.sort((a, b) =>
-  a.data.species.localeCompare(b.data.species)
+  a.data.species[currentLang].localeCompare(b.data.species[currentLang])
 );
 
 // Get unique categories
 const categories = [...new Set(allSpecies.map(s => s.data.category))].sort();
 
-// Get unique origins
-const origins = [...new Set(allSpecies.map(s => s.data.origin))].sort();
+// Get unique origins in current language
+const origins = [...new Set(allSpecies.map(s => s.data.origin[currentLang]))].sort();
 
 const categoryGroups = categories.map(category => ({
   category,
@@ -38,7 +42,7 @@ const speciesListStructuredData = {
     "@type": "ListItem",
     "position": index + 1,
     "url": `https://www.parrotspeciesguide.com/species/${species.data.slug}`,
-    "name": species.data.species,
+    "name": species.data.species[currentLang],
     "image": toAbsoluteUrl(species.data.image)
   }))
 };
@@ -207,7 +211,7 @@ const faqDataString = JSON.stringify(faqStructuredData).replace(/</g, '\\u003c')
                   <div class="species-card__media">
                     <img
                       src={speciesEntry.data.image}
-                      alt={`${speciesEntry.data.species} parrot from ${speciesEntry.data.origin} - ${speciesEntry.data.size}`}
+                      alt={`${speciesEntry.data.species[currentLang]} parrot from ${speciesEntry.data.origin[currentLang]} - ${speciesEntry.data.size[currentLang]}`}
                       loading="lazy"
                       decoding="async"
                       width="600"
@@ -217,7 +221,7 @@ const faqDataString = JSON.stringify(faqStructuredData).replace(/</g, '\\u003c')
                   </div>
 
                   <h3 class="species-card__title">
-                    {speciesEntry.data.species}
+                    {speciesEntry.data.species[currentLang]}
                   </h3>
 
                   <p class="species-card__meta">
@@ -226,15 +230,15 @@ const faqDataString = JSON.stringify(faqStructuredData).replace(/</g, '\\u003c')
 
                   <div class="species-card__badges">
                     <span class="badge badge-success badge--small">
-                      {speciesEntry.data.origin}
+                      {speciesEntry.data.origin[currentLang]}
                     </span>
-                    <span class={`badge badge--small ${speciesEntry.data.loudness.includes('Quiet') ? 'badge-success' : speciesEntry.data.loudness.includes('Loud') ? 'badge-accent' : ''}`}>
-                      {speciesEntry.data.loudness}
+                    <span class={`badge badge--small ${speciesEntry.data.loudness[currentLang].includes('Quiet') ? 'badge-success' : speciesEntry.data.loudness[currentLang].includes('Loud') ? 'badge-accent' : ''}`}>
+                      {speciesEntry.data.loudness[currentLang]}
                     </span>
                   </div>
 
                   <p class="species-card__excerpt">
-                    {speciesEntry.data.description.substring(0, 150)}...
+                    {speciesEntry.data.description[currentLang].substring(0, 150)}...
                   </p>
 
                   <div class="species-card__cta">
@@ -286,13 +290,13 @@ const faqDataString = JSON.stringify(faqStructuredData).replace(/</g, '\\u003c')
         // Split search terms by space and check if ANY term matches
         const searchTerms = searchTerm.split(/\s+/).filter(t => t.length > 0);
         const matchesSearch = searchTerms.length === 0 || searchTerms.some(term =>
-          species.species.toLowerCase().includes(term) ||
+          species.species[currentLang].toLowerCase().includes(term) ||
           species.category.toLowerCase().includes(term) ||
-          species.description.toLowerCase().includes(term)
+          species.description[currentLang].toLowerCase().includes(term)
         );
 
-        const matchesOrigin = !origin || species.origin === origin;
-        const matchesLoudness = !loudness || species.loudness.includes(loudness);
+        const matchesOrigin = !origin || species.origin[currentLang] === origin;
+        const matchesLoudness = !loudness || species.loudness[currentLang].includes(loudness);
 
         if (matchesSearch && matchesOrigin && matchesLoudness) {
           card.style.display = '';

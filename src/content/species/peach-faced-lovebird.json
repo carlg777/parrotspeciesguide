@@ -1,17 +1,52 @@
 {
   "category": "Lovebirds",
-  "species": "Peach-faced Lovebird",
+  "species": {
+    "en": "Peach-faced Lovebird",
+    "es": "Inseparable de Cuello Rosa (Agapornis roseicollis)"
+  },
   "slug": "peach-faced-lovebird",
   "image": "/assets/img/parrots/peach-faced-lovebird.webp",
-  "description": "One of the most popular lovebird species, they are mostly green with a beautiful rosy-pink face and throat. They are known for their big, feisty personalities.",
-  "size": "6 inches (15 cm). Weight: 50-60g (1.8-2.1 oz)",
+  "description": {
+    "en": "One of the most popular lovebird species, they are mostly green with a beautiful rosy-pink face and throat. They are known for their big, feisty personalities.",
+    "es": "Una de las especies de inseparables más populares, son mayoritariamente verdes con una hermosa cara y garganta de color rosa rosado. Son conocidos por sus grandes y enérgicas personalidades."
+  },
+  "size": {
+    "en": "6 inches (15 cm). Weight: 50-60g (1.8-2.1 oz)",
+    "es": "6 pulgadas (15 cm). Peso: 50-60g (1.8-2.1 oz)"
+  },
   "weight_grams": 55,
-  "temperament": "Feisty, energetic, and curious. They can be very affectionate but are also notoriously territorial and can become nippy, especially females. They are very social with their owners.",
-  "loudness": "Moderate to Loud. They have a high-pitched, repetitive chirp that can be quite loud and frequent, especially when excited or calling for attention.",
+  "temperament": {
+    "en": "Feisty, energetic, and curious. They can be very affectionate but are also notoriously territorial and can become nippy, especially females. They are very social with their owners.",
+    "es": "Enérgico, activo y curioso. Pueden ser muy afectuosos pero también son notoriamente territoriales y pueden volverse propensos a dar picotazos, especialmente las hembras. Son muy sociales con sus dueños."
+  },
+  "loudness": {
+    "en": "Moderate to Loud. They have a high-pitched, repetitive chirp that can be quite loud and frequent, especially when excited or calling for attention.",
+    "es": "Moderada a fuerte. Tienen un pío agudo y repetitivo que puede ser bastante fuerte y frecuente, especialmente cuando están excitados o piden atención."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
-  "vocalization": "Not known for talking. Their vocalizations are a series of high-pitched chirps and squawks. They can mimic household sounds.",
-  "dietaryNeeds": "A high-quality pelleted diet is the foundation. Supplement daily with fresh vegetables and a very small amount of fruit. Avoid all-seed diets.",
-  "healthPointers": "Generally hardy with a lifespan of 15-20 years. Prone to fatty liver disease if on a high-fat diet, and psittacosis. Females can sometimes have issues with egg-laying.",
-  "housing": "Can be challenging for apartments due to noise. They need a cage that is wider than it is tall, with plenty of toys. Minimum 24\"W x 18\"D x 18\"H.",
-  "origin": "Africa"
+  "vocalization": {
+    "en": "Not known for talking. Their vocalizations are a series of high-pitched chirps and squawks. They can mimic household sounds.",
+    "es": "No son conocidos por hablar. Sus vocalizaciones son una serie de píos y graznidos agudos. Pueden imitar los sonidos domésticos."
+  },
+  "dietaryNeeds": {
+    "en": "A high-quality pelleted diet is the foundation. Supplement daily with fresh vegetables and a very small amount of fruit. Avoid all-seed diets.",
+    "es": "La base es una dieta de pellets de alta calidad. Complementar diariamente con verduras frescas y una cantidad muy pequeña de fruta. Evite las dietas compuestas solo por semillas."
+  },
+  "healthPointers": {
+    "en": "Generally hardy with a lifespan of 15-20 years. Prone to fatty liver disease if on a high-fat diet, and psittacosis. Females can sometimes have issues with egg-laying.",
+    "es": "Generalmente resistentes, con una esperanza de vida de 15 a 20 años. Propensos a la enfermedad del hígado graso si siguen una dieta rica en grasas, y a la psitacosis. Las hembras pueden tener a veces problemas con la puesta de huevos."
+  },
+  "housing": {
+    "en": "Can be challenging for apartments due to noise. They need a cage that is wider than it is tall, with plenty of toys. Minimum 24\"W x 18\"D x 18\"H.",
+    "es": "Puede ser un reto para los apartamentos debido al ruido. Necesitan una jaula más ancha que alta, con muchos juguetes. Mínimo 60 cm de ancho x 45 cm de fondo x 45 cm de alto."
+  },
+  "origin": {
+    "en": "Africa",
+    "es": "África"
+  },
+  "careLevel": "beginner",
+  "lifespan": {
+    "en": "15-20 years",
+    "es": "15-20 años"
+  }
 }

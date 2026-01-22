@@ -1,17 +1,52 @@
 {
   "category": "Cockatoos",
-  "species": "Palm Cockatoo",
+  "species": {
+    "en": "Palm Cockatoo",
+    "es": "Cacatúa de las Palmeras (Probosciger aterrimus)"
+  },
   "slug": "palm-cockatoo",
   "image": "/assets/img/parrots/palm-cockatoo.webp",
-  "description": "A very large and powerful parrot, the Palm Cockatoo is a dark, smoky-grey or black with a huge crest and a massive beak. They have a distinctive bare red cheek patch that changes color with emotion.",
-  "size": "22-24 inches (56-61 cm). Weight: 900-1200g (32-42 oz)",
+  "description": {
+    "en": "A very large and powerful parrot, the Palm Cockatoo is a dark, smoky-grey or black with a huge crest and a massive beak. They have a distinctive bare red cheek patch that changes color with emotion.",
+    "es": "Un loro muy grande y potente, la cacatúa de las palmeras es de color gris ahumado oscuro o negro, con una cresta enorme y un pico macizo. Tienen una distintiva mancha roja en las mejillas que cambia de color según su estado emocional."
+  },
+  "size": {
+    "en": "22-24 inches (56-61 cm). Weight: 900-1200g (32-42 oz)",
+    "es": "22-24 pulgadas (56-61 cm). Peso: 900-1200g (32-42 oz)"
+  },
   "weight_grams": 1050,
-  "temperament": "Highly intelligent, sensitive, and can be quite gentle, but they are not a cuddly species. They require a very experienced owner who understands their complex body language.",
-  "loudness": "Loud. They have a wide vocal range, including a very loud, trumpet-like call. They are also known for drumming on hollow logs with sticks.",
+  "temperament": {
+    "en": "Highly intelligent, sensitive, and can be quite gentle, but they are not a cuddly species. They require a very experienced owner who understands their complex body language.",
+    "es": "Altamente inteligente, sensible y puede ser bastante amable, pero no es una especie mimosa. Requieren un dueño muy experimentado que comprenda su complejo lenguaje corporal."
+  },
+  "loudness": {
+    "en": "Loud. They have a wide vocal range, including a very loud, trumpet-like call. They are also known for drumming on hollow logs with sticks.",
+    "es": "Ruidoso. Tienen un amplio registro vocal, que incluye una llamada muy fuerte, parecida a una trompeta. También son conocidas por tamborilear con palos en troncos huecos."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Can learn a few words, but are not known for talking. Their vocal repertoire consists of a variety of whistles and calls.",
-  "dietaryNeeds": "A very specialized diet is required, high in fat. In the wild, they eat hard-to-crack nuts and seeds. In captivity, a mix of pellets, palm nuts, Brazil nuts, and other hard nuts is needed.",
-  "healthPointers": "Can live 80-90 years. Their beak is incredibly powerful and requires a constant supply of hard wood and nuts to keep it in condition. They are rare and very expensive.",
-  "housing": "Not a typical pet. They require a custom-built, walk-in aviary made of strong metal. Not suitable for a cage or a typical home environment.",
-  "origin": "Australia & Oceania"
+  "vocalization": {
+    "en": "Can learn a few words, but are not known for talking. Their vocal repertoire consists of a variety of whistles and calls.",
+    "es": "Pueden aprender algunas palabras, pero no son conocidas por hablar. Su repertorio vocal consiste en una variedad de silbidos y llamadas."
+  },
+  "dietaryNeeds": {
+    "en": "A very specialized diet is required, high in fat. In the wild, they eat hard-to-crack nuts and seeds. In captivity, a mix of pellets, palm nuts, Brazil nuts, and other hard nuts is needed.",
+    "es": "Se requiere una dieta muy especializada, rica en grasas. En estado salvaje, comen nueces y semillas difíciles de romper. En cautividad, se necesita una mezcla de pellets, nueces de palma, nueces de Brasil y otras nueces duras."
+  },
+  "healthPointers": {
+    "en": "Can live 80-90 years. Their beak is incredibly powerful and requires a constant supply of hard wood and nuts to keep it in condition. They are rare and very expensive.",
+    "es": "Pueden vivir entre 80 y 90 años. Su pico es increíblemente potente y requiere un suministro constante de madera dura y nueces para mantenerse en condiciones. Son raras y muy caras."
+  },
+  "housing": {
+    "en": "Not a typical pet. They require a custom-built, walk-in aviary made of strong metal. Not suitable for a cage or a typical home environment.",
+    "es": "No es una mascota típica. Requieren un aviario a medida hecho de metal resistente. No son adecuadas para una jaula ni para un entorno doméstico típico."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "80-90 years",
+    "es": "80-90 años"
+  }
 }

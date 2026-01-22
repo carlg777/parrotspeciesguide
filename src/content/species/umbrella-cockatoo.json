@@ -1,17 +1,52 @@
 {
   "category": "Cockatoos",
-  "species": "Umbrella Cockatoo",
+  "species": {
+    "en": "Umbrella Cockatoo",
+    "es": "Cacatúa Blanca (Cacatua alba)"
+  },
   "slug": "umbrella-cockatoo",
   "image": "/assets/img/parrots/umbrella-cockatoo.webp",
-  "description": "A large, all-white cockatoo known for its large, expressive crest that opens up like an umbrella. They are one of the most popular and affectionate large cockatoos.",
-  "size": "18 inches (46 cm). Weight: 500-700g (17.5-25 oz)",
+  "description": {
+    "en": "A large, all-white cockatoo known for its large, expressive crest that opens up like an umbrella. They are one of the most popular and affectionate large cockatoos.",
+    "es": "Una gran cacatúa totalmente blanca conocida por su cresta grande y expresiva que se abre como un paraguas. Son una de las cacatúas grandes más populares y afectuosas."
+  },
+  "size": {
+    "en": "18 inches (46 cm). Weight: 500-700g (17.5-25 oz)",
+    "es": "18 pulgadas (46 cm). Peso: 500-700g (17.5-25 oz)"
+  },
   "weight_grams": 600,
-  "temperament": "The quintessential 'velcro bird.' They are incredibly affectionate, cuddly, and gentle, but this comes with a high price: they are extremely demanding of attention and can be prone to separation anxiety.",
-  "loudness": "Extremely Loud. Their screech is incredibly powerful and they will use it to demand attention or express excitement or fear.",
+  "temperament": {
+    "en": "The quintessential 'velcro bird.' They are incredibly affectionate, cuddly, and gentle, but this comes with a high price: they are extremely demanding of attention and can be prone to separation anxiety.",
+    "es": "El 'pájaro velcro' por excelencia. Son increíblemente afectuosos, mimosos y amables, pero esto tiene un precio alto: demandan muchísima atención y pueden ser propensos a la ansiedad por separación."
+  },
+  "loudness": {
+    "en": "Extremely Loud. Their screech is incredibly powerful and they will use it to demand attention or express excitement or fear.",
+    "es": "Extremadamente ruidoso. Su chillido es increíblemente potente y lo utilizan para pedir atención o expresar emoción o miedo."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Can learn a fair number of words, but are more known for their loud screams and playful chattering.",
-  "dietaryNeeds": "A high-quality pelleted diet, lots of fresh vegetables, and limited fruits and nuts to prevent weight gain.",
-  "healthPointers": "Can live 60-80+ years. Extremely prone to feather plucking and self-mutilation if their social needs are not met. They also produce a large amount of powder down.",
-  "housing": "Not suitable for apartments. Requires a large, durable cage with plenty of toys. Minimum 40\"W x 30\"D x 60\"H.",
-  "origin": "Australia & Oceania"
+  "vocalization": {
+    "en": "Can learn a fair number of words, but are more known for their loud screams and playful chattering.",
+    "es": "Pueden aprender un buen número de palabras, pero son más conocidos por sus fuertes gritos y sus juegos de palabras."
+  },
+  "dietaryNeeds": {
+    "en": "A high-quality pelleted diet, lots of fresh vegetables, and limited fruits and nuts to prevent weight gain.",
+    "es": "Una dieta de pellets de alta calidad, muchas verduras frescas y frutas y frutos secos limitados para evitar el aumento de peso."
+  },
+  "healthPointers": {
+    "en": "Can live 60-80+ years. Extremely prone to feather plucking and self-mutilation if their social needs are not met. They also produce a large amount of powder down.",
+    "es": "Pueden vivir entre 60 y 80 años o más. Extremadamente propensas al picaje de plumas y a la automutilación si no se satisfacen sus necesidades sociales. También producen una gran cantidad de polvo de plumas."
+  },
+  "housing": {
+    "en": "Not suitable for apartments. Requires a large, durable cage with plenty of toys. Minimum 40\"W x 30\"D x 60\"H.",
+    "es": "No apto para apartamentos. Requiere una jaula grande y resistente con muchos juguetes. Mínimo 100 cm de ancho x 75 cm de fondo x 150 cm de alto."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "60-80+ years",
+    "es": "60-80+ años"
+  }
 }

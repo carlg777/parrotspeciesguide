@@ -1,17 +1,52 @@
 {
   "category": "Macaws",
-  "species": "Hyacinth Macaw",
+  "species": {
+    "en": "Hyacinth Macaw",
+    "es": "Guacamayo Jacinto (Anodorhynchus hyacinthinus)"
+  },
   "slug": "hyacinth-macaw",
   "image": "/assets/img/parrots/hyacinth-macaw.webp",
-  "description": "The largest of all flying parrot species, the Hyacinth Macaw is a breathtaking solid cobalt blue, with bright yellow patches of bare skin around its eyes and at the base of its beak.",
-  "size": "Up to 40 inches (100 cm). Weight: 1200-1700g (42-60 oz)",
+  "description": {
+    "en": "The largest of all flying parrot species, the Hyacinth Macaw is a breathtaking solid cobalt blue, with bright yellow patches of bare skin around its eyes and at the base of its beak.",
+    "es": "La más grande de todas las especies de loros voladores, el guacamayo jacinto es de un azul cobalto sólido impresionante, con parches amarillos brillantes de piel desnuda alrededor de los ojos y en la base del pico."
+  },
+  "size": {
+    "en": "Up to 40 inches (100 cm). Weight: 1200-1700g (42-60 oz)",
+    "es": "Hasta 40 pulgadas (100 cm). Peso: 1200-1700g (42-60 oz)"
+  },
   "weight_grams": 1450,
-  "temperament": "Famously known as 'gentle giants.' They are exceptionally gentle, sweet-natured, and even-tempered. They are highly intelligent and playful but not as prone to nippiness as other macaws.",
-  "loudness": "Extremely Loud. Their calls are deep, guttural, and can travel for miles. They are among the loudest of all parrots.",
+  "temperament": {
+    "en": "Famously known as 'gentle giants.' They are exceptionally gentle, sweet-natured, and even-tempered. They are highly intelligent and playful but not as prone to nippiness as other macaws.",
+    "es": "Famosamente conocidos como 'gigantes amables'. Son excepcionalmente mansos, de naturaleza dulce y carácter equilibrado. Son muy inteligentes y juguetones, pero no tan propensos a dar picotazos como otros guacamayos."
+  },
+  "loudness": {
+    "en": "Extremely Loud. Their calls are deep, guttural, and can travel for miles. They are among the loudest of all parrots.",
+    "es": "Extremadamente ruidoso. Sus llamadas son profundas, guturales y pueden viajar kilómetros. Se encuentran entre los loros más ruidosos."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Can learn to talk, but they are not known for extensive vocabularies or clarity. Their vocalizations are more often loud, throaty squawks.",
-  "dietaryNeeds": "A highly specialized diet is required. They need a diet very high in fat and calories, consisting of macadamia nuts, Brazil nuts, walnuts, and specialized pellets.",
-  "healthPointers": "Can live up to 60 years. Susceptible to PDD. Their massive beaks require a constant supply of extremely hard, durable toys and nuts to maintain their condition.",
-  "housing": "Requires a custom-built, exceptionally large, and strong enclosure, ideally a walk-in aviary. A standard cage will not suffice. Absolutely unsuitable for apartments.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Can learn to talk, but they are not known for extensive vocabularies or clarity. Their vocalizations are more often loud, throaty squawks.",
+    "es": "Pueden aprender a hablar, pero no son conocidos por tener vocabularios extensos ni claridad. Sus vocalizaciones suelen ser graznidos fuertes y guturales."
+  },
+  "dietaryNeeds": {
+    "en": "A highly specialized diet is required. They need a diet very high in fat and calories, consisting of macadamia nuts, Brazil nuts, walnuts, and specialized pellets.",
+    "es": "Se requiere una dieta altamente especializada. Necesitan una dieta muy rica en grasas y calorías, compuesta por nueces de macadamia, nueces de Brasil, nueces de Castilla y pellets especializados."
+  },
+  "healthPointers": {
+    "en": "Can live up to 60 years. Susceptible to PDD. Their massive beaks require a constant supply of extremely hard, durable toys and nuts to maintain their condition.",
+    "es": "Pueden vivir hasta 60 años. Susceptibles a la PDD. Sus picos macizos requieren un suministro constante de nueces y juguetes extremadamente duros y duraderos para mantener su estado."
+  },
+  "housing": {
+    "en": "Requires a custom-built, exceptionally large, and strong enclosure, ideally a walk-in aviary. A standard cage will not suffice. Absolutely unsuitable for apartments.",
+    "es": "Requiere un recinto a medida, excepcionalmente grande y resistente, idealmente un aviario en el que se pueda entrar. Una jaula estándar no será suficiente. Absolutamente inadecuado para apartamentos."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "Up to 60+ years",
+    "es": "Hasta 60+ años"
+  }
 }

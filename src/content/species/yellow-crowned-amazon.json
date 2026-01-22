@@ -1,17 +1,52 @@
 {
   "category": "Amazons",
-  "species": "Yellow-crowned Amazon",
+  "species": {
+    "en": "Yellow-crowned Amazon",
+    "es": "Amazona Real (Amazona ochrocephala)"
+  },
   "slug": "yellow-crowned-amazon",
   "image": "/assets/img/parrots/yellow-crowned-amazon.webp",
-  "description": "A large green parrot with a distinct patch of yellow on the crown. They are often confused with the Yellow-naped and Double Yellow-headed Amazons.",
-  "size": "13-15 inches (33-38 cm). Weight: 380-500g (13.4-17.5 oz)",
+  "description": {
+    "en": "A large green parrot with a distinct patch of yellow on the crown. They are often confused with the Yellow-naped and Double Yellow-headed Amazons.",
+    "es": "Un loro verde de gran tamaño con una mancha amarilla bien definida en la corona. A menudo se confunden con las amazonas de nuca amarilla y de cabeza amarilla."
+  },
+  "size": {
+    "en": "13-15 inches (33-38 cm). Weight: 380-500g (13.4-17.5 oz)",
+    "es": "13-15 pulgadas (33-38 cm). Peso: 380-500g (13.4-17.5 oz)"
+  },
   "weight_grams": 440,
-  "temperament": "Intelligent and playful. They are often considered to be a bit calmer and less prone to the intense aggression of the other two 'yellow head' types, but still require firm handling.",
-  "loudness": "Loud. Can produce the classic loud Amazon screams.",
+  "temperament": {
+    "en": "Intelligent and playful. They are often considered to be a bit calmer and less prone to the intense aggression of the other two 'yellow head' types, but still require firm handling.",
+    "es": "Inteligente y juguetona. A menudo se considera que son un poco más tranquilas y menos propensas a la agresión intensa de los otros dos tipos de 'cabeza amarilla', pero aun así requieren un manejo firme."
+  },
+  "loudness": {
+    "en": "Loud. Can produce the classic loud Amazon screams.",
+    "es": "Ruidosa. Pueden emitir los clásicos gritos fuertes de las amazonas."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Very good talkers, though perhaps slightly less gifted on average than the Yellow-naped and Double Yellow-headed.",
-  "dietaryNeeds": "A low-fat diet is crucial. Base the diet on pellets and a wide variety of vegetables.",
-  "healthPointers": "Can live for 60+ years. Prone to obesity, fatty liver disease, and Vitamin A deficiency.",
-  "housing": "Needs a large, strong cage. Minimum 36\"W x 24\"D x 48\"H. Unsuitable for apartments.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Very good talkers, though perhaps slightly less gifted on average than the Yellow-naped and Double Yellow-headed.",
+    "es": "Muy buenas habladoras, aunque quizá algo menos dotadas de media que las de nuca amarilla y de cabeza amarilla."
+  },
+  "dietaryNeeds": {
+    "en": "A low-fat diet is crucial. Base the diet on pellets and a wide variety of vegetables.",
+    "es": "Es fundamental una dieta baja en grasas. Basar la dieta en pellets y una amplia variedad de verduras."
+  },
+  "healthPointers": {
+    "en": "Can live for 60+ years. Prone to obesity, fatty liver disease, and Vitamin A deficiency.",
+    "es": "Pueden vivir más de 60 años. Propensas a la obesidad, la enfermedad del hígado graso y la deficiencia de vitamina A."
+  },
+  "housing": {
+    "en": "Needs a large, strong cage. Minimum 36\"W x 24\"D x 48\"H. Unsuitable for apartments.",
+    "es": "Necesita una jaula grande y resistente. Mínimo 90 cm de ancho x 60 cm de fondo x 120 cm de alto. Inadecuada para apartamentos."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "60+ years",
+    "es": "60+ años"
+  }
 }

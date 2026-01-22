@@ -1,17 +1,52 @@
 {
   "category": "Macaws",
-  "species": "Green-winged Macaw",
+  "species": {
+    "en": "Green-winged Macaw",
+    "es": "Guacamayo Aliverde (Ara chloropterus)"
+  },
   "slug": "green-winged-macaw",
   "image": "/assets/img/parrots/green-winged-macaw.webp",
-  "description": "One of the largest macaw species, the Green-winged Macaw is primarily deep red, with a distinct band of green across the middle of its wings, followed by blue tips. Often called the 'gentle giant.'",
-  "size": "34-36 inches (86-91 cm). Weight: 1000-1500g (35-53 oz)",
+  "description": {
+    "en": "One of the largest macaw species, the Green-winged Macaw is primarily deep red, with a distinct band of green across the middle of its wings, followed by blue tips. Often called the 'gentle giant.'",
+    "es": "Una de las especies de guacamayos más grandes, el guacamayo aliverde es principalmente de color rojo intenso, con una distintiva franja verde en la mitad de sus alas, seguida de puntas azules. A menudo se le llama el 'gigante amable'."
+  },
+  "size": {
+    "en": "34-36 inches (86-91 cm). Weight: 1000-1500g (35-53 oz)",
+    "es": "34-36 pulgadas (86-91 cm). Peso: 1000-1500g (35-53 oz)"
+  },
   "weight_grams": 1250,
-  "temperament": "Known for being more docile, gentle, and affectionate than other large macaws. They are still highly intelligent and require a great deal of social interaction.",
-  "loudness": "Very Loud. Their vocalizations are deep and powerful, and they can be extremely noisy, especially when in a flock or calling for attention.",
+  "temperament": {
+    "en": "Known for being more docile, gentle, and affectionate than other large macaws. They are still highly intelligent and require a great deal of social interaction.",
+    "es": "Conocido por ser más dócil, amable y afectuoso que otros guacamayos grandes. Siguen siendo muy inteligentes y requieren una gran interacción social."
+  },
+  "loudness": {
+    "en": "Very Loud. Their vocalizations are deep and powerful, and they can be extremely noisy, especially when in a flock or calling for attention.",
+    "es": "Muy ruidoso. Sus vocalizaciones son profundas y potentes, y pueden ser extremadamente ruidosos, especialmente cuando están en bandada o piden atención."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Good talkers, capable of learning words and short sentences, though they may not have the clarity of a Blue and Gold or an Amazon.",
-  "dietaryNeeds": "A formulated diet supplemented with nuts, fruits, and vegetables is crucial. They need a diet rich in fat to maintain good health.",
-  "healthPointers": "Can live 60-80+ years. Susceptible to PDD, papillomas, and psittacosis. Their powerful beaks require a constant supply of safe, hard toys to chew.",
-  "housing": "Needs an exceptionally large and strong cage or an aviary. Minimum cage size: 48\"W x 36\"D x 72\"H. Not suitable for apartment living.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Good talkers, capable of learning words and short sentences, though they may not have the clarity of a Blue and Gold or an Amazon.",
+    "es": "Buenos habladores, capaces de aprender palabras y frases cortas, aunque puede que no tengan la claridad de un guacamayo azul y amarillo o de un amazona."
+  },
+  "dietaryNeeds": {
+    "en": "A formulated diet supplemented with nuts, fruits, and vegetables is crucial. They need a diet rich in fat to maintain good health.",
+    "es": "Es crucial una dieta formulada complementada con frutos secos, frutas y verduras. Necesitan una dieta rica en grasas para mantener una buena salud."
+  },
+  "healthPointers": {
+    "en": "Can live 60-80+ years. Susceptible to PDD, papillomas, and psittacosis. Their powerful beaks require a constant supply of safe, hard toys to chew.",
+    "es": "Pueden vivir entre 60 y 80 años o más. Susceptibles a la PDD, papilomas y psitacosis. Sus potentes picos requieren un suministro constante de juguetes duros y seguros para masticar."
+  },
+  "housing": {
+    "en": "Needs an exceptionally large and strong cage or an aviary. Minimum cage size: 48\"W x 36\"D x 72\"H. Not suitable for apartment living.",
+    "es": "Necesita una jaula o aviario excepcionalmente grande y resistente. Tamaño mínimo de la jaula: 120 cm de ancho x 90 cm de fondo x 180 cm de alto. No es apto para vivir en un apartamento."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "60-80+ years",
+    "es": "60-80+ años"
+  }
 }

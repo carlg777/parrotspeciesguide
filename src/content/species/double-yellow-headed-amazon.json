@@ -1,17 +1,52 @@
 {
   "category": "Amazons",
-  "species": "Double Yellow-headed Amazon",
+  "species": {
+    "en": "Double Yellow-headed Amazon",
+    "es": "Amazona de Cabeza Amarilla (Amazona oratrix)"
+  },
   "slug": "double-yellow-headed-amazon",
   "image": "/assets/img/parrots/double-yellow-headed-amazon.webp",
-  "description": "A large, popular Amazon known for its striking yellow head, which spreads down the neck as it matures. They are highly sought after for their talking and singing ability.",
-  "size": "15-17 inches (38-43 cm). Weight: 480-600g (17-21 oz)",
+  "description": {
+    "en": "A large, popular Amazon known for its striking yellow head, which spreads down the neck as it matures. They are highly sought after for their talking and singing ability.",
+    "es": "Un amazona grande y popular conocido por su llamativa cabeza amarilla, que se extiende por el cuello a medida que madura. Son muy codiciados por su capacidad para hablar y cantar."
+  },
+  "size": {
+    "en": "15-17 inches (38-43 cm). Weight: 480-600g (17-21 oz)",
+    "es": "15-17 pulgadas (38-43 cm). Peso: 480-600g (17-21 oz)"
+  },
   "weight_grams": 540,
-  "temperament": "Highly intelligent, social, and confident. Can be very affectionate but are prone to bonding strongly with one person and can become aggressive, especially during breeding season.",
-  "loudness": "Very Loud. Possess an extremely powerful voice and are not shy about using it.",
+  "temperament": {
+    "en": "Highly intelligent, social, and confident. Can be very affectionate but are prone to bonding strongly with one person and can become aggressive, especially during breeding season.",
+    "es": "Altamente inteligente, social y seguro de sí mismo. Pueden ser muy afectuosos, pero son propensos a vincularse fuertemente con una sola persona y pueden volverse agresivos, especialmente durante la época de cría."
+  },
+  "loudness": {
+    "en": "Very Loud. Possess an extremely powerful voice and are not shy about using it.",
+    "es": "Muy ruidosa. Poseen una voz extremadamente potente y no tienen reparos en usarla."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Among the best talkers in the parrot world, capable of amazing clarity and extensive vocabularies. They are also talented singers.",
-  "dietaryNeeds": "Prone to obesity. A low-fat pelleted diet is crucial, supplemented with a wide variety of vegetables. Fruit and nuts should be given sparingly.",
-  "healthPointers": "Can live for 60+ years. Susceptible to obesity, fatty liver disease, atherosclerosis, and upper respiratory infections.",
-  "housing": "Needs a very large and durable cage due to their size and beak strength. Not suitable for apartments. Minimum cage: 40\"W x 30\"D x 60\"H.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Among the best talkers in the parrot world, capable of amazing clarity and extensive vocabularies. They are also talented singers.",
+    "es": "Se encuentran entre los mejores habladores del mundo de los loros, capaces de una claridad asombrosa y de vocabularios extensos. También son cantantes con talento."
+  },
+  "dietaryNeeds": {
+    "en": "Prone to obesity. A low-fat pelleted diet is crucial, supplemented with a wide variety of vegetables. Fruit and nuts should be given sparingly.",
+    "es": "Propensos a la obesidad. Es fundamental una dieta de pellets baja en grasas, complementada con una amplia variedad de verduras. La fruta y los frutos secos deben darse con moderación."
+  },
+  "healthPointers": {
+    "en": "Can live for 60+ years. Susceptible to obesity, fatty liver disease, atherosclerosis, and upper respiratory infections.",
+    "es": "Pueden vivir más de 60 años. Susceptibles a la obesidad, la enfermedad del hígado graso, la aterosclerosis y las infecciones de las vías respiratorias superiores."
+  },
+  "housing": {
+    "en": "Needs a very large and durable cage due to their size and beak strength. Not suitable for apartments. Minimum cage: 40\"W x 30\"D x 60\"H.",
+    "es": "Necesita una jaula muy grande y resistente debido a su tamaño y a la fuerza de su pico. No apta para apartamentos. Jaula mínima: 100 cm de ancho x 75 cm de fondo x 150 cm de alto."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "60+ years",
+    "es": "60+ años"
+  }
 }

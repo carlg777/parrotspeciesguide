@@ -1,17 +1,52 @@
 {
   "category": "Cockatoos",
-  "species": "White-Tailed Black Cockatoo",
+  "species": {
+    "en": "White-Tailed Black Cockatoo",
+    "es": "Cacatúa Coliblanca (Zanda latirostris/baudinii)"
+  },
   "slug": "white-tailed-black-cockatoo",
   "image": "/assets/img/parrots/white-tailed-black-cockatoo.webp",
-  "description": "This common name refers to two endangered species from Western Australia: Baudin's and Carnaby's Black Cockatoos. They are large, black birds with white tail panels and white cheek patches.",
-  "size": "21-23 inches (53-58.5 cm). Weight: 550-800g (19.5-28 oz)",
+  "description": {
+    "en": "This common name refers to two endangered species from Western Australia: Baudin's and Carnaby's Black Cockatoos. They are large, black birds with white tail panels and white cheek patches.",
+    "es": "Este nombre común se refiere a dos especies en peligro de extinción de Australia Occidental: las cacatúas negras de Baudin y de Carnaby. Son aves grandes y negras con paneles blancos en la cola y manchas blancas en las mejillas."
+  },
+  "size": {
+    "en": "21-23 inches (53-58.5 cm). Weight: 550-800g (19.5-28 oz)",
+    "es": "21-23 pulgadas (53-58.5 cm). Peso: 550-800g (19.5-28 oz)"
+  },
   "weight_grams": 675,
-  "temperament": "Not kept as pets. They are endangered wild birds with highly specialized needs and behaviors. They are social birds that live in large flocks.",
-  "loudness": "Very Loud. They have a distinctive, far-carrying call that sounds like 'wee-oo'.",
+  "temperament": {
+    "en": "Not kept as pets. They are endangered wild birds with highly specialized needs and behaviors. They are social birds that live in large flocks.",
+    "es": "No se mantienen como mascotas. Son aves silvestres en peligro de extinción con necesidades y comportamientos altamente especializados. Son aves sociales que viven en grandes bandadas."
+  },
+  "loudness": {
+    "en": "Very Loud. They have a distinctive, far-carrying call that sounds like 'wee-oo'.",
+    "es": "Muy ruidosa. Tienen una llamada distintiva que llega muy lejos y suena como 'wee-oo'."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Their vocalizations are their natural calls, which are important for flock communication.",
-  "dietaryNeeds": "Specialized diet consisting of native seeds, particularly from marri and banksia trees. Their habitat and food sources are under threat.",
-  "healthPointers": "Lifespan of up to 50 years. Endangered species protected by law. They are not part of the pet trade and their health is a major conservation concern.",
-  "housing": "Not a pet species. They are wild birds that require large areas of native woodland to survive.",
-  "origin": "Australia & Oceania"
+  "vocalization": {
+    "en": "Their vocalizations are their natural calls, which are important for flock communication.",
+    "es": "Sus vocalizaciones son sus llamadas naturales, que son importantes para la comunicación de la bandada."
+  },
+  "dietaryNeeds": {
+    "en": "Specialized diet consisting of native seeds, particularly from marri and banksia trees. Their habitat and food sources are under threat.",
+    "es": "Dieta especializada compuesta por semillas autóctonas, sobre todo de los árboles marri y banksia. Su hábitat y sus fuentes de alimento están amenazados."
+  },
+  "healthPointers": {
+    "en": "Lifespan of up to 50 years. Endangered species protected by law. They are not part of the pet trade and their health is a major conservation concern.",
+    "es": "Esperanza de vida de hasta 50 años. Especie en peligro de extinción protegida por la ley. No forman parte del comercio de mascotas y su salud es una de las principales preocupaciones de conservación."
+  },
+  "housing": {
+    "en": "Not a pet species. They are wild birds that require large areas of native woodland to survive.",
+    "es": "No es una especie de compañía. Son aves silvestres que requieren grandes áreas de bosque nativo para sobrevivir."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "Up to 50 years",
+    "es": "Hasta 50 años"
+  }
 }

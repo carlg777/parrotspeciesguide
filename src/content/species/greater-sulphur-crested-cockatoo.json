@@ -1,17 +1,52 @@
 {
   "category": "Cockatoos",
-  "species": "Greater Sulphur-Crested Cockatoo",
+  "species": {
+    "en": "Greater Sulphur-Crested Cockatoo",
+    "es": "Cacatúa de Moño Amarillo (Cacatua galerita)"
+  },
   "slug": "greater-sulphur-crested-cockatoo",
   "image": "/assets/img/parrots/greater-sulphur-crested-cockatoo.webp",
-  "description": "The iconic large white cockatoo with a big, expressive yellow crest. They are highly intelligent and are often seen in movies and television.",
-  "size": "18-20 inches (46-51 cm). Weight: 700-950g (25-33.5 oz)",
+  "description": {
+    "en": "The iconic large white cockatoo with a big, expressive yellow crest. They are highly intelligent and are often seen in movies and television.",
+    "es": "La icónica cacatúa blanca grande con una cresta amarilla grande y expresiva. Son muy inteligentes y se ven a menudo en películas y programas de televisión."
+  },
+  "size": {
+    "en": "18-20 inches (46-51 cm). Weight: 700-950g (25-33.5 oz)",
+    "es": "18-20 pulgadas (46-51 cm). Peso: 700-950g (25-33.5 oz)"
+  },
   "weight_grams": 825,
-  "temperament": "Extremely intelligent, complex, and demanding. They can be affectionate but often bond with one person and can be aggressive towards others. Require a very experienced owner.",
-  "loudness": "Extremely Loud. Their screech is deafening and can be heard from a great distance. They are not suitable for close neighbors.",
+  "temperament": {
+    "en": "Extremely intelligent, complex, and demanding. They can be affectionate but often bond with one person and can be aggressive towards others. Require a very experienced owner.",
+    "es": "Extremadamente inteligente, compleja y exigente. Pueden ser afectuosas, pero a menudo se vinculan con una sola persona y pueden ser agresivas con los demás. Requiere un dueño muy experimentado."
+  },
+  "loudness": {
+    "en": "Extremely Loud. Their screech is deafening and can be heard from a great distance. They are not suitable for close neighbors.",
+    "es": "Extremadamente ruidosa. Su chillido es ensordecedor y puede oírse desde una gran distancia. No son adecuadas para vecinos cercanos."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Excellent talkers and mimics. They can learn a wide vocabulary and are very good at learning tricks and complex tasks.",
-  "dietaryNeeds": "Prone to obesity and fatty liver disease. A low-fat pelleted diet with plenty of fresh vegetables is essential. Limit nuts and seeds to treats.",
-  "healthPointers": "Can live for 60-80 years. Very prone to behavioral problems like feather plucking and screaming if not given immense amounts of attention and stimulation. Produce a lot of feather dust.",
-  "housing": "Absolutely not for apartments. Requires a very large, strong cage or aviary. Minimum 40\"W x 30\"D x 60\"H.",
-  "origin": "Australia & Oceania"
+  "vocalization": {
+    "en": "Excellent talkers and mimics. They can learn a wide vocabulary and are very good at learning tricks and complex tasks.",
+    "es": "Excelentes habladoras e imitadoras. Pueden aprender un amplio vocabulario y son muy buenas aprendiendo trucos y tareas complejas."
+  },
+  "dietaryNeeds": {
+    "en": "Prone to obesity and fatty liver disease. A low-fat pelleted diet with plenty of fresh vegetables is essential. Limit nuts and seeds to treats.",
+    "es": "Propensas a la obesidad y a la enfermedad del hígado graso. Es esencial una dieta de pellets baja en grasas con abundantes verduras frescas. Limite los frutos secos y las semillas como premios."
+  },
+  "healthPointers": {
+    "en": "Can live for 60-80 years. Very prone to behavioral problems like feather plucking and screaming if not given immense amounts of attention and stimulation. Produce a lot of feather dust.",
+    "es": "Pueden vivir entre 60 y 80 años. Muy propensas a problemas de comportamiento como el picaje de plumas y los gritos si no reciben una inmensa cantidad de atención y estimulación. Producen mucho polvo de plumas."
+  },
+  "housing": {
+    "en": "Absolutely not for apartments. Requires a very large, strong cage or aviary. Minimum 40\"W x 30\"D x 60\"H.",
+    "es": "Absolutamente inadecuada para apartamentos. Requiere una jaula o aviario muy grande y resistente. Mínimo 100 cm de ancho x 75 cm de fondo x 150 cm de alto."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "60-80 years",
+    "es": "60-80 años"
+  }
 }

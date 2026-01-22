@@ -1,17 +1,52 @@
 {
   "category": "Cockatoos",
-  "species": "Triton Cockatoo",
+  "species": {
+    "en": "Triton Cockatoo",
+    "es": "Cacatúa Tritón (Cacatua galerita triton)"
+  },
   "slug": "triton-cockatoo",
   "image": "/assets/img/parrots/triton-cockatoo.webp",
-  "description": "The Triton is a large and popular subspecies of the Sulphur-Crested Cockatoo. They are large, white, have a big yellow crest, and a distinctive blue eye-ring.",
-  "size": "18-20 inches (46-51 cm). Weight: 600-800g (21-28 oz)",
+  "description": {
+    "en": "The Triton is a large and popular subspecies of the Sulphur-Crested Cockatoo. They are large, white, have a big yellow crest, and a distinctive blue eye-ring.",
+    "es": "La Tritón es una subespecie grande y popular de la cacatúa de moño amarillo. Son grandes, blancas, tienen una gran cresta amarilla y un distintivo anillo ocular azul."
+  },
+  "size": {
+    "en": "18-20 inches (46-51 cm). Weight: 600-800g (21-28 oz)",
+    "es": "18-20 pulgadas (46-51 cm). Peso: 600-800g (21-28 oz)"
+  },
   "weight_grams": 700,
-  "temperament": "Extremely intelligent, loud, and demanding. They are known for being particularly energetic and 'over the top,' even for a cockatoo. Require a very experienced owner.",
-  "loudness": "Extremely Loud. They have the classic, deafening screech of the Sulphur-Crested family and are known to be one of the noisiest parrots available.",
+  "temperament": {
+    "en": "Extremely intelligent, loud, and demanding. They are known for being particularly energetic and 'over the top,' even for a cockatoo. Require a very experienced owner.",
+    "es": "Extremadamente inteligente, ruidosa y exigente. Son conocidas por ser especialmente enérgicas y 'exageradas', incluso para una cacatúa. Requiere un dueño muy experimentado."
+  },
+  "loudness": {
+    "en": "Extremely Loud. They have the classic, deafening screech of the Sulphur-Crested family and are known to be one of the noisiest parrots available.",
+    "es": "Extremadamente ruidosa. Tienen el chillido clásico y ensordecedor de la familia de moño amarillo y son conocidas por ser uno de los loros más ruidosos que existen."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Can be good talkers, but their screaming often overshadows any talking ability. They are excellent at getting attention with their voice.",
-  "dietaryNeeds": "A low-fat pelleted diet is crucial. Supplement with a wide variety of fresh vegetables. Avoid high-fat seeds and nuts.",
-  "healthPointers": "Can live 60-80 years. Very prone to behavioral problems like feather plucking and screaming if not kept constantly stimulated and engaged. Produces a lot of feather dust.",
-  "housing": "Absolutely not for apartments. A very large, walk-in aviary is better than a cage. If caged, it must be huge and incredibly strong. Minimum 48\"W x 36\"D x 72\"H.",
-  "origin": "Australia & Oceania"
+  "vocalization": {
+    "en": "Can be good talkers, but their screaming often overshadows any talking ability. They are excellent at getting attention with their voice.",
+    "es": "Pueden ser buenas habladoras, pero sus gritos a menudo eclipsan cualquier capacidad de habla. Son excelentes para llamar la atención con su voz."
+  },
+  "dietaryNeeds": {
+    "en": "A low-fat pelleted diet is crucial. Supplement with a wide variety of fresh vegetables. Avoid high-fat seeds and nuts.",
+    "es": "Es fundamental una dieta de pellets baja en grasas. Compleméntela con una amplia variedad de verduras frescas. Evite las semillas y los frutos secos con alto contenido en grasas."
+  },
+  "healthPointers": {
+    "en": "Can live 60-80 years. Very prone to behavioral problems like feather plucking and screaming if not kept constantly stimulated and engaged. Produces a lot of feather dust.",
+    "es": "Pueden vivir entre 60 y 80 años. Muy propensas a problemas de comportamiento como el picaje de plumas y los gritos si no se les mantiene constantemente estimuladas y comprometidas. Produce mucho polvo de plumas."
+  },
+  "housing": {
+    "en": "Absolutely not for apartments. A very large, walk-in aviary is better than a cage. If caged, it must be huge and incredibly strong. Minimum 48\"W x 36\"D x 72\"H.",
+    "es": "Absolutamente inadecuada para apartamentos. Un aviario muy grande es mejor que una jaula. Si se enjaula, debe ser enorme e increíblemente resistente. Mínimo 120 cm de ancho x 90 cm de fondo x 180 cm de alto."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "60-80 years",
+    "es": "60-80 años"
+  }
 }

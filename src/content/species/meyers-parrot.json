@@ -1,17 +1,52 @@
 {
   "category": "African Parrots",
-  "species": "Meyer's Parrot",
+  "species": {
+    "en": "Meyer's Parrot",
+    "es": "Lorito de Meyer (Poicephalus meyeri)"
+  },
   "slug": "meyers-parrot",
   "image": "/assets/img/parrots/meyers-parrot.webp",
-  "description": "A small, compact parrot with a brownish-grey head and back, a turquoise or blue belly, and bright yellow markings on the crown and the bend of the wing.",
-  "size": "8-9 inches (20-23 cm). Weight: 100-135g (3.5-4.8 oz)",
+  "description": {
+    "en": "A small, compact parrot with a brownish-grey head and back, a turquoise or blue belly, and bright yellow markings on the crown and the bend of the wing.",
+    "es": "Un loro pequeño y compacto con la cabeza y el dorso de color marrón grisáceo, el vientre turquesa o azul, y marcas amarillas brillantes en la corona y el doblez del ala."
+  },
+  "size": {
+    "en": "8-9 inches (20-23 cm). Weight: 100-135g (3.5-4.8 oz)",
+    "es": "8-9 pulgadas (20-23 cm). Peso: 100-135g (3.5-4.8 oz)"
+  },
   "weight_grams": 117,
-  "temperament": "Known for being exceptionally quiet, gentle, and charming. They are not as demanding or high-energy as many other parrots, making them great companions for calmer households.",
-  "loudness": "Quiet. Considered one of the quietest parrot species, they tend to chatter and whistle softly to themselves.",
+  "temperament": {
+    "en": "Known for being exceptionally quiet, gentle, and charming. They are not as demanding or high-energy as many other parrots, making them great companions for calmer households.",
+    "es": "Conocidos por ser excepcionalmente silenciosos, amables y encantadores. No son tan exigentes ni tienen tanta energía como muchos otros loros, lo que los convierte en compañeros ideales para hogares más tranquilos."
+  },
+  "loudness": {
+    "en": "Quiet. Considered one of the quietest parrot species, they tend to chatter and whistle softly to themselves.",
+    "es": "Silencioso. Considerada una de las especies de loros más silenciosas, tienden a parlotear y silbar suavemente para sí mismos."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
-  "vocalization": "Not known for their talking ability. They may learn a few words, but their vocalizations are mostly a pleasant mix of soft chirps and whistles.",
-  "dietaryNeeds": "A standard diet of good-quality pellets, fresh vegetables, and some fruit is sufficient. They enjoy a variety of foods.",
-  "healthPointers": "Can live for 25-35 years. Can be prone to aspergillosis if their environment is not kept clean and dry. Otherwise, they are quite hardy.",
-  "housing": "Excellent for apartments due to their quiet nature. A minimum cage size of 24\"W x 18\"D x 24\"H is appropriate.",
-  "origin": "Africa"
+  "vocalization": {
+    "en": "Not known for their talking ability. They may learn a few words, but their vocalizations are mostly a pleasant mix of soft chirps and whistles.",
+    "es": "No son conocidos por su capacidad de habla. Pueden aprender algunas palabras, pero sus vocalizaciones son sobre todo una agradable mezcla de suaves gorjeos y silbidos."
+  },
+  "dietaryNeeds": {
+    "en": "A standard diet of good-quality pellets, fresh vegetables, and some fruit is sufficient. They enjoy a variety of foods.",
+    "es": "Basta con una dieta estándar de pellets de buena calidad, verduras frescas y algo de fruta. Disfrutan de una gran variedad de alimentos."
+  },
+  "healthPointers": {
+    "en": "Can live for 25-35 years. Can be prone to aspergillosis if their environment is not kept clean and dry. Otherwise, they are quite hardy.",
+    "es": "Pueden vivir entre 25 y 35 años. Pueden ser propensos a la aspergilosis si su entorno no se mantiene limpio y seco. Por lo demás, son bastante resistentes."
+  },
+  "housing": {
+    "en": "Excellent for apartments due to their quiet nature. A minimum cage size of 24\"W x 18\"D x 24\"H is appropriate.",
+    "es": "Excelente para apartamentos debido a su naturaleza silenciosa. Se recomienda una jaula con un tamaño mínimo de 60 cm de ancho x 45 cm de fondo x 60 cm de alto."
+  },
+  "origin": {
+    "en": "Africa",
+    "es": "África"
+  },
+  "careLevel": "intermediate",
+  "lifespan": {
+    "en": "25-35 years",
+    "es": "25-35 años"
+  }
 }

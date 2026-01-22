@@ -1,17 +1,52 @@
 {
   "category": "Parakeets",
-  "species": "Budgerigar (Budgie)",
+  "species": {
+    "en": "Budgerigar (Budgie)",
+    "es": "Periquito Australiano (Melopsittacus undulatus)"
+  },
   "slug": "budgerigar-budgie",
   "image": "/assets/img/parrots/budgerigar-budgie.webp",
-  "description": "One of the most popular pets in the world, the budgie is a small, long-tailed, seed-eating parrot. Wild budgies are green and yellow, but selective breeding has produced a rainbow of colors.",
-  "size": "7-8 inches (18-20 cm). Weight: 30-40g (1-1.4 oz)",
+  "description": {
+    "en": "One of the most popular pets in the world, the budgie is a small, long-tailed, seed-eating parrot. Wild budgies are green and yellow, but selective breeding has produced a rainbow of colors.",
+    "es": "Una de las mascotas más populares del mundo, el periquito es un loro pequeño de cola larga que come semillas. Los periquitos salvajes son verdes y amarillos, pero la cría selectiva ha producido un arco iris de colores."
+  },
+  "size": {
+    "en": "7-8 inches (18-20 cm). Weight: 30-40g (1-1.4 oz)",
+    "es": "7-8 pulgadas (18-20 cm). Peso: 30-40g (1-1.4 oz)"
+  },
   "weight_grams": 35,
-  "temperament": "Social, cheerful, and energetic. They are intelligent little birds that are relatively easy to tame and can become very affectionate with their owners.",
-  "loudness": "Quiet. Their chatter is generally pleasant and not disruptive, making them ideal for almost any living situation.",
+  "temperament": {
+    "en": "Social, cheerful, and energetic. They are intelligent little birds that are relatively easy to tame and can become very affectionate with their owners.",
+    "es": "Social, alegre y enérgico. Son pajaritos inteligentes que resultan relativamente fáciles de adiestrar y pueden llegar a ser muy afectuosos con sus dueños."
+  },
+  "loudness": {
+    "en": "Quiet. Their chatter is generally pleasant and not disruptive, making them ideal for almost any living situation.",
+    "es": "Silenciosa. Su parloteo es generalmente agradable y no molesto, por lo que son ideales para casi cualquier situación de vida."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
-  "vocalization": "Can be excellent talkers, with some males learning hundreds of words. Their voices are fast and high-pitched. Both sexes are great at whistling and chattering.",
-  "dietaryNeeds": "A high-quality pelleted diet should form the base. Supplement with a variety of fresh vegetables (leafy greens, shredded carrots) and a small amount of fruit. Seed should be a treat, not a staple.",
-  "healthPointers": "Can live 5-15 years. Prone to tumors, liver problems (often diet-related), and scaly mites on the beak and feet. A clean cage and a healthy diet are crucial.",
-  "housing": "Perfect for apartments. They are small and quiet. A cage that is wider than it is tall is best, with a minimum size of 18\"W x 18\"D x 18\"H, but bigger is always better.",
-  "origin": "Australia & Oceania"
+  "vocalization": {
+    "en": "Can be excellent talkers, with some males learning hundreds of words. Their voices are fast and high-pitched. Both sexes are great at whistling and chattering.",
+    "es": "Pueden ser excelentes habladores, y algunos machos llegan a aprender cientos de palabras. Sus voces son rápidas y agudas. Ambos sexos son excelentes silbando y parlando."
+  },
+  "dietaryNeeds": {
+    "en": "A high-quality pelleted diet should form the base. Supplement with a variety of fresh vegetables (leafy greens, shredded carrots) and a small amount of fruit. Seed should be a treat, not a staple.",
+    "es": "La base debe ser una dieta de pellets de alta calidad. Se complementa con una variedad de verduras frescas (verduras de hoja verde, zanahoria rallada) y una pequeña cantidad de fruta. Las semillas deben ser un premio, no un alimento básico."
+  },
+  "healthPointers": {
+    "en": "Can live 5-15 years. Prone to tumors, liver problems (often diet-related), and scaly mites on the beak and feet. A clean cage and a healthy diet are crucial.",
+    "es": "Pueden vivir entre 5 y 15 años. Propensos a tumores, problemas hepáticos (a menudo relacionados con la dieta) y ácaros de la sarna en el pico y las patas. Una jaula limpia y una dieta sana son fundamentales."
+  },
+  "housing": {
+    "en": "Perfect for apartments. They are small and quiet. A cage that is wider than it is tall is best, with a minimum size of 18\"W x 18\"D x 18\"H, but bigger is always better.",
+    "es": "Perfecto para apartamentos. Son pequeños y silenciosos. Lo mejor es una jaula más ancha que alta, con un tamaño mínimo de 45 cm de ancho x 45 cm de fondo x 45 cm de alto, pero cuanto más grande sea, mejor."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "careLevel": "beginner",
+  "lifespan": {
+    "en": "5-15 years",
+    "es": "5-15 años"
+  }
 }

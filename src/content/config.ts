@@ -50,56 +50,61 @@ import { defineCollection, z } from 'astro:content';
  * MIGRATION NOTE: All enhanced fields are optional to maintain backward compatibility
  * with existing species data. Content editors can populate these fields gradually.
  */
+const bilingualString = z.object({
+  en: z.string(),
+  es: z.string(),
+});
+
 const speciesCollection = defineCollection({
   type: 'data',
   schema: z.object({
     // Core identification fields
-    category: z.string(),
-    species: z.string(),
+    category: z.string(), // Categories stay as strings for slugging
+    species: bilingualString,
     slug: z.string(),
     image: z.string(),
-    description: z.string(),
+    description: bilingualString,
 
     // Physical characteristics
-    size: z.string(),
+    size: bilingualString,
     weight_grams: z.number(),
 
     // Behavior and personality
-    temperament: z.string(),
-    loudness: z.string(),
+    temperament: bilingualString,
+    loudness: bilingualString,
     loudness_icon: z.string(),
-    vocalization: z.string(),
+    vocalization: bilingualString,
 
     // Care requirements (existing)
-    dietaryNeeds: z.string(),
-    healthPointers: z.string(),
-    housing: z.string(),
+    dietaryNeeds: bilingualString,
+    healthPointers: bilingualString,
+    housing: bilingualString,
 
     // Origin
-    origin: z.string(),
+    origin: bilingualString,
 
     // Enhanced care fields (Phase 1 - optional for gradual migration)
 
     // Expected lifespan in years (e.g., "15-25 years", "30-40 years")
-    lifespan: z.string().optional(),
+    lifespan: bilingualString.optional(),
 
     // Care difficulty level for prospective owners
     careLevel: z.enum(['beginner', 'intermediate', 'advanced']).optional(),
 
     // Energy level and activity patterns (e.g., "High energy, requires 3-4 hours daily activity")
-    activityLevel: z.string().optional(),
+    activityLevel: bilingualString.optional(),
 
     // Socialization requirements and interaction needs
-    socialNeeds: z.string().optional(),
+    socialNeeds: bilingualString.optional(),
 
     // Noise expectations and guidance for owners
-    noiseTolerance: z.string().optional(),
+    noiseTolerance: bilingualString.optional(),
 
     // Detailed space requirements beyond basic housing
-    spaceRequirements: z.string().optional(),
+    spaceRequirements: bilingualString.optional(),
 
     // Daily time investment needed for care and interaction
-    timeCommitment: z.string().optional(),
+    timeCommitment: bilingualString.optional(),
   }),
 });
 

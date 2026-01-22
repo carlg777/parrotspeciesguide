@@ -1,17 +1,52 @@
 {
   "category": "Cockatoos",
-  "species": "Major Mitchell’s Cockatoo",
+  "species": {
+    "en": "Major Mitchell’s Cockatoo",
+    "es": "Cacatúa Inca (Lophochroa leadbeateri)"
+  },
   "slug": "major-mitchells-cockatoo",
   "image": "/assets/img/parrots/major-mitchells-cockatoo.webp",
-  "description": "Also known as the Leadbeater's Cockatoo, this is arguably one of the most beautiful cockatoos, with soft white and salmon-pink plumage and a stunning, large crest of red and yellow bands.",
-  "size": "13-14 inches (33-35.5 cm). Weight: 360-480g (12.7-17 oz)",
+  "description": {
+    "en": "Also known as the Leadbeater's Cockatoo, this is arguably one of the most beautiful cockatoos, with soft white and salmon-pink plumage and a stunning, large crest of red and yellow bands.",
+    "es": "También conocida como cacatúa de Leadbeater, es posiblemente una de las cacatúas más bellas, con un suave plumaje blanco y rosa salmón y una impresionante y gran cresta con franjas rojas y amarillas."
+  },
+  "size": {
+    "en": "13-14 inches (33-35.5 cm). Weight: 360-480g (12.7-17 oz)",
+    "es": "13-14 pulgadas (33-35.5 cm). Peso: 360-480g (12.7-17 oz)"
+  },
   "weight_grams": 420,
-  "temperament": "Intelligent and active, but are not typically as cuddly as other cockatoo species. They are known to be more independent and can become quite aggressive, especially males.",
-  "loudness": "Loud. They have a loud, quavering call that can be very piercing.",
+  "temperament": {
+    "en": "Intelligent and active, but are not typically as cuddly as other cockatoo species. They are known to be more independent and can become quite aggressive, especially males.",
+    "es": "Inteligentes y activos, pero no suelen ser tan mimosos como otras especies de cacatúas. Se sabe que son más independientes y pueden volverse bastante agresivos, especialmente los machos."
+  },
+  "loudness": {
+    "en": "Loud. They have a loud, quavering call that can be very piercing.",
+    "es": "Ruidoso. Tienen una llamada fuerte y temblorosa que puede ser muy penetrante."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Not known for being great talkers, but can learn a few words. Their natural call is very distinct.",
-  "dietaryNeeds": "A formulated diet is best, supplemented with a variety of vegetables. In the wild, they eat a lot of seeds, but this should be limited in captivity to prevent obesity.",
-  "healthPointers": "A hardy species with a lifespan of 60+ years. Can be prone to bonding with one person and becoming aggressive toward others.",
-  "housing": "Not recommended for apartments. They need a very large cage or aviary to accommodate their active nature. Minimum 36\"W x 24\"D x 48\"H.",
-  "origin": "Australia & Oceania"
+  "vocalization": {
+    "en": "Not known for being great talkers, but can learn a few words. Their natural call is very distinct.",
+    "es": "No son conocidas por ser grandes habladoras, pero pueden aprender algunas palabras. Su llamada natural es muy característica."
+  },
+  "dietaryNeeds": {
+    "en": "A formulated diet is best, supplemented with a variety of vegetables. In the wild, they eat a lot of seeds, but this should be limited in captivity to prevent obesity.",
+    "es": "Lo mejor es una dieta formulada, complementada con una variedad de verduras. En estado salvaje comen muchas semillas, pero esto debe limitarse en cautividad para evitar la obesidad."
+  },
+  "healthPointers": {
+    "en": "A hardy species with a lifespan of 60+ years. Can be prone to bonding with one person and becoming aggressive toward others.",
+    "es": "Una especie resistente con una esperanza de vida de más de 60 años. Pueden ser propensas a vincularse con una sola persona y volverse agresivas con los demás."
+  },
+  "housing": {
+    "en": "Not recommended for apartments. They need a very large cage or aviary to accommodate their active nature. Minimum 36\"W x 24\"D x 48\"H.",
+    "es": "No se recomienda para apartamentos. Necesitan una jaula o aviario muy grande para dar cabida a su naturaleza activa. Mínimo 90 cm de ancho x 60 cm de fondo x 120 cm de alto."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "60+ years",
+    "es": "60+ años"
+  }
 }

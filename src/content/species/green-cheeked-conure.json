@@ -1,24 +1,72 @@
 {
   "category": "Conures",
-  "species": "Green-cheeked Conure",
+  "species": {
+    "en": "Green-cheeked Conure",
+    "es": "Cotorra de Molina (Pyrrhura molinae)"
+  },
   "slug": "green-cheeked-conure",
   "image": "/assets/img/parrots/green-cheeked-conure.webp",
-  "description": "A small, popular conure known for its relatively quiet nature. They are mostly green with a maroon tail, grey head, and subtle red on the belly.",
-  "size": "10 inches (25.5 cm). Weight: 60-80g (2.1-2.8 oz)",
+  "description": {
+    "en": "A small, popular conure known for its relatively quiet nature. They are mostly green with a maroon tail, grey head, and subtle red on the belly.",
+    "es": "Un conuro pequeño y popular conocido por su naturaleza relativamente silenciosa. Son mayoritariamente verdes con una cola granate, cabeza gris y un rojo sutil en el vientre."
+  },
+  "size": {
+    "en": "10 inches (25.5 cm). Weight: 60-80g (2.1-2.8 oz)",
+    "es": "10 pulgadas (25.5 cm). Peso: 60-80g (2.1-2.8 oz)"
+  },
   "weight_grams": 70,
-  "temperament": "Goofy, affectionate, and intelligent. They are less prone to being nippy than other conures and have big personalities in small bodies.",
-  "loudness": "Quiet to Moderate. By far one of the quietest conure species, making them excellent for apartment living.",
+  "temperament": {
+    "en": "Goofy, affectionate, and intelligent. They are less prone to being nippy than other conures and have big personalities in small bodies.",
+    "es": "Divertida, afectuosa e inteligente. Son menos propensas a dar picotazos que otros conuros y tienen grandes personalidades en cuerpos pequeños."
+  },
+  "loudness": {
+    "en": "Quiet to Moderate. By far one of the quietest conure species, making them excellent for apartment living.",
+    "es": "Silenciosa a moderada. Con diferencia, una de las especies de conuro más silenciosas, lo que las hace excelentes para vivir en apartamentos."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
-  "vocalization": "Can learn some words, but their voices are gravelly and not very clear. They often learn to mimic household sounds.",
-  "dietaryNeeds": "A standard conure diet of pellets, fresh vegetables, and some fruit. Ensure a varied diet to keep them engaged.",
-  "healthPointers": "Generally robust and can live 15-25 years with proper care. Can be prone to polyomavirus. They love to snuggle in fabric, so be cautious about cloth huts that can cause crop impaction or strangulation.",
-  "housing": "Perfect for apartments. They are relatively quiet and their smaller size means a cage of 20\"W x 20\"D x 24\"H is a good minimum size, though larger is always better.",
-  "origin": "Central & South America",
-  "lifespan": "15-30 years with quality care (average 20-25 years)",
+  "vocalization": {
+    "en": "Can learn some words, but their voices are gravelly and not very clear. They often learn to mimic household sounds.",
+    "es": "Pueden aprender algunas palabras, pero sus voces son rasposas y no muy claras. A menudo aprenden a imitar sonidos domésticos."
+  },
+  "dietaryNeeds": {
+    "en": "A standard conure diet of pellets, fresh vegetables, and some fruit. Ensure a varied diet to keep them engaged.",
+    "es": "Dieta estándar de conuro a base de pellets, verduras frescas y algo de fruta. Asegure una dieta variada para mantenerlos activos."
+  },
+  "healthPointers": {
+    "en": "Generally robust and can live 15-25 years with proper care. Can be prone to polyomavirus. They love to snuggle in fabric, so be cautious about cloth huts that can cause crop impaction or strangulation.",
+    "es": "Generalmente robustas y pueden vivir entre 15 y 25 años con los cuidados adecuados. Pueden ser propensas al poliomavirus. Les encanta acurrucarse en la tela, así que tenga cuidado con las cabañas de tela que pueden causar impactación del buche o estrangulamiento."
+  },
+  "housing": {
+    "en": "Perfect for apartments. They are relatively quiet and their smaller size means a cage of 20\"W x 20\"D x 24\"H is a good minimum size, though larger is always better.",
+    "es": "Perfecta para apartamentos. Son relativamente silenciosas y su menor tamaño significa que una jaula de 50 cm de ancho x 50 cm de fondo x 60 cm de alto es un buen tamaño mínimo, aunque cuanto más grande sea, mejor."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "lifespan": {
+    "en": "15-25 years",
+    "es": "15-25 años"
+  },
   "careLevel": "intermediate",
-  "activityLevel": "High energy and playful. Loves climbing, swinging, and interactive toys. Needs 2-3 hours outside cage for exercise and bonding. More active and mischievous than cockatiels but more manageable than larger parrots.",
-  "socialNeeds": "Very social and affectionate. Enjoys close contact and cuddling. Can bond strongly to one person but socializes well with others if introduced properly. Tolerates alone time better than larger parrots but still needs daily interaction.",
-  "noiseTolerance": "Relatively quiet for a conure. Occasional loud calls but not constant screeching. Morning/evening vocalizations. Apartment-suitable if neighbors are reasonable. Quieter than sun conures or larger parrots.",
-  "spaceRequirements": "Minimum cage 24\"W × 24\"D × 30\"H. Prefers width over height for horizontal movement. Needs multiple perches, foraging toys, and climbing opportunities. Play gym recommended for out-of-cage time.",
-  "timeCommitment": "1.5-2 hours daily for play, training, and interaction. Daily food preparation (fresh vegetables) and cage spot-cleaning (15 min). Weekly deep cage clean (45 min). More demanding than budgies but less than larger parrots."
+  "activityLevel": {
+    "en": "High energy and playful. Loves climbing, swinging, and interactive toys. Needs 2-3 hours outside cage for exercise and bonding. More active and mischievous than cockatiels but more manageable than larger parrots.",
+    "es": "Gran energía y juego. Le encanta trepar, columpiarse y los juguetes interactivos. Necesita 2-3 horas fuera de la jaula para hacer ejercicio y crear vínculos afectivos. Más activa y traviesa que las ninfas, pero más manejable que los loros grandes."
+  },
+  "socialNeeds": {
+    "en": "Very social and affectionate. Enjoys close contact and cuddling. Can bond strongly to one person but socializes well with others if introduced properly. Tolerates alone time better than larger parrots but still needs daily interaction.",
+    "es": "Muy sociable y afectuosa. Disfruta del contacto estrecho y de los mimos. Puede crear fuertes vínculos con una persona, pero se socializa bien con los demás si se le presenta adecuadamente. Tolera mejor el tiempo a solas que los loros más grandes, pero sigue necesitando interacción diaria."
+  },
+  "noiseTolerance": {
+    "en": "Relatively quiet for a conure. Occasional loud calls but not constant screeching. Morning/evening vocalizations. Apartment-suitable if neighbors are reasonable. Quieter than sun conures or larger parrots.",
+    "es": "Relativamente silenciosa para ser un conuro. Gritos fuertes ocasionales, pero no constantes. Vocalizaciones matutinas y vespertinas. Adecuada para apartamentos si los vecinos son razonables. Más silenciosa que los conuros de sol o los loros grandes."
+  },
+  "spaceRequirements": {
+    "en": "Minimum cage 24\"W × 24\"D × 30\"H. Prefers width over height for horizontal movement. Needs multiple perches, foraging toys, and climbing opportunities. Play gym recommended for out-of-cage time.",
+    "es": "Jaula mínima de 60 cm de ancho x 60 cm de fondo x 75 cm de alto. Prefiere la anchura a la altura para el movimiento horizontal. Necesita varias perchas, juguetes de forrajeo y oportunidades para trepar. Se recomienda un gimnasio de juegos para el tiempo fuera de la jaula."
+  },
+  "timeCommitment": {
+    "en": "1.5-2 hours daily for play, training, and interaction. Daily food preparation (fresh vegetables) and cage spot-cleaning (15 min). Weekly deep cage clean (45 min). More demanding than budgies but less than larger parrots.",
+    "es": "1,5-2 horas diarias para juego, adiestramiento e interacción. Preparación diaria de la comida (verduras frescas) y limpieza puntual de la jaula (15 min). Limpieza a fondo semanal de la jaula (45 min). Más exigente que los periquitos pero menos que los loros grandes."
+  }
 }

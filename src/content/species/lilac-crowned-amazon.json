@@ -1,17 +1,52 @@
 {
   "category": "Amazons",
-  "species": "Lilac-crowned Amazon",
+  "species": {
+    "en": "Lilac-crowned Amazon",
+    "es": "Amazona de Corona Lila (Amazona finschi)"
+  },
   "slug": "lilac-crowned-amazon",
   "image": "/assets/img/parrots/lilac-crowned-amazon.webp",
-  "description": "A medium-sized Amazon with primarily green plumage, a maroon forehead, and a distinctive lilac-blue crown and neck. They are known for their gentler nature.",
-  "size": "12-13.5 inches (30.5-34 cm). Weight: 300-390g (10.5-13.7 oz)",
+  "description": {
+    "en": "A medium-sized Amazon with primarily green plumage, a maroon forehead, and a distinctive lilac-blue crown and neck. They are known for their gentler nature.",
+    "es": "Un amazona de tamaño medio con plumaje principalmente verde, frente granate y una distintiva corona y cuello azul lila. Son conocidos por su naturaleza más amable."
+  },
+  "size": {
+    "en": "12-13.5 inches (30.5-34 cm). Weight: 300-390g (10.5-13.7 oz)",
+    "es": "12-13.5 pulgadas (30.5-34 cm). Peso: 300-390g (10.5-13.7 oz)"
+  },
   "weight_grams": 345,
-  "temperament": "Generally considered calmer, less aggressive, and quieter than many other Amazon species. They are playful, curious, and can be very affectionate.",
-  "loudness": "Moderate. While capable of loud calls, they are not as prone to screaming as some of their relatives.",
-  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
-  "vocalization": "Moderate talkers. They can develop a decent vocabulary but are not typically as prolific as the yellow-headed species.",
-  "dietaryNeeds": "A well-balanced diet of high-quality pellets, fresh vegetables, and limited fruit to prevent obesity.",
-  "healthPointers": "A generally hardy species with a lifespan of 50+ years. Prone to the common Amazon ailments like obesity and Vitamin A deficiency if not fed a proper diet.",
-  "housing": "A good-sized cage is still needed. Minimum 30\"W x 24\"D x 40\"H. Their more moderate noise level might make them more suitable for some shared-wall living situations than other Amazons.",
-  "origin": "Central & South America"
+  "temperament": {
+    "en": "Generally considered calmer, less aggressive, and quieter than many other Amazon species. They are playful, curious, and can be very affectionate.",
+    "es": "Generalmente se consideran más tranquilas, menos agresivas y más silenciosas que muchas otras especies de amazonas. Son juguetonas, curiosas y pueden ser muy afectuosas."
+  },
+  "loudness": {
+    "en": "Moderate. While capable of loud calls, they are not as prone to screaming as some of their relatives.",
+    "es": "Moderado. Aunque son capaces de emitir llamadas fuertes, no son tan propensas a gritar como algunas de sus parientes."
+  },
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4L7 9H3zm13.5 3c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": {
+    "en": "Moderate talkers. They can develop a decent vocabulary but are not typically as prolific as the yellow-headed species.",
+    "es": "Habladoras moderadas. Pueden desarrollar un vocabulario decente, pero no suelen ser tan prolíficas como las especies de cabeza amarilla."
+  },
+  "dietaryNeeds": {
+    "en": "A well-balanced diet of high-quality pellets, fresh vegetables, and limited fruit to prevent obesity.",
+    "es": "Una dieta equilibrada de pellets de alta calidad, verduras frescas y fruta limitada para evitar la obesidad."
+  },
+  "healthPointers": {
+    "en": "A generally hardy species with a lifespan of 50+ years. Prone to the common Amazon ailments like obesity and Vitamin A deficiency if not fed a proper diet.",
+    "es": "Una especie generalmente resistente con una esperanza de vida de más de 50 años. Propensa a las dolencias comunes de las amazonas, como la obesidad y la deficiencia de vitamina A si no se alimenta con una dieta adecuada."
+  },
+  "housing": {
+    "en": "A good-sized cage is still needed. Minimum 30\"W x 24\"D x 40\"H. Their more moderate noise level might make them more suitable for some shared-wall living situations than other Amazons.",
+    "es": "Sigue siendo necesaria una jaula de buen tamaño. Mínimo 75 cm de ancho x 60 cm de fondo x 100 cm de alto. Su nivel de ruido más moderado podría hacerlas más adecuadas para algunas situaciones de vivienda con paredes compartidas que otras amazonas."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "50+ years",
+    "es": "50+ años"
+  }
 }

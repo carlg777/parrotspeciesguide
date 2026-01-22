@@ -1,17 +1,52 @@
 {
   "category": "Caiques",
-  "species": "White-bellied Caique",
+  "species": {
+    "en": "White-bellied Caique",
+    "es": "Caíque de Vientre Blanco (Pionites leucogaster)"
+  },
   "slug": "white-bellied-caique",
   "image": "/assets/img/parrots/white-bellied-caique.webp",
-  "description": "Similar in build to the Black-headed Caique, but with a vibrant orange or yellow head, white belly, and green wings. They are equally energetic.",
-  "size": "9 inches (23 cm). Weight: 150-170g (5.3-6 oz)",
+  "description": {
+    "en": "Similar in build to the Black-headed Caique, but with a vibrant orange or yellow head, white belly, and green wings. They are equally energetic.",
+    "es": "De constitución similar al caíque de cabeza negra, pero con la cabeza de color naranja o amarillo vibrante, el vientre blanco y las alas verdes. Son igualmente enérgicos."
+  },
+  "size": {
+    "en": "9 inches (23 cm). Weight: 150-170g (5.3-6 oz)",
+    "es": "9 pulgadas (23 cm). Peso: 150-170g (5.3-6 oz)"
+  },
   "weight_grams": 160,
-  "temperament": "Goofy, fearless, and always on the move. They have a reputation for being slightly more high-strung than the Black-headed variety. Very cuddly on their own terms.",
-  "loudness": "Moderate to Loud. Their calls can be very loud and shrill, especially when excited.",
-  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
-  "vocalization": "Limited talking ability. They are excellent mimics of sounds and can learn many whistles.",
-  "dietaryNeeds": "A varied diet is key. High-quality pellets, a good mix of fresh vegetables, and a bit more fruit than other parrots to match their high energy levels.",
-  "healthPointers": "Can live 20-30 years. Polyomavirus can be a concern, so ensure they come from a reputable breeder. Prone to getting into trouble due to their fearless nature.",
-  "housing": "Can be suitable for apartments, but noise is a factor. A roomy cage is a must, 24\"W x 24\"D x 30\"H at a minimum, to accommodate their acrobatic antics.",
-  "origin": "Central & South America"
+  "temperament": {
+    "en": "Goofy, fearless, and always on the move. They have a reputation for being slightly more high-strung than the Black-headed variety. Very cuddly on their own terms.",
+    "es": "Gordinflón, intrépido y siempre en movimiento. Tienen fama de ser algo más nerviosos que la variedad de cabeza negra. Muy mimosos en sus propios términos."
+  },
+  "loudness": {
+    "en": "Moderate to Loud. Their calls can be very loud and shrill, especially when excited.",
+    "es": "Moderada a fuerte. Sus llamadas pueden ser muy fuertes y estridentes, sobre todo cuando están excitados."
+  },
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4L7 9H3zm13.5 3c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": {
+    "en": "Limited talking ability. They are excellent mimics of sounds and can learn many whistles.",
+    "es": "Capacidad de habla limitada. Son excelentes imitadores de sonidos y pueden aprender muchos silbidos."
+  },
+  "dietaryNeeds": {
+    "en": "A varied diet is key. High-quality pellets, a good mix of fresh vegetables, and a bit more fruit than other parrots to match their high energy levels.",
+    "es": "Una dieta variada es fundamental. Pellets de alta calidad, una buena mezcla de verduras frescas y algo más de fruta que otros loros para igualar sus altos niveles de energía."
+  },
+  "healthPointers": {
+    "en": "Can live 20-30 years. Polyomavirus can be a concern, so ensure they come from a reputable breeder. Prone to getting into trouble due to their fearless nature.",
+    "es": "Pueden vivir entre 20 y 30 años. El poliomavirus puede ser un problema, así que asegúrese de que proceden de un criador de confianza. Propensos a meterse en líos debido a su naturaleza intrépida."
+  },
+  "housing": {
+    "en": "Can be suitable for apartments, but noise is a factor. A roomy cage is a must, 24\"W x 24\"D x 30\"H at a minimum, to accommodate their acrobatic antics.",
+    "es": "Puede ser adecuado para apartamentos, pero el ruido es un factor. Es imprescindible una jaula espaciosa, de 60 x 60 x 75 cm como mínimo, para dar cabida a sus acrobacias."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "intermediate",
+  "lifespan": {
+    "en": "20-30 years",
+    "es": "20-30 años"
+  }
 }

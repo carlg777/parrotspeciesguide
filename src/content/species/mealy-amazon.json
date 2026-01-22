@@ -1,17 +1,52 @@
 {
   "category": "Amazons",
-  "species": "Mealy Amazon",
+  "species": {
+    "en": "Mealy Amazon",
+    "es": "Amazona Harinosa (Amazona farinosa)"
+  },
   "slug": "mealy-amazon",
   "image": "/assets/img/parrots/mealy-amazon.webp",
-  "description": "One of the largest Amazon species, they have a green body with a dusty or 'mealy' appearance due to a faint white-ish tinge to their feathers. Some have a patch of yellow on the crown.",
-  "size": "15-16 inches (38-41 cm). Weight: 540-700g (19-24.7 oz)",
+  "description": {
+    "en": "One of the largest Amazon species, they have a green body with a dusty or 'mealy' appearance due to a faint white-ish tinge to their feathers. Some have a patch of yellow on the crown.",
+    "es": "Una de las especies de amazonas más grandes, tienen el cuerpo verde con un aspecto polvoriento o 'harinoso' debido a un ligero tinte blanquecino en sus plumas. Algunas tienen una mancha amarilla en la corona."
+  },
+  "size": {
+    "en": "15-16 inches (38-41 cm). Weight: 540-700g (19-24.7 oz)",
+    "es": "15-16 pulgadas (38-41 cm). Peso: 540-700g (19-24.7 oz)"
+  },
   "weight_grams": 620,
-  "temperament": "Known as 'gentle giants.' They are typically more docile, easy-going, and less prone to aggression than many other large Amazons.",
-  "loudness": "Moderate to Loud. Their voice is not as harsh as some other Amazons, but they can still be quite loud when they want to be.",
+  "temperament": {
+    "en": "Known as 'gentle giants.' They are typically more docile, easy-going, and less prone to aggression than many other large Amazons.",
+    "es": "Conocidas como 'gigantes amables'. Suelen ser más dóciles, tranquilas y menos propensas a la agresión que muchas otras amazonas grandes."
+  },
+  "loudness": {
+    "en": "Moderate to Loud. Their voice is not as harsh as some other Amazons, but they can still be quite loud when they want to be.",
+    "es": "Moderado a fuerte. Su voz no es tan áspera como la de otras amazonas, pero pueden seguir siendo bastante ruidosas cuando quieren."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
-  "vocalization": "Fair talking ability. They can learn words and phrases but are not considered the most gifted talkers of the genus.",
-  "dietaryNeeds": "A standard low-fat Amazon diet is appropriate: high-quality pellets with plenty of fresh vegetables and occasional fruits.",
-  "healthPointers": "Can live for 40-60 years. Obesity is a concern. They need a large cage and plenty of out-of-cage time for exercise.",
-  "housing": "Requires a very large cage due to their size. Minimum 40\"W x 30\"D x 60\"H. Not ideal for apartments.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Fair talking ability. They can learn words and phrases but are not considered the most gifted talkers of the genus.",
+    "es": "Capacidad de habla aceptable. Pueden aprender palabras y frases, pero no se consideran las habladoras más dotadas del género."
+  },
+  "dietaryNeeds": {
+    "en": "A standard low-fat Amazon diet is appropriate: high-quality pellets with plenty of fresh vegetables and occasional fruits.",
+    "es": "Es adecuada una dieta estándar para amazonas baja en grasas: pellets de alta calidad con abundantes verduras frescas y frutas ocasionales."
+  },
+  "healthPointers": {
+    "en": "Can live for 40-60 years. Obesity is a concern. They need a large cage and plenty of out-of-cage time for exercise.",
+    "es": "Pueden vivir entre 40 y 60 años. La obesidad es una preocupación. Necesitan una jaula grande y mucho tiempo fuera de ella para hacer ejercicio."
+  },
+  "housing": {
+    "en": "Requires a very large cage due to their size. Minimum 40\"W x 30\"D x 60\"H. Not ideal for apartments.",
+    "es": "Requiere una jaula muy grande debido a su tamaño. Mínimo 100 cm de ancho x 75 cm de fondo x 150 cm de alto. No es ideal para apartamentos."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "40-60 years",
+    "es": "40-60 años"
+  }
 }

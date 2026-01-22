@@ -1,17 +1,52 @@
 {
   "category": "Macaws",
-  "species": "Lear's Macaw",
+  "species": {
+    "en": "Lear's Macaw",
+    "es": "Guacamayo de Lear (Anodorhynchus leari)"
+  },
   "slug": "lears-macaw",
   "image": "/assets/img/parrots/lears-macaw.webp",
-  "description": "A large, rare macaw that is a uniform deep blue, similar to the Hyacinth but slightly smaller and with a greenish tinge. They have a teardrop-shaped yellow patch of skin at the base of their beak.",
-  "size": "28-31 inches (71-79 cm). Weight: 900-1000g (31.7-35 oz)",
+  "description": {
+    "en": "A large, rare macaw that is a uniform deep blue, similar to the Hyacinth but slightly smaller and with a greenish tinge. They have a teardrop-shaped yellow patch of skin at the base of their beak.",
+    "es": "Un guacamayo grande y poco común de un azul profundo uniforme, similar al jacinto pero ligeramente más pequeño y con un matiz verdoso. Tienen una mancha amarilla de piel en forma de lágrima en la base del pico."
+  },
+  "size": {
+    "en": "28-31 inches (71-79 cm). Weight: 900-1000g (31.7-35 oz)",
+    "es": "28-31 pulgadas (71-79 cm). Peso: 900-1000g (31.7-35 oz)"
+  },
   "weight_grams": 950,
-  "temperament": "Intelligent, playful, and social. In the wild, they are very shy. In captivity, they can be affectionate but require experienced handling due to their rarity and specialized needs.",
-  "loudness": "Very Loud. They have a powerful, rolling call similar to but higher-pitched than a Hyacinth's.",
+  "temperament": {
+    "en": "Intelligent, playful, and social. In the wild, they are very shy. In captivity, they can be affectionate but require experienced handling due to their rarity and specialized needs.",
+    "es": "Inteligente, juguetón y social. En estado salvaje son muy tímidos. En cautividad pueden ser afectuosos, pero requieren un manejo experimentado debido a su rareza y a sus necesidades especializadas."
+  },
+  "loudness": {
+    "en": "Very Loud. They have a powerful, rolling call similar to but higher-pitched than a Hyacinth's.",
+    "es": "Muy ruidoso. Tienen una llamada potente y ondulante, similar a la del jacinto pero de tono más agudo."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Not well known for talking ability in captivity due to their rarity. Their natural calls are impressive and loud.",
-  "dietaryNeeds": "A highly specialized diet, primarily consisting of Licuri palm nuts. Replicating this in captivity is challenging and requires a specific formulated diet.",
-  "healthPointers": "Lifespan can exceed 60 years. Endangered and protected. Health care requires an avian specialist. Prone to PDD and other macaw-related illnesses.",
-  "housing": "Requires a very large, custom-built aviary. They are not considered pet birds and are usually found only in conservation programs and zoos. Not suitable for private homes.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Not well known for talking ability in captivity due to their rarity. Their natural calls are impressive and loud.",
+    "es": "No son conocidos por su capacidad de habla en cautividad debido a su rareza. Sus llamadas naturales son impresionantes y fuertes."
+  },
+  "dietaryNeeds": {
+    "en": "A highly specialized diet, primarily consisting of Licuri palm nuts. Replicating this in captivity is challenging and requires a specific formulated diet.",
+    "es": "Una dieta altamente especializada, compuesta principalmente por nueces de palma Licuri. Reproducir esto en cautividad es un reto y requiere una dieta formulada específica."
+  },
+  "healthPointers": {
+    "en": "Lifespan can exceed 60 years. Endangered and protected. Health care requires an avian specialist. Prone to PDD and other macaw-related illnesses.",
+    "es": "Su esperanza de vida puede superar los 60 años. En peligro de extinción y protegidos. La atención sanitaria requiere un especialista en aves. Propensos a la PDD y otras enfermedades relacionadas con los guacamayos."
+  },
+  "housing": {
+    "en": "Requires a very large, custom-built aviary. They are not considered pet birds and are usually found only in conservation programs and zoos. Not suitable for private homes.",
+    "es": "Requiere un aviario muy grande construido a medida. No se consideran pájaros de compañía y suelen encontrarse únicamente en programas de conservación y zoológicos. No son adecuados para hogares privados."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "60+ years",
+    "es": "60+ años"
+  }
 }

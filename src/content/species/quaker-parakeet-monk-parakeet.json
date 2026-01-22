@@ -1,17 +1,52 @@
 {
   "category": "Parakeets",
-  "species": "Quaker Parakeet (Monk Parakeet)",
+  "species": {
+    "en": "Quaker Parakeet (Monk Parakeet)",
+    "es": "Cotorra Monje (Myiopsitta monachus)"
+  },
   "slug": "quaker-parakeet-monk-parakeet",
   "image": "/assets/img/parrots/quaker-parakeet-monk-parakeet.webp",
-  "description": "A small, bright green parrot with a greyish breast and cheeks. They are the only parrot species that builds its own nest out of sticks rather than nesting in a cavity.",
-  "size": "11-12 inches (28-30.5 cm). Weight: 90-120g (3.2-4.2 oz)",
+  "description": {
+    "en": "A small, bright green parrot with a greyish breast and cheeks. They are the only parrot species that builds its own nest out of sticks rather than nesting in a cavity.",
+    "es": "Loro pequeño de color verde brillante con el pecho y las mejillas grisáceos. Son la única especie de loro que construye su propio nido con palos en lugar de anidar en una cavidad."
+  },
+  "size": {
+    "en": "11-12 inches (28-30.5 cm). Weight: 90-120g (3.2-4.2 oz)",
+    "translated": "11-12 pulgadas (28-30.5 cm). Peso: 90-120g (3.2-4.2 oz)"
+  },
   "weight_grams": 105,
-  "temperament": "Confident, social, and comical. Quakers are known for their big personalities and can be very cuddly. They are also known for being territorial about their cages.",
-  "loudness": "Loud. They are prone to chattering and squawking and can be quite noisy, especially when they hear sounds like the phone ringing or the vacuum cleaner.",
+  "temperament": {
+    "en": "Confident, social, and comical. Quakers are known for their big personalities and can be very cuddly. They are also known for being territorial about their cages.",
+    "es": "Segura de sí misma, sociable y cómica. Las cotorras monje son conocidas por su gran personalidad y pueden ser muy mimosas. También son conocidas por ser territoriales con sus jaulas."
+  },
+  "loudness": {
+    "en": "Loud. They are prone to chattering and squawking and can be quite noisy, especially when they hear sounds like the phone ringing or the vacuum cleaner.",
+    "es": "Ruidosa. Son propensas a parlotear y graznar y pueden ser bastante ruidosas, sobre todo cuando oyen sonidos como el timbre del teléfono o el aspirador."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Excellent talkers. Many Quakers learn to speak very clearly and can accumulate a large vocabulary.",
-  "dietaryNeeds": "A pelleted diet with fresh vegetables and some fruit. They are prone to fatty liver disease, so a low-fat diet is very important.",
-  "healthPointers": "Hardy and adaptable, with a lifespan of 20-30 years. Prone to fatty liver disease and feather plucking if they become bored or are on a poor diet. They are illegal to own in some states due to fears of them establishing feral colonies.",
-  "housing": "Can be challenging for apartments due to their noise level. A minimum cage size of 20\"W x 20\"D x 24\"H is recommended.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Excellent talkers. Many Quakers learn to speak very clearly and can accumulate a large vocabulary.",
+    "es": "Excelentes habladoras. Muchas cotorras monje aprenden a hablar con gran claridad y pueden acumular un amplio vocabulario."
+  },
+  "dietaryNeeds": {
+    "en": "A pelleted diet with fresh vegetables and some fruit. They are prone to fatty liver disease, so a low-fat diet is very important.",
+    "es": "Una dieta de pellets con verduras frescas y algo de fruta. Son propensos a la enfermedad del hígado graso, por lo que una dieta baja en grasas es muy importante."
+  },
+  "healthPointers": {
+    "en": "Hardy and adaptable, with a lifespan of 20-30 years. Prone to fatty liver disease and feather plucking if they become bored or are on a poor diet. They are illegal to own in some states due to fears of them establishing feral colonies.",
+    "es": "Resistentes y adaptables, con una esperanza de vida de 20 a 30 años. Propensas a la enfermedad del hígado graso y al picaje de plumas si se aburren o siguen una dieta deficiente. Su posesión es ilegal en algunos estados por temor a que establezcan colonias asilvestradas."
+  },
+  "housing": {
+    "en": "Can be challenging for apartments due to their noise level. A minimum cage size of 20\"W x 20\"D x 24\"H is recommended.",
+    "es": "Puede ser un reto para los apartamentos debido a su nivel de ruido. Se recomienda una jaula con un tamaño mínimo de 50 cm de ancho x 50 cm de fondo x 60 cm de alto."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "intermediate",
+  "lifespan": {
+    "en": "20-30 years",
+    "es": "20-30 años"
+  }
 }

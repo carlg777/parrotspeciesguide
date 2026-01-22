@@ -1,17 +1,52 @@
 {
   "category": "Caiques",
-  "species": "Black-headed Caique",
+  "species": {
+    "en": "Black-headed Caique",
+    "es": "Caíque de Cabeza Negra (Pionites melanocephalus)"
+  },
   "slug": "black-headed-caique",
   "image": "/assets/img/parrots/black-headed-caique.webp",
-  "description": "A small, stocky parrot with a black head, white throat and chest, yellow thighs, and green wings. They are often described as clowns.",
-  "size": "9 inches (23 cm). Weight: 150-170g (5.3-6 oz)",
+  "description": {
+    "en": "A small, stocky parrot with a black head, white throat and chest, yellow thighs, and green wings. They are often described as clowns.",
+    "es": "Un loro pequeño y fornido con la cabeza negra, la garganta y el pecho blancos, los muslos amarillos y las alas verdes. A menudo se les describe como payasos."
+  },
+  "size": {
+    "en": "9 inches (23 cm). Weight: 150-170g (5.3-6 oz)",
+    "es": "9 pulgadas (23 cm). Peso: 150-170g (5.3-6 oz)"
+  },
   "weight_grams": 160,
-  "temperament": "Extremely playful, energetic, and comical. They love to hop, dance, and wrestle with toys. Can be nippy and require consistent training.",
-  "loudness": "Moderate to Loud. Not as piercing as larger parrots, but they have a high-pitched, sharp call that can be frequent.",
-  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
-  "vocalization": "Not known for talking ability. They are more likely to learn whistles, beeps, and other environmental sounds.",
-  "dietaryNeeds": "High-energy birds that do well on a diet of pellets, fresh fruits, vegetables, and flowers. They can be picky eaters.",
-  "healthPointers": "Generally hardy birds that can live 20-30 years. Ensure they have plenty of toys for chewing and energy-burning to prevent behavioral issues.",
-  "housing": "Suitable for apartments with tolerant neighbors. They are active and need a spacious cage for their size, at least 24\"W x 24\"D x 30\"H, with lots of toys and room to hop.",
-  "origin": "Central & South America"
+  "temperament": {
+    "en": "Extremely playful, energetic, and comical. They love to hop, dance, and wrestle with toys. Can be nippy and require consistent training.",
+    "es": "Extremadamente juguetón, enérgico y cómico. Les encanta saltar, bailar y luchar con los juguetes. Pueden dar picotazos y requieren un entrenamiento constante."
+  },
+  "loudness": {
+    "en": "Moderate to Loud. Not as piercing as larger parrots, but they have a high-pitched, sharp call that can be frequent.",
+    "es": "Moderada a fuerte. No es tan penetrante como la de los loros grandes, pero tienen una llamada aguda y cortante que puede ser frecuente."
+  },
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4L7 9H3zm13.5 3c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": {
+    "en": "Not known for talking ability. They are more likely to learn whistles, beeps, and other environmental sounds.",
+    "es": "No son conocidos por su capacidad de habla. Es más probable que aprendan silbidos, pitidos y otros sonidos ambientales."
+  },
+  "dietaryNeeds": {
+    "en": "High-energy birds that do well on a diet of pellets, fresh fruits, vegetables, and flowers. They can be picky eaters.",
+    "es": "Aves de gran energía que se desenvuelven bien con una dieta de pellets, frutas frescas, verduras y flores. Pueden ser quisquillosos con la comida."
+  },
+  "healthPointers": {
+    "en": "Generally hardy birds that can live 20-30 years. Ensure they have plenty of toys for chewing and energy-burning to prevent behavioral issues.",
+    "es": "Aves generalmente resistentes que pueden vivir entre 20 y 30 años. Asegúrese de que tengan muchos juguetes para masticar y quemar energía para evitar problemas de comportamiento."
+  },
+  "housing": {
+    "en": "Suitable for apartments with tolerant neighbors. They are active and need a spacious cage for their size, at least 24\"W x 24\"D x 30\"H, with lots of toys and room to hop.",
+    "es": "Adecuado para apartamentos con vecinos tolerantes. Son activos y necesitan una jaula espaciosa para su tamaño, de al menos 60 cm de ancho x 60 cm de fondo x 75 cm de alto, con muchos juguetes y espacio para saltar."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "intermediate",
+  "lifespan": {
+    "en": "20-30 years",
+    "es": "20-30 años"
+  }
 }

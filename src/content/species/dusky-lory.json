@@ -1,17 +1,52 @@
 {
   "category": "Lories & Lorikeets",
-  "species": "Dusky Lory",
+  "species": {
+    "en": "Dusky Lory",
+    "es": "Lori Sombrío (Pseudeos fuscata)"
+  },
   "slug": "dusky-lory",
   "image": "/assets/img/parrots/dusky-lory.webp",
-  "description": "A uniquely colored lory with two main color phases: one with a brownish-black body with a bright orange or yellow bib, and another that is more olive-green. Both have striking orange and red markings.",
-  "size": "10 inches (25.5 cm). Weight: 90-115g (3.2-4 oz)",
+  "description": {
+    "en": "A uniquely colored lory with two main color phases: one with a brownish-black body with a bright orange or yellow bib, and another that is more olive-green. Both have striking orange and red markings.",
+    "es": "Un lori de colores únicos con dos fases de color principales: una con el cuerpo negro amarronado y el babero naranja o amarillo brillante, y otra más verde oliva. Ambas tienen llamativas marcas naranjas y rojas."
+  },
+  "size": {
+    "en": "10 inches (25.5 cm). Weight: 90-115g (3.2-4 oz)",
+    "es": "10 pulgadas (25.5 cm). Peso: 90-115g (3.2-4 oz)"
+  },
   "weight_grams": 102,
-  "temperament": "Playful, intelligent, and curious. They are known for their comical antics and can be quite affectionate. They are very active and enjoy swinging and playing with toys.",
-  "loudness": "Moderate to Loud. They have a high-pitched, repetitive call that can be noisy, but they are generally not as loud as a Rainbow or Chattering Lory.",
-  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
-  "vocalization": "Can learn to mimic a good number of words and sounds. Their voice is high-pitched and they enjoy chattering.",
-  "dietaryNeeds": "A liquid nectar diet is essential. Commercially prepared formulas are best. Supplement with a variety of soft fruits and some vegetables.",
-  "healthPointers": "Can live 20+ years. Messy droppings are a given. Prone to fungal infections if their environment is not kept scrupulously clean. They need a lot of toys to keep them occupied.",
-  "housing": "Can be manageable in an apartment if the owner is diligent about cleaning and can tolerate moderate noise. A cage of at least 30\"W x 24\"D x 24\"H is needed.",
-  "origin": "Australia & Oceania"
+  "temperament": {
+    "en": "Playful, intelligent, and curious. They are known for their comical antics and can be quite affectionate. They are very active and enjoy swinging and playing with toys.",
+    "es": "Juguetón, inteligente y curioso. Son conocidos por sus cómicas travesuras y pueden ser muy afectuosos. Son muy activos y disfrutan columpiándose y jugando con juguetes."
+  },
+  "loudness": {
+    "en": "Moderate to Loud. They have a high-pitched, repetitive call that can be noisy, but they are generally not as loud as a Rainbow or Chattering Lory.",
+    "es": "Moderado a fuerte. Tienen una llamada aguda y repetitiva que puede ser ruidosa, pero por lo general no son tan ruidosos como un lori arcoíris o un lori garrulo."
+  },
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4L7 9H3zm13.5 3c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": {
+    "en": "Can learn to mimic a good number of words and sounds. Their voice is high-pitched and they enjoy chattering.",
+    "es": "Pueden aprender a imitar un buen número de palabras y sonidos. Su voz es aguda y disfrutan parlooteando."
+  },
+  "dietaryNeeds": {
+    "en": "A liquid nectar diet is essential. Commercially prepared formulas are best. Supplement with a variety of soft fruits and some vegetables.",
+    "es": "Es esencial una dieta de néctar líquido. Las fórmulas preparadas comercialmente son las mejores. Complementar con una variedad de frutas blandas y algunas verduras."
+  },
+  "healthPointers": {
+    "en": "Can live 20+ years. Messy droppings are a given. Prone to fungal infections if their environment is not kept scrupulously clean. They need a lot of toys to keep them occupied.",
+    "es": "Pueden vivir más de 20 años. Los excrementos sucios son un hecho. Propensos a las infecciones por hongos si su entorno no se mantiene escrupulosamente limpio. Necesitan muchos juguetes para mantenerse ocupados."
+  },
+  "housing": {
+    "en": "Can be manageable in an apartment if the owner is diligent about cleaning and can tolerate moderate noise. A cage of at least 30\"W x 24\"D x 24\"H is needed.",
+    "es": "Pueden ser manejables en un apartamento si el dueño es diligente con la limpieza y puede tolerar un ruido moderado. Se necesita una jaula de al menos 75 cm de ancho x 60 cm de fondo x 60 cm de alto."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "20+ years",
+    "es": "20+ años"
+  }
 }

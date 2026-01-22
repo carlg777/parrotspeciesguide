@@ -1,17 +1,52 @@
 {
   "category": "Macaws",
-  "species": "Spix's Macaw",
+  "species": {
+    "en": "Spix's Macaw",
+    "es": "Guacamayo de Spix (Cyanopsitta spixii)"
+  },
   "slug": "spixs-macaw",
   "image": "/assets/img/parrots/spixs-macaw.webp",
-  "description": "The famous 'Little Blue Macaw,' a small macaw with various shades of blue-grey plumage and a brighter blue on the wings and tail. It is extinct in the wild, existing only in breeding programs.",
-  "size": "22 inches (56 cm). Weight: 300g (10.5 oz)",
+  "description": {
+    "en": "The famous 'Little Blue Macaw,' a small macaw with various shades of blue-grey plumage and a brighter blue on the wings and tail. It is extinct in the wild, existing only in breeding programs.",
+    "es": "El famoso 'pequeño guacamayo azul', un guacamayo pequeño con varios tonos de plumaje azul-grisáceo y un azul más brillante en las alas y la cola. Está extinguido en estado salvaje y sólo existe en programas de cría."
+  },
+  "size": {
+    "en": "22 inches (56 cm). Weight: 300g (10.5 oz)",
+    "es": "22 pulgadas (56 cm). Peso: 300g (10.5 oz)"
+  },
   "weight_grams": 300,
-  "temperament": "Known to be very shy, gentle, and intelligent. They form strong pair bonds. Their temperament in a companion setting is not well-documented due to their extreme rarity.",
-  "loudness": "Moderate. Their call is a 'kra-ark' sound, which is not considered as loud or harsh as that of other macaw species.",
+  "temperament": {
+    "en": "Known to be very shy, gentle, and intelligent. They form strong pair bonds. Their temperament in a companion setting is not well-documented due to their extreme rarity.",
+    "es": "Conocido por ser muy tímido, amable e inteligente. Forman fuertes vínculos de pareja. Su temperamento en un entorno de compañía no está bien documentado debido a su extrema rareza."
+  },
+  "loudness": {
+    "en": "Moderate. Their call is a 'kra-ark' sound, which is not considered as loud or harsh as that of other macaw species.",
+    "es": "Moderado. Su llamada es un sonido tipo 'kra-ark', que no se considera tan fuerte ni tan áspero como el de otras especies de guacamayos."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
-  "vocalization": "Not known for talking ability. Their vocalizations are their natural calls.",
-  "dietaryNeeds": "Highly specialized, relying on the nuts of specific palm trees in their native habitat. Breeding programs work to replicate this diet.",
-  "healthPointers": "Lifespan of 20-30 years. The incredibly small gene pool presents significant health challenges. They are not available as pets and are managed under strict conservation protocols.",
-  "housing": "Housed exclusively in large, dedicated aviaries as part of international conservation and reintroduction efforts. Not a pet species.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Not known for talking ability. Their vocalizations are their natural calls.",
+    "es": "No son conocidos por su capacidad de habla. Sus vocalizaciones son sus llamadas naturales."
+  },
+  "dietaryNeeds": {
+    "en": "Highly specialized, relying on the nuts of specific palm trees in their native habitat. Breeding programs work to replicate this diet.",
+    "es": "Altamente especializada, dependiente de las nueces de palmeras específicas de su hábitat natural. Los programas de cría trabajan para reproducir esta dieta."
+  },
+  "healthPointers": {
+    "en": "Lifespan of 20-30 years. The incredibly small gene pool presents significant health challenges. They are not available as pets and are managed under strict conservation protocols.",
+    "es": "Esperanza de vida de 20 a 30 años. El increíblemente pequeño acervo genético plantea importantes retos sanitarios. No están disponibles como mascotas y se gestionan bajo estrictos protocolos de conservación."
+  },
+  "housing": {
+    "en": "Housed exclusively in large, dedicated aviaries as part of international conservation and reintroduction efforts. Not a pet species.",
+    "es": "Alojados exclusivamente en grandes aviarios dedicados como parte de los esfuerzos internacionales de conservación y reintroducción. No es una especie de compañía."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "20-30+ years",
+    "es": "20-30+ años"
+  }
 }

@@ -1,17 +1,52 @@
 {
   "category": "Macaws",
-  "species": "Illiger's Macaw",
+  "species": {
+    "en": "Illiger's Macaw",
+    "es": "Guacamayo de Illiger (Primolius maracana)"
+  },
   "slug": "illigers-macaw",
   "image": "/assets/img/parrots/illigers-macaw.webp",
-  "description": "A popular mini-macaw, the Illiger's is predominantly green with a red forehead, and blue on the head and wings. They have a distinctive orange-red patch on their belly.",
-  "size": "15-17 inches (38-43 cm). Weight: 250-300g (8.8-10.5 oz)",
+  "description": {
+    "en": "A popular mini-macaw, the Illiger's is predominantly green with a red forehead, and blue on the head and wings. They have a distinctive orange-red patch on their belly.",
+    "es": "Un mini-guacamayo popular, el de Illiger es predominantemente verde con la frente roja, y azul en la cabeza y las alas. Tienen una mancha distintiva de color rojo anaranjado en el abdomen."
+  },
+  "size": {
+    "en": "15-17 inches (38-43 cm). Weight: 250-300g (8.8-10.5 oz)",
+    "es": "15-17 pulgadas (38-43 cm). Peso: 250-300g (8.8-10.5 oz)"
+  },
   "weight_grams": 275,
-  "temperament": "Highly intelligent, outgoing, and curious. They are known for their playful and affectionate nature, but they can also be mischievous and require consistent training.",
-  "loudness": "Moderate to Loud. While not as loud as a large macaw, they have a high-pitched call that can be quite piercing and frequent.",
+  "temperament": {
+    "en": "Highly intelligent, outgoing, and curious. They are known for their playful and affectionate nature, but they can also be mischievous and require consistent training.",
+    "es": "Altamente inteligente, extrovertido y curioso. Son conocidos por su naturaleza juguetona y afectuosa, pero también pueden ser traviesos y requieren un entrenamiento constante."
+  },
+  "loudness": {
+    "en": "Moderate to Loud. While not as loud as a large macaw, they have a high-pitched call that can be quite piercing and frequent.",
+    "es": "Moderado a fuerte. Aunque no son tan ruidosos como un guacamayo grande, tienen una llamada de tono agudo que puede ser bastante penetrante y frecuente."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
-  "vocalization": "Good talkers for their size. They can learn a variety of words and phrases and are known for their playful chatter.",
-  "dietaryNeeds": "A balanced diet of pellets, fresh fruits, and vegetables. They enjoy nuts as treats, but these should be given in moderation.",
-  "healthPointers": "Generally a hardy species with a lifespan of 40-50 years. They can be prone to feather plucking if they become bored, so a variety of enriching toys is essential.",
-  "housing": "Needs a large cage for a mini-macaw, at least 30\"W x 24\"D x 48\"H. Their noise level might be too much for some apartments.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Good talkers for their size. They can learn a variety of words and phrases and are known for their playful chatter.",
+    "es": "Buenos habladores para su tamaño. Pueden aprender una variedad de palabras y frases y son conocidos por su parloteo juguetón."
+  },
+  "dietaryNeeds": {
+    "en": "A balanced diet of pellets, fresh fruits, and vegetables. They enjoy nuts as treats, but these should be given in moderation.",
+    "es": "Una dieta equilibrada de pellets, frutas frescas y verduras. Disfrutan de los frutos secos como premio, pero deben darse con moderación."
+  },
+  "healthPointers": {
+    "en": "Generally a hardy species with a lifespan of 40-50 years. They can be prone to feather plucking if they become bored, so a variety of enriching toys is essential.",
+    "es": "Especie generalmente resistente con una esperanza de vida de 40 a 50 años. Pueden ser propensos al picaje de plumas si se aburren, por lo que es esencial una variedad de juguetes enriquecedores."
+  },
+  "housing": {
+    "en": "Needs a large cage for a mini-macaw, at least 30\"W x 24\"D x 48\"H. Their noise level might be too much for some apartments.",
+    "es": "Necesita una jaula grande para un mini-guacamayo, de al menos 75 cm de ancho x 60 cm de fondo x 120 cm de alto. Su nivel de ruido puede ser excesivo para algunos apartamentos."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "intermediate",
+  "lifespan": {
+    "en": "40-50 years",
+    "es": "40-50 años"
+  }
 }

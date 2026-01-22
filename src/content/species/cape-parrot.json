@@ -1,17 +1,52 @@
 {
   "category": "African Parrots",
-  "species": "Cape Parrot",
+  "species": {
+    "en": "Cape Parrot",
+    "es": "Loro del Cabo (Poicephalus robustus)"
+  },
   "slug": "cape-parrot",
   "image": "/assets/img/parrots/cape-parrot.webp",
-  "description": "A large, robust parrot from the Poicephalus genus, the Cape Parrot is mostly green with an olive-yellow to brownish head. Females often have a distinct orange-red patch on their forehead.",
-  "size": "13 inches (33 cm). Weight: 300-400g (10.5-14 oz)",
+  "description": {
+    "en": "A large, robust parrot from the Poicephalus genus, the Cape Parrot is mostly green with an olive-yellow to brownish head. Females often have a distinct orange-red patch on their forehead.",
+    "es": "Un loro grande y robusto del género Poicephalus, el loro del Cabo es mayoritariamente verde con una cabeza de color amarillo oliva a marrón. Las hembras suelen tener una distintiva mancha roja anaranjada en la frente."
+  },
+  "size": {
+    "en": "13 inches (33 cm). Weight: 300-400g (10.5-14 oz)",
+    "es": "13 pulgadas (33 cm). Peso: 300-400g (10.5-14 oz)"
+  },
   "weight_grams": 350,
-  "temperament": "Highly intelligent, playful, and can be very affectionate. They are known for their somewhat demanding nature and can become 'one-person' birds if not well-socialized.",
-  "loudness": "Moderate to Loud. They have a powerful call and can be quite vocal, especially during the morning and evening.",
-  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
-  "vocalization": "Good talkers with the ability to develop a clear vocabulary of words and phrases.",
-  "dietaryNeeds": "Requires a specialized diet as they are adapted to eating nuts from specific trees. A formulated pellet diet supplemented with a variety of vegetables and nuts is recommended. Consult an avian vet for specifics.",
-  "healthPointers": "Susceptible to Psittacine Beak and Feather Disease (PBFD). Their large, powerful beaks require plenty of hard, durable toys to keep them healthy and trim. Can live for 30+ years.",
-  "housing": "Needs a very large and extremely durable cage due to their powerful beak. A minimum of 36\"W x 24\"D x 48\"H is recommended. Their potential noise makes them unsuitable for most apartments.",
-  "origin": "Africa"
+  "temperament": {
+    "en": "Highly intelligent, playful, and can be very affectionate. They are known for their somewhat demanding nature and can become 'one-person' birds if not well-socialized.",
+    "es": "Muy inteligente, juguetón y puede ser muy afectuoso. Son conocidos por su naturaleza algo exigente y pueden convertirse en aves de 'una sola persona' si no se socializan bien."
+  },
+  "loudness": {
+    "en": "Moderate to Loud. They have a powerful call and can be quite vocal, especially during the morning and evening.",
+    "es": "Moderado a fuerte. Tienen una llamada potente y pueden ser muy vocales, especialmente durante la mañana y la tarde."
+  },
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4L7 9H3zm13.5 3c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": {
+    "en": "Good talkers with the ability to develop a clear vocabulary of words and phrases.",
+    "es": "Buenos habladores con capacidad para desarrollar un vocabulario claro de palabras y frases."
+  },
+  "dietaryNeeds": {
+    "en": "Requires a specialized diet as they are adapted to eating nuts from specific trees. A formulated pellet diet supplemented with a variety of vegetables and nuts is recommended. Consult an avian vet for specifics.",
+    "es": "Requiere una dieta especializada ya que están adaptados a comer nueces de árboles específicos. Se recomienda una dieta de pellets formulada complementada con una variedad de verduras y frutos secos. Consulte a un veterinario de aves para obtener detalles."
+  },
+  "healthPointers": {
+    "en": "Susceptible to Psittacine Beak and Feather Disease (PBFD). Their large, powerful beaks require plenty of hard, durable toys to keep them healthy and trim. Can live for 30+ years.",
+    "es": "Susceptible a la enfermedad del pico y las plumas de las psitácidas (PBFD). Sus picos grandes y potentes requieren muchos juguetes duros y duraderos para mantenerlos sanos y recortados. Pueden vivir más de 30 años."
+  },
+  "housing": {
+    "en": "Needs a very large and extremely durable cage due to their powerful beak. A minimum of 36\"W x 24\"D x 48\"H is recommended. Their potential noise makes them unsuitable for most apartments.",
+    "es": "Necesita una jaula muy grande y extremadamente duradera debido a su potente pico. Se recomienda un mínimo de 90 cm de ancho x 60 cm de fondo x 120 cm de alto. Su ruidosidad potencial los hace inadecuados para la mayoría de los apartamentos."
+  },
+  "origin": {
+    "en": "Africa",
+    "es": "África"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "30+ years",
+    "es": "30+ años"
+  }
 }

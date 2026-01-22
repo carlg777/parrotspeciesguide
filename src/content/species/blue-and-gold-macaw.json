@@ -1,24 +1,52 @@
 {
   "category": "Macaws",
-  "species": "Blue and Gold Macaw",
+  "species": {
+    "en": "Blue and Gold Macaw",
+    "es": "Guacamayo azul y amarillo (Ara ararauna)"
+  },
   "slug": "blue-and-gold-macaw",
   "image": "/assets/img/parrots/blue-and-gold-macaw.webp",
-  "description": "A large and iconic macaw with a brilliant blue back and wings, a golden-yellow chest and belly, and a white facial patch with lines of small black feathers.",
-  "size": "30-36 inches (76-91 cm). Weight: 900-1300g (31.7-45.8 oz)",
-  "weight_grams": 1100,
-  "temperament": "Highly intelligent, social, and can form very strong bonds with their owners. They are playful and enjoy being the center of attention, but require consistent training to prevent nipping.",
-  "loudness": "Very Loud. Their call is a powerful, harsh screech that can be heard from a long distance. They will use it to communicate and get attention.",
+  "description": {
+    "en": "One of the most recognizable parrots in the world, the Blue and Gold Macaw is a large, vibrant bird known for its brilliant blue upperparts and golden-yellow underparts. They are famous for their intelligence and social nature.",
+    "es": "Uno de los loros más reconocibles del mundo, el guacamayo azul y amarillo es un ave grande y vibrante conocida por sus partes superiores de color azul brillante y sus partes inferiores de color amarillo dorado. Son famosos por su inteligencia y naturaleza social."
+  },
+  "size": {
+    "en": "32-34 inches (81-86 cm). Weight: 900-1100g (31.7-38.8 oz)",
+    "es": "32-34 pulgadas (81-86 cm). Peso: 900-1100 g (31,7-38,8 oz)"
+  },
+  "weight_grams": 1000,
+  "temperament": {
+    "en": "Intelligent, social, and affectionate. They are known for being playful and inquisitive, but they also require a significant amount of attention and social interaction to stay healthy and happy.",
+    "es": "Inteligente, social y cariñoso. Son conocidos por ser juguetones e inquisitivos, pero también requieren una cantidad significativa de atención e interacción social para mantenerse sanos y felices."
+  },
+  "loudness": {
+    "en": "Very Loud. Their vocalizations are powerful and can be heard from long distances. They are prone to loud screaming, especially in the morning and evening.",
+    "es": "Muy ruidoso. Sus vocalizaciones son potentes y pueden oírse desde largas distancias. Son propensos a dar gritos fuertes, especialmente por la mañana y por la noche."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Excellent talkers with the ability to learn a large vocabulary of words and phrases. Their voices are typically very clear.",
-  "dietaryNeeds": "Require a diet higher in fat than many other parrots. A high-quality pelleted diet should be supplemented with a variety of nuts (like walnuts, macadamias, and almonds), fresh fruits, and vegetables.",
-  "healthPointers": "Can live 60-80+ years. Prone to feather plucking if bored or stressed, Proventricular Dilatation Disease (PDD), and overgrown beaks. They need plenty of hard toys to chew.",
-  "housing": "Requires a very large and durable cage, at least 48\"W x 36\"D x 72\"H. An outdoor aviary is ideal. Absolutely not suitable for apartments due to their size and noise level.",
-  "origin": "Central & South America",
-  "lifespan": "30-50+ years (some live 70+ years with excellent care)",
+  "vocalization": {
+    "en": "Excellent talkers. Many Blue and Golds can develop a clear and extensive vocabulary. They are also adept at mimicking other sounds and whistles.",
+    "es": "Habladores excelentes. Muchos guacamayos azules y amarillos pueden desarrollar un vocabulario claro y extenso. También son expertos en imitar otros sonidos y silbidos."
+  },
+  "dietaryNeeds": {
+    "en": "A variety of high-quality pellets, supplemented with fresh fruits, vegetables, and a controlled amount of nuts. They require a balanced diet to prevent nutritional deficiencies.",
+    "es": "Variedad de pellets de alta calidad, complementados con frutas frescas, verduras y una cantidad controlada de frutos secos. Requieren una dieta equilibrada para evitar deficiencias nutricionales."
+  },
+  "healthPointers": {
+    "en": "Can live 60-80+ years. Common health issues include PDD (Proventricular Dilatation Disease), psittacosis, and feather plucking due to boredom or stress.",
+    "es": "Pueden vivir entre 60 y 80 años o más. Los problemas de salud más comunes incluyen la PDD (enfermedad de dilatación proventricular), la psitacosis y el picaje de plumas debido al aburrimiento o al estrés."
+  },
+  "housing": {
+    "en": "Requires a very large, strong cage or an aviary (minimum cage size: 36\"W x 48\"D x 60\"H). They need plenty of space to stretch their wings and a variety of toys for enrichment.",
+    "es": "Requiere una jaula muy grande y resistente o un aviario (tamaño mínimo de la jaula: 90 cm de ancho x 120 cm de fondo x 150 cm de alto). Necesitan mucho espacio para estirar las alas y una variedad de juguetes para su enriquecimiento."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
   "careLevel": "advanced",
-  "activityLevel": "High energy and very active. Requires extensive daily exercise, climbing, and foraging activities. Needs 4-5 hours out-of-cage time for physical and mental stimulation. Destructive if under-stimulated.",
-  "socialNeeds": "Extremely social and demanding. Forms intense bonds requiring substantial daily interaction. Can become aggressive or develop severe behavioral problems without consistent socialization. Not suitable for owners with limited time.",
-  "noiseTolerance": "Extremely loud - unsuitable for apartments or noise-sensitive settings. Ear-piercing screams that carry long distances. Vocalizes primarily morning/evening but can be noisy throughout day when excited. Neighbors within 100+ feet will hear.",
-  "spaceRequirements": "Large cage minimum 48\"W × 36\"D × 60\"H. Needs heavy-duty construction (14-gauge wire or thicker). Requires dedicated bird room or very large space. Play stand and multiple perches essential. Will destroy furniture and belongings if not properly managed.",
-  "timeCommitment": "3-4 hours daily minimum for interaction, training, exercise, and enrichment. Extensive time for cage maintenance, food prep (fresh chop daily), and behavioral management. Lifetime commitment spanning decades."
+  "lifespan": {
+    "en": "60-80+ years",
+    "es": "60-80+ años"
+  }
 }

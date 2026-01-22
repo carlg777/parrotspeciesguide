@@ -1,17 +1,52 @@
 {
   "category": "African Parrots",
-  "species": "Red-bellied Parrot",
+  "species": {
+    "en": "Red-bellied Parrot",
+    "es": "Lorito de Vientre Rojo (Poicephalus rufiventris)"
+  },
   "slug": "red-bellied-parrot",
   "image": "/assets/img/parrots/red-bellied-parrot.webp",
-  "description": "This small parrot is sexually dimorphic. They are primarily greyish-brown with green feathers on the back. Males have a striking bright orange or red belly, while the female's belly is grey.",
-  "size": "9 inches (23 cm). Weight: 115-130g (4-4.6 oz)",
+  "description": {
+    "en": "This small parrot is sexually dimorphic. They are primarily greyish-brown with green feathers on the back. Males have a striking bright orange or red belly, while the female's belly is grey.",
+    "es": "Este pequeño loro presenta dimorfismo sexual. Son principalmente de color marrón grisáceo con plumas verdes en el dorso. Los machos tienen un llamativo vientre naranja brillante o rojo, mientras que el vientre de la hembra es gris."
+  },
+  "size": {
+    "en": "9 inches (23 cm). Weight: 115-130g (4-4.6 oz)",
+    "es": "9 pulgadas (23 cm). Peso: 115-130g (4-4.6 oz)"
+  },
   "weight_grams": 122,
-  "temperament": "Playful, curious, and intelligent. They can be a bit shy and reserved with strangers but form strong bonds with their chosen person. They are active and enjoy playing with toys.",
-  "loudness": "Quiet to Moderate. They are not screamers but have a range of whistles and chirps that can get loud when they are excited or alarmed.",
-  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
-  "vocalization": "Can be decent talkers, learning several words and phrases. They are also great at mimicking sounds like microwaves and phones.",
-  "dietaryNeeds": "A balanced diet of pellets, fresh vegetables, and a small amount of fruit. Like their cousins, they should have a low-fat diet.",
-  "healthPointers": "A hardy species with a lifespan of 20-30 years. Ensure a varied diet to prevent vitamin deficiencies and provide plenty of chewable toys to keep their beak healthy.",
-  "housing": "A great choice for apartment dwellers. A cage of at least 24\"W x 18\"D x 24\"H will give them room to play.",
-  "origin": "Africa"
+  "temperament": {
+    "en": "Playful, curious, and intelligent. They can be a bit shy and reserved with strangers but form strong bonds with their chosen person. They are active and enjoy playing with toys.",
+    "es": "Juguetón, curioso e inteligente. Pueden ser un poco tímidos y reservados con los extraños, pero crean fuertes vínculos con su persona elegida. Son activos y disfrutan jugando con juguetes."
+  },
+  "loudness": {
+    "en": "Quiet to Moderate. They are not screamers but have a range of whistles and chirps that can get loud when they are excited or alarmed.",
+    "es": "Silencioso a moderado. No son de los que gritan, pero tienen una gama de silbidos y gorjeos que pueden llegar a ser fuertes cuando están excitados o alarmados."
+  },
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4L7 9H3zm13.5 3c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": {
+    "en": "Can be decent talkers, learning several words and phrases. They are also great at mimicking sounds like microwaves and phones.",
+    "es": "Pueden ser habladores aceptables, aprendiendo bastantes palabras y frases. También son excelentes imitando sonidos como los del microondas y el teléfono."
+  },
+  "dietaryNeeds": {
+    "en": "A balanced diet of pellets, fresh vegetables, and a small amount of fruit. Like their cousins, they should have a low-fat diet.",
+    "es": "Una dieta equilibrada de pellets, verduras frescas y una pequeña cantidad de fruta. Como sus primos, deben tener una dieta baja en grasas."
+  },
+  "healthPointers": {
+    "en": "A hardy species with a lifespan of 20-30 years. Ensure a varied diet to prevent vitamin deficiencies and provide plenty of chewable toys to keep their beak healthy.",
+    "es": "Una especie resistente con una esperanza de vida de 20 a 30 años. Asegure una dieta variada para prevenir las deficiencias vitamínicas y proporcione abundantes juguetes masticables para mantener su pico sano."
+  },
+  "housing": {
+    "en": "A great choice for apartment dwellers. A cage of at least 24\"W x 18\"D x 24\"H will give them room to play.",
+    "es": "Una gran elección para los que viven en apartamentos. Una jaula de al menos 60 cm de ancho x 45 cm de fondo x 60 cm de alto les dará espacio para jugar."
+  },
+  "origin": {
+    "en": "Africa",
+    "es": "África"
+  },
+  "careLevel": "intermediate",
+  "lifespan": {
+    "en": "20-30 years",
+    "es": "20-30 años"
+  }
 }

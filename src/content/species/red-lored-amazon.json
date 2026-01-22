@@ -1,17 +1,52 @@
 {
   "category": "Amazons",
-  "species": "Red-lored Amazon",
+  "species": {
+    "en": "Red-lored Amazon",
+    "es": "Amazona Frentirroja (Amazona autumnalis)"
+  },
   "slug": "red-lored-amazon",
   "image": "/assets/img/parrots/red-lored-amazon.webp",
-  "description": "A striking medium-sized parrot, primarily green with a bright red patch on its forehead (lore), yellow cheeks, and blue streaks behind the eyes.",
-  "size": "13-14 inches (33-35.5 cm). Weight: 380-480g (13.4-17 oz)",
+  "description": {
+    "en": "A striking medium-sized parrot, primarily green with a bright red patch on its forehead (lore), yellow cheeks, and blue streaks behind the eyes.",
+    "es": "Un llamativo loro de tamaño medio, principalmente verde con una mancha roja brillante en la frente (lorum), mejillas amarillas y rayas azules detrás de los ojos."
+  },
+  "size": {
+    "en": "13-14 inches (33-35.5 cm). Weight: 380-480g (13.4-17 oz)",
+    "es": "13-14 pulgadas (33-35.5 cm). Peso: 380-480g (13.4-17 oz)"
+  },
   "weight_grams": 430,
-  "temperament": "Very intelligent, curious, and energetic. They can form strong bonds and be very affectionate, but also require a lot of mental stimulation to prevent boredom.",
-  "loudness": "Loud. They have a strong, loud call and will use it.",
+  "temperament": {
+    "en": "Very intelligent, curious, and energetic. They can form strong bonds and be very affectionate, but also require a lot of mental stimulation to prevent boredom.",
+    "es": "Muy inteligente, curiosa y enérgica. Pueden formar vínculos fuertes y ser muy afectuosas, pero también requieren mucha estimulación mental para evitar el aburrimiento."
+  },
+  "loudness": {
+    "en": "Loud. They have a strong, loud call and will use it.",
+    "es": "Ruidosa. Tienen una llamada fuerte y potente, y la usarán."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Very good talking ability with a clear voice. Many can learn a wide range of words and phrases.",
-  "dietaryNeeds": "A varied diet of pellets, leafy greens, and other vegetables is key. Limit fruits and high-fat seeds.",
-  "healthPointers": "Can live for 50+ years. Susceptible to common avian diseases like PDD, psittacosis, and fatty liver disease.",
-  "housing": "Needs a large cage with plenty of toys. Minimum 36\"W x 24\"D x 48\"H. Noise level is too high for most apartments.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Very good talking ability with a clear voice. Many can learn a wide range of words and phrases.",
+    "es": "Muy buena capacidad de habla con una voz clara. Muchas pueden aprender una amplia gama de palabras y frases."
+  },
+  "dietaryNeeds": {
+    "en": "A varied diet of pellets, leafy greens, and other vegetables is key. Limit fruits and high-fat seeds.",
+    "es": "Una dieta variada de pellets, verduras de hoja verde y otras hortalizas es fundamental. Limite las frutas y las semillas con alto contenido en grasas."
+  },
+  "healthPointers": {
+    "en": "Can live for 50+ years. Susceptible to common avian diseases like PDD, psittacosis, and fatty liver disease.",
+    "es": "Pueden vivir más de 50 años. Susceptibles a enfermedades aviares comunes como PDD, psitacosis y enfermedad del hígado graso."
+  },
+  "housing": {
+    "en": "Needs a large cage with plenty of toys. Minimum 36\"W x 24\"D x 48\"H. Noise level is too high for most apartments.",
+    "es": "Necesita una jaula grande con muchos juguetes. Mínimo 90 cm de ancho x 60 cm de fondo x 120 cm de alto. El nivel de ruido es demasiado alto para la mayoría de los apartamentos."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "50+ years",
+    "es": "50+ años"
+  }
 }

@@ -1,17 +1,52 @@
 {
   "category": "Pionus",
-  "species": "Blue-Headed Pionus",
+  "species": {
+    "en": "Blue-Headed Pionus",
+    "es": "Loro Cabeciazul (Pionus menstruus)"
+  },
   "slug": "blue-headed-pionus",
   "image": "/assets/img/parrots/blue-headed-pionus.webp",
-  "description": "A stocky, medium-sized parrot with a brilliant blue head and neck, a green body, and red feathers under its tail. They have a distinctive bare white eye-ring.",
-  "size": "11 inches (28 cm). Weight: 230-295g (8.1-10.4 oz)",
+  "description": {
+    "en": "A stocky, medium-sized parrot with a brilliant blue head and neck, a green body, and red feathers under its tail. They have a distinctive bare white eye-ring.",
+    "es": "Un loro robusto, de tamaño medio, con la cabeza y el cuello de un azul brillante, el cuerpo verde y plumas rojas bajo la cola. Tienen un distintivo anillo ocular blanco desnudo."
+  },
+  "size": {
+    "en": "11 inches (28 cm). Weight: 230-295g (8.1-10.4 oz)",
+    "es": "11 pulgadas (28 cm). Peso: 230-295g (8.1-10.4 oz)"
+  },
   "weight_grams": 260,
-  "temperament": "Known for being exceptionally calm, quiet, and gentle. They are less demanding than many other parrots and make excellent, easy-going companions.",
-  "loudness": "Low to moderate. Much quieter than Amazons or Macaws, making them very suitable for apartments.",
+  "temperament": {
+    "en": "Known for being exceptionally calm, quiet, and gentle. They are less demanding than many other parrots and make excellent, easy-going companions.",
+    "es": "Conocidos por ser excepcionalmente tranquilos, silenciosos y amables. Son menos exigentes que muchos otros loros y son compañeros excelentes y fáciles de tratar."
+  },
+  "loudness": {
+    "en": "Low to moderate. Much quieter than Amazons or Macaws, making them very suitable for apartments.",
+    "es": "Baja a moderada. Mucho más silenciosos que los amazonas o los guacamayos, lo que los hace muy adecuados para apartamentos."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
-  "vocalization": "Generally not known for their talking ability, though some individuals may learn a few words. They make soft, wheezing sounds when frightened, which is normal for the species.",
-  "dietaryNeeds": "A high-quality pelleted diet, supplemented with fresh vegetables and fruits. They are less prone to obesity than Amazons.",
-  "healthPointers": "Generally healthy and hardy, with a lifespan of 25-40 years. Can be prone to aspergillosis and vitamin A deficiency.",
-  "housing": "A medium-large cage with a minimum size of 24\"W x 24\"D x 36\"H is appropriate. They enjoy toys but are not as destructive as other parrots.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Generally not known for their talking ability, though some individuals may learn a few words. They make soft, wheezing sounds when frightened, which is normal for the species.",
+    "es": "Por lo general, no son conocidos por su capacidad de habla, aunque algunos individuos pueden aprender algunas palabras. Emiten sonidos suaves y sibilantes cuando se asustan, lo cual es normal en la especie."
+  },
+  "dietaryNeeds": {
+    "en": "A high-quality pelleted diet, supplemented with fresh vegetables and fruits. They are less prone to obesity than Amazons.",
+    "es": "Una dieta de pellets de alta calidad, complementada con frutas y verduras frescas. Son menos propensos a la obesidad que los amazonas."
+  },
+  "healthPointers": {
+    "en": "Generally healthy and hardy, with a lifespan of 25-40 years. Can be prone to aspergillosis and vitamin A deficiency.",
+    "es": "Generalmente sanos y resistentes, con una esperanza de vida de 25 a 40 años. Pueden ser propensos a la aspergilosis y a la deficiencia de vitamina A."
+  },
+  "housing": {
+    "en": "A medium-large cage with a minimum size of 24\"W x 24\"D x 36\"H is appropriate. They enjoy toys but are not as destructive as other parrots.",
+    "es": "Una jaula de tamaño mediano-grande con un tamaño mínimo de 60 cm de ancho x 60 cm de fondo x 90 cm de alto es adecuada. Disfrutan de los juguetes pero no son tan destructivos como otros loros."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "intermediate",
+  "lifespan": {
+    "en": "25-40 years",
+    "es": "25-40 años"
+  }
 }

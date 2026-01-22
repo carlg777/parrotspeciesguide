@@ -1,17 +1,52 @@
 {
   "category": "Parakeets",
-  "species": "Bourke's Parakeet",
+  "species": {
+    "en": "Bourke's Parakeet",
+    "es": "Periquito de Bourke (Neopsephotus bourkii)"
+  },
   "slug": "bourkes-parakeet",
   "image": "/assets/img/parrots/bourkes-parakeet.webp",
-  "description": "A small, gentle parakeet with brownish-tinged plumage, a pinkish belly, and blue highlights on the wings and tail. They are known for their calm demeanor.",
-  "size": "7-8 inches (18-20 cm). Weight: 40-50g (1.4-1.8 oz)",
+  "description": {
+    "en": "A small, gentle parakeet with brownish-tinged plumage, a pinkish belly, and blue highlights on the wings and tail. They are known for their calm demeanor.",
+    "es": "Un periquito pequeño y amable con plumaje de tintes marrones, vientre rosado y reflejos azules en las alas y la cola. Son conocidos por su comportamiento tranquilo."
+  },
+  "size": {
+    "en": "7-8 inches (18-20 cm). Weight: 40-50g (1.4-1.8 oz)",
+    "es": "7-8 pulgadas (18-20 cm). Peso: 40-50g (1.4-1.8 oz)"
+  },
   "weight_grams": 45,
-  "temperament": "Very calm, quiet, and sweet-natured. They are not as active or demanding as budgies and are most active at dawn and dusk.",
-  "loudness": "Very Quiet. They have a soft, melodious twittering call, making them one of the best choices for those who want a quiet bird.",
+  "temperament": {
+    "en": "Very calm, quiet, and sweet-natured. They are not as active or demanding as budgies and are most active at dawn and dusk.",
+    "es": "Muy tranquilo, silencioso y de naturaleza dulce. No son tan activos ni exigentes como los periquitos y son más activos al amanecer y al atardecer."
+  },
+  "loudness": {
+    "en": "Very Quiet. They have a soft, melodious twittering call, making them one of the best choices for those who want a quiet bird.",
+    "es": "Muy silenciosa. Tienen una llamada suave y melodiosa, lo que los convierte en una de las mejores opciones para quienes desean un ave silenciosa."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
-  "vocalization": "Not known to talk. Their vocalizations are limited to soft, pleasant chirps and whistles.",
-  "dietaryNeeds": "A good-quality parakeet mix, pellets, fresh vegetables, fruits, and sprouted seeds. Enjoy ground foraging and grass seeds.",
-  "healthPointers": "Generally hardy and can live 15-25 years. Less prone to behavioral issues due to their calm nature. Need a temperature range of 60-85°F.",
-  "housing": "Perfect for apartments. Their quiet nature is a huge plus. A cage that is longer than it is tall is ideal, minimum 24\"L x 16\"D x 16\"H.",
-  "origin": "Australia & Oceania"
+  "vocalization": {
+    "en": "Not known to talk. Their vocalizations are limited to soft, pleasant chirps and whistles.",
+    "es": "No se sabe que hablen. Sus vocalizaciones se limitan a suaves y agradables píos y silbidos."
+  },
+  "dietaryNeeds": {
+    "en": "A good-quality parakeet mix, pellets, fresh vegetables, fruits, and sprouted seeds. Enjoy ground foraging and grass seeds.",
+    "es": "Una mezcla para periquitos de buena calidad, pellets, verduras frescas, frutas y semillas germinadas. Disfrutan del forrajeo en el suelo y de las semillas de hierba."
+  },
+  "healthPointers": {
+    "en": "Generally hardy and can live 15-25 years. Less prone to behavioral issues due to their calm nature. Need a temperature range of 60-85°F.",
+    "es": "Generalmente resistentes y pueden vivir entre 15 y 25 años. Menos propensos a problemas de comportamiento debido a su naturaleza tranquila. Necesitan un rango de temperatura de 15-29°C."
+  },
+  "housing": {
+    "en": "Perfect for apartments. Their quiet nature is a huge plus. A cage that is longer than it is tall is ideal, minimum 24\"L x 16\"D x 16\"H.",
+    "es": "Perfecto para apartamentos. Su naturaleza silenciosa es una gran ventaja. Lo ideal es una jaula más larga que alta, con un mínimo de 60 cm de largo x 40 cm de fondo x 40 cm de alto."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "careLevel": "beginner",
+  "lifespan": {
+    "en": "15-25 years",
+    "es": "15-25 años"
+  }
 }

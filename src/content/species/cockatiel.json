@@ -1,24 +1,72 @@
 {
   "category": "Parakeets",
-  "species": "Cockatiel",
+  "species": {
+    "en": "Cockatiel",
+    "es": "Carolina o Ninfa (Nymphicus hollandicus)"
+  },
   "slug": "cockatiel",
   "image": "/assets/img/parrots/cockatiel.webp",
-  "description": "Distinctive crested parrots from Australia. Grey body with white wing patches, orange cheek circles, and yellow head (males). Many color mutations exist including lutino, pied, and pearl varieties.",
-  "size": "12-13 inches (30-33 cm). Weight: 80-100g (2.8-3.5 oz)",
+  "description": {
+    "en": "Distinctive crested parrots from Australia. Grey body with white wing patches, orange cheek circles, and yellow head (males). Many color mutations exist including lutino, pied, and pearl varieties.",
+    "es": "Loros con cresta distintivos de Australia. Cuerpo gris con manchas blancas en las alas, círculos anaranjados en las mejillas y cabeza amarilla (machos). Existen muchas mutaciones de color, como las variedades lutina, pía y perlada."
+  },
+  "size": {
+    "en": "12-13 inches (30-33 cm). Weight: 80-100g (2.8-3.5 oz)",
+    "es": "12-13 pulgadas (30-33 cm). Peso: 80-100g (2.8-3.5 oz)"
+  },
   "weight_grams": 90,
-  "temperament": "Gentle, affectionate, and social. Generally calm and less demanding than larger parrots. Males tend to be more vocal and outgoing than females.",
-  "loudness": "Moderate. They whistle, chirp, and can be vocal especially at dawn and dusk. Not as loud as larger parrots but can be persistent.",
+  "temperament": {
+    "en": "Gentle, affectionate, and social. Generally calm and less demanding than larger parrots. Males tend to be more vocal and outgoing than females.",
+    "es": "Amable, afectuosa y sociable. Generalmente tranquila y menos exigente que los loros grandes. Los machos suelen ser más vocales y extrovertidos que las hembras."
+  },
+  "loudness": {
+    "en": "Moderate. They whistle, chirp, and can be vocal especially at dawn and dusk. Not as loud as larger parrots but can be persistent.",
+    "es": "Moderada. Silban, pían y pueden ser vocales, especialmente al amanecer y al atardecer. No son tan ruidosos como los loros grandes, pero pueden ser persistentes."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
-  "vocalization": "Males are excellent whistlers and can learn songs and simple words. They often mimic household sounds. Females are generally quieter but can learn some vocalizations.",
-  "dietaryNeeds": "High-quality cockatiel pellets as base diet, supplemented with fresh vegetables, fruits, and some seeds. Provide cuttlebone for calcium and mineral block.",
-  "healthPointers": "Generally healthy and can live 15-25 years. Prone to night frights, fatty liver disease, and egg-binding in females. Need UV light exposure, regular nail trims, and spacious caging. Watch for signs of illness as they hide symptoms well.",
-  "housing": "Minimum 24\" x 18\" x 24\" cage. Bar spacing 1/2 to 5/8 inch. Provide multiple perches, toys, and climbing opportunities. Need 10-12 hours quiet darkness for sleep.",
-  "origin": "Australia & Oceania",
-  "lifespan": "15-25 years with proper care (average 18-20 years)",
+  "vocalization": {
+    "en": "Males are excellent whistlers and can learn songs and simple words. They often mimic household sounds. Females are generally quieter but can learn some vocalizations.",
+    "es": "Los machos son excelentes silbadores y pueden aprender canciones y palabras sencillas. A menudo imitan sonidos domésticos. Las hembras suelen ser más silenciosas pero pueden aprender algunas vocalizaciones."
+  },
+  "dietaryNeeds": {
+    "en": "High-quality cockatiel pellets as base diet, supplemented with fresh vegetables, fruits, and some seeds. Provide cuttlebone for calcium and mineral block.",
+    "es": "Pellets para ninfas de alta calidad como dieta base, complementados con verduras frescas, frutas y algunas semillas. Proporcione jibia para el calcio y un bloque mineral."
+  },
+  "healthPointers": {
+    "en": "Generally healthy and can live 15-25 years. Prone to night frights, fatty liver disease, and egg-binding in females. Need UV light exposure, regular nail trims, and spacious caging. Watch for signs of illness as they hide symptoms well.",
+    "es": "Generalmente sanas y pueden vivir entre 15 y 25 años. Propensas a los sustos nocturnos, a la enfermedad del hígado graso y a la retención de huevos en las hembras. Necesitan exposición a la luz ultravioleta, recortes regulares de uñas y jaulas espaciosas. Vigile los signos de enfermedad, ya que ocultan bien los síntomas."
+  },
+  "housing": {
+    "en": "Minimum 24\" x 18\" x 24\" cage. Bar spacing 1/2 to 5/8 inch. Provide multiple perches, toys, and climbing opportunities. Need 10-12 hours quiet darkness for sleep.",
+    "es": "Jaula mínima de 60 x 45 x 60 cm. Separación entre barrotes de 1,2 a 1,5 cm. Proporcione múltiples perchas, juguetes y oportunidades para trepar. Necesitan 10-12 horas de oscuridad silenciosa para dormir."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "lifespan": {
+    "en": "15-25 years",
+    "es": "15-25 años"
+  },
   "careLevel": "beginner",
-  "activityLevel": "Moderate activity level. Enjoys playing, climbing, and exploring but also content with quiet time. Benefits from 2-3 hours outside cage daily for exercise and interaction.",
-  "socialNeeds": "Highly social and bond strongly with owners. Prefer companionship of humans or other cockatiels. Can develop behavioral issues if left alone for long periods. Thrive with daily interaction and gentle handling.",
-  "noiseTolerance": "Moderate noise level suitable for apartments if neighbors are tolerant. Vocal periods at dawn/dusk (flock calling). Whistling and chirping throughout day. Not screeching like larger parrots, but persistent vocalizations can be noticeable.",
-  "spaceRequirements": "Minimum cage 24\"W × 18\"D × 24\"H for single bird. Larger is better - 36\" width ideal. Needs space for toys, perches at varying heights, and room to spread wings. Benefits from play gym or bird tree for out-of-cage time.",
-  "timeCommitment": "1-2 hours daily minimum for interaction, training, and supervised out-of-cage time. Additional time for cage cleaning (10-15 min daily spot-clean, 30 min weekly deep-clean) and food preparation."
+  "activityLevel": {
+    "en": "Moderate activity level. Enjoys playing, climbing, and exploring but also content with quiet time. Benefits from 2-3 hours outside cage daily for exercise and interaction.",
+    "es": "Nivel de actividad moderado. Disfruta jugando, trepando y explorando, pero también se conforma con los ratos de tranquilidad. Se beneficia de 2-3 horas diarias fuera de la jaula para hacer ejercicio e interactuar."
+  },
+  "socialNeeds": {
+    "en": "Highly social and bond strongly with owners. Prefer companionship of humans or other cockatiels. Can develop behavioral issues if left alone for long periods. Thrive with daily interaction and gentle handling.",
+    "es": "Muy sociable y con fuertes vínculos con sus dueños. Prefiere la compañía de humanos u otras ninfas. Puede desarrollar problemas de comportamiento si se la deja sola durante periodos prolongados. Prospera con la interacción diaria y el manejo suave."
+  },
+  "noiseTolerance": {
+    "en": "Moderate noise level suitable for apartments if neighbors are tolerant. Vocal periods at dawn/dusk (flock calling). Whistling and chirping throughout day. Not screeching like larger parrots, but persistent vocalizations can be noticeable.",
+    "es": "Nivel de ruido moderado apto para apartamentos si los vecinos son tolerantes. Periodos vocales al amanecer y al atardecer (llamadas de bandada). Silbidos y píos a lo largo del día. No chillan como los loros grandes, pero las vocalizaciones persistentes pueden ser perceptibles."
+  },
+  "spaceRequirements": {
+    "en": "Minimum cage 24\"W × 18\"D × 24\"H for single bird. Larger is better - 36\" width ideal. Needs space for toys, perches at varying heights, and room to spread wings. Benefits from play gym or bird tree for out-of-cage time.",
+    "es": "Jaula mínima de 60 cm de ancho x 45 cm de fondo x 60 cm de alto para un solo pájaro. Cuanto más grande, mejor; lo ideal es una anchura de 90 cm. Necesita espacio para juguetes, perchas a distintas alturas y espacio para desplegar las alas. Se beneficia de un gimnasio de juegos o un árbol para pájaros para el tiempo fuera de la jaula."
+  },
+  "timeCommitment": {
+    "en": "1-2 hours daily minimum for interaction, training, and supervised out-of-cage time. Additional time for cage cleaning (10-15 min daily spot-clean, 30 min weekly deep-clean) and food preparation.",
+    "es": "Mínimo de 1-2 horas diarias para interacción, entrenamiento y tiempo supervisado fuera de la jaula. Tiempo adicional para la limpieza de la jaula (10-15 min diarios de limpieza puntual, 30 min semanales de limpieza a fondo) y la preparación de la comida."
+  }
 }

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/node": "^9.5.0",
+    "@vudovn/antigravity-kit": "^1.0.9",
     "astro": "^5.14.8"
   },
   "devDependencies": {

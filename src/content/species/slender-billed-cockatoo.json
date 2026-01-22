@@ -1,17 +1,52 @@
 {
   "category": "Cockatoos",
-  "species": "Slender-Billed Cockatoo",
+  "species": {
+    "en": "Slender-Billed Cockatoo",
+    "es": "Cacatúa Cavadora (Cacatua tenuirostris)"
+  },
   "slug": "slender-billed-cockatoo",
   "image": "/assets/img/parrots/slender-billed-cockatoo.webp",
-  "description": "A type of Corella from Australia, this white cockatoo is distinguished by its very long, slender upper beak, which it uses for digging up roots and tubers. They have a pink splash around the face.",
-  "size": "15-16 inches (38-41 cm). Weight: 500-650g (17.5-23 oz)",
+  "description": {
+    "en": "A type of Corella from Australia, this white cockatoo is distinguished by its very long, slender upper beak, which it uses for digging up roots and tubers. They have a pink splash around the face.",
+    "es": "Un tipo de Corella de Australia, esta cacatúa blanca se distingue por su pico superior muy largo y delgado, que utiliza para desenterrar raíces y tubérculos. Tienen una mancha rosa alrededor de la cara."
+  },
+  "size": {
+    "en": "15-16 inches (38-41 cm). Weight: 500-650g (17.5-23 oz)",
+    "es": "15-16 pulgadas (38-41 cm). Peso: 500-650g (17.5-23 oz)"
+  },
   "weight_grams": 575,
-  "temperament": "Extremely intelligent, playful, and can be very affectionate. They are known for being one of the best talkers among the cockatoos. They have a strong instinct to dig and chew.",
-  "loudness": "Very Loud. They have a loud, multi-part call that can be very noisy.",
+  "temperament": {
+    "en": "Extremely intelligent, playful, and can be very affectionate. They are known for being one of the best talkers among the cockatoos. They have a strong instinct to dig and chew.",
+    "es": "Extremadamente inteligente, juguetona y puede ser muy afectuosa. Son conocidas por ser una de las mejores habladoras entre las cacatúas. Tienen un fuerte instinto para excavar y masticar."
+  },
+  "loudness": {
+    "en": "Very Loud. They have a loud, multi-part call that can be very noisy.",
+    "es": "Muy ruidosa. Tienen una llamada fuerte y de varias partes que puede ser muy ruidosa."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Considered one of the best talkers of all cockatoos, capable of learning extensive vocabularies with remarkable clarity.",
-  "dietaryNeeds": "A pelleted diet with lots of fresh vegetables. They need a constant supply of wood and other safe materials to chew to satisfy their digging and chewing instincts.",
-  "healthPointers": "Can live for 70+ years. Beak can become overgrown if not provided with sufficient chewing opportunities. They can be prone to behavioral issues if bored.",
-  "housing": "Not suitable for apartments. Requires a very large, extremely durable cage with lots of wood to destroy. Minimum 36\"W x 24\"D x 48\"H.",
-  "origin": "Australia & Oceania"
+  "vocalization": {
+    "en": "Considered one of the best talkers of all cockatoos, capable of learning extensive vocabularies with remarkable clarity.",
+    "es": "Considerada una de las mejores habladoras de todas las cacatúas, capaz de aprender vocabularios extensos con una claridad notable."
+  },
+  "dietaryNeeds": {
+    "en": "A pelleted diet with lots of fresh vegetables. They need a constant supply of wood and other safe materials to chew to satisfy their digging and chewing instincts.",
+    "es": "Una dieta de pellets con muchas verduras frescas. Necesitan un suministro constante de madera y otros materiales seguros para masticar y así satisfacer sus instintos de excavación y masticación."
+  },
+  "healthPointers": {
+    "en": "Can live for 70+ years. Beak can become overgrown if not provided with sufficient chewing opportunities. They can be prone to behavioral issues if bored.",
+    "es": "Pueden vivir más de 70 años. El pico puede crecer demasiado si no se le proporcionan suficientes oportunidades para masticar. Pueden ser propensas a problemas de comportamiento si se aburren."
+  },
+  "housing": {
+    "en": "Not suitable for apartments. Requires a very large, extremely durable cage with lots of wood to destroy. Minimum 36\"W x 24\"D x 48\"H.",
+    "es": "No apta para apartamentos. Requiere una jaula muy grande y extremadamente duradera con mucha madera para destruir. Mínimo 90 cm de ancho x 60 cm de fondo x 120 cm de alto."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "70+ years",
+    "es": "70+ años"
+  }
 }

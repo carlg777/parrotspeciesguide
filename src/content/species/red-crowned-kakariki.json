@@ -1,17 +1,52 @@
 {
   "category": "Kakarikis",
-  "species": "Red-Crowned Kakariki",
+  "species": {
+    "en": "Red-Crowned Kakariki",
+    "es": "Kakariki de Frente Roja (Cyanoramphus novaezelandiae)"
+  },
   "slug": "red-crowned-kakariki",
   "image": "/assets/img/parrots/red-crowned-kakariki.webp",
-  "description": "A small to medium parakeet with a bright green body and a distinctive red crown and forehead stripe. They are native to New Zealand and are known for their constant motion.",
-  "size": "10-11 inches (25-28 cm). Weight: 50-65g (1.8-2.3 oz)",
+  "description": {
+    "en": "A small to medium parakeet with a bright green body and a distinctive red crown and forehead stripe. They are native to New Zealand and are known for their constant motion.",
+    "es": "Un periquito de tamaño pequeño a mediano con el cuerpo de color verde brillante y una distintiva corona roja y una franja en la frente. Son originarios de Nueva Zelanda y conocidos por su movimiento constante."
+  },
+  "size": {
+    "en": "10-11 inches (25-28 cm). Weight: 50-65g (1.8-2.3 oz)",
+    "es": "10-11 pulgadas (25-28 cm). Peso: 50-65g (1.8-2.3 oz)"
+  },
   "weight_grams": 57,
-  "temperament": "Extremely active, curious, and playful. They are constantly chattering and moving, and are known for their comical antics. They are generally not aggressive.",
-  "loudness": "Moderate. They have a continuous, goat-like chatter that is not overly loud but is very persistent.",
-  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4l-5 5H7zm9.5 2.5c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
-  "vocalization": "Can learn some words but are not known as exceptional talkers. They prefer to chatter in their own language.",
-  "dietaryNeeds": "A varied diet including pellets, seeds, fresh vegetables, fruits, and even insects. They enjoy foraging on the ground.",
-  "healthPointers": "Generally hardy but need experienced care as they are still relatively uncommon in captivity. Can live 12-15 years. Their high activity level means they need a lot of space.",
-  "housing": "A large flight cage with plenty of room for ground foraging is essential. Bar spacing should be 1/2 inch. They need multiple perch levels and many toys.",
-  "origin": "Australia & Oceania"
+  "temperament": {
+    "en": "Extremely active, curious, and playful. They are constantly chattering and moving, and are known for their comical antics. They are generally not aggressive.",
+    "es": "Extremadamente activo, curioso y juguetón. Están constantemente parlando y moviéndose, y son conocidos por sus cómicas travesuras. Por lo general, no son agresivos."
+  },
+  "loudness": {
+    "en": "Moderate. They have a continuous, goat-like chatter that is not overly loud but is very persistent.",
+    "es": "Moderada. Tienen un parloteo continuo, parecido al de una cabra, que no es excesivamente fuerte pero sí muy persistente."
+  },
+  "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-yellow-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Moderate\"><title>Moderate</title><path d=\"M7 9v6h4l5 5V4L7 9H3zm13.5 3c0 .75-.38 1.41-.97 1.82v-3.64c.59.41.97 1.07.97 1.82zM14 8.25v7.5c1.18-.41 2-1.57 2-2.75s-.82-2.34-2-2.75z\"></path></svg>",
+  "vocalization": {
+    "en": "Can learn some words but are not known as exceptional talkers. They prefer to chatter in their own language.",
+    "es": "Pueden aprender algunas palabras, pero no son conocidos como habladores excepcionales. Prefieren parlotear en su propio idioma."
+  },
+  "dietaryNeeds": {
+    "en": "A varied diet including pellets, seeds, fresh vegetables, fruits, and even insects. They enjoy foraging on the ground.",
+    "es": "Una dieta variada que incluya pellets, semillas, verduras frescas, frutas e incluso insectos. Disfrutan del forrajeo en el suelo."
+  },
+  "healthPointers": {
+    "en": "Generally hardy but need experienced care as they are still relatively uncommon in captivity. Can live 12-15 years. Their high activity level means they need a lot of space.",
+    "es": "Generalmente resistentes, pero necesitan cuidados de expertos, ya que siguen siendo relativamente poco comunes en cautividad. Pueden vivir entre 12 y 15 años. Su alto nivel de actividad significa que necesitan mucho espacio."
+  },
+  "housing": {
+    "en": "A large flight cage with plenty of room for ground foraging is essential. Bar spacing should be 1/2 inch. They need multiple perch levels and many toys.",
+    "es": "Es esencial una jaula de vuelo grande con mucho espacio para el forrajeo en el suelo. La separación entre barrotes debe ser de 1,2 cm. Necesitan múltiples niveles de perchas y muchos juguetes."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "careLevel": "intermediate",
+  "lifespan": {
+    "en": "12-15 years",
+    "es": "12-15 años"
+  }
 }

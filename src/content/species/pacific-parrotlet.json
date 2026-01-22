@@ -1,17 +1,52 @@
 {
   "category": "Parrotlets",
-  "species": "Pacific Parrotlet",
+  "species": {
+    "en": "Pacific Parrotlet",
+    "es": "Cotorrita Celestial (Forpus coelestis)"
+  },
   "slug": "pacific-parrotlet",
   "image": "/assets/img/parrots/pacific-parrotlet.webp",
-  "description": "One of the smallest parrot species, often called 'pocket parrots.' They have a stocky build and a short tail. Males are bright green with a striking cobalt blue streak behind the eye and on the wings, while females are mostly green.",
-  "size": "4.5-5.5 inches (11.5-14 cm). Weight: 28-35g (1-1.2 oz)",
+  "description": {
+    "en": "One of the smallest parrot species, often called 'pocket parrots.' They have a stocky build and a short tail. Males are bright green with a striking cobalt blue streak behind the eye and on the wings, while females are mostly green.",
+    "es": "Una de las especies de loros más pequeñas, a menudo llamadas 'loros de bolsillo'. Tienen una constitución robusta y una cola corta. Los machos son de color verde brillante con una llamativa raya azul cobalto detrás del ojo y en las alas, mientras que las hembras son mayoritariamente verdes."
+  },
+  "size": {
+    "en": "4.5-5.5 inches (11.5-14 cm). Weight: 28-35g (1-1.2 oz)",
+    "es": "4.5-5.5 pulgadas (11.5-14 cm). Peso: 28-35g (1-1.2 oz)"
+  },
   "weight_grams": 31,
-  "temperament": "Bold, feisty, and comical. They are known for having a 'big parrot' personality in a tiny body. Can be very affectionate and cuddly, but also territorial and require consistent handling to manage their assertiveness.",
-  "loudness": "Quiet. Their natural vocalizations are soft chirps and chattering, making them an excellent choice for apartment living.",
+  "temperament": {
+    "en": "Bold, feisty, and comical. They are known for having a 'big parrot' personality in a tiny body. Can be very affectionate and cuddly, but also territorial and require consistent handling to manage their assertiveness.",
+    "es": "Audaz, enérgica y cómica. Son conocidas por tener la personalidad de un 'loro grande' en un cuerpo diminuto. Pueden ser muy afectuosas y mimosas, pero también territoriales y requieren un manejo constante para controlar su asertividad."
+  },
+  "loudness": {
+    "en": "Quiet. Their natural vocalizations are soft chirps and chattering, making them an excellent choice for apartment living.",
+    "es": "Silenciosa. Sus vocalizaciones naturales son suaves píos y parloteos, lo que los convierte en una excelente opción para vivir en apartamentos."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
-  "vocalization": "Not known for being great talkers, though some may learn a few words. Their voice is very small and high-pitched. They are more likely to chatter quietly than scream.",
-  "dietaryNeeds": "A high-quality small parrot pellets, fresh vegetables, and fruits. Unlike many parrots, they need some sunflower seeds for extra fat content. Provide mineral blocks and cuttlebone.",
-  "healthPointers": "Generally hardy and can live 15-20 years despite their small size. Prone to fatty liver disease if on a poor diet. Color mutation birds should not be fed pellets due to potential kidney issues.",
-  "housing": "Perfect for apartments. A cage with bar spacing of 1/2 inch or less is crucial. A minimum cage size of 18\"W x 18\"D x 18\"H is acceptable, but a larger, wider cage is highly recommended to provide ample room for toys and activity.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Not known for being great talkers, though some may learn a few words. Their voice is very small and high-pitched. They are more likely to chatter quietly than scream.",
+    "es": "No son conocidos por ser grandes habladores, aunque algunos pueden aprender algunas palabras. Su voz es muy pequeña y aguda. Es más probable que parlooteen tranquilamente que que griten."
+  },
+  "dietaryNeeds": {
+    "en": "A high-quality small parrot pellets, fresh vegetables, and fruits. Unlike many parrots, they need some sunflower seeds for extra fat content. Provide mineral blocks and cuttlebone.",
+    "es": "Pellets para loros pequeños de alta calidad, verduras y frutas frescas. A diferencia de muchos loros, necesitan algunas semillas de girasol para obtener un contenido extra de grasa. Proporcione bloques minerales y jibia."
+  },
+  "healthPointers": {
+    "en": "Generally hardy and can live 15-20 years despite their small size. Prone to fatty liver disease if on a poor diet. Color mutation birds should not be fed pellets due to potential kidney issues.",
+    "es": "Generalmente resistentes y pueden vivir de 15 a 20 años a pesar de su pequeño tamaño. Propensos a la enfermedad del hígado graso si siguen una dieta deficiente. A las aves con mutaciones de color no se les deben dar pellets debido a posibles problemas renales."
+  },
+  "housing": {
+    "en": "Perfect for apartments. A cage with bar spacing of 1/2 inch or less is crucial. A minimum cage size of 18\"W x 18\"D x 18\"H is acceptable, but a larger, wider cage is highly recommended to provide ample room for toys and activity.",
+    "es": "Perfecto para apartamentos. Es fundamental una jaula con una separación entre barrotes de 1,2 cm o menos. Un tamaño mínimo de jaula de 45 x 45 x 45 cm es aceptable, pero se recomienda encarecidamente una jaula más grande y ancha para proporcionar un espacio amplio para los juguetes y la actividad."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "beginner",
+  "lifespan": {
+    "en": "15-20 years",
+    "es": "15-20 años"
+  }
 }

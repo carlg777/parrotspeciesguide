@@ -1,17 +1,52 @@
 {
   "category": "Cockatoos",
-  "species": "Goffin's Cockatoo",
+  "species": {
+    "en": "Goffin's Cockatoo",
+    "es": "Cacatúa de las Tanimbar (Cacatua goffiniana)"
+  },
   "slug": "goffins-cockatoo",
   "image": "/assets/img/parrots/goffins-cockatoo.webp",
-  "description": "Also known as the Tanimbar Corella, this is one of the smallest white cockatoo species. They have a small crest and a pale pink patch between the eyes.",
-  "size": "12-13 inches (30.5-33 cm). Weight: 250-350g (8.8-12.3 oz)",
+  "description": {
+    "en": "Also known as the Tanimbar Corella, this is one of the smallest white cockatoo species. They have a small crest and a pale pink patch between the eyes.",
+    "es": "También conocida como corella de Tanimbar, es una de las especies de cacatúa blanca más pequeñas. Tienen una cresta pequeña y una mancha rosa pálido entre los ojos."
+  },
+  "size": {
+    "en": "12-13 inches (30.5-33 cm). Weight: 250-350g (8.8-12.3 oz)",
+    "es": "12-13 pulgadas (30.5-33 cm). Peso: 250-350g (8.8-12.3 oz)"
+  },
   "weight_grams": 300,
-  "temperament": "Extremely intelligent, playful, and highly inquisitive. They are known for being masters of escape and problem-solving. Can be very affectionate but also very demanding and nippy.",
-  "loudness": "Very Loud. Despite their small size, they can produce an incredibly loud, piercing screech.",
+  "temperament": {
+    "en": "Extremely intelligent, playful, and highly inquisitive. They are known for being masters of escape and problem-solving. Can be very affectionate but also very demanding and nippy.",
+    "es": "Extremadamente inteligente, juguetona y muy inquisitiva. Son conocidas por ser maestras del escape y de la resolución de problemas. Pueden ser muy afectuosas, pero también muy exigentes y dadas a dar picotazos."
+  },
+  "loudness": {
+    "en": "Very Loud. Despite their small size, they can produce an incredibly loud, piercing screech.",
+    "es": "Muy ruidosa. A pesar de su pequeño tamaño, pueden producir un chillido increíblemente fuerte y penetrante."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Can learn to talk, but they are more known for their loud calls and ability to mimic sounds.",
-  "dietaryNeeds": "A high-quality pelleted diet with a variety of fresh vegetables. They are energetic and need a good diet, but watch for weight gain.",
-  "healthPointers": "Can live up to 40 years. Very prone to feather plucking and self-mutilation if they become bored or stressed. PBFD is also a major concern.",
-  "housing": "Not recommended for apartments. They need an exceptionally secure and durable cage with complex locks. Minimum size: 30\"W x 22\"D x 40\"H.",
-  "origin": "Australia & Oceania"
+  "vocalization": {
+    "en": "Can learn to talk, but they are more known for their loud calls and ability to mimic sounds.",
+    "es": "Pueden aprender a hablar, pero son más conocidas por sus fuertes llamadas y su capacidad para imitar sonidos."
+  },
+  "dietaryNeeds": {
+    "en": "A high-quality pelleted diet with a variety of fresh vegetables. They are energetic and need a good diet, but watch for weight gain.",
+    "es": "Una dieta de pellets de alta calidad con una variedad de verduras frescas. Son enérgicas y necesitan una buena dieta, pero hay que vigilar el aumento de peso."
+  },
+  "healthPointers": {
+    "en": "Can live up to 40 years. Very prone to feather plucking and self-mutilation if they become bored or stressed. PBFD is also a major concern.",
+    "es": "Pueden vivir hasta 40 años. Muy propensas al picaje de plumas y a la automutilación si se aburren o se estresan. El PBFD también es una preocupación importante."
+  },
+  "housing": {
+    "en": "Not recommended for apartments. They need an exceptionally secure and durable cage with complex locks. Minimum size: 30\"W x 22\"D x 40\"H.",
+    "es": "No se recomienda para apartamentos. Necesitan una jaula excepcionalmente segura y duradera con cierres complejos. Tamaño mínimo: 75 cm de ancho x 55 cm de fondo x 100 cm de alto."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "Up to 40 years",
+    "es": "Hasta 40 años"
+  }
 }

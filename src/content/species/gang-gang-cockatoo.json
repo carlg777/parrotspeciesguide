@@ -1,17 +1,52 @@
 {
   "category": "Cockatoos",
-  "species": "Gang-Gang Cockatoo",
+  "species": {
+    "en": "Gang-Gang Cockatoo",
+    "es": "Cacatúa Gang-gang (Callocephalon fimbriatum)"
+  },
   "slug": "gang-gang-cockatoo",
   "image": "/assets/img/parrots/gang-gang-cockatoo.webp",
-  "description": "A unique, small cockatoo from Australia. They are sexually dimorphic: males are dark grey with a striking bright red head and wispy crest, while females are all grey.",
-  "size": "13-14 inches (33-35.5 cm). Weight: 250-300g (8.8-10.5 oz)",
+  "description": {
+    "en": "A unique, small cockatoo from Australia. They are sexually dimorphic: males are dark grey with a striking bright red head and wispy crest, while females are all grey.",
+    "es": "Una cacatúa pequeña y única de Australia. Presentan dimorfismo sexual: los machos son de color gris oscuro con una llamativa cabeza de color rojo brillante y una cresta rala, mientras que las hembras son totalmente grises."
+  },
+  "size": {
+    "en": "13-14 inches (33-35.5 cm). Weight: 250-300g (8.8-10.5 oz)",
+    "es": "13-14 pulgadas (33-35.5 cm). Peso: 250-300g (8.8-10.5 oz)"
+  },
   "weight_grams": 275,
-  "temperament": "Relatively quiet, gentle, and can be shy. They are not as cuddly as other cockatoos and are less common in aviculture due to their specialized needs.",
-  "loudness": "Quiet for a cockatoo. Their call is a distinctive 'creaky door' or growling sound, rather than a harsh screech.",
+  "temperament": {
+    "en": "Relatively quiet, gentle, and can be shy. They are not as cuddly as other cockatoos and are less common in aviculture due to their specialized needs.",
+    "es": "Relativamente silenciosa, amable y puede ser tímida. No son tan mimosas como otras cacatúas y son menos comunes en avicultura debido a sus necesidades especializadas."
+  },
+  "loudness": {
+    "en": "Quiet for a cockatoo. Their call is a distinctive 'creaky door' or growling sound, rather than a harsh screech.",
+    "es": "Silenciosa para una cacatúa. Su llamada es un sonido distintivo de 'puerta chirriante' o gruñido, en lugar de un chillido áspero."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-green-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Quiet\"><title>Quiet</title><path d=\"M7 9v6h4l5 5V4l-5 5H7z\"></path></svg>",
-  "vocalization": "Not known to be talkers, but they can mimic sounds. Their natural call is unique and not overly loud.",
-  "dietaryNeeds": "A specialized diet is required, focusing on native seeds (especially eucalyptus and acacia), berries, and insects. A standard parrot diet is often insufficient.",
-  "healthPointers": "Can live for 60+ years. They do not thrive in warm climates and are susceptible to heat stress. They are not common as pets and are best suited for experienced keepers in appropriate climates.",
-  "housing": "An aviary that can be kept cool is ideal. They are not well-suited for typical indoor cage life.",
-  "origin": "Australia & Oceania"
+  "vocalization": {
+    "en": "Not known to be talkers, but they can mimic sounds. Their natural call is unique and not overly loud.",
+    "es": "No se sabe que sean habladoras, pero pueden imitar sonidos. Su llamada natural es única y no excesivamente fuerte."
+  },
+  "dietaryNeeds": {
+    "en": "A specialized diet is required, focusing on native seeds (especially eucalyptus and acacia), berries, and insects. A standard parrot diet is often insufficient.",
+    "es": "Se requiere una dieta especializada, centrada en semillas autóctonas (especialmente eucalipto y acacia), bayas e insectos. Una dieta estándar para loros suele ser insuficiente."
+  },
+  "healthPointers": {
+    "en": "Can live for 60+ years. They do not thrive in warm climates and are susceptible to heat stress. They are not common as pets and are best suited for experienced keepers in appropriate climates.",
+    "es": "Pueden vivir más de 60 años. No prosperan en climas cálidos y son susceptibles al estrés por calor. No son comunes como mascotas y son más adecuadas para cuidadores experimentados en climas apropiados."
+  },
+  "housing": {
+    "en": "An aviary that can be kept cool is ideal. They are not well-suited for typical indoor cage life.",
+    "es": "Un aviario que pueda mantenerse fresco es ideal. No se adaptan bien a la vida típica en jaulas de interior."
+  },
+  "origin": {
+    "en": "Australia & Oceania",
+    "es": "Australia y Oceanía"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "60+ years",
+    "es": "60+ años"
+  }
 }

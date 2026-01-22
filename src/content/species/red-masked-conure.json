@@ -1,17 +1,52 @@
 {
   "category": "Conures",
-  "species": "Red-Masked Conure",
+  "species": {
+    "en": "Red-Masked Conure",
+    "es": "Aratinga de Guayaquil (Psittacara erythrogenys)"
+  },
   "slug": "red-masked-conure",
   "image": "/assets/img/parrots/red-masked-conure.webp",
-  "description": "Famous as the stars of the movie 'The Wild Parrots of Telegraph Hill,' this conure is bright green with a full head and face of brilliant red.",
-  "size": "13 inches (33 cm). Weight: 160-200g (5.6-7 oz)",
+  "description": {
+    "en": "Famous as the stars of the movie 'The Wild Parrots of Telegraph Hill,' this conure is bright green with a full head and face of brilliant red.",
+    "es": "Famoso por ser el protagonista de la película 'The Wild Parrots of Telegraph Hill', este conuro es de color verde brillante con la cabeza y la cara de color rojo vibrante."
+  },
+  "size": {
+    "en": "13 inches (33 cm). Weight: 160-200g (5.6-7 oz)",
+    "es": "13 pulgadas (33 cm). Peso: 160-200g (5.6-7 oz)"
+  },
   "weight_grams": 180,
-  "temperament": "Intelligent, bold, and energetic. They are very social and can be affectionate, but they require good socialization to curb a tendency to be nippy.",
-  "loudness": "Very Loud. They have a loud, sharp call and are known to be quite vocal, especially in groups.",
+  "temperament": {
+    "en": "Intelligent, bold, and energetic. They are very social and can be affectionate, but they require good socialization to curb a tendency to be nippy.",
+    "es": "Inteligente, audaz y enérgico. Son muy sociales y pueden ser afectuosos, pero requieren una buena socialización para frenar su tendencia a dar picotazos."
+  },
+  "loudness": {
+    "en": "Very Loud. They have a loud, sharp call and are known to be quite vocal, especially in groups.",
+    "es": "Muy ruidosa. Tienen una llamada fuerte y aguda y son conocidos por ser muy vocales, especialmente en grupos."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Fair to good talkers. They can learn a number of words and phrases and are good at mimicking sounds.",
-  "dietaryNeeds": "A varied diet is important. A base of pellets, supplemented with a wide range of fresh vegetables and fruits.",
-  "healthPointers": "Hardy birds with a lifespan of 25-30 years. They are known to form feral flocks in several US cities. Can be prone to PBFD.",
-  "housing": "Not recommended for apartments due to their high noise level. They need a spacious cage, at least 24\"W x 24\"D x 36\"H.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Fair to good talkers. They can learn a number of words and phrases and are good at mimicking sounds.",
+    "es": "Habladoras de aceptables a buenas. Pueden aprender varias palabras y frases y se les da bien imitar sonidos."
+  },
+  "dietaryNeeds": {
+    "en": "A varied diet is important. A base of pellets, supplemented with a wide range of fresh vegetables and fruits.",
+    "es": "Es importante una dieta variada. Una base de pellets, complementada con una amplia gama de verduras y frutas frescas."
+  },
+  "healthPointers": {
+    "en": "Hardy birds with a lifespan of 25-30 years. They are known to form feral flocks in several US cities. Can be prone to PBFD.",
+    "es": "Aves resistentes con una esperanza de vida de 25-30 años. Se sabe que forman bandadas asilvestradas en varias ciudades de EE. UU. Pueden ser propensas al PBFD."
+  },
+  "housing": {
+    "en": "Not recommended for apartments due to their high noise level. They need a spacious cage, at least 24\"W x 24\"D x 36\"H.",
+    "es": "No se recomienda para apartamentos debido a su alto nivel de ruido. Necesitan una jaula espaciosa, de al menos 60 cm de ancho x 60 cm de fondo x 90 cm de alto."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "25-30 years",
+    "es": "25-30 años"
+  }
 }

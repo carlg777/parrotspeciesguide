@@ -1,17 +1,52 @@
 {
   "category": "Macaws",
-  "species": "Yellow-Collared Macaw",
+  "species": {
+    "en": "Yellow-Collared Macaw",
+    "es": "Guacamayo de Collar Amarillo (Primolius auricollis)"
+  },
   "slug": "yellow-collared-macaw",
   "image": "/assets/img/parrots/yellow-collared-macaw.webp",
-  "description": "A popular mini-macaw, mostly green with a distinctive bright yellow band on the back of its neck that develops with age. They have a black forehead and a reddish belly patch.",
-  "size": "15 inches (38 cm). Weight: 250-280g (8.8-9.9 oz)",
+  "description": {
+    "en": "A popular mini-macaw, mostly green with a distinctive bright yellow band on the back of its neck that develops with age. They have a black forehead and a reddish belly patch.",
+    "es": "Un mini-guacamayo popular, mayoritariamente verde con una distintiva franja amarilla brillante en la parte posterior del cuello que se desarrolla con la edad. Tienen la frente negra y una mancha rojiza en el vientre."
+  },
+  "size": {
+    "en": "15 inches (38 cm). Weight: 250-280g (8.8-9.9 oz)",
+    "es": "15 pulgadas (38 cm). Peso: 250-280g (8.8-9.9 oz)"
+  },
   "weight_grams": 265,
-  "temperament": "Intelligent, curious, and mischievous. They are known for being very playful and can be affectionate, but they also have a stubborn streak and can be nippy.",
-  "loudness": "Loud for their size. They have a high-pitched, piercing call that can be quite repetitive when they want something.",
+  "temperament": {
+    "en": "Intelligent, curious, and mischievous. They are known for being very playful and can be affectionate, but they also have a stubborn streak and can be nippy.",
+    "es": "Inteligente, curioso y travieso. Son conocidos por ser muy juguetones y pueden ser afectuosos, pero también tienen una vena obstinada y pueden dar picotazos."
+  },
+  "loudness": {
+    "en": "Loud for their size. They have a high-pitched, piercing call that can be quite repetitive when they want something.",
+    "es": "Ruidoso para su tamaño. Tienen una llamada aguda y penetrante que puede ser bastante repetitiva cuando quieren algo."
+  },
   "loudness_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"w-12 h-12 text-red-500\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" role=\"img\" aria-label=\"Loud\"><title>Loud</title><path d=\"M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z\"></path></svg>",
-  "vocalization": "Very good talkers. They can develop a clear vocabulary of words and are known for their ability to learn tricks and mimic sounds.",
-  "dietaryNeeds": "A balanced diet consisting of high-quality pellets, fresh vegetables, leafy greens, and a limited amount of fruit and nuts.",
-  "healthPointers": "Can live for 50+ years. A hardy species. Prone to feather plucking if bored. They need plenty of chewable toys to keep their beaks in good condition.",
-  "housing": "Needs a roomy cage, minimum 30\"W x 24\"D x 36\"H. Their potential for noise makes them a challenging, but not impossible, choice for apartments.",
-  "origin": "Central & South America"
+  "vocalization": {
+    "en": "Very good talkers. They can develop a clear vocabulary of words and are known for their ability to learn tricks and mimic sounds.",
+    "es": "Muy buenos habladores. Pueden desarrollar un vocabulario claro de palabras y son conocidos por su capacidad para aprender trucos e imitar sonidos."
+  },
+  "dietaryNeeds": {
+    "en": "A balanced diet consisting of high-quality pellets, fresh vegetables, leafy greens, and a limited amount of fruit and nuts.",
+    "es": "Una dieta equilibrada compuesta por pellets de alta calidad, verduras frescas, verduras de hoja verde y una cantidad limitada de frutas y frutos secos."
+  },
+  "healthPointers": {
+    "en": "Can live for 50+ years. A hardy species. Prone to feather plucking if bored. They need plenty of chewable toys to keep their beaks in good condition.",
+    "es": "Pueden vivir más de 50 años. Una especie resistente. Propensa al picaje de plumas si se aburren. Necesitan muchos juguetes masticables para mantener sus picos en buen estado."
+  },
+  "housing": {
+    "en": "Needs a roomy cage, minimum 30\"W x 24\"D x 36\"H. Their potential for noise makes them a challenging, but not impossible, choice for apartments.",
+    "es": "Necesita una jaula espaciosa, de un mínimo de 75 cm de ancho x 60 cm de fondo x 90 cm de alto. Su potencial ruidoso los convierte en una elección difícil, pero no imposible, para los apartamentos."
+  },
+  "origin": {
+    "en": "Central & South America",
+    "es": "América Central y del Sur"
+  },
+  "careLevel": "advanced",
+  "lifespan": {
+    "en": "50+ years",
+    "es": "50+ años"
+  }
 }
