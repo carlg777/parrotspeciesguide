@@ -1,0 +1,82 @@
+---
+import Meter from '../ui/Meter.astro';
+
+const { species, lang = 'en' } = Astro.props;
+
+// Labels map
+const labels = {
+  en: {
+    title: "Species Ratings",
+    talking: "Talking Ability",
+    noise: "Noise Level",
+    social: "Social Needs",
+    cuddliness: "Cuddliness"
+  },
+  es: {
+    title: "Calificaciones de la Especie",
+    talking: "Capacidad de Habla",
+    noise: "Nivel de Ruido",
+    social: "Necesidades Sociales",
+    cuddliness: "Afectuosidad"
+  }
+};
+
+const t = labels[lang as 'en' | 'es'];
+---
+
+<div class="filters-panel__card attribute-grid">
+  <h2 class="attribute-title">{t.title}</h2>
+  
+  <div class="meters-grid">
+    <Meter 
+      label={t.talking} 
+      value={species.talkingScore || 1} 
+      color="var(--pf-primary-500)" 
+      id="meter-talking"
+    />
+    <Meter 
+      label={t.noise} 
+      value={species.noiseScore || 1} 
+      color={species.noiseScore > 7 ? 'var(--pf-support-error)' : 'var(--pf-primary-500)'}
+      id="meter-noise"
+    />
+    <Meter 
+      label={t.social} 
+      value={species.socialScore || 1} 
+      color="var(--pf-secondary-500)"
+      id="meter-social"
+    />
+    <Meter 
+      label={t.cuddliness} 
+      value={species.cuddlinessScore || 1} 
+      color="var(--pf-secondary-500)"
+      id="meter-cuddliness"
+    />
+  </div>
+</div>
+
+<style>
+  .attribute-grid {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .attribute-title {
+    font-family: var(--pf-font-display);
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem;
+  }
+
+  .meters-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .meters-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+  }
+</style>

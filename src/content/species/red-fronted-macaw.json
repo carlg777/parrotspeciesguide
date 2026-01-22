@@ -80,5 +80,9 @@
         "es": "El Guacamayo de Frente Roja (Ara rubrogenys) es originario de América Central y del Sur."
       }
     }
-  ]
+  ],
+  "talkingScore": 5,
+  "noiseScore": 7,
+  "socialScore": 7,
+  "cuddlinessScore": 5
 }

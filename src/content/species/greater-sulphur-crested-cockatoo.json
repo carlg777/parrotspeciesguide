@@ -80,5 +80,9 @@
         "es": "El Cacatúa de Moño Amarillo (Cacatua galerita) es originario de Australia y Oceanía."
       }
     }
-  ]
+  ],
+  "talkingScore": 9,
+  "noiseScore": 7,
+  "socialScore": 9,
+  "cuddlinessScore": 9
 }

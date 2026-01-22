@@ -100,5 +100,9 @@
         "es": "El Carolina o Ninfa (Nymphicus hollandicus) es originario de Australia y Oceanía."
       }
     }
-  ]
+  ],
+  "talkingScore": 5,
+  "noiseScore": 7,
+  "socialScore": 9,
+  "cuddlinessScore": 9
 }

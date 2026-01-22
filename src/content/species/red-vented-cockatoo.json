@@ -80,5 +80,9 @@
         "es": "El Cacatúa Filipina (Cacatua haematuropygia) es originario de Australia y Oceanía."
       }
     }
-  ]
+  ],
+  "talkingScore": 1,
+  "noiseScore": 7,
+  "socialScore": 7,
+  "cuddlinessScore": 5
 }

@@ -80,5 +80,9 @@
         "es": "El Lorito de Jardine (Poicephalus gulielmi) es originario de África."
       }
     }
-  ]
+  ],
+  "talkingScore": 7,
+  "noiseScore": 9,
+  "socialScore": 9,
+  "cuddlinessScore": 7
 }

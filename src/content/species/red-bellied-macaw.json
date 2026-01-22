@@ -80,5 +80,9 @@
         "es": "El Guacamayo de Vientre Rojo (Orthopsittaca manilatus) es originario de América Central y del Sur."
       }
     }
-  ]
+  ],
+  "talkingScore": 3,
+  "noiseScore": 5,
+  "socialScore": 6,
+  "cuddlinessScore": 9
 }

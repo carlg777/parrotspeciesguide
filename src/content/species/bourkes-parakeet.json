@@ -80,5 +80,9 @@
         "es": "El Periquito de Bourke (Neopsephotus bourkii) es originario de Australia y Oceanía."
       }
     }
-  ]
+  ],
+  "talkingScore": 3,
+  "noiseScore": 2,
+  "socialScore": 9,
+  "cuddlinessScore": 5
 }

@@ -80,5 +80,9 @@
         "es": "El Periquito de Alexandra (Polytelis alexandrae) es originario de Australia y Oceanía."
       }
     }
-  ]
+  ],
+  "talkingScore": 5,
+  "noiseScore": 7,
+  "socialScore": 7,
+  "cuddlinessScore": 9
 }

@@ -80,5 +80,9 @@
         "es": "El Guacamayo de Hahn (Diopsittaca nobilis) es originario de América Central y del Sur."
       }
     }
-  ]
+  ],
+  "talkingScore": 7,
+  "noiseScore": 7,
+  "socialScore": 6,
+  "cuddlinessScore": 9
 }

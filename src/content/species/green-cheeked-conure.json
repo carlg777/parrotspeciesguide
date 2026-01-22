@@ -100,5 +100,9 @@
         "es": "El Cotorra de Molina (Pyrrhura molinae) es originario de América Central y del Sur."
       }
     }
-  ]
+  ],
+  "talkingScore": 5,
+  "noiseScore": 5,
+  "socialScore": 6,
+  "cuddlinessScore": 9
 }

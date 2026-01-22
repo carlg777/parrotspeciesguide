@@ -112,6 +112,12 @@ const speciesCollection = defineCollection({
 
     // Daily time investment needed for care and interaction
     timeCommitment: bilingualString.optional(),
+
+    // Visual Ratings (1-10 scale) for UI Meters
+    talkingScore: z.number().min(0).max(10).optional(),
+    noiseScore: z.number().min(0).max(10).optional(),
+    socialScore: z.number().min(0).max(10).optional(),
+    cuddlinessScore: z.number().min(0).max(10).optional(),
   }),
 });
 

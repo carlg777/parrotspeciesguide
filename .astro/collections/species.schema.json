@@ -107,6 +107,26 @@
         "timeCommitment": {
           "$ref": "#/definitions/species/properties/species"
         },
+        "talkingScore": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "noiseScore": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "socialScore": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "cuddlinessScore": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
         "$schema": {
           "type": "string"
         }

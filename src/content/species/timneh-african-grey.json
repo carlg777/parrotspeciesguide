@@ -80,5 +80,9 @@
         "es": "El Loro Gris de Cola de Vinagre (Psittacus timneh) es originario de África."
       }
     }
-  ]
+  ],
+  "talkingScore": 9,
+  "noiseScore": 7,
+  "socialScore": 6,
+  "cuddlinessScore": 5
 }

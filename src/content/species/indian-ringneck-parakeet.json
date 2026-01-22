@@ -80,5 +80,9 @@
         "es": "El Cotorra de Kramer (Psittacula krameri) es originario de Asiática (India)."
       }
     }
-  ]
+  ],
+  "talkingScore": 1,
+  "noiseScore": 7,
+  "socialScore": 7,
+  "cuddlinessScore": 9
 }

@@ -80,5 +80,9 @@
         "es": "El Aratinga de Cabeza Oscura (Aratinga weddellii) es originario de América Central y del Sur."
       }
     }
-  ]
+  ],
+  "talkingScore": 1,
+  "noiseScore": 7,
+  "socialScore": 9,
+  "cuddlinessScore": 9
 }

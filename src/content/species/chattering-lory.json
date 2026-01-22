@@ -80,5 +80,9 @@
         "es": "El Lori Garrulo (Lorius garrulus) es originario de Australia y Oceanía."
       }
     }
-  ]
+  ],
+  "talkingScore": 9,
+  "noiseScore": 9,
+  "socialScore": 9,
+  "cuddlinessScore": 9
 }

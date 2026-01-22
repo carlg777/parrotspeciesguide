@@ -80,5 +80,9 @@
         "es": "El Loro Cabeciazul (Pionus menstruus) es originario de América Central y del Sur."
       }
     }
-  ]
+  ],
+  "talkingScore": 1,
+  "noiseScore": 5,
+  "socialScore": 9,
+  "cuddlinessScore": 5
 }

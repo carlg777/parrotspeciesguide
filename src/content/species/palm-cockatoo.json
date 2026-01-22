@@ -80,5 +80,9 @@
         "es": "El Cacatúa de las Palmeras (Probosciger aterrimus) es originario de Australia y Oceanía."
       }
     }
-  ]
+  ],
+  "talkingScore": 3,
+  "noiseScore": 9,
+  "socialScore": 6,
+  "cuddlinessScore": 9
 }

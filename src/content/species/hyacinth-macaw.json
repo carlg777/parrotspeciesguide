@@ -80,5 +80,9 @@
         "es": "El Guacamayo Jacinto (Anodorhynchus hyacinthinus) es originario de América Central y del Sur."
       }
     }
-  ]
+  ],
+  "talkingScore": 1,
+  "noiseScore": 7,
+  "socialScore": 6,
+  "cuddlinessScore": 5
 }

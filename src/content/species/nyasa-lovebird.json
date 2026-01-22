@@ -80,5 +80,9 @@
         "es": "El Inseparable del Nyasa (Agapornis lilianae) es originario de África."
       }
     }
-  ]
+  ],
+  "talkingScore": 1,
+  "noiseScore": 2,
+  "socialScore": 6,
+  "cuddlinessScore": 5
 }

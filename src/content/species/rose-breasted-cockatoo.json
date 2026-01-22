@@ -80,5 +80,9 @@
         "es": "El Cacatúa Galah (Eolophus roseicapilla) es originario de Australia y Oceanía."
       }
     }
-  ]
+  ],
+  "talkingScore": 7,
+  "noiseScore": 7,
+  "socialScore": 6,
+  "cuddlinessScore": 9
 }

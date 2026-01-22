@@ -80,5 +80,9 @@
         "es": "El Caíque de Vientre Blanco (Pionites leucogaster) es originario de América Central y del Sur."
       }
     }
-  ]
+  ],
+  "talkingScore": 5,
+  "noiseScore": 9,
+  "socialScore": 6,
+  "cuddlinessScore": 9
 }

@@ -80,5 +80,9 @@
         "es": "El Loro Barranquero (Cyanoliseus patagonus) es originario de América Central y del Sur."
       }
     }
-  ]
+  ],
+  "talkingScore": 1,
+  "noiseScore": 9,
+  "socialScore": 6,
+  "cuddlinessScore": 9
 }

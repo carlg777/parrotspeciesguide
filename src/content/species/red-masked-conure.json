@@ -80,5 +80,9 @@
         "es": "El Aratinga de Guayaquil (Psittacara erythrogenys) es originario de América Central y del Sur."
       }
     }
-  ]
+  ],
+  "talkingScore": 7,
+  "noiseScore": 9,
+  "socialScore": 7,
+  "cuddlinessScore": 9
 }

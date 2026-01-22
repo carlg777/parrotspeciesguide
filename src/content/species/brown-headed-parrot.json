@@ -80,5 +80,9 @@
         "es": "El Lorito de Cabeza Parda (Poicephalus cryptoxanthus) es originario de África."
       }
     }
-  ]
+  ],
+  "talkingScore": 5,
+  "noiseScore": 2,
+  "socialScore": 9,
+  "cuddlinessScore": 9
 }

@@ -80,5 +80,9 @@
         "es": "El Kakariki de Frente Roja (Cyanoramphus novaezelandiae) es originario de Australia y Oceanía."
       }
     }
-  ]
+  ],
+  "talkingScore": 3,
+  "noiseScore": 7,
+  "socialScore": 6,
+  "cuddlinessScore": 5
 }

@@ -80,5 +80,9 @@
         "es": "El Cacatúa Coliblanca (Zanda latirostris/baudinii) es originario de Australia y Oceanía."
       }
     }
-  ]
+  ],
+  "talkingScore": 1,
+  "noiseScore": 9,
+  "socialScore": 7,
+  "cuddlinessScore": 5
 }

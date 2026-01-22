@@ -80,5 +80,9 @@
         "es": "El Inseparable Enmascarado (Agapornis personatus) es originario de África."
       }
     }
-  ]
+  ],
+  "talkingScore": 1,
+  "noiseScore": 7,
+  "socialScore": 6,
+  "cuddlinessScore": 9
 }

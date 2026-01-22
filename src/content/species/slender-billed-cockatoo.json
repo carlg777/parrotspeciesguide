@@ -80,5 +80,9 @@
         "es": "El Cacatúa Cavadora (Cacatua tenuirostris) es originario de Australia y Oceanía."
       }
     }
-  ]
+  ],
+  "talkingScore": 1,
+  "noiseScore": 9,
+  "socialScore": 6,
+  "cuddlinessScore": 9
 }

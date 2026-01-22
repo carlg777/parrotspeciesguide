@@ -80,5 +80,9 @@
         "es": "El Bolborhynchus lineola es originario de América Central y del Sur."
       }
     }
-  ]
+  ],
+  "talkingScore": 3,
+  "noiseScore": 2,
+  "socialScore": 6,
+  "cuddlinessScore": 5
 }

@@ -1,6 +1,7 @@
 ---
 export const prerender = true;
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import AttributeGrid from '../../../components/species/AttributeGrid.astro';
 import { getCollection } from 'astro:content';
 import { getLangFromUrl } from "../../../i18n/utils";
 import { toAbsoluteUrl } from '../../../lib/urlUtils';
@@ -183,6 +184,9 @@ const faqDataString = faqStructuredData ? JSON.stringify(faqStructuredData).repl
         </div>
       </div>
     </header>
+
+    <!-- Visual Attribute Ratings -->
+    <AttributeGrid species={species} lang="es" />
 
     <!-- Quick Facts Grid -->
     <section style="margin-bottom: 3rem;">

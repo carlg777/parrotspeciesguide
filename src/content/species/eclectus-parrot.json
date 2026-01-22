@@ -80,5 +80,9 @@
         "es": "El Loro Ecléctico (Eclectus roratus) es originario de Australia y Oceanía."
       }
     }
-  ]
+  ],
+  "talkingScore": 5,
+  "noiseScore": 9,
+  "socialScore": 6,
+  "cuddlinessScore": 5
 }

@@ -80,5 +80,9 @@
         "es": "El Amazona Alinaranja (Amazona amazonica) es originario de América Central y del Sur."
       }
     }
-  ]
+  ],
+  "talkingScore": 7,
+  "noiseScore": 9,
+  "socialScore": 6,
+  "cuddlinessScore": 3
 }

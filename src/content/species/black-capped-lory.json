@@ -80,5 +80,9 @@
         "es": "El Lori Tricolor (Lorius lory) es originario de Australia y Oceanía."
       }
     }
-  ]
+  ],
+  "talkingScore": 5,
+  "noiseScore": 7,
+  "socialScore": 9,
+  "cuddlinessScore": 3
 }

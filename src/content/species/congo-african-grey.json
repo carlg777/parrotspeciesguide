@@ -80,5 +80,9 @@
         "es": "El Loro Gris de Cola Roja (Psittacus erithacus) es originario de África."
       }
     }
-  ]
+  ],
+  "talkingScore": 5,
+  "noiseScore": 9,
+  "socialScore": 6,
+  "cuddlinessScore": 5
 }
