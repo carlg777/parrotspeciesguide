@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "60-80+ years",
     "es": "60-80+ años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Green-winged Macaw?",
+        "es": "¿Cuál es la esperanza de vida de un Guacamayo Aliverde (Ara chloropterus)?"
+      },
+      "answer": {
+        "en": "The Green-winged Macaw typically lives for 60-80+ years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Guacamayo Aliverde (Ara chloropterus) suele vivir 60-80+ años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Green-winged Macaw good for beginners?",
+        "es": "¿Es el Guacamayo Aliverde (Ara chloropterus) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'advanced' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'avanzado'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Green-winged Macaw come from?",
+        "es": "¿De dónde procede el Guacamayo Aliverde (Ara chloropterus)?"
+      },
+      "answer": {
+        "en": "The Green-winged Macaw is native to Central & South America.",
+        "es": "El Guacamayo Aliverde (Ara chloropterus) es originario de América Central y del Sur."
+      }
+    }
+  ]
 }

@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "25-30 years",
     "es": "25-30 años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Jenday Conure?",
+        "es": "¿Cuál es la esperanza de vida de un Aratinga Jendaya (Aratinga jandaya)?"
+      },
+      "answer": {
+        "en": "The Jenday Conure typically lives for 25-30 years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Aratinga Jendaya (Aratinga jandaya) suele vivir 25-30 años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Jenday Conure good for beginners?",
+        "es": "¿Es el Aratinga Jendaya (Aratinga jandaya) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'intermediate' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'intermedio'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Jenday Conure come from?",
+        "es": "¿De dónde procede el Aratinga Jendaya (Aratinga jandaya)?"
+      },
+      "answer": {
+        "en": "The Jenday Conure is native to Central & South America.",
+        "es": "El Aratinga Jendaya (Aratinga jandaya) es originario de América Central y del Sur."
+      }
+    }
+  ]
 }

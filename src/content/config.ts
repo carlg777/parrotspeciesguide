@@ -81,7 +81,14 @@ const speciesCollection = defineCollection({
     housing: bilingualString,
 
     // Origin
+    // Origin
     origin: bilingualString,
+
+    // FAQs for SEO & Schema
+    faqs: z.array(z.object({
+      question: bilingualString,
+      answer: bilingualString,
+    })).optional(),
 
     // Enhanced care fields (Phase 1 - optional for gradual migration)
 

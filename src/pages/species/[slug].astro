@@ -84,6 +84,22 @@ const breadcrumbStructuredData = {
 
 const structuredDataString = JSON.stringify(structuredData).replace(/</g, '\\u003c');
 const breadcrumbDataString = JSON.stringify(breadcrumbStructuredData).replace(/</g, '\\u003c');
+
+// FAQ Structured Data
+const faqStructuredData = species.faqs ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": species.faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question[currentLang],
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer[currentLang]
+    }
+  }))
+} : null;
+
+const faqDataString = faqStructuredData ? JSON.stringify(faqStructuredData).replace(/</g, '\\u003c') : null;
 ---
 
 <BaseLayout
@@ -103,6 +119,11 @@ const breadcrumbDataString = JSON.stringify(breadcrumbStructuredData).replace(/<
     <script type="application/ld+json" is:inline>
       {breadcrumbDataString}
     </script>
+    {faqDataString && (
+      <script type="application/ld+json" is:inline>
+        {faqDataString}
+      </script>
+    )}
   </Fragment>
 
   <main class="container" style="padding: 2rem 0 4rem;">
@@ -236,6 +257,29 @@ const breadcrumbDataString = JSON.stringify(breadcrumbStructuredData).replace(/<
           <div style="color: var(--pf-neutral-700); line-height: 1.6;" set:html={species.housing[currentLang]} />
         </div>
       </section>
+
+      </section>
+
+      <!-- FAQ Section -->
+      {species.faqs && species.faqs.length > 0 && (
+        <section style="margin-bottom: 3rem;">
+          <h2 style="font-family: var(--pf-font-display); font-size: 1.75rem; margin: 0 0 1.5rem;">
+            Common Questions About {species.species[currentLang]}
+          </h2>
+          <div style="display: grid; gap: 1.5rem;">
+            {species.faqs.map((faq) => (
+              <div class="filters-panel__card" style="padding: 1.5rem;">
+                <h3 style="font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--pf-neutral-900);">
+                  {faq.question[currentLang]}
+                </h3>
+                <p style="margin: 0; color: var(--pf-neutral-700); line-height: 1.6;">
+                  {faq.answer[currentLang]}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <!-- Related Species -->
       {relatedSpecies.length > 0 && (

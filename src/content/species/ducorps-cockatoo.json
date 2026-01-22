@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "40+ years",
     "es": "40+ años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Ducorps’ Cockatoo?",
+        "es": "¿Cuál es la esperanza de vida de un Cacatúa de las Salomón (Cacatua ducorpsii)?"
+      },
+      "answer": {
+        "en": "The Ducorps’ Cockatoo typically lives for 40+ years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Cacatúa de las Salomón (Cacatua ducorpsii) suele vivir 40+ años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Ducorps’ Cockatoo good for beginners?",
+        "es": "¿Es el Cacatúa de las Salomón (Cacatua ducorpsii) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'advanced' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'avanzado'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Ducorps’ Cockatoo come from?",
+        "es": "¿De dónde procede el Cacatúa de las Salomón (Cacatua ducorpsii)?"
+      },
+      "answer": {
+        "en": "The Ducorps’ Cockatoo is native to Australia & Oceania.",
+        "es": "El Cacatúa de las Salomón (Cacatua ducorpsii) es originario de Australia y Oceanía."
+      }
+    }
+  ]
 }

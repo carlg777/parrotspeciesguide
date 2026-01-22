@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "30-50+ years",
     "es": "30-50+ años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Eclectus Parrot?",
+        "es": "¿Cuál es la esperanza de vida de un Loro Ecléctico (Eclectus roratus)?"
+      },
+      "answer": {
+        "en": "The Eclectus Parrot typically lives for 30-50+ years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Loro Ecléctico (Eclectus roratus) suele vivir 30-50+ años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Eclectus Parrot good for beginners?",
+        "es": "¿Es el Loro Ecléctico (Eclectus roratus) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'advanced' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'avanzado'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Eclectus Parrot come from?",
+        "es": "¿De dónde procede el Loro Ecléctico (Eclectus roratus)?"
+      },
+      "answer": {
+        "en": "The Eclectus Parrot is native to Australia & Oceania.",
+        "es": "El Loro Ecléctico (Eclectus roratus) es originario de Australia y Oceanía."
+      }
+    }
+  ]
 }

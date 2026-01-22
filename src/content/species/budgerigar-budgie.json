@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "5-15 years",
     "es": "5-15 años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Budgerigar (Budgie)?",
+        "es": "¿Cuál es la esperanza de vida de un Periquito Australiano (Melopsittacus undulatus)?"
+      },
+      "answer": {
+        "en": "The Budgerigar (Budgie) typically lives for 5-15 years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Periquito Australiano (Melopsittacus undulatus) suele vivir 5-15 años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Budgerigar (Budgie) good for beginners?",
+        "es": "¿Es el Periquito Australiano (Melopsittacus undulatus) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'beginner' care level. They are generally easier to handle and train compared to larger parrots.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'principiante'. Suelen ser más fáciles de manejar y adiestrar que los loros más grandes."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Budgerigar (Budgie) come from?",
+        "es": "¿De dónde procede el Periquito Australiano (Melopsittacus undulatus)?"
+      },
+      "answer": {
+        "en": "The Budgerigar (Budgie) is native to Australia & Oceania.",
+        "es": "El Periquito Australiano (Melopsittacus undulatus) es originario de Australia y Oceanía."
+      }
+    }
+  ]
 }

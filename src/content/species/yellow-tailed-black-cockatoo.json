@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "60+ years",
     "es": "60+ años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Yellow-Tailed Black Cockatoo?",
+        "es": "¿Cuál es la esperanza de vida de un Cacatúa Coliamarilla (Zanda funerea)?"
+      },
+      "answer": {
+        "en": "The Yellow-Tailed Black Cockatoo typically lives for 60+ years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Cacatúa Coliamarilla (Zanda funerea) suele vivir 60+ años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Yellow-Tailed Black Cockatoo good for beginners?",
+        "es": "¿Es el Cacatúa Coliamarilla (Zanda funerea) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'advanced' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'avanzado'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Yellow-Tailed Black Cockatoo come from?",
+        "es": "¿De dónde procede el Cacatúa Coliamarilla (Zanda funerea)?"
+      },
+      "answer": {
+        "en": "The Yellow-Tailed Black Cockatoo is native to Australia & Oceania.",
+        "es": "El Cacatúa Coliamarilla (Zanda funerea) es originario de Australia y Oceanía."
+      }
+    }
+  ]
 }

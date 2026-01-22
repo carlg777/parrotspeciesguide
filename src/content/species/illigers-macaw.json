@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "40-50 years",
     "es": "40-50 años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Illiger's Macaw?",
+        "es": "¿Cuál es la esperanza de vida de un Guacamayo de Illiger (Primolius maracana)?"
+      },
+      "answer": {
+        "en": "The Illiger's Macaw typically lives for 40-50 years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Guacamayo de Illiger (Primolius maracana) suele vivir 40-50 años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Illiger's Macaw good for beginners?",
+        "es": "¿Es el Guacamayo de Illiger (Primolius maracana) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'intermediate' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'intermedio'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Illiger's Macaw come from?",
+        "es": "¿De dónde procede el Guacamayo de Illiger (Primolius maracana)?"
+      },
+      "answer": {
+        "en": "The Illiger's Macaw is native to Central & South America.",
+        "es": "El Guacamayo de Illiger (Primolius maracana) es originario de América Central y del Sur."
+      }
+    }
+  ]
 }

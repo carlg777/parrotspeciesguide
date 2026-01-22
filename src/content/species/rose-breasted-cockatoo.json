@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "40-60+ years",
     "es": "40-60+ años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Rose-Breasted Cockatoo?",
+        "es": "¿Cuál es la esperanza de vida de un Cacatúa Galah (Eolophus roseicapilla)?"
+      },
+      "answer": {
+        "en": "The Rose-Breasted Cockatoo typically lives for 40-60+ years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Cacatúa Galah (Eolophus roseicapilla) suele vivir 40-60+ años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Rose-Breasted Cockatoo good for beginners?",
+        "es": "¿Es el Cacatúa Galah (Eolophus roseicapilla) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'advanced' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'avanzado'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Rose-Breasted Cockatoo come from?",
+        "es": "¿De dónde procede el Cacatúa Galah (Eolophus roseicapilla)?"
+      },
+      "answer": {
+        "en": "The Rose-Breasted Cockatoo is native to Australia & Oceania.",
+        "es": "El Cacatúa Galah (Eolophus roseicapilla) es originario de Australia y Oceanía."
+      }
+    }
+  ]
 }

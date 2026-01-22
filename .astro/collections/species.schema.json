@@ -62,6 +62,25 @@
         "origin": {
           "$ref": "#/definitions/species/properties/species"
         },
+        "faqs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "$ref": "#/definitions/species/properties/species"
+              },
+              "answer": {
+                "$ref": "#/definitions/species/properties/species"
+              }
+            },
+            "required": [
+              "question",
+              "answer"
+            ],
+            "additionalProperties": false
+          }
+        },
         "lifespan": {
           "$ref": "#/definitions/species/properties/species"
         },

@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "60+ years",
     "es": "60+ años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Yellow-crowned Amazon?",
+        "es": "¿Cuál es la esperanza de vida de un Amazona Real (Amazona ochrocephala)?"
+      },
+      "answer": {
+        "en": "The Yellow-crowned Amazon typically lives for 60+ years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Amazona Real (Amazona ochrocephala) suele vivir 60+ años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Yellow-crowned Amazon good for beginners?",
+        "es": "¿Es el Amazona Real (Amazona ochrocephala) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'advanced' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'avanzado'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Yellow-crowned Amazon come from?",
+        "es": "¿De dónde procede el Amazona Real (Amazona ochrocephala)?"
+      },
+      "answer": {
+        "en": "The Yellow-crowned Amazon is native to Central & South America.",
+        "es": "El Amazona Real (Amazona ochrocephala) es originario de América Central y del Sur."
+      }
+    }
+  ]
 }

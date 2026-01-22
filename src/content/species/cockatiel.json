@@ -68,5 +68,37 @@
   "timeCommitment": {
     "en": "1-2 hours daily minimum for interaction, training, and supervised out-of-cage time. Additional time for cage cleaning (10-15 min daily spot-clean, 30 min weekly deep-clean) and food preparation.",
     "es": "Mínimo de 1-2 horas diarias para interacción, entrenamiento y tiempo supervisado fuera de la jaula. Tiempo adicional para la limpieza de la jaula (10-15 min diarios de limpieza puntual, 30 min semanales de limpieza a fondo) y la preparación de la comida."
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Cockatiel?",
+        "es": "¿Cuál es la esperanza de vida de un Carolina o Ninfa (Nymphicus hollandicus)?"
+      },
+      "answer": {
+        "en": "The Cockatiel typically lives for 15-25 years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Carolina o Ninfa (Nymphicus hollandicus) suele vivir 15-25 años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Cockatiel good for beginners?",
+        "es": "¿Es el Carolina o Ninfa (Nymphicus hollandicus) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'beginner' care level. They are generally easier to handle and train compared to larger parrots.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'principiante'. Suelen ser más fáciles de manejar y adiestrar que los loros más grandes."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Cockatiel come from?",
+        "es": "¿De dónde procede el Carolina o Ninfa (Nymphicus hollandicus)?"
+      },
+      "answer": {
+        "en": "The Cockatiel is native to Australia & Oceania.",
+        "es": "El Carolina o Ninfa (Nymphicus hollandicus) es originario de Australia y Oceanía."
+      }
+    }
+  ]
 }

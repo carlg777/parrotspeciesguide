@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "60+ years",
     "es": "60+ años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Double Yellow-headed Amazon?",
+        "es": "¿Cuál es la esperanza de vida de un Amazona de Cabeza Amarilla (Amazona oratrix)?"
+      },
+      "answer": {
+        "en": "The Double Yellow-headed Amazon typically lives for 60+ years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Amazona de Cabeza Amarilla (Amazona oratrix) suele vivir 60+ años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Double Yellow-headed Amazon good for beginners?",
+        "es": "¿Es el Amazona de Cabeza Amarilla (Amazona oratrix) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'advanced' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'avanzado'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Double Yellow-headed Amazon come from?",
+        "es": "¿De dónde procede el Amazona de Cabeza Amarilla (Amazona oratrix)?"
+      },
+      "answer": {
+        "en": "The Double Yellow-headed Amazon is native to Central & South America.",
+        "es": "El Amazona de Cabeza Amarilla (Amazona oratrix) es originario de América Central y del Sur."
+      }
+    }
+  ]
 }

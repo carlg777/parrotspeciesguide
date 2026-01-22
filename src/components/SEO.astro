@@ -1,0 +1,78 @@
+---
+import { getLangFromUrl, getLocalizedPath, removeLocaleFromPath, languages } from "../i18n/utils";
+import { toAbsoluteUrl } from "../lib/urlUtils";
+
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  ogType?: string;
+  twitterCard?: string;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  ogTitle = title,
+  ogDescription = description ?? "",
+  ogImage = "/assets/img/og/psg-og.png",
+  ogType = "website",
+  twitterCard = "summary_large_image"
+} = Astro.props as Props;
+
+const currentLang = getLangFromUrl(Astro.url);
+const currentPathWithoutLocale = removeLocaleFromPath(Astro.url.pathname);
+const resolvedOgImage = toAbsoluteUrl(ogImage);
+
+// Brand Suffix Logic
+const brandName = "ParrotBliss";
+const fullTitle = title.includes(brandName) ? title : `${title} | ${brandName}`;
+const fullOgTitle = ogTitle.includes(brandName) ? ogTitle : `${ogTitle} | ${brandName}`;
+
+// Generate alternate URLs for headers
+const alternateUrls = Object.keys(languages).map(lang => ({
+  lang,
+  url: `${Astro.site}${getLocalizedPath(currentPathWithoutLocale, lang as keyof typeof languages).slice(1)}`
+}));
+
+// Locale for OG tags (US primary)
+const ogLocale = currentLang === 'en' ? 'en_US' : 'es_ES';
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="generator" content={Astro.generator} />
+<meta name="google" content="notranslate" />
+
+<!-- Primary Meta Tags -->
+<title>{fullTitle}</title>
+<meta name="title" content={fullTitle} />
+{description && <meta name="description" content={description} />}
+{canonical && <link rel="canonical" href={canonical} />}
+
+<!-- Hreflang / Alternate Links -->
+{alternateUrls.map(({ lang, url }) => (
+  <link rel="alternate" hreflang={lang} href={url} />
+))}
+<link rel="alternate" hreflang="x-default" href={`${Astro.site}${currentPathWithoutLocale.slice(1)}`} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={ogType} />
+<meta property="og:url" content={canonical || Astro.url.href} />
+<meta property="og:title" content={fullOgTitle} />
+{ogDescription && <meta property="og:description" content={ogDescription} />}
+{resolvedOgImage && <meta property="og:image" content={resolvedOgImage} />}
+<meta property="og:site_name" content={brandName} />
+<meta property="og:locale" content={ogLocale} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content={twitterCard} />
+<meta property="twitter:url" content={canonical || Astro.url.href} />
+<meta property="twitter:title" content={fullOgTitle} />
+{ogDescription && <meta property="twitter:description" content={ogDescription} />}
+{resolvedOgImage && <meta property="twitter:image" content={resolvedOgImage} />}

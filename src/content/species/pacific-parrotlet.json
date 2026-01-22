@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "15-20 years",
     "es": "15-20 años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Pacific Parrotlet?",
+        "es": "¿Cuál es la esperanza de vida de un Cotorrita Celestial (Forpus coelestis)?"
+      },
+      "answer": {
+        "en": "The Pacific Parrotlet typically lives for 15-20 years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Cotorrita Celestial (Forpus coelestis) suele vivir 15-20 años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Pacific Parrotlet good for beginners?",
+        "es": "¿Es el Cotorrita Celestial (Forpus coelestis) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'beginner' care level. They are generally easier to handle and train compared to larger parrots.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'principiante'. Suelen ser más fáciles de manejar y adiestrar que los loros más grandes."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Pacific Parrotlet come from?",
+        "es": "¿De dónde procede el Cotorrita Celestial (Forpus coelestis)?"
+      },
+      "answer": {
+        "en": "The Pacific Parrotlet is native to Central & South America.",
+        "es": "El Cotorrita Celestial (Forpus coelestis) es originario de América Central y del Sur."
+      }
+    }
+  ]
 }

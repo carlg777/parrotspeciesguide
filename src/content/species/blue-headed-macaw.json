@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "30+ years",
     "es": "30+ años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Blue-Headed Macaw?",
+        "es": "¿Cuál es la esperanza de vida de un Guacamayo de Cabeza Azul (Primolius couloni)?"
+      },
+      "answer": {
+        "en": "The Blue-Headed Macaw typically lives for 30+ years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Guacamayo de Cabeza Azul (Primolius couloni) suele vivir 30+ años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Blue-Headed Macaw good for beginners?",
+        "es": "¿Es el Guacamayo de Cabeza Azul (Primolius couloni) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'intermediate' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'intermedio'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Blue-Headed Macaw come from?",
+        "es": "¿De dónde procede el Guacamayo de Cabeza Azul (Primolius couloni)?"
+      },
+      "answer": {
+        "en": "The Blue-Headed Macaw is native to Central & South America.",
+        "es": "El Guacamayo de Cabeza Azul (Primolius couloni) es originario de América Central y del Sur."
+      }
+    }
+  ]
 }

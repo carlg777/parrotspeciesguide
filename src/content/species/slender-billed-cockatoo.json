@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "70+ years",
     "es": "70+ años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Slender-Billed Cockatoo?",
+        "es": "¿Cuál es la esperanza de vida de un Cacatúa Cavadora (Cacatua tenuirostris)?"
+      },
+      "answer": {
+        "en": "The Slender-Billed Cockatoo typically lives for 70+ years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Cacatúa Cavadora (Cacatua tenuirostris) suele vivir 70+ años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Slender-Billed Cockatoo good for beginners?",
+        "es": "¿Es el Cacatúa Cavadora (Cacatua tenuirostris) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'advanced' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'avanzado'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Slender-Billed Cockatoo come from?",
+        "es": "¿De dónde procede el Cacatúa Cavadora (Cacatua tenuirostris)?"
+      },
+      "answer": {
+        "en": "The Slender-Billed Cockatoo is native to Australia & Oceania.",
+        "es": "El Cacatúa Cavadora (Cacatua tenuirostris) es originario de Australia y Oceanía."
+      }
+    }
+  ]
 }

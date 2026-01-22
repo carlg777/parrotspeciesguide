@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "Up to 50 years",
     "es": "Hasta 50 años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a White-Tailed Black Cockatoo?",
+        "es": "¿Cuál es la esperanza de vida de un Cacatúa Coliblanca (Zanda latirostris/baudinii)?"
+      },
+      "answer": {
+        "en": "The White-Tailed Black Cockatoo typically lives for Up to 50 years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Cacatúa Coliblanca (Zanda latirostris/baudinii) suele vivir Hasta 50 años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the White-Tailed Black Cockatoo good for beginners?",
+        "es": "¿Es el Cacatúa Coliblanca (Zanda latirostris/baudinii) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'advanced' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'avanzado'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the White-Tailed Black Cockatoo come from?",
+        "es": "¿De dónde procede el Cacatúa Coliblanca (Zanda latirostris/baudinii)?"
+      },
+      "answer": {
+        "en": "The White-Tailed Black Cockatoo is native to Australia & Oceania.",
+        "es": "El Cacatúa Coliblanca (Zanda latirostris/baudinii) es originario de Australia y Oceanía."
+      }
+    }
+  ]
 }

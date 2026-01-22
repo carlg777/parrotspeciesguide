@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "20-30 years",
     "es": "20-30 años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Black-headed Caique?",
+        "es": "¿Cuál es la esperanza de vida de un Caíque de Cabeza Negra (Pionites melanocephalus)?"
+      },
+      "answer": {
+        "en": "The Black-headed Caique typically lives for 20-30 years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Caíque de Cabeza Negra (Pionites melanocephalus) suele vivir 20-30 años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Black-headed Caique good for beginners?",
+        "es": "¿Es el Caíque de Cabeza Negra (Pionites melanocephalus) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'intermediate' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'intermedio'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Black-headed Caique come from?",
+        "es": "¿De dónde procede el Caíque de Cabeza Negra (Pionites melanocephalus)?"
+      },
+      "answer": {
+        "en": "The Black-headed Caique is native to Central & South America.",
+        "es": "El Caíque de Cabeza Negra (Pionites melanocephalus) es originario de América Central y del Sur."
+      }
+    }
+  ]
 }

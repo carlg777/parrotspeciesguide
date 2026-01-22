@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "25-35 years",
     "es": "25-35 años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Meyer's Parrot?",
+        "es": "¿Cuál es la esperanza de vida de un Lorito de Meyer (Poicephalus meyeri)?"
+      },
+      "answer": {
+        "en": "The Meyer's Parrot typically lives for 25-35 years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Lorito de Meyer (Poicephalus meyeri) suele vivir 25-35 años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Meyer's Parrot good for beginners?",
+        "es": "¿Es el Lorito de Meyer (Poicephalus meyeri) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'intermediate' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'intermedio'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Meyer's Parrot come from?",
+        "es": "¿De dónde procede el Lorito de Meyer (Poicephalus meyeri)?"
+      },
+      "answer": {
+        "en": "The Meyer's Parrot is native to Africa.",
+        "es": "El Lorito de Meyer (Poicephalus meyeri) es originario de África."
+      }
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { getLangFromUrl, getLocalizedPath, removeLocaleFromPath, languages } from "../i18n/utils";
-import { toAbsoluteUrl } from "../lib/urlUtils";
+import SEO from "../components/SEO.astro";
+import { getLangFromUrl } from "../i18n/utils";
 
 interface Props {
   title: string;
@@ -20,54 +20,31 @@ const {
   title,
   description,
   canonical,
-  ogTitle = title,
-  ogDescription = description ?? "",
-  ogImage = "/assets/img/og/psg-og.png",
-  ogType = "website",
-  twitterCard = "summary_large_image",
+  ogTitle,
+  ogDescription,
+  ogImage,
+  ogType,
+  twitterCard,
   dataPage = "static"
 } = Astro.props as Props;
 
 const currentLang = getLangFromUrl(Astro.url);
-const currentPathWithoutLocale = removeLocaleFromPath(Astro.url.pathname);
-const resolvedOgImage = toAbsoluteUrl(ogImage);
-
-// Generate alternate URLs for all languages
-const alternateUrls = Object.keys(languages).map(lang => ({
-  lang,
-  url: `${Astro.site}${getLocalizedPath(currentPathWithoutLocale, lang as keyof typeof languages).slice(1)}`
-}));
 ---
 
 <!DOCTYPE html>
 <html lang={currentLang} translate="no">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="google" content="notranslate" />
-    <title>{title}</title>
-    {description && <meta name="description" content={description} />}
-    {canonical && <link rel="canonical" href={canonical} />}
-
-    <!-- Alternate language links for SEO -->
-    {alternateUrls.map(({ lang, url }) => (
-      <link rel="alternate" hreflang={lang} href={url} />
-    ))}
-    <link rel="alternate" hreflang="x-default" href={`${Astro.site}${currentPathWithoutLocale.slice(1)}`} />
-
-    <!-- Open Graph -->
-    <meta property="og:title" content={ogTitle} />
-    {ogDescription && <meta property="og:description" content={ogDescription} />}
-    {canonical && <meta property="og:url" content={canonical} />}
-    <meta property="og:type" content={ogType} />
-    {resolvedOgImage && <meta property="og:image" content={resolvedOgImage} />}
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content={twitterCard} />
-    <meta name="twitter:title" content={ogTitle} />
-    {ogDescription && <meta name="twitter:description" content={ogDescription} />}
-    {resolvedOgImage && <meta name="twitter:image" content={resolvedOgImage} />}
-
+    <SEO
+      title={title}
+      description={description}
+      canonical={canonical}
+      ogTitle={ogTitle}
+      ogDescription={ogDescription}
+      ogImage={ogImage}
+      ogType={ogType}
+      twitterCard={twitterCard}
+    />
+    
     <link rel="preload" href="/assets/css/styles.css" as="style" />
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <slot name="head" />

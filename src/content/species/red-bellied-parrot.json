@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "20-30 years",
     "es": "20-30 años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Red-bellied Parrot?",
+        "es": "¿Cuál es la esperanza de vida de un Lorito de Vientre Rojo (Poicephalus rufiventris)?"
+      },
+      "answer": {
+        "en": "The Red-bellied Parrot typically lives for 20-30 years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Lorito de Vientre Rojo (Poicephalus rufiventris) suele vivir 20-30 años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Red-bellied Parrot good for beginners?",
+        "es": "¿Es el Lorito de Vientre Rojo (Poicephalus rufiventris) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'intermediate' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'intermedio'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Red-bellied Parrot come from?",
+        "es": "¿De dónde procede el Lorito de Vientre Rojo (Poicephalus rufiventris)?"
+      },
+      "answer": {
+        "en": "The Red-bellied Parrot is native to Africa.",
+        "es": "El Lorito de Vientre Rojo (Poicephalus rufiventris) es originario de África."
+      }
+    }
+  ]
 }

@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "60-80 years",
     "es": "60-80 años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Greater Sulphur-Crested Cockatoo?",
+        "es": "¿Cuál es la esperanza de vida de un Cacatúa de Moño Amarillo (Cacatua galerita)?"
+      },
+      "answer": {
+        "en": "The Greater Sulphur-Crested Cockatoo typically lives for 60-80 years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Cacatúa de Moño Amarillo (Cacatua galerita) suele vivir 60-80 años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Greater Sulphur-Crested Cockatoo good for beginners?",
+        "es": "¿Es el Cacatúa de Moño Amarillo (Cacatua galerita) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'advanced' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'avanzado'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Greater Sulphur-Crested Cockatoo come from?",
+        "es": "¿De dónde procede el Cacatúa de Moño Amarillo (Cacatua galerita)?"
+      },
+      "answer": {
+        "en": "The Greater Sulphur-Crested Cockatoo is native to Australia & Oceania.",
+        "es": "El Cacatúa de Moño Amarillo (Cacatua galerita) es originario de Australia y Oceanía."
+      }
+    }
+  ]
 }

@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "10-15 years",
     "es": "10-15 años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Nyasa Lovebird?",
+        "es": "¿Cuál es la esperanza de vida de un Inseparable del Nyasa (Agapornis lilianae)?"
+      },
+      "answer": {
+        "en": "The Nyasa Lovebird typically lives for 10-15 years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Inseparable del Nyasa (Agapornis lilianae) suele vivir 10-15 años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Nyasa Lovebird good for beginners?",
+        "es": "¿Es el Inseparable del Nyasa (Agapornis lilianae) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'intermediate' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'intermedio'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Nyasa Lovebird come from?",
+        "es": "¿De dónde procede el Inseparable del Nyasa (Agapornis lilianae)?"
+      },
+      "answer": {
+        "en": "The Nyasa Lovebird is native to Africa.",
+        "es": "El Inseparable del Nyasa (Agapornis lilianae) es originario de África."
+      }
+    }
+  ]
 }

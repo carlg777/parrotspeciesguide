@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "10-15 years",
     "es": "10-15 años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Rainbow Lorikeet?",
+        "es": "¿Cuál es la esperanza de vida de un Lori Arcoíris (Trichoglossus moluccanus)?"
+      },
+      "answer": {
+        "en": "The Rainbow Lorikeet typically lives for 10-15 years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Lori Arcoíris (Trichoglossus moluccanus) suele vivir 10-15 años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Rainbow Lorikeet good for beginners?",
+        "es": "¿Es el Lori Arcoíris (Trichoglossus moluccanus) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'advanced' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'avanzado'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Rainbow Lorikeet come from?",
+        "es": "¿De dónde procede el Lori Arcoíris (Trichoglossus moluccanus)?"
+      },
+      "answer": {
+        "en": "The Rainbow Lorikeet is native to Australia & Oceania.",
+        "es": "El Lori Arcoíris (Trichoglossus moluccanus) es originario de Australia y Oceanía."
+      }
+    }
+  ]
 }

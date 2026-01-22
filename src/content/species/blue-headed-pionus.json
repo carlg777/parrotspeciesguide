@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "25-40 years",
     "es": "25-40 años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Blue-Headed Pionus?",
+        "es": "¿Cuál es la esperanza de vida de un Loro Cabeciazul (Pionus menstruus)?"
+      },
+      "answer": {
+        "en": "The Blue-Headed Pionus typically lives for 25-40 years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Loro Cabeciazul (Pionus menstruus) suele vivir 25-40 años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Blue-Headed Pionus good for beginners?",
+        "es": "¿Es el Loro Cabeciazul (Pionus menstruus) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'intermediate' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'intermedio'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Blue-Headed Pionus come from?",
+        "es": "¿De dónde procede el Loro Cabeciazul (Pionus menstruus)?"
+      },
+      "answer": {
+        "en": "The Blue-Headed Pionus is native to Central & South America.",
+        "es": "El Loro Cabeciazul (Pionus menstruus) es originario de América Central y del Sur."
+      }
+    }
+  ]
 }

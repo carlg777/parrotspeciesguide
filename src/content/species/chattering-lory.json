@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "20-30 years",
     "es": "20-30 años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Chattering Lory?",
+        "es": "¿Cuál es la esperanza de vida de un Lori Garrulo (Lorius garrulus)?"
+      },
+      "answer": {
+        "en": "The Chattering Lory typically lives for 20-30 years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Lori Garrulo (Lorius garrulus) suele vivir 20-30 años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Chattering Lory good for beginners?",
+        "es": "¿Es el Lori Garrulo (Lorius garrulus) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'advanced' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'avanzado'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Chattering Lory come from?",
+        "es": "¿De dónde procede el Lori Garrulo (Lorius garrulus)?"
+      },
+      "answer": {
+        "en": "The Chattering Lory is native to Australia & Oceania.",
+        "es": "El Lori Garrulo (Lorius garrulus) es originario de Australia y Oceanía."
+      }
+    }
+  ]
 }

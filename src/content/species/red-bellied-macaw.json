@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "30-40 years",
     "es": "30-40 años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Red-Bellied Macaw?",
+        "es": "¿Cuál es la esperanza de vida de un Guacamayo de Vientre Rojo (Orthopsittaca manilatus)?"
+      },
+      "answer": {
+        "en": "The Red-Bellied Macaw typically lives for 30-40 years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Guacamayo de Vientre Rojo (Orthopsittaca manilatus) suele vivir 30-40 años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Red-Bellied Macaw good for beginners?",
+        "es": "¿Es el Guacamayo de Vientre Rojo (Orthopsittaca manilatus) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'intermediate' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'intermedio'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Red-Bellied Macaw come from?",
+        "es": "¿De dónde procede el Guacamayo de Vientre Rojo (Orthopsittaca manilatus)?"
+      },
+      "answer": {
+        "en": "The Red-Bellied Macaw is native to Central & South America.",
+        "es": "El Guacamayo de Vientre Rojo (Orthopsittaca manilatus) es originario de América Central y del Sur."
+      }
+    }
+  ]
 }

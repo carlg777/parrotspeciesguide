@@ -48,5 +48,37 @@
   "lifespan": {
     "en": "30+ years",
     "es": "30+ años"
-  }
+  },
+  "faqs": [
+    {
+      "question": {
+        "en": "What is the lifespan of a Gold-Capped Conure?",
+        "es": "¿Cuál es la esperanza de vida de un Aratinga de Cabeza Dorada (Aratinga auricapillus)?"
+      },
+      "answer": {
+        "en": "The Gold-Capped Conure typically lives for 30+ years. With proper care, diet, and regular vet check-ups, they can live a full and healthy life.",
+        "es": "El Aratinga de Cabeza Dorada (Aratinga auricapillus) suele vivir 30+ años. Con los cuidados adecuados, una dieta correcta y revisiones veterinarias periódicas, pueden vivir una vida plena y sana."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the Gold-Capped Conure good for beginners?",
+        "es": "¿Es el Aratinga de Cabeza Dorada (Aratinga auricapillus) adecuado para principiantes?"
+      },
+      "answer": {
+        "en": "This species is rated as 'intermediate' care level. They require specific attention, socialization, or dietary needs that may challenge first-time owners.",
+        "es": "Esta especie está clasificada con un nivel de cuidado 'intermedio'. Requieren una atención específica, socialización o necesidades dietéticas que pueden suponer un reto para los propietarios primerizos."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does the Gold-Capped Conure come from?",
+        "es": "¿De dónde procede el Aratinga de Cabeza Dorada (Aratinga auricapillus)?"
+      },
+      "answer": {
+        "en": "The Gold-Capped Conure is native to Central & South America.",
+        "es": "El Aratinga de Cabeza Dorada (Aratinga auricapillus) es originario de América Central y del Sur."
+      }
+    }
+  ]
 }
