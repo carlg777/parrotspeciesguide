@@ -3,6 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { Image, getImage } from 'astro:assets';
 import parrotFunFacts from '../../assets/img/parrot-fun-facts-infographic.jpg';
 import parrotFunFactsMobile from '../../assets/img/parrot-fun-facts-mobile.jpg';
+import CategoryCard from '../../components/home/CategoryCard.astro';
 import { getCollection } from "astro:content";
 
 const allSpecies = await getCollection("species");
@@ -84,13 +85,20 @@ const faqDataString = JSON.stringify(faqStructuredData).replace(/</g, '\\u003c')
     <section class="section">
       <h2 class="section-title section-title--xl">Categorías de Especies de Loros</h2>
       <div class="category-grid">
-        {categories.map((category) => {
-          const count = allSpecies.filter((s) => s.data.category === category).length;
+        {categories.map(category => {
+          const categorySpecies = allSpecies.filter(s => s.data.category === category);
+          const count = categorySpecies.length;
+          // Strategy: Use the image of the first species in the category
+          const firstSpecies = categorySpecies[0];
+          const imagePath = firstSpecies ? firstSpecies.data.image : '/assets/img/parrots/placeholder.webp'; // Fallback
+
           return (
-            <a href={`/es/species#${category.toLowerCase().replace(/\s+/g, '-')}`} class="category-card">
-              <h3 class="category-card__title">{category}</h3>
-              <p class="category-card__meta">{count} especies</p>
-            </a>
+            <CategoryCard 
+              category={category}
+              count={count}
+              imagePath={imagePath}
+              href={`/es/species#${category.toLowerCase().replace(/\s+/g, '-')}`}
+            />
           );
         })}
       </div>
