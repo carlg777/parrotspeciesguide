@@ -3,6 +3,8 @@ export const prerender = true;
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from 'astro:content';
 import { toAbsoluteUrl } from '../../lib/urlUtils';
+import { Image } from 'astro:assets';
+import { getImageImport } from '../../lib/imageImport';
 import { getLangFromUrl } from '../../i18n/utils';
 
 // Get current language
@@ -209,13 +211,13 @@ const faqDataString = JSON.stringify(faqStructuredData).replace(/</g, '\\u003c')
               <article class="filters-panel__card species-card" data-species={speciesEntry.data.slug}>
                 <a href={`/species/${speciesEntry.data.slug}`} class="species-card__link">
                   <div class="species-card__media">
-                    <img
-                      src={speciesEntry.data.image}
+                    <Image
+                      src={getImageImport(speciesEntry.data.image)}
                       alt={`${speciesEntry.data.species[currentLang]} parrot from ${speciesEntry.data.origin[currentLang]} - ${speciesEntry.data.size[currentLang]}`}
                       loading="lazy"
                       decoding="async"
-                      width="600"
-                      height="400"
+                      widths={[300, 600]}
+                      sizes="(max-width: 480px) 100vw, 300px"
                       class="species-card__image"
                     />
                   </div>

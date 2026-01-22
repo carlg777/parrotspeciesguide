@@ -4,6 +4,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import AttributeGrid from '../../components/species/AttributeGrid.astro';
 import { getCollection } from 'astro:content';
 import { toAbsoluteUrl } from '../../lib/urlUtils';
+import { Image } from 'astro:assets';
+import { getImageImport } from '../../lib/imageImport';
 
 import { getLangFromUrl } from '../../i18n/utils';
 
@@ -152,15 +154,15 @@ const faqDataString = faqStructuredData ? JSON.stringify(faqStructuredData).repl
       <!-- Hero Section -->
       <section style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start;">
         <div style="position: relative; border-radius: var(--pf-radius-soft); overflow: hidden;">
-          <img
-            src={species.image}
+          <Image
+            src={getImageImport(species.image)}
             alt={`${species.species[currentLang]} parrot - ${species.description[currentLang].substring(0, 100)}...`}
             loading="eager"
             fetchpriority="high"
             decoding="async"
+            widths={[400, 800, 1200]}
+            sizes="(max-width: 768px) 100vw, 800px"
             style="width: 100%; height: auto; display: block;"
-            width="800"
-            height="600"
           />
         </div>
 
@@ -296,11 +298,13 @@ const faqDataString = faqStructuredData ? JSON.stringify(faqStructuredData).repl
               <article class="filters-panel__card">
                 <a href={`/species/${related.data.slug}`} style="text-decoration: none; color: inherit;">
                   <div style="position: relative; padding-bottom: 66.67%; overflow: hidden; border-radius: var(--pf-radius-soft); margin-bottom: 1rem;">
-                    <img
-                      src={related.data.image}
+                    <Image
+                      src={getImageImport(related.data.image)}
                       alt={related.data.species[currentLang]}
                       loading="lazy"
                       decoding="async"
+                      widths={[300, 600]}
+                      sizes="(max-width: 480px) 100vw, 300px"
                       style="position: absolute; width: 100%; height: 100%; object-fit: cover;"
                     />
                   </div>

@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from 'astro:assets';
+import parrotFunFacts from '../assets/img/parrot-fun-facts-infographic.jpg';
 import { getCollection } from 'astro:content';
 
 // Get all species
@@ -90,6 +92,19 @@ const faqDataString = JSON.stringify(faqStructuredData).replace(/</g, '\\u003c')
             </a>
           );
         })}
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title section-title--xl">Did You Know?</h2>
+      <div class="infographic-container">
+        <Image 
+          src={parrotFunFacts} 
+          alt="Parrot Power Infographic: Fun facts about intelligence, tool use, climbing, feet, mating, and habitats of parrots"
+          widths={[400, 800, 1200]}
+          sizes="(max-width: 800px) 100vw, 1200px"
+          class="infographic-image"
+        />
       </div>
     </section>
 

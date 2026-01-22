@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { Image } from 'astro:assets';
+import parrotFunFacts from '../../assets/img/parrot-fun-facts-infographic.jpg';
 import { getCollection } from "astro:content";
 
 const allSpecies = await getCollection("species");
@@ -90,6 +92,19 @@ const faqDataString = JSON.stringify(faqStructuredData).replace(/</g, '\\u003c')
             </a>
           );
         })}
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title section-title--xl">¿Sabías Que?</h2>
+      <div class="infographic-container">
+        <Image 
+          src={parrotFunFacts} 
+          alt="Infografía de Poder de los Loros: Datos curiosos sobre inteligencia, uso de herramientas, escalada, patas, apareamiento y hábitats de los loros"
+          widths={[400, 800, 1200]}
+          sizes="(max-width: 800px) 100vw, 1200px"
+          class="infographic-image"
+        />
       </div>
     </section>
 
