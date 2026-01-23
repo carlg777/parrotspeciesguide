@@ -1127,7 +1127,57 @@ footer.site-footer {
     display: flex;
   }
 
-  /* Mobile nav positioning handled by Header.astro component styles */
+  /* Mobile Navigation */
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 0;
+    gap: 0;
+    align-items: stretch;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid var(--pf-neutral-200);
+    display: none;
+    z-index: 9999;
+  }
+
+  .main-nav.is-active {
+    display: flex;
+  }
+
+  .main-nav a {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--pf-neutral-100);
+    color: #1f2937;
+    display: block;
+    text-align: left;
+  }
+
+  .main-nav a:hover {
+    background-color: var(--pf-neutral-050);
+  }
+
+  .main-nav .user-pill {
+    margin: 0;
+    width: 100%;
+    display: block;
+    border-radius: 0;
+    text-align: left;
+    padding: 1rem 1.5rem;
+  }
+
+  .mobile-nav-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
 
   .results-layout {
     grid-template-columns: 1fr;
