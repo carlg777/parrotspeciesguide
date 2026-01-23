@@ -10,6 +10,22 @@ import { getLangFromUrl } from "../../../i18n/utils";
 // Get current language
 const currentLang = getLangFromUrl(Astro.url);
 
+const categoryTranslations: Record<string, string> = {
+  "African Parrots": "Loros Africanos",
+  "Amazons": "Amazonas",
+  "Caiques": "Caiques",
+  "Cockatoos": "Cacatúas",
+  "Conures": "Cotorras",
+  "Eclectus": "Eclectus",
+  "Kakarikis": "Kakarikis",
+  "Lories & Lorikeets": "Loris y Loriquitos",
+  "Lovebirds": "Agapornis",
+  "Macaws": "Guacamayos",
+  "Parakeets": "Periquitos",
+  "Parrotlets": "Loritos",
+  "Pionus": "Pionus"
+};
+
 // Get all species
 const allSpecies = await getCollection('species');
 
@@ -26,6 +42,7 @@ const origins = [...new Set(allSpecies.map(s => s.data.origin[currentLang]))].so
 
 const categoryGroups = categories.map(category => ({
   category,
+  translatedCategory: categoryTranslations[category] || category,
   slug: category.toLowerCase().replace(/\s+/g, "-"),
   species: sortedSpecies.filter(entry => entry.data.category === category)
 }));
@@ -204,7 +221,7 @@ const faqDataString = JSON.stringify(faqStructuredData).replace(/</g, '\\u003c')
       {categoryGroups.map(group => (
         <section id={group.slug} class="species-category" data-category={group.category}>
           <h2 class="section-title section-title--lg">
-            {group.category}
+            {group.translatedCategory}
           </h2>
           <div class="featured-grid species-category__grid">
             {group.species.map((speciesEntry) => (
@@ -227,7 +244,7 @@ const faqDataString = JSON.stringify(faqStructuredData).replace(/</g, '\\u003c')
                   </h3>
 
                   <p class="species-card__meta">
-                    {speciesEntry.data.category}
+                    {categoryTranslations[speciesEntry.data.category] || speciesEntry.data.category}
                   </p>
 
                   <div class="species-card__badges">

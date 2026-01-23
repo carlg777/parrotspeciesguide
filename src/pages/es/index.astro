@@ -6,6 +6,22 @@ import parrotFunFactsMobile from '../../assets/img/parrot-fun-facts-mobile.jpg';
 import CategoryCard from '../../components/home/CategoryCard.astro';
 import { getCollection } from "astro:content";
 
+const categoryTranslations: Record<string, string> = {
+  "African Parrots": "Loros Africanos",
+  "Amazons": "Amazonas",
+  "Caiques": "Caiques",
+  "Cockatoos": "Cacatúas",
+  "Conures": "Cotorras",
+  "Eclectus": "Eclectus",
+  "Kakarikis": "Kakarikis",
+  "Lories & Lorikeets": "Loris y Loriquitos",
+  "Lovebirds": "Agapornis",
+  "Macaws": "Guacamayos",
+  "Parakeets": "Periquitos",
+  "Parrotlets": "Loritos",
+  "Pionus": "Pionus"
+};
+
 const allSpecies = await getCollection("species");
 const categories = [...new Set(allSpecies.map((s) => s.data.category))].sort();
 
@@ -103,10 +119,11 @@ const faqDataString = JSON.stringify(faqStructuredData).replace(/</g, '\\u003c')
           }
 
           const imagePath = featuredSpecies ? featuredSpecies.data.image : '/assets/img/parrots/placeholder.webp'; // Fallback
+          const translatedCategory = categoryTranslations[category] || category;
 
           return (
             <CategoryCard 
-              category={category}
+              category={translatedCategory}
               count={count}
               imagePath={imagePath}
               href={`/es/species#${category.toLowerCase().replace(/\s+/g, '-')}`}
