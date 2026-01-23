@@ -42,16 +42,15 @@ const t = useTranslations(currentLang);
     var hamburger = document.querySelector('.hamburger');
     var nav = document.getElementById('mobile-nav');
 
+    alert('Function called! hamburger=' + !!hamburger + ', nav=' + !!nav);
+
     if (!hamburger || !nav) {
-      alert('Menu elements not found!');
       return;
     }
 
     hamburger.classList.toggle('is-active');
     var isOpen = hamburger.classList.contains('is-active');
-    hamburger.setAttribute('aria-expanded', isOpen);
 
-    // Force ALL styles inline to guarantee visibility
     if (isOpen) {
       nav.setAttribute('style',
         'display: flex !important;' +
@@ -63,17 +62,14 @@ const t = useTranslations(currentLang);
         'bottom: 0 !important;' +
         'width: 100vw !important;' +
         'height: 100vh !important;' +
-        'background-color: white !important;' +
+        'background-color: red !important;' +
         'z-index: 999999 !important;' +
-        'padding: 80px 20px 20px 20px !important;' +
-        'overflow-y: auto !important;' +
-        'visibility: visible !important;' +
-        'opacity: 1 !important;' +
-        'transform: none !important;' +
-        'pointer-events: auto !important;'
+        'padding: 80px 20px 20px 20px !important;'
       );
+      alert('Menu opened! Style set. nav.style.display=' + nav.style.display);
     } else {
       nav.setAttribute('style', '');
+      alert('Menu closed!');
     }
   }
 </script>
