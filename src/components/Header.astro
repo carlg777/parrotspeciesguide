@@ -13,7 +13,7 @@ const t = useTranslations(currentLang);
         <span>Parrot Species Guide</span>
       </a>
 
-      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" onclick="toggleMobileMenu()">
         <div class="hamburger__line"></div>
         <div class="hamburger__line"></div>
         <div class="hamburger__line"></div>
@@ -37,30 +37,28 @@ const t = useTranslations(currentLang);
 </div>
 
 <script is:inline>
-  // Mobile Menu Logic - runs immediately
-  (function() {
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.getElementById('mobile-nav');
+  // Global function for inline onclick
+  function toggleMobileMenu() {
+    var hamburger = document.querySelector('.hamburger');
+    var nav = document.getElementById('mobile-nav');
 
-    console.log('Menu init:', { hamburger: !!hamburger, nav: !!nav });
-
-    if (hamburger && nav) {
-      hamburger.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        const isOpen = hamburger.classList.toggle('is-active');
-        hamburger.setAttribute('aria-expanded', String(isOpen));
-
-        // Force display with inline style
-        nav.style.cssText = isOpen ? 'display: flex !important;' : 'display: none !important;';
-
-        console.log('Menu toggled:', isOpen, nav.style.display);
-      });
-    } else {
-      console.error('Menu elements not found!', { hamburger, nav });
+    if (!hamburger || !nav) {
+      alert('Menu elements not found!');
+      return;
     }
-  })();
+
+    hamburger.classList.toggle('is-active');
+    var isOpen = hamburger.classList.contains('is-active');
+    hamburger.setAttribute('aria-expanded', isOpen);
+
+    // Toggle menu visibility
+    if (isOpen) {
+      nav.style.display = 'flex';
+      nav.style.flexDirection = 'column';
+    } else {
+      nav.style.display = 'none';
+    }
+  }
 </script>
 
 <style>
