@@ -122,21 +122,28 @@ const t = useTranslations(currentLang);
     gap: 2rem;
   }
 
-  /* Desktop: reposition nav to align with header logic if needed */
-  @media (min-width: 769px) {
+  /* Desktop Styles */
+  @media (min-width: 901px) {
     .site-header__inner {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 2rem;
-    }
-    .main-nav {
-      justify-self: end;
       display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    
-    /* Hide hamburger */
-    .mobile-nav-inner {
-        display: contents; /* Strip container behavior on desktop */
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      order: 2;
+    }
+
+    .lang-toggle {
+      order: 3;
+      margin-left: 1.5rem;
+    }
+
+    .hamburger {
+      display: none !important;
     }
   }
 
@@ -204,9 +211,25 @@ const t = useTranslations(currentLang);
 
   /* Mobile Styles */
   @media (max-width: 900px) {
+    .site-header__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      flex: 1;
+    }
+
+    .lang-toggle {
+      order: 2;
+      margin-right: 0.75rem;
+    }
+
     /* Show hamburger on mobile */
     .hamburger {
       display: flex;
+      order: 3;
     }
 
     /* Hide nav by default on mobile */
