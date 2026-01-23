@@ -13,9 +13,9 @@ const t = useTranslations(currentLang);
     <div class="nav-links" style="display: flex; gap: 2rem;">
       <a href="/species">{t('nav.species')}</a>
       {currentLang === 'en' ? (
-        <a href="/es/species" hreflang="es">Español</a>
+        <a href={`/es${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`} hreflang="es">Español</a>
       ) : (
-        <a href="/species" hreflang="en">English</a>
+        <a href={Astro.url.pathname.replace(/^\/es/, '') || '/'} hreflang="en">English</a>
       )}
     </div>
   </nav>
