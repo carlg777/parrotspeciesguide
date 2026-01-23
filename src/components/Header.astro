@@ -143,13 +143,14 @@ const t = useTranslations(currentLang);
     }
 
     .main-nav {
+      /* Base positioning */
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
       width: 100vw;
-      height: 100%;
       height: 100dvh;
+      
+      /* Layout & Styling */
       flex-direction: column;
       background-color: #ffffff;
       padding: 6rem 1.5rem 2rem;
@@ -158,22 +159,18 @@ const t = useTranslations(currentLang);
       gap: 1.5rem;
       align-items: flex-start;
       overflow-y: auto;
-      z-index: 99999; /* Nuclear option */
-      display: flex; /* Force flex */
+      z-index: 99999;
       
-      /* transitions */
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(10px);
-      transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-      pointer-events: none; /* Prevent clicks when hidden */
+      /* Visibility Logic: Default Hidden */
+      display: none; 
+      opacity: 1; /* Reset opacity logic */
+      visibility: visible;
+      transform: none;
+      pointer-events: auto;
     }
 
     .main-nav.is-active {
-      opacity: 1 !important;
-      visibility: visible !important;
-      transform: translateY(0) !important;
-      pointer-events: auto;
+      display: flex; /* Show when active */
     }
 
     .main-nav a {
