@@ -54,13 +54,18 @@ image: "{article_data.get('image_url', '')}"
     return filepath
 
 if __name__ == "__main__":
-    # Example usage: python save_article.py '{"title_en": "Test", "title_es": "Prueba", "content_en": "Hello", "content_es": "Hola"}'
     if len(sys.argv) < 2:
-        print("Usage: python save_article.py '<json_data>'")
+        print("Usage: python save_article.py '<json_data>' OR python save_article.py <json_file>")
         sys.exit(1)
     
+    arg = sys.argv[1]
     try:
-        data = json.loads(sys.argv[1])
+        if os.path.isfile(arg):
+            with open(arg, "r") as f:
+                data = json.load(f)
+        else:
+            data = json.loads(arg)
+            
         path = save_article(data)
         print(f"Article saved to {path}")
     except Exception as e:
