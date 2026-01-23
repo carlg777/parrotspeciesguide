@@ -177,8 +177,14 @@ const t = useTranslations(currentLang);
     transition: all 0.3s ease;
   }
 
-  /* Mobile Styles - hamburger animation only, layout in global CSS */
+  /* Mobile Styles */
   @media (max-width: 900px) {
+    /* Hide nav by default on mobile */
+    .main-nav {
+      display: none;
+    }
+
+    /* Hamburger X animation */
     .hamburger.is-active .hamburger__line:nth-child(1) {
       transform: translateY(7px) rotate(45deg);
     }
