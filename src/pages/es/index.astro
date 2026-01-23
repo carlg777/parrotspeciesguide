@@ -88,9 +88,21 @@ const faqDataString = JSON.stringify(faqStructuredData).replace(/</g, '\\u003c')
         {categories.map(category => {
           const categorySpecies = allSpecies.filter(s => s.data.category === category);
           const count = categorySpecies.length;
-          // Strategy: Use the image of the first species in the category
-          const firstSpecies = categorySpecies[0];
-          const imagePath = firstSpecies ? firstSpecies.data.image : '/assets/img/parrots/placeholder.webp'; // Fallback
+
+          // Image Selection Strategy:
+          // 1. check for manual override (e.g. for better visuals or fixing corrupted images)
+          // 2. Default to the first species in the category
+          const overrides: { [key: string]: string } = {
+            "African Parrots": "congo-african-grey"
+          };
+          
+          let featuredSpecies = categorySpecies[0];
+          if (overrides[category]) {
+            const overrideMatch = categorySpecies.find(s => s.data.slug === overrides[category]);
+            if (overrideMatch) featuredSpecies = overrideMatch;
+          }
+
+          const imagePath = featuredSpecies ? featuredSpecies.data.image : '/assets/img/parrots/placeholder.webp'; // Fallback
 
           return (
             <CategoryCard 
