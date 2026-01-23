@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 interface Props {
   year: number;
 }
@@ -7,20 +8,217 @@ const { year } = Astro.props;
 ---
 
 <footer class="site-footer">
-  <div class="container" style="text-align: center; padding: 2rem 0;">
-    <p style="margin: 0; color: #6b7280;">
-      © {year} Parrot Species Guide. All rights reserved.
-    </p>
-    <p style="margin: 0.5rem 0 0; font-size: 0.875rem; color: #9ca3af;">
-      Comprehensive care information for 84+ parrot species
-    </p>
+  <div class="footer-trust">
+    <div class="container footer-trust__inner">
+      <div class="trust-badge">
+        <span class="trust-icon">✓</span>
+        <span>Veterinarian Reviewed Content</span>
+      </div>
+      <div class="trust-badge">
+        <span class="trust-icon">♥</span>
+        <span>Trusted by 50,000+ Owners</span>
+      </div>
+      <div class="trust-badge">
+        <span class="trust-icon">🛡️</span>
+        <span>Up-to-Date Care Guides</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-main">
+    <div class="footer-brand">
+      <div class="brand">
+        <div class="brand__logo">P</div>
+        <span>Parrot Species Guide</span>
+      </div>
+      <p class="footer-desc">
+        The most comprehensive and accurate care guides for parrot owners. Dedicated to the health and happiness of our feathered friends.
+      </p>
+    </div>
+
+    <div class="footer-nav">
+      <div class="footer-col">
+        <h3 class="footer-heading">Explore</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/species">Species Guide</a></li>
+          <li><a href="/browse">Browse Categories</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Resources</h3>
+        <ul>
+          <li><a href="/guides/feeding-basics">Feeding Basics</a></li>
+          <li><a href="/guides/housing">Housing Guide</a></li>
+          <li><a href="/faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Connect</h3>
+        <p class="contact-email">hello@parrotspeciesguide.com</p>
+        <div class="social-links">
+          <!-- Social placeholders -->
+          <a href="#" aria-label="Twitter">Twitter</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom__inner">
+      <p class="copyright">© {year} Parrot Species Guide. All rights reserved.</p>
+      <div class="legal-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+      </div>
+    </div>
   </div>
 </footer>
 
 <style>
   .site-footer {
-    background: #f9fafb;
-    border-top: 1px solid #e5e7eb;
-    margin-top: 4rem;
+    background: #ffffff;
+    border-top: 1px solid var(--pf-neutral-200);
+    margin-top: 6rem;
+  }
+
+  .footer-trust {
+    border-bottom: 1px solid var(--pf-neutral-200);
+    background: var(--pf-neutral-050);
+  }
+
+  .footer-trust__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1.5rem 0;
+  }
+
+  .trust-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--pf-neutral-700);
+  }
+
+  .trust-icon {
+    color: var(--pf-primary-500);
+    font-weight: bold;
+  }
+
+  .footer-main {
+    padding: 4rem 0;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    .footer-main {
+      grid-template-columns: 1.5fr 2fr;
+    }
+  }
+
+  .brand {
+    margin-bottom: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--pf-font-display);
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--pf-primary-600);
+  }
+  
+  .brand__logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--pf-primary-500), var(--pf-secondary-500));
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 0.9rem;
+  }
+
+  .footer-desc {
+    color: var(--pf-neutral-500);
+    line-height: 1.6;
+    max-width: 360px;
+    font-size: 0.95rem;
+  }
+
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 2rem;
+  }
+
+  .footer-heading {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--pf-neutral-900);
+    margin: 0 0 1.25rem;
+    font-weight: 700;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .footer-col a {
+    color: var(--pf-neutral-500);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+
+  .footer-col a:hover {
+    color: var(--pf-primary-500);
+  }
+
+  .footer-bottom {
+    border-top: 1px solid var(--pf-neutral-200);
+    padding: 1.5rem 0;
+    background: #ffffff;
+  }
+
+  .footer-bottom__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: var(--pf-neutral-500);
+  }
+
+  .copyright {
+    margin: 0;
+  }
+
+  .legal-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .legal-links a {
+    color: var(--pf-neutral-500);
+    text-decoration: none;
+  }
+
+  .legal-links a:hover {
+    text-decoration: underline;
   }
 </style>
