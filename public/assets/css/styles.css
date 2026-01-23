@@ -1143,7 +1143,7 @@ footer.site-footer {
     transition: max-height 0.3s ease, box-shadow 0.3s ease;
   }
 
-  .main-nav.is-open {
+  .main-nav.is-active {
     max-height: 500px;
     box-shadow: var(--pf-elevation-2);
     padding: 1rem 0;
