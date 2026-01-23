@@ -35,6 +35,9 @@ const t = useTranslations(currentLang);
         <a href="/species" class={Astro.url.pathname.startsWith('/species') ? 'is-active' : ''}>
           {t('nav.species')}
         </a>
+        <a href={currentLang === 'en' ? "/news" : "/es/news"} class={Astro.url.pathname.includes('/news') ? 'is-active' : ''}>
+          {t('nav.news')}
+        </a>
         <a href="/browse" class={Astro.url.pathname.startsWith('/browse') ? 'is-active' : ''}>
           Browse
         </a>

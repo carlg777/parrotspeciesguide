@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getCollection } from 'astro:content';
+import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
+
+const currentLang = getLangFromUrl(Astro.url);
+const t = useTranslations(currentLang);
+
+const allNews = (await getCollection('news')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<BaseLayout
+  title={currentLang === 'en' ? "Parrot News | Latest Updates" : "Noticias de Loros | Últimas Actualizaciones"}
+  description={currentLang === 'en' ? "Stay updated with the latest news and research in the world of parrots." : "Manténgase al día con las últimas noticias e investigaciones en el mundo de los loros."}
+  dataPage="news"
+>
+  <main class="container page-main">
+    <header class="page-header">
+      <h1 class="page-title page-title--xl">
+        {currentLang === 'en' ? "🦜 Parrot News" : "🦜 Noticias de Loros"}
+      </h1>
+      <p class="page-subtitle--wide">
+        {currentLang === 'en' ? "Latest updates, research, and stories" : "Últimas actualizaciones, investigaciones e historias"}
+      </p>
+    </header>
+
+    <section class="section">
+      <div class="news-grid">
+        {allNews.map(post => (
+          <article class="filters-panel__card">
+            <h2 class="faq-question">
+              <a href={`/es/news/${post.slug}`} style="text-decoration: none; color: inherit;">
+                {post.data.title[currentLang]}
+              </a>
+            </h2>
+            <p class="text-sm text-neutral-500" style="margin-bottom: 0.5rem;">
+              {post.data.pubDate.toLocaleDateString(currentLang === 'en' ? 'en-US' : 'es-ES', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+              })} • {post.data.author}
+            </p>
+            <p class="faq-answer">
+              {post.data.description[currentLang]}
+            </p>
+            <div style="margin-top: 1rem;">
+              <a href={`/es/news/${post.slug}`} class="button button-sm">
+                {currentLang === 'en' ? "Read More →" : "Leer Más →"}
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+</style>

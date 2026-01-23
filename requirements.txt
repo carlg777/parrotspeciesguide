@@ -1,0 +1,3 @@
+duckduckgo-search
+feedparser
+requests

@@ -1,0 +1,111 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getCollection } from 'astro:content';
+import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
+
+export async function getStaticPaths() {
+  const newsEntries = await getCollection('news');
+  return newsEntries.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const currentLang = getLangFromUrl(Astro.url);
+const t = useTranslations(currentLang);
+---
+
+<BaseLayout
+  title={`${entry.data.title[currentLang]} | Parrot News`}
+  description={entry.data.description[currentLang]}
+  dataPage="news-detail"
+>
+  <main class="container page-main">
+    <article class="article-content">
+      <header class="page-header">
+        <h1 class="page-title">{entry.data.title[currentLang]}</h1>
+        <div class="article-meta">
+          <time datetime={entry.data.pubDate.toISOString()}>
+            {entry.data.pubDate.toLocaleDateString(currentLang === 'en' ? 'en-US' : 'es-ES', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}
+          </time>
+          <span class="meta-separator">|</span>
+          <span class="author">{entry.data.author}</span>
+        </div>
+      </header>
+
+      {entry.data.image && (
+        <div class="featured-image">
+          <img src={entry.data.image} alt={entry.data.title[currentLang]} loading="lazy" />
+        </div>
+      )}
+
+      <div class="content-body" data-current-lang={currentLang}>
+        <Content />
+      </div>
+
+      <footer class="article-footer">
+        <a href="/es/news" class="button">
+          {currentLang === 'en' ? "← Back to News" : "← Volver a Noticias"}
+        </a>
+      </footer>
+    </article>
+  </main>
+</BaseLayout>
+
+<style>
+  .article-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .article-meta {
+    color: var(--pf-neutral-500);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  .meta-separator {
+    margin: 0 0.5rem;
+  }
+  .featured-image {
+    margin-bottom: 2rem;
+    border-radius: var(--pf-radius-lg);
+    overflow: hidden;
+  }
+  .featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .content-body {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: var(--pf-neutral-800);
+  }
+  .content-body :global(h2) {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .content-body :global(p) {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Bilingual Content Handling */
+  .content-body[data-current-lang="en"] :global(.news-content-es) {
+    display: none;
+  }
+  .content-body[data-current-lang="es"] :global(.news-content-en) {
+    display: none;
+  }
+
+  .article-footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--pf-neutral-200);
+  }
+</style>

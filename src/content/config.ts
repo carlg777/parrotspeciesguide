@@ -179,9 +179,22 @@ const guidesCollection = defineCollection({
   }),
 });
 
+const newsCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: bilingualString,
+    pubDate: z.date(),
+    description: bilingualString,
+    author: z.string().default('Parrot Guide Team'),
+    image: z.string().optional(),
+    category: z.string().optional(),
+  }),
+});
+
 export const collections = {
   species: speciesCollection,
   guides: guidesCollection,
+  news: newsCollection,
 };
 
 /*
