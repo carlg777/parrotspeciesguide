@@ -138,7 +138,8 @@ const t = useTranslations(currentLang);
   @media (max-width: 768px) {
     .hamburger {
       display: flex;
-      z-index: 101; /* Ensure above everything */
+      z-index: 100000; /* Must be > main-nav (99999) */
+      position: relative; /* Ensure z-index applies */
     }
 
     .main-nav {
