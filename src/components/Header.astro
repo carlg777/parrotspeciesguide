@@ -37,16 +37,11 @@ const t = useTranslations(currentLang);
 </div>
 
 <script is:inline>
-  // Global function for inline onclick
   function toggleMobileMenu() {
     var hamburger = document.querySelector('.hamburger');
     var nav = document.getElementById('mobile-nav');
 
-    alert('Function called! hamburger=' + !!hamburger + ', nav=' + !!nav);
-
-    if (!hamburger || !nav) {
-      return;
-    }
+    if (!hamburger || !nav) return;
 
     hamburger.classList.toggle('is-active');
     var isOpen = hamburger.classList.contains('is-active');
@@ -62,14 +57,12 @@ const t = useTranslations(currentLang);
         'bottom: 0 !important;' +
         'width: 100vw !important;' +
         'height: 100vh !important;' +
-        'background-color: red !important;' +
+        'background-color: #ffffff !important;' +
         'z-index: 999999 !important;' +
         'padding: 80px 20px 20px 20px !important;'
       );
-      alert('Menu opened! Style set. nav.style.display=' + nav.style.display);
     } else {
       nav.setAttribute('style', '');
-      alert('Menu closed!');
     }
   }
 </script>

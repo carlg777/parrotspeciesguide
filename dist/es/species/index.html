@@ -5,16 +5,11 @@
     </script> <link rel="stylesheet" href="/_astro/index.DK4HkWFK.css"></head> <body data-page="species"> <div class="header-wrapper" data-astro-cid-3ef6ksr2> <header class="site-header" data-astro-cid-3ef6ksr2> <div class="site-header__inner container" data-astro-cid-3ef6ksr2> <a href="/" class="brand" data-astro-cid-3ef6ksr2> <div class="brand__logo" data-astro-cid-3ef6ksr2>P</div> <span data-astro-cid-3ef6ksr2>Parrot Species Guide</span> </a> <button class="hamburger" aria-label="Menu" aria-expanded="false" onclick="toggleMobileMenu()" data-astro-cid-3ef6ksr2> <div class="hamburger__line" data-astro-cid-3ef6ksr2></div> <div class="hamburger__line" data-astro-cid-3ef6ksr2></div> <div class="hamburger__line" data-astro-cid-3ef6ksr2></div> </button> <nav class="main-nav" id="mobile-nav" data-astro-cid-3ef6ksr2> <a href="/species" class data-astro-cid-3ef6ksr2> Guía de Especies </a> <a href="/browse" class data-astro-cid-3ef6ksr2>
 Browse
 </a> <a href="/species/" hreflang="en" class="user-pill" data-astro-cid-3ef6ksr2>English</a> </nav> </div> </header> </div> <script>
-  // Global function for inline onclick
   function toggleMobileMenu() {
     var hamburger = document.querySelector('.hamburger');
     var nav = document.getElementById('mobile-nav');
 
-    alert('Function called! hamburger=' + !!hamburger + ', nav=' + !!nav);
-
-    if (!hamburger || !nav) {
-      return;
-    }
+    if (!hamburger || !nav) return;
 
     hamburger.classList.toggle('is-active');
     var isOpen = hamburger.classList.contains('is-active');
@@ -30,14 +25,12 @@ Browse
         'bottom: 0 !important;' +
         'width: 100vw !important;' +
         'height: 100vh !important;' +
-        'background-color: red !important;' +
+        'background-color: #ffffff !important;' +
         'z-index: 999999 !important;' +
         'padding: 80px 20px 20px 20px !important;'
       );
-      alert('Menu opened! Style set. nav.style.display=' + nav.style.display);
     } else {
       nav.setAttribute('style', '');
-      alert('Menu closed!');
     }
   }
 </script>    <main class="container page-main page-main--compact"> <header class="page-header"> <h1 class="page-title">
@@ -234,25 +227,4 @@ The most comprehensive and accurate care guides for parrot owners. Dedicated to 
           filterSpecies();
         });
       });
-    })();</script>  <script>
-      // Mobile Menu - defined at end of body to ensure DOM is ready
-      window.toggleMobileMenu = function() {
-        alert('toggleMobileMenu called!');
-        var hamburger = document.querySelector('.hamburger');
-        var nav = document.getElementById('mobile-nav');
-
-        if (!hamburger || !nav) {
-          alert('Elements not found: hamburger=' + !!hamburger + ', nav=' + !!nav);
-          return;
-        }
-
-        hamburger.classList.toggle('is-active');
-        var isOpen = hamburger.classList.contains('is-active');
-
-        if (isOpen) {
-          nav.style.cssText = 'display:flex!important;flex-direction:column!important;position:fixed!important;top:0!important;left:0!important;right:0!important;bottom:0!important;width:100vw!important;height:100vh!important;background:red!important;z-index:999999!important;padding:80px 20px!important;';
-        } else {
-          nav.style.cssText = '';
-        }
-      };
-    </script> </body> </html>
+    })();</script>  </body></html>

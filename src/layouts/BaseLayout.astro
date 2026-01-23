@@ -55,27 +55,5 @@ const currentLang = getLangFromUrl(Astro.url);
     <Footer year={new Date().getFullYear()} />
     <slot name="scripts" />
 
-    <script is:inline>
-      // Mobile Menu - defined at end of body to ensure DOM is ready
-      window.toggleMobileMenu = function() {
-        alert('toggleMobileMenu called!');
-        var hamburger = document.querySelector('.hamburger');
-        var nav = document.getElementById('mobile-nav');
-
-        if (!hamburger || !nav) {
-          alert('Elements not found: hamburger=' + !!hamburger + ', nav=' + !!nav);
-          return;
-        }
-
-        hamburger.classList.toggle('is-active');
-        var isOpen = hamburger.classList.contains('is-active');
-
-        if (isOpen) {
-          nav.style.cssText = 'display:flex!important;flex-direction:column!important;position:fixed!important;top:0!important;left:0!important;right:0!important;bottom:0!important;width:100vw!important;height:100vh!important;background:red!important;z-index:999999!important;padding:80px 20px!important;';
-        } else {
-          nav.style.cssText = '';
-        }
-      };
-    </script>
   </body>
 </html>
