@@ -39,7 +39,7 @@ const t = useTranslations(currentLang);
           {t('nav.news')}
         </a>
         <a href="/browse" class={Astro.url.pathname.startsWith('/browse') ? 'is-active' : ''}>
-          Browse
+          {t('nav.browse')}
         </a>
       </nav>
     </div>
@@ -103,7 +103,7 @@ const t = useTranslations(currentLang);
 
   /* Navigation Links */
   .main-nav {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 2rem;
   }
