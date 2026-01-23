@@ -142,19 +142,19 @@ const t = useTranslations(currentLang);
 
     .main-nav {
       position: fixed;
-      top: 4rem; /* Below the header */
+      top: 4rem;
       left: 0;
       right: 0;
       bottom: 0;
-      height: calc(100vh - 4rem);
-      height: calc(100dvh - 4rem); /* Mobile fallback */
+      height: auto; /* Let bottom:0 determine height */
       flex-direction: column;
       background: white;
       padding: 2rem 1.5rem;
       border-top: 1px solid var(--pf-neutral-200);
       gap: 1.5rem;
       align-items: flex-start;
-      overflow-y: auto; /* Allow scrolling if content is tall */
+      overflow-y: auto;
+      z-index: 10000; /* Force on top */
       
       /* Hidden State */
       opacity: 0;
