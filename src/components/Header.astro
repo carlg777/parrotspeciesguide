@@ -17,8 +17,10 @@ const t = useTranslations(currentLang);
       <div class="hamburger__line"></div>
       <div class="hamburger__line"></div>
     </button>
+  </div>
 
-    <nav class="main-nav">
+  <nav class="main-nav">
+    <div class="container mobile-nav-inner">
       <a href="/species" class={Astro.url.pathname.startsWith('/species') ? 'is-active' : ''}>
         {t('nav.species')}
       </a>
@@ -30,8 +32,8 @@ const t = useTranslations(currentLang);
       ) : (
         <a href={Astro.url.pathname.replace(/^\/es/, '') || '/'} hreflang="en" class="user-pill">English</a>
       )}
-    </nav>
-  </div>
+    </div>
+  </nav>
 </header>
 
 <script>
@@ -94,6 +96,24 @@ const t = useTranslations(currentLang);
     display: flex;
     align-items: center;
     gap: 2rem;
+  }
+
+  /* Desktop: reposition nav to align with header logic if needed */
+  @media (min-width: 769px) {
+    .site-header__inner {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 2rem;
+    }
+    .main-nav {
+      justify-self: end;
+      display: flex;
+    }
+    
+    /* Hide hamburger */
+    .mobile-nav-inner {
+        display: contents; /* Strip container behavior on desktop */
+    }
   }
 
   .main-nav a {
