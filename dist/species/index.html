@@ -2,9 +2,45 @@
       {speciesListDataString}
     </script> <script type="application/ld+json">
       {faqDataString}
-    </script> <link rel="stylesheet" href="/_astro/index.CfNDdWrV.css"></head> <body data-page="species"> <header class="site-header" data-astro-cid-3ef6ksr2> <div class="site-header__inner container" data-astro-cid-3ef6ksr2> <a href="/" class="brand" data-astro-cid-3ef6ksr2> <div class="brand__logo" data-astro-cid-3ef6ksr2>P</div> <span data-astro-cid-3ef6ksr2>Parrot Species Guide</span> </a> <button class="hamburger" aria-label="Menu" aria-expanded="false" data-astro-cid-3ef6ksr2> <div class="hamburger__line" data-astro-cid-3ef6ksr2></div> <div class="hamburger__line" data-astro-cid-3ef6ksr2></div> <div class="hamburger__line" data-astro-cid-3ef6ksr2></div> </button> </div> <nav class="main-nav" data-astro-cid-3ef6ksr2> <div class="container mobile-nav-inner" data-astro-cid-3ef6ksr2> <a href="/species" class="is-active" data-astro-cid-3ef6ksr2> Species Guide </a> <a href="/browse" class data-astro-cid-3ef6ksr2>
+    </script> <link rel="stylesheet" href="/_astro/index.D_YDh0Ab.css"></head> <body data-page="species"> <div class="header-wrapper" data-astro-cid-3ef6ksr2> <header class="site-header" data-astro-cid-3ef6ksr2> <div class="site-header__inner container" data-astro-cid-3ef6ksr2> <a href="/" class="brand" data-astro-cid-3ef6ksr2> <div class="brand__logo" data-astro-cid-3ef6ksr2>P</div> <span data-astro-cid-3ef6ksr2>Parrot Species Guide</span> </a> <button class="hamburger" aria-label="Menu" aria-expanded="false" onclick="toggleMobileMenu()" data-astro-cid-3ef6ksr2> <div class="hamburger__line" data-astro-cid-3ef6ksr2></div> <div class="hamburger__line" data-astro-cid-3ef6ksr2></div> <div class="hamburger__line" data-astro-cid-3ef6ksr2></div> </button> <nav class="main-nav" id="mobile-nav" data-astro-cid-3ef6ksr2> <a href="/species" class="is-active" data-astro-cid-3ef6ksr2> Species Guide </a> <a href="/browse" class data-astro-cid-3ef6ksr2>
 Browse
-</a> <a href="/es/species/" hreflang="es" class="user-pill" data-astro-cid-3ef6ksr2>Español</a> </div> </nav> </header> <script type="module">const e=document.querySelector(".hamburger"),t=document.querySelector(".main-nav");e&&t&&e.addEventListener("click",()=>{const a=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",String(!a)),e.classList.toggle("is-active"),t.classList.toggle("is-active")});</script>    <main class="container page-main page-main--compact"> <header class="page-header"> <h1 class="page-title">
+</a> <a href="/es/species/" hreflang="es" class="user-pill" data-astro-cid-3ef6ksr2>Español</a> </nav> </div> </header> </div> <script>
+  // Global function for inline onclick
+  function toggleMobileMenu() {
+    var hamburger = document.querySelector('.hamburger');
+    var nav = document.getElementById('mobile-nav');
+
+    alert('Function called! hamburger=' + !!hamburger + ', nav=' + !!nav);
+
+    if (!hamburger || !nav) {
+      return;
+    }
+
+    hamburger.classList.toggle('is-active');
+    var isOpen = hamburger.classList.contains('is-active');
+
+    if (isOpen) {
+      nav.setAttribute('style',
+        'display: flex !important;' +
+        'flex-direction: column !important;' +
+        'position: fixed !important;' +
+        'top: 0 !important;' +
+        'left: 0 !important;' +
+        'right: 0 !important;' +
+        'bottom: 0 !important;' +
+        'width: 100vw !important;' +
+        'height: 100vh !important;' +
+        'background-color: red !important;' +
+        'z-index: 999999 !important;' +
+        'padding: 80px 20px 20px 20px !important;'
+      );
+      alert('Menu opened! Style set. nav.style.display=' + nav.style.display);
+    } else {
+      nav.setAttribute('style', '');
+      alert('Menu closed!');
+    }
+  }
+</script>    <main class="container page-main page-main--compact"> <header class="page-header"> <h1 class="page-title">
 Parrot Species Guide
 </h1> <p class="page-subtitle">
 Explore 84 parrot species with detailed care information
@@ -206,4 +242,25 @@ No species match your filters. Try adjusting your search.
     loudnessFilter.addEventListener('change', filterSpecies);
   })();</script>  <footer class="site-footer" data-astro-cid-sz7xmlte> <div class="footer-trust" data-astro-cid-sz7xmlte> <div class="container footer-trust__inner" data-astro-cid-sz7xmlte> <div class="trust-badge" data-astro-cid-sz7xmlte> <span class="trust-icon" data-astro-cid-sz7xmlte>✓</span> <span data-astro-cid-sz7xmlte>Veterinarian Reviewed Content</span> </div> <div class="trust-badge" data-astro-cid-sz7xmlte> <span class="trust-icon" data-astro-cid-sz7xmlte>♥</span> <span data-astro-cid-sz7xmlte>Trusted by 50,000+ Owners</span> </div> <div class="trust-badge" data-astro-cid-sz7xmlte> <span class="trust-icon" data-astro-cid-sz7xmlte>🛡️</span> <span data-astro-cid-sz7xmlte>Up-to-Date Care Guides</span> </div> </div> </div> <div class="container footer-main" data-astro-cid-sz7xmlte> <div class="footer-brand" data-astro-cid-sz7xmlte> <div class="brand" data-astro-cid-sz7xmlte> <div class="brand__logo" data-astro-cid-sz7xmlte>P</div> <span data-astro-cid-sz7xmlte>Parrot Species Guide</span> </div> <p class="footer-desc" data-astro-cid-sz7xmlte>
 The most comprehensive and accurate care guides for parrot owners. Dedicated to the health and happiness of our feathered friends.
-</p> </div> <div class="footer-nav" data-astro-cid-sz7xmlte> <div class="footer-col" data-astro-cid-sz7xmlte> <h3 class="footer-heading" data-astro-cid-sz7xmlte>Explore</h3> <ul data-astro-cid-sz7xmlte> <li data-astro-cid-sz7xmlte><a href="/" data-astro-cid-sz7xmlte>Home</a></li> <li data-astro-cid-sz7xmlte><a href="/species" data-astro-cid-sz7xmlte>Species Guide</a></li> <li data-astro-cid-sz7xmlte><a href="/browse" data-astro-cid-sz7xmlte>Browse Categories</a></li> </ul> </div> <div class="footer-col" data-astro-cid-sz7xmlte> <h3 class="footer-heading" data-astro-cid-sz7xmlte>Resources</h3> <ul data-astro-cid-sz7xmlte> <li data-astro-cid-sz7xmlte><a href="/guides/feeding-basics" data-astro-cid-sz7xmlte>Feeding Basics</a></li> <li data-astro-cid-sz7xmlte><a href="/guides/housing" data-astro-cid-sz7xmlte>Housing Guide</a></li> <li data-astro-cid-sz7xmlte><a href="/faq" data-astro-cid-sz7xmlte>FAQ</a></li> </ul> </div> <div class="footer-col" data-astro-cid-sz7xmlte> <h3 class="footer-heading" data-astro-cid-sz7xmlte>Connect</h3> <p class="contact-email" data-astro-cid-sz7xmlte>hello@parrotspeciesguide.com</p> <div class="social-links" data-astro-cid-sz7xmlte> <!-- Social placeholders --> <a href="#" aria-label="Twitter" data-astro-cid-sz7xmlte>Twitter</a> <a href="#" aria-label="Instagram" data-astro-cid-sz7xmlte>Instagram</a> </div> </div> </div> </div> <div class="footer-bottom" data-astro-cid-sz7xmlte> <div class="container footer-bottom__inner" data-astro-cid-sz7xmlte> <p class="copyright" data-astro-cid-sz7xmlte>© 2026 Parrot Species Guide. All rights reserved.</p> <div class="legal-links" data-astro-cid-sz7xmlte> <a href="/privacy" data-astro-cid-sz7xmlte>Privacy Policy</a> <a href="/terms" data-astro-cid-sz7xmlte>Terms of Service</a> </div> </div> </div> </footer>   </body></html>
+</p> </div> <div class="footer-nav" data-astro-cid-sz7xmlte> <div class="footer-col" data-astro-cid-sz7xmlte> <h3 class="footer-heading" data-astro-cid-sz7xmlte>Explore</h3> <ul data-astro-cid-sz7xmlte> <li data-astro-cid-sz7xmlte><a href="/" data-astro-cid-sz7xmlte>Home</a></li> <li data-astro-cid-sz7xmlte><a href="/species" data-astro-cid-sz7xmlte>Species Guide</a></li> <li data-astro-cid-sz7xmlte><a href="/browse" data-astro-cid-sz7xmlte>Browse Categories</a></li> </ul> </div> <div class="footer-col" data-astro-cid-sz7xmlte> <h3 class="footer-heading" data-astro-cid-sz7xmlte>Resources</h3> <ul data-astro-cid-sz7xmlte> <li data-astro-cid-sz7xmlte><a href="/guides/feeding-basics" data-astro-cid-sz7xmlte>Feeding Basics</a></li> <li data-astro-cid-sz7xmlte><a href="/guides/housing" data-astro-cid-sz7xmlte>Housing Guide</a></li> <li data-astro-cid-sz7xmlte><a href="/faq" data-astro-cid-sz7xmlte>FAQ</a></li> </ul> </div> <div class="footer-col" data-astro-cid-sz7xmlte> <h3 class="footer-heading" data-astro-cid-sz7xmlte>Connect</h3> <p class="contact-email" data-astro-cid-sz7xmlte>hello@parrotspeciesguide.com</p> <div class="social-links" data-astro-cid-sz7xmlte> <!-- Social placeholders --> <a href="#" aria-label="Twitter" data-astro-cid-sz7xmlte>Twitter</a> <a href="#" aria-label="Instagram" data-astro-cid-sz7xmlte>Instagram</a> </div> </div> </div> </div> <div class="footer-bottom" data-astro-cid-sz7xmlte> <div class="container footer-bottom__inner" data-astro-cid-sz7xmlte> <p class="copyright" data-astro-cid-sz7xmlte>© 2026 Parrot Species Guide. All rights reserved.</p> <div class="legal-links" data-astro-cid-sz7xmlte> <a href="/privacy" data-astro-cid-sz7xmlte>Privacy Policy</a> <a href="/terms" data-astro-cid-sz7xmlte>Terms of Service</a> </div> </div> </div> </footer>   <script>
+      // Mobile Menu - defined at end of body to ensure DOM is ready
+      window.toggleMobileMenu = function() {
+        alert('toggleMobileMenu called!');
+        var hamburger = document.querySelector('.hamburger');
+        var nav = document.getElementById('mobile-nav');
+
+        if (!hamburger || !nav) {
+          alert('Elements not found: hamburger=' + !!hamburger + ', nav=' + !!nav);
+          return;
+        }
+
+        hamburger.classList.toggle('is-active');
+        var isOpen = hamburger.classList.contains('is-active');
+
+        if (isOpen) {
+          nav.style.cssText = 'display:flex!important;flex-direction:column!important;position:fixed!important;top:0!important;left:0!important;right:0!important;bottom:0!important;width:100vw!important;height:100vh!important;background:red!important;z-index:999999!important;padding:80px 20px!important;';
+        } else {
+          nav.style.cssText = '';
+        }
+      };
+    </script> </body> </html>
