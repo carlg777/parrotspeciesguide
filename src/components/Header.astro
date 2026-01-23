@@ -5,58 +5,57 @@ const currentLang = getLangFromUrl(Astro.url);
 const t = useTranslations(currentLang);
 ---
 
-<header class="site-header">
-  <div class="site-header__inner container">
-    <a href="/" class="brand">
-      <div class="brand__logo">P</div>
-      <span>Parrot Species Guide</span>
-    </a>
-
-    <button class="hamburger" aria-label="Menu" aria-expanded="false">
-      <div class="hamburger__line"></div>
-      <div class="hamburger__line"></div>
-      <div class="hamburger__line"></div>
-    </button>
-  </div>
-
-  <nav class="main-nav">
-    <div class="container mobile-nav-inner">
-      <a href="/species" class={Astro.url.pathname.startsWith('/species') ? 'is-active' : ''}>
-        {t('nav.species')}
+<div class="header-wrapper">
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a href="/" class="brand">
+        <div class="brand__logo">P</div>
+        <span>Parrot Species Guide</span>
       </a>
-      <a href="/browse" class={Astro.url.pathname.startsWith('/browse') ? 'is-active' : ''}>
-        Browse
-      </a>
-      {currentLang === 'en' ? (
-        <a href={`/es${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`} hreflang="es" class="user-pill">Español</a>
-      ) : (
-        <a href={Astro.url.pathname.replace(/^\/es/, '') || '/'} hreflang="en" class="user-pill">English</a>
-      )}
+
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+      </button>
+
+      <nav class="main-nav" id="mobile-nav">
+        <a href="/species" class={Astro.url.pathname.startsWith('/species') ? 'is-active' : ''}>
+          {t('nav.species')}
+        </a>
+        <a href="/browse" class={Astro.url.pathname.startsWith('/browse') ? 'is-active' : ''}>
+          Browse
+        </a>
+        {currentLang === 'en' ? (
+          <a href={`/es${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`} hreflang="es" class="user-pill">Español</a>
+        ) : (
+          <a href={Astro.url.pathname.replace(/^\/es/, '') || '/'} hreflang="en" class="user-pill">English</a>
+        )}
+      </nav>
     </div>
-  </nav>
-</header>
+  </header>
+</div>
 
 <script>
-  // Mobile Menu Logic - using inline styles to guarantee visibility
-  const hamburger = document.querySelector('.hamburger');
-  const nav = document.querySelector('.main-nav');
+  // Mobile Menu Logic
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.getElementById('mobile-nav');
 
-  if (hamburger && nav) {
-    let isOpen = false;
+    console.log('Menu init:', { hamburger: !!hamburger, nav: !!nav });
 
-    hamburger.addEventListener('click', () => {
-      isOpen = !isOpen;
-      hamburger.setAttribute('aria-expanded', String(isOpen));
-      hamburger.classList.toggle('is-active');
+    if (hamburger && nav) {
+      hamburger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isOpen = hamburger.classList.toggle('is-active');
+        hamburger.setAttribute('aria-expanded', String(isOpen));
 
-      // Use inline styles to guarantee the menu shows/hides
-      if (isOpen) {
-        nav.style.display = 'flex';
-      } else {
-        nav.style.display = '';
-      }
-    });
-  }
+        // Toggle visibility with inline style
+        nav.style.display = isOpen ? 'flex' : 'none';
+        console.log('Menu toggled:', isOpen);
+      });
+    }
+  });
 </script>
 
 <style>

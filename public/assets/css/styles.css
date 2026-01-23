@@ -1128,12 +1128,16 @@ footer.site-footer {
   }
 
   /* Mobile Navigation */
+  .site-header__inner {
+    position: relative;
+  }
+
   .main-nav {
     position: absolute;
     top: 100%;
-    left: 0;
-    right: 0;
-    width: 100%;
+    left: -4%;
+    right: -4%;
+    width: 108%;
     flex-direction: column;
     background-color: #ffffff;
     padding: 0;
@@ -1143,10 +1147,6 @@ footer.site-footer {
     border-top: 1px solid var(--pf-neutral-200);
     display: none;
     z-index: 9999;
-  }
-
-  .main-nav.is-active {
-    display: flex;
   }
 
   .main-nav a {
@@ -1170,13 +1170,6 @@ footer.site-footer {
     border-radius: 0;
     text-align: left;
     padding: 1rem 1.5rem;
-  }
-
-  .mobile-nav-inner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
   }
 
   .results-layout {
