@@ -6,31 +6,181 @@ const t = useTranslations(currentLang);
 ---
 
 <header class="site-header">
-  <nav class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
-    <a href="/" class="logo" style="font-size: 1.5rem; font-weight: bold; text-decoration: none;">
-      🦜 Parrot Species Guide
+  <div class="site-header__inner container">
+    <a href="/" class="brand">
+      <div class="brand__logo">P</div>
+      <span>Parrot Species Guide</span>
     </a>
-    <div class="nav-links" style="display: flex; gap: 2rem;">
-      <a href="/species">{t('nav.species')}</a>
+
+    <button class="hamburger" aria-label="Menu" aria-expanded="false">
+      <div class="hamburger__line"></div>
+      <div class="hamburger__line"></div>
+      <div class="hamburger__line"></div>
+    </button>
+
+    <nav class="main-nav">
+      <a href="/species" class={Astro.url.pathname.startsWith('/species') ? 'is-active' : ''}>
+        {t('nav.species')}
+      </a>
+      <a href="/browse" class={Astro.url.pathname.startsWith('/browse') ? 'is-active' : ''}>
+        Browse
+      </a>
       {currentLang === 'en' ? (
-        <a href={`/es${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`} hreflang="es">Español</a>
+        <a href={`/es${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`} hreflang="es" class="user-pill">Español</a>
       ) : (
-        <a href={Astro.url.pathname.replace(/^\/es/, '') || '/'} hreflang="en">English</a>
+        <a href={Astro.url.pathname.replace(/^\/es/, '') || '/'} hreflang="en" class="user-pill">English</a>
       )}
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
 
+<script>
+  // Mobile Menu Logic
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.main-nav');
+
+  if (hamburger && nav) {
+    hamburger.addEventListener('click', () => {
+      const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!isExpanded));
+      hamburger.classList.toggle('is-active');
+      nav.classList.toggle('is-active');
+    });
+  }
+</script>
+
 <style>
+  /* Header Base Styles */
   .site-header {
     background: white;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid var(--pf-neutral-200);
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
-  .nav-links a {
+
+  .site-header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+  }
+
+  /* Brand / Logo */
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     text-decoration: none;
-    color: #374151;
+    color: var(--pf-primary-600);
+    font-weight: 700;
+    font-size: 1.1rem;
+    font-family: var(--pf-font-display);
   }
-  .nav-links a:hover {
-    color: #10b981;
+
+  .brand__logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--pf-primary-500), var(--pf-secondary-500));
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 0.9rem;
+  }
+
+  /* Navigation Links */
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .main-nav a {
+    text-decoration: none;
+    color: var(--pf-neutral-700);
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .main-nav a:hover,
+  .main-nav a.is-active {
+    color: var(--pf-primary-600);
+  }
+
+  .user-pill {
+    padding: 0.4rem 0.8rem;
+    background: var(--pf-neutral-050);
+    border-radius: var(--pf-radius-pill);
+    font-size: 0.9rem;
+    color: var(--pf-primary-600) !important;
+  }
+
+  /* Hamburger Menu (Hidden on Desktop) */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .hamburger__line {
+    width: 24px;
+    height: 2px;
+    background: var(--pf-neutral-700);
+    transition: all 0.3s ease;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+
+    .main-nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background: white;
+      padding: 1.5rem;
+      border-bottom: 1px solid var(--pf-neutral-200);
+      box-shadow: var(--pf-elevation-2);
+      gap: 1.5rem;
+      align-items: flex-start;
+      
+      /* Hidden State */
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .main-nav.is-active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .main-nav a {
+      font-size: 1.1rem;
+      width: 100%;
+      padding: 0.5rem 0;
+    }
+
+    /* Hibernate Hamburger Animation */
+    .hamburger.is-active .hamburger__line:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .hamburger.is-active .hamburger__line:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.is-active .hamburger__line:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
   }
 </style>
