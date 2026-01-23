@@ -37,16 +37,24 @@ const t = useTranslations(currentLang);
 </header>
 
 <script>
-  // Mobile Menu Logic
+  // Mobile Menu Logic - using inline styles to guarantee visibility
   const hamburger = document.querySelector('.hamburger');
   const nav = document.querySelector('.main-nav');
 
   if (hamburger && nav) {
+    let isOpen = false;
+
     hamburger.addEventListener('click', () => {
-      const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
-      hamburger.setAttribute('aria-expanded', String(!isExpanded));
+      isOpen = !isOpen;
+      hamburger.setAttribute('aria-expanded', String(isOpen));
       hamburger.classList.toggle('is-active');
-      nav.classList.toggle('is-active');
+
+      // Use inline styles to guarantee the menu shows/hides
+      if (isOpen) {
+        nav.style.display = 'flex';
+      } else {
+        nav.style.display = '';
+      }
     });
   }
 </script>
