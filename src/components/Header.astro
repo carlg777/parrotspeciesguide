@@ -154,8 +154,8 @@ const t = useTranslations(currentLang);
     transition: all 0.3s ease;
   }
 
-  /* Mobile Styles */
-  @media (max-width: 768px) {
+  /* Mobile Styles - must match global CSS breakpoint */
+  @media (max-width: 900px) {
     .hamburger {
       display: flex;
       z-index: 100000; /* Must be > main-nav (99999) */
