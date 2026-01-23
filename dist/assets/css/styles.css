@@ -222,11 +222,20 @@ header.site-header {
   position: sticky;
   top: 0;
   z-index: 50;
+  /* background styles moved to ::before to avoid containing block issues */
+  /* backdrop-filter on parent breaks position: fixed children */
+}
+
+header.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: var(--pf-elevation-1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  z-index: -1;
 }
 
 .site-header__inner {
