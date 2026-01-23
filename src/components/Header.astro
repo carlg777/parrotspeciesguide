@@ -51,12 +51,29 @@ const t = useTranslations(currentLang);
     var isOpen = hamburger.classList.contains('is-active');
     hamburger.setAttribute('aria-expanded', isOpen);
 
-    // Toggle menu visibility
+    // Force ALL styles inline to guarantee visibility
     if (isOpen) {
-      nav.style.display = 'flex';
-      nav.style.flexDirection = 'column';
+      nav.setAttribute('style',
+        'display: flex !important;' +
+        'flex-direction: column !important;' +
+        'position: fixed !important;' +
+        'top: 0 !important;' +
+        'left: 0 !important;' +
+        'right: 0 !important;' +
+        'bottom: 0 !important;' +
+        'width: 100vw !important;' +
+        'height: 100vh !important;' +
+        'background-color: white !important;' +
+        'z-index: 999999 !important;' +
+        'padding: 80px 20px 20px 20px !important;' +
+        'overflow-y: auto !important;' +
+        'visibility: visible !important;' +
+        'opacity: 1 !important;' +
+        'transform: none !important;' +
+        'pointer-events: auto !important;'
+      );
     } else {
-      nav.style.display = 'none';
+      nav.setAttribute('style', '');
     }
   }
 </script>
