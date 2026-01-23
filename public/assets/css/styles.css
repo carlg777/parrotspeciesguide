@@ -1145,6 +1145,7 @@ footer.site-footer {
 
   .main-nav.is-active {
     max-height: 500px;
+    overflow: visible;
     box-shadow: var(--pf-elevation-2);
     padding: 1rem 0;
   }
