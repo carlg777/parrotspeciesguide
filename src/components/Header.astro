@@ -138,23 +138,26 @@ const t = useTranslations(currentLang);
   @media (max-width: 768px) {
     .hamburger {
       display: flex;
+      z-index: 101; /* Ensure above everything */
     }
 
     .main-nav {
       position: fixed;
-      top: 4rem;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: auto; /* Let bottom:0 determine height */
+      inset: 0; /* Full screen overlay */
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh; /* Dynamic viewport height */
       flex-direction: column;
       background: white;
-      padding: 2rem 1.5rem;
-      border-top: 1px solid var(--pf-neutral-200);
+      padding: 6rem 1.5rem 2rem; /* Top padding clears the header */
+      padding-top: calc(4rem + 2rem);
+      padding-bottom: env(safe-area-inset-bottom, 20px);
       gap: 1.5rem;
       align-items: flex-start;
       overflow-y: auto;
-      z-index: 10000; /* Force on top */
+      z-index: 40; /* Just below header (50) so hamburger stays clickable, OR higher if we want to cover everything */
+      /* Actually, to avoid clicking issues, let's keep it below the header (z:50) but ensure it fills screen */
+      /* Wait, if it's below header, top part is covered. That's good. */
       
       /* Hidden State */
       opacity: 0;
