@@ -36,26 +36,31 @@ const t = useTranslations(currentLang);
   </header>
 </div>
 
-<script>
-  // Mobile Menu Logic
-  document.addEventListener('DOMContentLoaded', () => {
+<script is:inline>
+  // Mobile Menu Logic - runs immediately
+  (function() {
     const hamburger = document.querySelector('.hamburger');
     const nav = document.getElementById('mobile-nav');
 
     console.log('Menu init:', { hamburger: !!hamburger, nav: !!nav });
 
     if (hamburger && nav) {
-      hamburger.addEventListener('click', (e) => {
+      hamburger.addEventListener('click', function(e) {
         e.preventDefault();
+        e.stopPropagation();
+
         const isOpen = hamburger.classList.toggle('is-active');
         hamburger.setAttribute('aria-expanded', String(isOpen));
 
-        // Toggle visibility with inline style
-        nav.style.display = isOpen ? 'flex' : 'none';
-        console.log('Menu toggled:', isOpen);
+        // Force display with inline style
+        nav.style.cssText = isOpen ? 'display: flex !important;' : 'display: none !important;';
+
+        console.log('Menu toggled:', isOpen, nav.style.display);
       });
+    } else {
+      console.error('Menu elements not found!', { hamburger, nav });
     }
-  });
+  })();
 </script>
 
 <style>
