@@ -13,6 +13,18 @@ const t = useTranslations(currentLang);
         <span>Parrot Species Guide</span>
       </a>
 
+      {currentLang === 'en' ? (
+        <a href={`/es${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`} hreflang="es" class="lang-toggle" aria-label="Cambiar a Español">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span>ES</span>
+        </a>
+      ) : (
+        <a href={Astro.url.pathname.replace(/^\/es/, '') || '/'} hreflang="en" class="lang-toggle" aria-label="Switch to English">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span>EN</span>
+        </a>
+      )}
+
       <button class="hamburger" aria-label="Menu" aria-expanded="false" onclick="toggleMobileMenu()">
         <div class="hamburger__line"></div>
         <div class="hamburger__line"></div>
@@ -26,11 +38,6 @@ const t = useTranslations(currentLang);
         <a href="/browse" class={Astro.url.pathname.startsWith('/browse') ? 'is-active' : ''}>
           Browse
         </a>
-        {currentLang === 'en' ? (
-          <a href={`/es${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`} hreflang="es" class="user-pill">Español</a>
-        ) : (
-          <a href={Astro.url.pathname.replace(/^\/es/, '') || '/'} hreflang="en" class="user-pill">English</a>
-        )}
       </nav>
     </div>
   </header>
@@ -54,11 +61,13 @@ const t = useTranslations(currentLang);
         'top: 100% !important;' +
         'left: 0 !important;' +
         'right: 0 !important;' +
-        'background-color: #ffffff !important;' +
+        'background-color: rgba(255,255,255,0.95) !important;' +
+        'backdrop-filter: blur(10px) !important;' +
+        '-webkit-backdrop-filter: blur(10px) !important;' +
         'z-index: 999 !important;' +
-        'padding: 0.5rem 0 !important;' +
+        'padding: 0.25rem 0 !important;' +
         'box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;' +
-        'border-top: 1px solid #e5e7eb !important;'
+        'border-top: 1px solid rgba(229,231,235,0.8) !important;'
       );
     } else {
       nav.setAttribute('style', '');
@@ -149,6 +158,30 @@ const t = useTranslations(currentLang);
     border-radius: var(--pf-radius-pill);
     font-size: 0.9rem;
     color: var(--pf-primary-600) !important;
+  }
+
+  /* Language Toggle Button */
+  .lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.6rem;
+    background: var(--pf-neutral-050);
+    border-radius: var(--pf-radius-pill);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--pf-neutral-600);
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .lang-toggle:hover {
+    background: var(--pf-neutral-100);
+    color: var(--pf-primary-600);
+  }
+
+  .lang-toggle svg {
+    opacity: 0.7;
   }
 
   /* Hamburger Menu (Hidden on Desktop) */
