@@ -141,22 +141,25 @@ const t = useTranslations(currentLang);
     }
 
     .main-nav {
-      position: absolute;
-      top: 100%;
+      position: fixed;
+      top: 4rem; /* Below the header */
       left: 0;
       right: 0;
+      bottom: 0;
+      height: calc(100vh - 4rem);
+      height: calc(100dvh - 4rem); /* Mobile fallback */
       flex-direction: column;
       background: white;
-      padding: 1.5rem;
-      border-bottom: 1px solid var(--pf-neutral-200);
-      box-shadow: var(--pf-elevation-2);
+      padding: 2rem 1.5rem;
+      border-top: 1px solid var(--pf-neutral-200);
       gap: 1.5rem;
       align-items: flex-start;
+      overflow-y: auto; /* Allow scrolling if content is tall */
       
       /* Hidden State */
       opacity: 0;
       visibility: hidden;
-      transform: translateY(-10px);
+      transform: translateY(10px);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -167,9 +170,16 @@ const t = useTranslations(currentLang);
     }
 
     .main-nav a {
-      font-size: 1.1rem;
+      font-size: 1.25rem; /* Larger touch targets */
       width: 100%;
-      padding: 0.5rem 0;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--pf-neutral-100);
+    }
+
+    .user-pill {
+      margin-top: 1rem;
+      width: auto !important;
+      display: inline-block;
     }
 
     /* Hibernate Hamburger Animation */
